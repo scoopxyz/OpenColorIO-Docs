@@ -1,0 +1,673 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>aces_1.0.3 &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to Configure ColorSpace Allocation" href="allocation_vars.html" />
+    <link rel="prev" title="nuke-default" href="nuke_default.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Configurations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#public-configs">Public Configs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="spi_vfx.html">spi-vfx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi_anim.html">spi-anim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nuke_default.html">nuke-default</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">aces_1.0.3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#information-about-aces">Information about ACES</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#colorspaces">Colorspaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roles">Roles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#displays-and-views">Displays and Views</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#luts">LUTs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generating-configurations">Generating Configurations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#thanks">Thanks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#author">Author</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="allocation_vars.html">How to Configure ColorSpace Allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="config_syntax.html">Config syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contexts.html">Contexts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="looks.html">Looks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">Configurations</a> &raquo;</li>
+        
+      <li>aces_1.0.3</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/configs/aces_1.0.3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="aces-1-0-3">
+<h1>aces_1.0.3<a class="headerlink" href="#aces-1-0-3" title="Permalink to this headline">¶</a></h1>
+<p>ACES 1.0.3 OpenColorIO configuration</p>
+<div class="section" id="information-about-aces">
+<h2>Information about ACES<a class="headerlink" href="#information-about-aces" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>ACES</strong> project home page is here:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.oscars.org/aces">http://www.oscars.org/aces</a></p></li>
+</ul>
+<p>The latest documentation on the ACES transforms and specifications can be found here:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.oscars.org/science-technology/aces/aces-documentation">http://www.oscars.org/science-technology/aces/aces-documentation</a></p></li>
+</ul>
+</div>
+<div class="section" id="colorspaces">
+<h2>Colorspaces<a class="headerlink" href="#colorspaces" title="Permalink to this headline">¶</a></h2>
+<p>Colorspaces in this configurations are grouped into the following families:
+ACES, ADX, Look, Output, Input, Utility, Aliases. Descriptions for the
+colorspaces in the different families are provided below.</p>
+<p>For ease of use across a broader number of applications, the family name of each
+colorspace is pre-pended to the colorspace name when the configuration is
+authored. Those prefixes will be omitted in this document, but will show up when
+the configuration is loaded and used.</p>
+<div class="section" id="aces-colorspaces">
+<h3>ACES Colorspaces<a class="headerlink" href="#aces-colorspaces" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>ACES2065-1</p></li>
+<li><p>ACEScc</p></li>
+<li><p>ACEScct</p></li>
+<li><p>ACESproxy</p></li>
+<li><p>ACEScg</p></li>
+</ul>
+<p><strong>Description</strong></p>
+<p>Colorspaces and transforms representing the core ACES working and interchange
+colorspaces.</p>
+<p><strong>Technical information</strong></p>
+<p>Transforms generated based on the <a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl">ACES CTL Transforms</a></p>
+</div>
+<div class="section" id="output-colorspaces">
+<h3>Output Colorspaces<a class="headerlink" href="#output-colorspaces" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>sRGB</p></li>
+<li><p>sRGB (D60 sim.)</p></li>
+<li><p>Rec.709</p></li>
+<li><p>Rec.709 (D60 sim.)</p></li>
+<li><p>Rec.2020</p></li>
+<li><p>Rec.2020 ST2048 (1000 nits)</p></li>
+<li><p>DCDM (P3 gamut clip)</p></li>
+<li><p>DCDM</p></li>
+<li><p>P3-D60 ST2048 (1000 nits)</p></li>
+<li><p>P3-D60 ST2048 (2000 nits)</p></li>
+<li><p>P3-D60 ST2048 (4000 nits)</p></li>
+<li><p>P3-D60</p></li>
+<li><p>P3-DCI</p></li>
+</ul>
+<p><strong>Description</strong></p>
+<p>Colorspaces and transforms implementing the ACES Output Transforms. These
+colorspaces produce code values ready for display on hardware devices calibrated
+to the standard used to name the colorspace.</p>
+<p><strong>Technical information</strong></p>
+<ul class="simple">
+<li><p>Transforms generated based on the <a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl">ACES CTL Transforms</a></p></li>
+<li><p>All transforms produce full-range output. Host applications should be used to
+apply an full-to-legal scaling needed.</p></li>
+</ul>
+</div>
+<div class="section" id="input-colorspaces">
+<h3>Input Colorspaces<a class="headerlink" href="#input-colorspaces" title="Permalink to this headline">¶</a></h3>
+<p>There are a variety of Input Transforms covering different cameras manufacturers, gamuts, transfer functions and camera settings. See below for specifics.</p>
+<p><strong>Description</strong></p>
+<p>Colorspaces and transforms that implement the ACES Input Transforms. These colorspaces are used to convert from camera-specific formats and encodings to ACES.</p>
+<p><strong>Technical information</strong></p>
+<p>References and descriptions are provided for each group of Input Transforms below.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The colorspaces whose names include a transfer function and a gamut name are full implementations of ACES Input Transforms.</dt><dd><ul>
+<li><p>Ex. The ARRI ‘V3 LogC (EI160) - Wide Gamut’ colorspace</p></li>
+<li><p>Ex. The RED ‘REDlogFilm - DRAGONcolor2’ colorspace</p></li>
+<li><p>Ex. The Canon ‘Canon-Log - DCI-P3 Daylight’ colorspace</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>The colorspaces that start with ‘Linear - ‘ will convert to or from a specific gamut but not apply a transfer function.</p></li>
+<li><p>The colorspaces that start with ‘Curve - ‘ will apply a transfer function but not convert between gamuts.</p></li>
+</ul>
+<div class="section" id="adx-colorspaces">
+<h4>ADX Colorspaces<a class="headerlink" href="#adx-colorspaces" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>ADX10</p></li>
+<li><p>ADX16</p></li>
+</ul>
+<p><strong>Description</strong></p>
+<p>Colorspaces and transforms representing the ACES ADX spaces used for film scanning and printing.</p>
+<p><strong>Technical information</strong></p>
+<ul class="simple">
+<li><p>Transforms generated based on the <a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl">ACES CTL Transforms</a></p></li>
+<li><p><a class="reference external" href="https://github.com/imageworks/OpenColorIO-Configs/tree/master/aces_0.7.1">Alex Fry’s ACES 0.7.1 OCIO config</a> was also a valuable resource.</p></li>
+</ul>
+</div>
+<div class="section" id="arri">
+<h4>ARRI<a class="headerlink" href="#arri" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.arri.com/camera/alexa_mini/learn/working_with_aces/">ARRI ‘Working with ACES’</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl/idt/vendorSupplied/arri/alexa">ARRI Input Transforms</a></p></li>
+<li><p>Conversations with Joseph Goldstone of ARRI</p></li>
+</ul>
+</div>
+<div class="section" id="canon">
+<h4>Canon<a class="headerlink" href="#canon" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://usa.canon.com/cusa/professional/standard_display/aces">Canon ACES landing page</a></p></li>
+<li><p><a class="reference external" href="http://learn.usa.canon.com/app/pdfs/white_papers/White_Paper_Clog_optoelectronic.pdf">Clog white paper</a></p></li>
+<li><p><a class="reference external" href="https://www.usa.canon.com/internet/portal/us/home/support/details/cameras/cinema-eos/eos-c300-mark-ii?tab=drivers#Z7_MQH8HIC0L88RB0AMD0F1Q42K25">C700 Drivers and Software</a></p></li>
+<li><p><a class="reference external" href="http://www.usa.canon.com/cusa/professional/products/professional_cameras/cinema_eos_cameras/eos_c500#DriversAndSoftware">C500 Drivers and Software</a></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="http://www.usa.canon.com/cusa/professional/products/professional_cameras/cinema_eos_cameras/eos_c300#DriversAndSoftware">C300 Drivers and Software</a></dt><dd><ul>
+<li><p>Choose <em>OSX Mountain Lion v10.8</em> to download the IDTs</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://www.usa.canon.com/internet/portal/us/home/support/details/cameras/cinema-eos/eos-c300-mark-ii">C300 Mark II Drivers and Software</a></dt><dd><ul>
+<li><p>Choose <em>OSX Mountain Lion v10.8</em> to download the IDTs, labeled “EOS C300 Mark II Input Transform Version 2.0 (for Cinema Gamut / BT.2020)”</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="http://www.usa.canon.com/cusa/professional/products/professional_cameras/cinema_eos_cameras/eos_c100#DriversAndSoftware">C100 Drivers and Software</a></dt><dd><ul>
+<li><p>Choose <em>OSX Mountain Lion v10.8</em> to download the IDTs</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="panasonic">
+<h4>Panasonic<a class="headerlink" href="#panasonic" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://pro-av.panasonic.net/en/varicam/common/pdf/VARICAM_V-Log_V-Gamut.pdf">Vlog/V-Gamut white paper</a></p></li>
+<li><p><a class="reference external" href="http://pro-av.panasonic.net/en/varicam/35/dl.html">Varicam Drivers and Software</a></p></li>
+</ul>
+</div>
+<div class="section" id="red">
+<h4>RED<a class="headerlink" href="#red" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.red.com/learn/red-101/redlogfilm-redgamma">Understanding REDlogFilm and REDgamma</a></p></li>
+<li><p>Conversations with Graeme Nattress of RED</p></li>
+</ul>
+</div>
+<div class="section" id="sony">
+<h4>Sony<a class="headerlink" href="#sony" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl/idt/vendorSupplied/sony">Sony Input Transforms</a></p></li>
+</ul>
+</div>
+<div class="section" id="gopro-experimental">
+<h4>GoPro (Experimental)<a class="headerlink" href="#gopro-experimental" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The quality and consistency of these transforms has not been verified.</p></li>
+<li><p>Conversations with David Newman of GoPro</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="utility">
+<h3>Utility<a class="headerlink" href="#utility" title="Permalink to this headline">¶</a></h3>
+<p><strong>Description</strong></p>
+<p>A collection of colorspaces that are used to facilitate the creation of LUTs and other basic functionality.</p>
+<p><strong>Technical information</strong></p>
+<ul class="simple">
+<li><p>The ‘Log2 xx nits Shaper’ and ‘Dolby PQ xx nits Shaper’ spaces cover the linear range centered around 18% grey. The 48 nits spaces cover -6.5 stops (0.0028125) to +6.5 stops(16.291740). The 1000 nits spaces cover -12 stops to +10 stops. The 2000 nits spaces cover -12 stops to +11 stops. The 4000 nits spaces cover -12 stops to +12 stops.</p></li>
+<li><p>The LMT shaper spaces cover the linear range going from 10 stops below 18% grey (0.00017578125) to 6.5 stops above 18% grey (16.291740)</p></li>
+<li><p>The colorspaces starting with ‘Linear - ‘ will convert to or from a specific gamut but not apply a transfer function.</p></li>
+<li><p>The colorspaces starting with ‘Curve - ‘ will apply a transfer function but not convert between gamuts.</p></li>
+</ul>
+</div>
+<div class="section" id="look">
+<h3>Look<a class="headerlink" href="#look" title="Permalink to this headline">¶</a></h3>
+<p><strong>Colorspaces</strong></p>
+<ul class="simple">
+<li><p>ACES 1.0 to 0.1 emulation</p></li>
+<li><p>ACES 1.0 to 0.2 emulation</p></li>
+<li><p>ACES 1.0 to 0.7 emulation</p></li>
+</ul>
+<p><strong>Description</strong></p>
+<p>Colorspaces and transforms emulating the look of the ACES 0.1, 0.2 and 0.7 release.</p>
+<ul class="simple">
+<li><p>Should be applied to data in the ACES2065-1 colorspace.</p></li>
+<li><p>Should be used before an ACES Output Transform.</p></li>
+</ul>
+<p><strong>Technical information</strong></p>
+<p>Transforms generated based on the <a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl">ACES CTL Transforms</a></p>
+</div>
+</div>
+<div class="section" id="roles">
+<h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
+<p><strong>Description</strong></p>
+<p>The role colorspaces are aliases to the colorspaces used for the <em>OCIO</em> ‘roles’ functionality.</p>
+<p><strong>Aliases</strong></p>
+<p><strong>Description</strong></p>
+<p>The alias colorspaces are named with all lower-case letters and no spaces, dashes, parentheses or other characters that would not work well in a filename. They are only references, aliases for the base colorspaces with more user-friendly names. These spaces were added to enable OCIO’s token-based colorspace / filename matching.</p>
+<ul class="simple">
+<li><p>These colorspaces should not generally be used by most artists.</p></li>
+</ul>
+<div class="section" id="id4">
+<h3>Roles<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>The standard <em>OCIO</em> roles are defined. They role assignments are:</p>
+<ul class="simple">
+<li><p><strong>color_picking</strong>: Output - Rec.709</p></li>
+<li><p><strong>color_timing</strong>: ACEScc</p></li>
+<li><p><strong>compositing_log</strong>: ADX10</p></li>
+<li><p><strong>data</strong>: Raw</p></li>
+<li><p><strong>default</strong>: ACES2065-1</p></li>
+<li><p><strong>matte_paint</strong>: ACEScc</p></li>
+<li><p><strong>reference</strong>: Raw</p></li>
+<li><p><strong>scene_linear</strong>: ACEScg</p></li>
+<li><p><strong>texture_paint</strong>: Raw</p></li>
+</ul>
+<p>Additionally, a number of colorspaces that are gaining wider adoption have been added to the config. Their names and assignment are:</p>
+<ul class="simple">
+<li><p><strong>compositing_linear</strong>:: ACEScg</p></li>
+<li><p><strong>rendering</strong>:: ACEScg</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="displays-and-views">
+<h2>Displays and Views<a class="headerlink" href="#displays-and-views" title="Permalink to this headline">¶</a></h2>
+<p>The default config has one Display named <strong>ACES</strong>, which contains the following Views / colorspaces:</p>
+<ul class="simple">
+<li><p>sRGB, colorspace: sRGB</p></li>
+<li><p>sRGB D60 sim., colorspace: sRGB (D60 sim.)</p></li>
+<li><p>DCDM, colorspace: DCDM</p></li>
+<li><p>DCDM P3 gamut clip, colorspace: DCDM (P3 gamut clip)</p></li>
+<li><p>P3-D60, colorspace: P3-D60</p></li>
+<li><p>P3-D60 PQ 1000 nits, colorspace: P3-D60 PQ (1000 nits)</p></li>
+<li><p>P3-D60 PQ 2000 nits, colorspace: P3-D60 PQ (2000 nits)</p></li>
+<li><p>P3-D60 PQ 4000 nits, colorspace: P3-D60 PQ (4000 nits)</p></li>
+<li><p>P3-DCI, colorspace: P3-DCI</p></li>
+<li><p>Rec.2020, colorspace: Rec.2020</p></li>
+<li><p>Rec.2020 ST2048 1000 nits, colorspace: Rec.2020 ST2048 (1000 nits)</p></li>
+<li><p>Rec.709, colorspace: Rec.709</p></li>
+<li><p>Rec.709 D60 sim., colorspace: Rec.709 (D60 sim.)</p></li>
+<li><p>Raw, colorspace: Raw</p></li>
+<li><p>Log, colorspace: ACEScc</p></li>
+</ul>
+<p>Considerations for custom config generation:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The choice of a single Display and many Views may not align well with the implementation of OCIO in an application.</dt><dd><ul>
+<li><p>If you would like to generate a config that contains multiple Displays, with a small number of Views for each, review the config generation script’s ‘–createMultipleDisplays’ option.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>If a Look is added to the config, a new set of Views will be added, one for each of the Views listed above except Raw and Log, that includes the Look. The Views with Looks will be interleaved in the View list with the original Views.</dt><dd><ul>
+<li><p>To add a custom Look to the config, review the config generation script’s ‘–addACESLookLUT’, ‘–addACESLookCDL’, ‘–addCustomLookLUT’ and ‘–addCustomLookCDL’ options.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="luts">
+<h2>LUTs<a class="headerlink" href="#luts" title="Permalink to this headline">¶</a></h2>
+<p>The default resolution is 65x65x65 for the 3D LUTs and 4096 for the 1D LUTs.</p>
+<p><strong>OCIO LUTs</strong>
+The LUTs used internally by OCIO can be can be retrieved <a class="reference external" href="https://github.com/hpd/OpenColorIO-Configs/tree/master/aces_1.0.3/luts">from the repository here.</a></p>
+<p><strong>Baked LUTs</strong>
+LUTs that can be used outside of OCIO are included in the <a class="reference external" href="https://github.com/hpd/OpenColorIO-Configs/tree/master/aces_1.0.3/baked">‘baked’ directory here.</a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The LUTs encode the ACES Output Transform for a specific colorspace input and are generally named:</dt><dd><ul>
+<li><p>‘Ouput Transform name’ for ‘Input colorspace name’.extension</p></li>
+<li><p>Ex. ‘sRGB (D60 sim.) for ACEScc.icc’</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The LUTs included in the ‘baked’ directory cover the following formats and applications:</p>
+<ul class="simple">
+<li><p>.3dl for Autodesk Flame</p></li>
+<li><p>.3dl for Autodesk Lustre</p></li>
+<li><p>.lut for SideFX Houdini</p></li>
+<li><p>.csp for Autodesk Maya</p></li>
+<li><p>.icc for Adobe Photoshop</p></li>
+</ul>
+</div>
+<div class="section" id="generating-configurations">
+<h2>Generating Configurations<a class="headerlink" href="#generating-configurations" title="Permalink to this headline">¶</a></h2>
+<p><strong>Python</strong>
+Configurations can be generated by the following <em>Python</em> package: <a class="reference external" href="https://github.com/hpd/OpenColorIO-Configs/tree/master/aces_1.0.3/python">aces_1.0.3/python</a></p>
+<p>Usage is described on the command line and in the package root <a class="reference external" href="https://github.com/hpd/OpenColorIO-Configs/blob/master/aces_1.0.3/python/aces_ocio/__init__.py">__init__.py</a> file.</p>
+<p>Features exposed for customization by the user include:</p>
+<ul class="simple">
+<li><p>The resolution of 1D and 3D LUTs</p></li>
+<li><p>Inclusion of custom Looks</p></li>
+<li><p>Two modes of creating the list of OCIO Displays and Views</p></li>
+<li><p>Selection of shaper function: Log2 or Dolby PQ</p></li>
+</ul>
+<p><strong>CTL Source</strong>
+The configuration depends on the <strong>ACES 1.0.3</strong> release. The release contains a number of file renames and the new ACEScct color space and a number of minor bug fixes and small additions, but is otherwise very similar as the master <strong>ACES 1.0.2</strong> release.</p>
+<p>The CTL is available here:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl">https://github.com/ampas/aces-dev/tree/v1.0.3/transforms/ctl</a></p></li>
+</ul>
+<p>Clone this repo using the following command:</p>
+<ul class="simple">
+<li><p>git clone –branch v1.0.3 <a class="reference external" href="https://github.com/ampas/aces-dev.git">https://github.com/ampas/aces-dev.git</a></p></li>
+</ul>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>The <em>Python</em> configuration generation package depends on the following
+libraries:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>OpenImageIO</strong>: <a class="reference external" href="http://openimageio.org">http://openimageio.org</a></dt><dd><ul>
+<li><p>Detailed build instructions can be found here: <a class="reference external" href="https://sites.google.com/site/openimageio/checking-out-and-building-openimageio">OpenImageIO Build Instructions</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>OpenColorIO</strong>: <a class="reference external" href="http://opencolorio.org">http://opencolorio.org</a></dt><dd><ul>
+<li><p>Detailed build instructions can be found here: <a class="reference external" href="http://opencolorio.org/installation.html">OpenColorIO Build Instructions</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>CTL</strong>: <a class="reference external" href="https://github.com/ampas/CTL">https://github.com/ampas/CTL</a></p></li>
+</ul>
+<p>Building on macOS
+-
+Use the following commands to build these packages on macOS</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>OpenColorIO</dt><dd><ul>
+<li><p>brew install -vd opencolorio –with-python</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Update the homebrew repository of install scripts to make sure that OpenImageIO is included.</dt><dd><ul>
+<li><p>brew tap homebrew/science</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Optional Dependencies for OpenImageIO</dt><dd><ul>
+<li><p>brew install -vd libRaw</p></li>
+<li><p>brew install -vd OpenCV</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>OpenImageIO</dt><dd><ul>
+<li><p>brew install -vd openimageio –with-python</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>CTL</dt><dd><ul>
+<li><p>brew install -vd CTL</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>OpenColorIO, a second time. <em>ociolutimage</em> will build with <em>openimageio</em> installed.</dt><dd><ul>
+<li><p>brew uninstall -vd opencolorio</p></li>
+<li><p>brew install -vd opencolorio –with-python</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="thanks">
+<h2>Thanks<a class="headerlink" href="#thanks" title="Permalink to this headline">¶</a></h2>
+<p>The script used to generate these transforms and the transforms themselves were the product of work and conversations with a number of people. Thanks go to:</p>
+<ul class="simple">
+<li><p>Steve Agland</p></li>
+<li><p>Joe Bogacz</p></li>
+<li><p>Jack Binks</p></li>
+<li><p>Scott Dyer</p></li>
+<li><p>Alex Fry</p></li>
+<li><p>Alex Forsythe</p></li>
+<li><p>Joseph Goldstone</p></li>
+<li><p>Stephen Hill</p></li>
+<li><p>Jim Houston</p></li>
+<li><p>Thomas Mansencal</p></li>
+<li><p>Robert Molholm</p></li>
+<li><p>Nikola Milosevic</p></li>
+<li><p>Will McCown</p></li>
+<li><p>Graeme Nattress</p></li>
+<li><p>David Newman</p></li>
+<li><p>Sam Richards</p></li>
+<li><p>Erik Strauss</p></li>
+<li><p>Doug Walker</p></li>
+<li><p>Kevin Wheatley</p></li>
+</ul>
+</div>
+<div class="section" id="author">
+<h2>Author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h2>
+<p>The original author of this OCIO config is:</p>
+<ul class="simple">
+<li><p>Haarm-Pieter Duiker</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="allocation_vars.html" class="btn btn-neutral float-right" title="How to Configure ColorSpace Allocation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="nuke_default.html" class="btn btn-neutral float-left" title="nuke-default" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

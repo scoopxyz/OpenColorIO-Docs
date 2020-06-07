@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tool overview &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Baking LUT’s" href="baking_luts.html" />
+    <link rel="prev" title="User Guide" href="_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">User Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tool overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-api">The API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ociocheck">ociocheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ociobakelut">ociobakelut</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ocio2icc">ocio2icc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ocioconvert">ocioconvert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ociodisplay">ociodisplay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nuke-plugins">Nuke plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="baking_luts.html">Baking LUT’s</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configs/_index.html">Configurations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">User Guide</a> &raquo;</li>
+        
+      <li>Tool overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/users/tool_overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tool-overview">
+<span id="userguide-tooloverview"></span><h1>Tool overview<a class="headerlink" href="#tool-overview" title="Permalink to this headline">¶</a></h1>
+<p>OCIO is comprised of many parts. At the lowest level there is the C++ API.
+This API can be used in applications and plugins</p>
+<p>Note that all these plugins use the same config file to define color spaces,
+roles and so on. For information on setting up configurations, see
+<a class="reference internal" href="../configs/_index.html#configurations"><span class="std std-ref">Configurations</span></a></p>
+<div class="section" id="the-api">
+<h2>The API<a class="headerlink" href="#the-api" title="Permalink to this headline">¶</a></h2>
+<p>Most users will never directly interact with the C++ API. However the API is
+used by all the supplied applications (e.g <a class="reference internal" href="#overview-ocio2icc"><span class="std std-ref">ocio2icc</span></a>) and plugins
+(e.g the <a class="reference internal" href="#overview-nukeplugins"><span class="std std-ref">Nuke plugins</span></a>)</p>
+<p>To get started with the API, see the <span class="xref std std-ref">developer-guide</span></p>
+</div>
+<div class="section" id="ociocheck">
+<span id="overview-ociocheck"></span><h2>ociocheck<a class="headerlink" href="#ociocheck" title="Permalink to this headline">¶</a></h2>
+<p>This is a command line tool which shows an overview of an OCIO config
+file, and check for obvious errors</p>
+<p>For example, the following shows the output of a config with a typo -
+the colorspace used for <code class="docutils literal notranslate"><span class="pre">compositing_log</span></code> is not incorrect:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ociocheck --iconfig example.ocio
+
+OpenColorIO Library Version: 0.8.3
+OpenColorIO Library VersionHex: 525056
+Loading example.ocio
+
+** General **
+Search Path: luts
+Working Dir: /tmp
+
+Default Display: sRGB
+Default View: Film
+
+** Roles **
+ncf (default)
+lnf (scene_linear)
+NOT DEFINED (compositing_log)
+
+** ColorSpaces **
+lnf
+lgf
+ncf
+srgb8 -- output only
+
+ERROR: Config failed sanitycheck. The role &#39;compositing_log&#39; refers to a colorspace, &#39;lgff&#39;, which is not defined.
+
+Tests complete.
+</pre></div>
+</div>
+<p>It cannot verify the defined color transforms are “correct”, only that
+the config file can be loaded by OCIO without error. Some of the
+problems it will detect are:</p>
+<ul class="simple">
+<li><p>Duplicate colorspace names</p></li>
+<li><p>References to undefined colorspaces</p></li>
+<li><p>Required roles being undefined</p></li>
+<li><p>At least one display device is defined</p></li>
+</ul>
+<p>As with all the OCIO command line tools, you can use the <cite>–help</cite> argument to
+read a description and see the other arguments accepted:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ociocheck --help
+ociocheck -- validate an OpenColorIO configuration
+
+usage:  ociocheck [options]
+
+    --help        Print help message
+    --iconfig %s  Input .ocio configuration file (default: $OCIO)
+    --oconfig %s  Output .ocio file
+</pre></div>
+</div>
+</div>
+<div class="section" id="ociobakelut">
+<span id="overview-ociobakelut"></span><h2>ociobakelut<a class="headerlink" href="#ociobakelut" title="Permalink to this headline">¶</a></h2>
+<p>A command line tool which bakes a color transform into various color
+lookup file formats (“a LUT”)</p>
+<p>This is intended for applications that have not directly integrated
+OCIO, but can load LUT files</p>
+<p>If we want to create a <code class="docutils literal notranslate"><span class="pre">lnf</span></code> to <code class="docutils literal notranslate"><span class="pre">srgb8</span></code> viewer LUT for Houdini’s
+MPlay:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ociobakelut --inputspace scene_linear --shaperspace lg10 --outputspace srgb8 --format houdini houdini__lnf_to_lg10_to_srgb8.lut
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">--inputspace</span></code> and <code class="docutils literal notranslate"><span class="pre">-outputspace</span></code> options specify the
+colorspace of the input image, and the displayed image.</p>
+<p>Since a 3D LUT can only practically operate on 0-1 (e.g a Log image),
+the <code class="docutils literal notranslate"><span class="pre">--shaperspace</span></code> option is specified. This uses the Houdini LUT’s
+1D “pretransform” LUT to do “lnf” to “lg10”, then the 3D LUT part to
+go from “lg10” to “srgb8” (basically creating a single file containing
+a 1D linear-to-log LUT, and a 3D log-to-sRGB LUT)</p>
+<p>To make a log to sRGB LUT for Flame, the usage is similar, except the
+shaperspace option is omitted, as the input colorspace does not have
+values outside 0.0-1.0 (being a Log space):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ociobakelut --inputspace lg10 --outputspace srgb8 --format flame flame__lg10_to_srgb.3dl
+</pre></div>
+</div>
+<p>See the <a class="reference internal" href="../overview/faq.html#faq-supportedlut"><span class="std std-ref">What LUT Formats are supported?</span></a> section for a list of formats that
+support baking</p>
+</div>
+<div class="section" id="ocio2icc">
+<span id="overview-ocio2icc"></span><h2>ocio2icc<a class="headerlink" href="#ocio2icc" title="Permalink to this headline">¶</a></h2>
+<p>A command line tool to generate an ICC “proofing” profile from a color space
+transform, which can be used in applications such as Photoshop.</p>
+<p>A common workflow is for matte-painters to work on sRGB files in Photoshop. An
+ICC profile is used to view the work with the same film emulation transform as
+used in other departments.</p>
+</div>
+<div class="section" id="ocioconvert">
+<span id="overview-ocioconvert"></span><h2>ocioconvert<a class="headerlink" href="#ocioconvert" title="Permalink to this headline">¶</a></h2>
+<p>Loads an image, applies a color transform, and saves it to a new file.</p>
+<p>OpenImageIO is used to open and save the file, so a wide range of formats are
+supported.</p>
+</div>
+<div class="section" id="ociodisplay">
+<span id="overview-ociodisplay"></span><h2>ociodisplay<a class="headerlink" href="#ociodisplay" title="Permalink to this headline">¶</a></h2>
+<p>A basic image viewer. Uses OpenImageIO to load images, and displays them using
+OCIO and typical viewer controls (scene-linear exposure control and a
+post-display gamma control)</p>
+<p>May be useful to users to quickly check colorspace configuration, but
+primarily a demonstration of the OCIO API</p>
+</div>
+<div class="section" id="nuke-plugins">
+<span id="overview-nukeplugins"></span><h2>Nuke plugins<a class="headerlink" href="#nuke-plugins" title="Permalink to this headline">¶</a></h2>
+<p>A set of OCIO nodes for The Foundry’s Nuke, including:</p>
+<ul class="simple">
+<li><p>OCIOColorSpace, transforms between two color spaces (similar to the built-in
+“ColorSpace” node, but the colorspaces are described in the OCIO config file)</p></li>
+<li><p>OCIODisplay to be used as viewer processes</p></li>
+<li><p>OCIOFileTransform loads a transform from a file (e.g a 1D or 3D LUT), and
+applies it</p></li>
+<li><p>OCIOCDLTransform applies CDL-compliant grades, and includes utilities to
+create/load ASC CDL files</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="baking_luts.html" class="btn btn-neutral float-right" title="Baking LUT’s" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_index.html" class="btn btn-neutral float-left" title="User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Looks &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="API" href="../api/_index.html" />
+    <link rel="prev" title="Contexts" href="contexts.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Configurations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#public-configs">Public Configs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="spi_vfx.html">spi-vfx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi_anim.html">spi-anim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nuke_default.html">nuke-default</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aces_1.0.3.html">aces_1.0.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="allocation_vars.html">How to Configure ColorSpace Allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="config_syntax.html">Config syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contexts.html">Contexts</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Looks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-configuration">Example configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">Configurations</a> &raquo;</li>
+        
+      <li>Looks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/configs/looks.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="looks">
+<span id="userguide-looks"></span><h1>Looks<a class="headerlink" href="#looks" title="Permalink to this headline">¶</a></h1>
+<p>A “look” is a named color transform, intended to modify the look of an
+image in a “creative” manner (as opposed to a colorspace definition
+which tends to be technically/mathematically defined). An OCIO look typically
+exists as a flexible addendum to a defined viewing transform.</p>
+<p>Examples of looks may be a neutral grade, to be applied to film scans
+prior to VFX work, or a per-shot DI grade decided on by the director,
+to be applied just before the viewing transform.</p>
+<p>Looks are defined similarly to colorspaces, you specify a name and a
+transform (possibly a GroupTransform containing several other
+transforms), and optionally an inverse transform.</p>
+<p>Where looks differ from colorspace definitions are in how they are
+applied. With a look, you also specify the “process space” - the
+colorspace in which the transform is applied.</p>
+<div class="section" id="example-configuration">
+<h2>Example configuration<a class="headerlink" href="#example-configuration" title="Permalink to this headline">¶</a></h2>
+<p><strong>Step 1: Setup a Look</strong></p>
+<p>A look is a top-level OCIO configuration object. Conceptually, it’s a
+named transform which gets applied in a specific color space. All of the
+changes below to the .ocio configs can be done manually by editing the
+text, or using the Python API.</p>
+<p>Example look definition in a OCIO config:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">looks</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="kt">!&lt;Look&gt;</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">di</span>
+  <span class="nt">process_space</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rclg16</span>
+  <span class="nt">transform</span><span class="p">:</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">look_di.cc</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">linear</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+<p>Example Python API call:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">look</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">Look</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;di&#39;</span><span class="p">,</span> <span class="n">processSpace</span><span class="o">=</span><span class="s1">&#39;rclg16&#39;</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">FileTransform</span><span class="p">(</span><span class="s1">&#39;look_di.cc&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="n">OCIO</span><span class="o">.</span><span class="n">Constants</span><span class="o">.</span><span class="n">INTERP_LINEAR</span><span class="p">)</span>
+<span class="n">look</span><span class="o">.</span><span class="n">setTransform</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">config</span><span class="o">.</span><span class="n">addLook</span><span class="p">(</span><span class="n">look</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The src file can be any LUT type that OCIO supports (in this case, it’s a
+file that contains the <code class="docutils literal notranslate"><span class="pre">&lt;ColorCorrection&gt;</span></code> element from a CDL file.) You
+could also specify a .3dl, etc.</p>
+<p>Once you define a look in your configuration, you’ll see that the
+<code class="docutils literal notranslate"><span class="pre">OCIOLookTransform</span></code> node in Nuke will provide the named option. In
+this example, the ‘DI’ look conceptually represents a look that will
+be applied in DI. Other look names we often used are ‘onset’,
+‘editorial’, etc.  The <code class="docutils literal notranslate"><span class="pre">process_space</span></code> specifies that the transform
+should be applied in that space. In this example, if you provide
+linear input to the <code class="docutils literal notranslate"><span class="pre">OCIOLookTransform</span></code> node, the pixels will be
+converted to <code class="docutils literal notranslate"><span class="pre">rclg16</span></code> before applying the <code class="docutils literal notranslate"><span class="pre">look_di.cc</span></code>
+file-transform.</p>
+<p><strong>Step 2: Update the Display to use a look.</strong></p>
+<p>You can specify an optional ‘looks’ tag in the View tag, which will
+apply the specified look(s). This lets application in the viewer
+provide options which use the looks.</p>
+<p>Example YAML config:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
+  <span class="nt">DLP</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">nc10</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Log</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">rclg10</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Film</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">p3dci16</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Film DI</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">p3dci16</span><span class="p p-Indicator">,</span><span class="nt"> looks</span><span class="p">:</span> <span class="nv">di</span><span class="p p-Indicator">}</span>
+  <span class="nt">sRGB</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">nc10</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Log</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">rclg10</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Film</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">srgb10</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Film DI</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">srgb10</span><span class="p p-Indicator">,</span><span class="nt"> looks</span><span class="p">:</span> <span class="nv">di</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+<p>Example Python API call:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">name</span><span class="p">,</span><span class="n">colorspace</span><span class="p">,</span><span class="n">look</span> <span class="ow">in</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;Raw&#39;</span><span class="p">,</span><span class="s1">&#39;nc10&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Log&#39;</span><span class="p">,</span><span class="s1">&#39;rclg10&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;Film&#39;</span><span class="p">,</span><span class="s1">&#39;p3dci16&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Film DI&#39;</span><span class="p">,</span><span class="s1">&#39;p3dci16&#39;</span><span class="p">,</span><span class="s1">&#39;di&#39;</span><span class="p">]</span> <span class="p">]:</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">addDisplay</span><span class="p">(</span><span class="s1">&#39;DLP&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">colorspace</span><span class="p">,</span><span class="n">look</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span><span class="n">colorspace</span><span class="p">,</span><span class="n">look</span> <span class="ow">in</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;Raw&#39;</span><span class="p">,</span><span class="s1">&#39;nc10&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Log&#39;</span><span class="p">,</span><span class="s1">&#39;rclg10&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;Film&#39;</span><span class="p">,</span><span class="s1">&#39;srgb10&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Film DI&#39;</span><span class="p">,</span><span class="s1">&#39;srgb10&#39;</span><span class="p">,</span><span class="s1">&#39;di&#39;</span><span class="p">]</span> <span class="p">]:</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">addDisplay</span><span class="p">(</span><span class="s1">&#39;sRGB&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">colorspace</span><span class="p">,</span><span class="n">look</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Option for advanced users: The looks tag is actually a comma-delimited
+list supporting +/- modifiers. So if you you wanted to specify a View
+that undoes DI, and then adds Onset, you could do “-di,+onset”.</p>
+<p><strong>Step 3: Get per-shot looks supported.</strong></p>
+<p>In the top example, look_di.cc, being a relative path location, will check
+each location in the config’s search_path. The first file that’s found
+will be used.</p>
+<p>So if your config contains:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">search_path</span><span class="p">:</span> <span class="n">luts</span>
+</pre></div>
+</div>
+<p>… then only the ‘luts’ subdir relative to the OCIO config will be
+checked.</p>
+<p>However if you specify:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>search_path: /shots/show/$SHOT/cc/data:luts
+</pre></div>
+</div>
+<p>…the directory ‘/shots/show/$SHOT/cc/data/’ will be evaluated first,
+and only if not found will the ‘luts’ directory be checked.</p>
+<p>env-vars, absolute, and relative paths can be used both in the config’s
+<code class="docutils literal notranslate"><span class="pre">search_path</span></code>, as well as the View’s src specification.</p>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="kt">!&lt;Look&gt;</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">di</span>
+  <span class="nt">process_space</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rclg16</span>
+  <span class="nt">transform</span><span class="p">:</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">looks/$SHOT_di/current/look_$SHOT_di.cc</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">linear</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+<p>Note that if the per-shot lut is not found, you can control whether a
+fallback LUT succeeds based on if it’s in the master location. You can
+also use this for multiple levels (show, shot, etc).</p>
+<p>Advanced option: If some shots use .cc files, and some use 3d-luts
+currently there’s no simple way to handle this. What we’d recommend as a
+work around is to label all of your files with the same extension (such as
+.cc), and then rely on OCIO’s resilience to misnamed lut files to just load
+them anyways. Caveat: this only works in 1.0.1+ (commit sha-1: 6da3411ced)</p>
+<p>Advanced option: In the Nuke OCIO nodes, you often want to preview
+looks ‘across shots’ (often for reference, same-as, etc). You can
+override the env-vars in each node, using the ‘Context’ menu. For
+example, if you know that $SHOT is being used, in the context key1 you
+should specify ‘SHOT’, and the in value1 specify the shot to use (such
+as dev.lookdev). You can also use expressions, to say parse a shot
+name out of <code class="docutils literal notranslate"><span class="pre">[metadata</span> <span class="pre">&quot;input/filename&quot;]</span></code></p>
+<p>Advanced option: If you are writing your own OCIO integration code,
+<code class="docutils literal notranslate"><span class="pre">getProcessor</span></code> will fail if the per-shot lut is not found, and you
+may want to distinguish this error from other OCIO errors. For this
+reason, we provide OCIO::ExceptionMissingFile, which can be explicitly
+caught (this can then handled using
+<code class="docutils literal notranslate"><span class="pre">OCIO::DisplayTransform::setLooksOverride()</span></code>). I’d expect image
+flipbook applications to use this approach.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../api/_index.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contexts.html" class="btn btn-neutral float-left" title="Contexts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

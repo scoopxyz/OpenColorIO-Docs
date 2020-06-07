@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Coding guidelines &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Documentation guidelines" href="documentation_guidelines.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configs/_index.html">Configurations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Coding guidelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-conventions">File Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#line-length">Line Length</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formatting">Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#misc-rules">Misc. Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bottom-line">Bottom Line</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">&lt;no title&gt;</a> &raquo;</li>
+        
+      <li>Coding guidelines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/contributors/coding_guidelines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="coding-guidelines">
+<h1>Coding guidelines<a class="headerlink" href="#coding-guidelines" title="Permalink to this headline">¶</a></h1>
+<p>There are only two important rules:</p>
+<ol class="arabic simple">
+<li><p>When making changes, conform to the style and conventions of the surrounding code.</p></li>
+<li><p>Strive for clarity, even if that means occasionally breaking the guidelines. Use your head and ask for advice if your common sense seems to disagree with the conventions.</p></li>
+</ol>
+<div class="section" id="file-conventions">
+<h2>File Conventions<a class="headerlink" href="#file-conventions" title="Permalink to this headline">¶</a></h2>
+<p>C++ implementation should be named <code class="docutils literal notranslate"><span class="pre">*.cpp</span></code>. Headers should be named <code class="docutils literal notranslate"><span class="pre">*.h</span></code>.
+All source files should begin with the copyright and license, which can be cut and pasted from other source files). For NEW source files, please do change the copyright year to the present. However DO NOT edit existing files just to update the copyright year, it just creates pointless deltas and offers no increased protection</p>
+</div>
+<div class="section" id="line-length">
+<h2>Line Length<a class="headerlink" href="#line-length" title="Permalink to this headline">¶</a></h2>
+<p>Each line of text in your code should be at most 100 characters long.</p>
+<p>Generally the only exceptions are for comments with example commands or URLs - to make cut and paste easier.</p>
+<p>The other exception is for those rare cases where letting a line be longer (and wrapping on an 100-character window) is actually a better and clearer alternative than trying to split it into two lines. Sometimes this happens, but it’s rare.</p>
+<p>DO NOT alter somebody else’s code to re-wrap lines (or change whitespace) just because you found something that violates the rules. Let the group/author/leader know, and resist the temptation to change it yourself.</p>
+</div>
+<div class="section" id="formatting">
+<h2>Formatting<a class="headerlink" href="#formatting" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Indent 4 spaces at a time, and use actual spaces, not tabs.  This is particularly critical on python code.  The only exception currently allowed in within Makefiles, where tab characters are sometimes required.</p></li>
+<li><p>Opening brace on the line following the condition or loop.</p></li>
+<li><p>The contents of namespaces are not indented.</p></li>
+<li><p>Function names should be on the same line as their return values.</p></li>
+<li><p>Function calls should NOT have a space between the function name and the opening parenthesis. A single space should be added after each required comma.</p></li>
+</ul>
+<p>Here is a short code fragment that shows these concepts in action:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">OCIO_NAMESPACE</span>
+<span class="p">{</span>
+
+
+<span class="kt">int</span> <span class="n">MungeMyNumbers</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">b</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">16</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">x</span> <span class="o">+=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">i</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="p">}</span> <span class="c1">// namespace OCIO_NAMESPACE</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="misc-rules">
+<h2>Misc. Rules<a class="headerlink" href="#misc-rules" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Avoid macros when possible.</p></li>
+<li><p>Anonymous namespaces are preferred when sensible.</p></li>
+<li><p>Variable names should be camelCase, as well as longAndExplicit.</p></li>
+<li><p>Avoid long function implementations. Break up work into small, manageable chunks.</p></li>
+<li><p>Use “TODO:” comments for code that is temporary, a short-term solution, or good-enough but not perfect. This is vastly preferred to leaving subtle corner cases undocumented.</p></li>
+<li><p>Always initialize variables on construction.</p></li>
+<li><p>Do not leave dead code paths around. (This is what revision history is for)</p></li>
+<li><p>Includes should always be ordered as follows: C library, C++ library, other libraries’ .h, OCIO public headers, OCIO private headers. Includes within a category should be alphabetized.</p></li>
+<li><p>The C++ “using” directive is not allowed.</p></li>
+<li><p>Static / global variables should be avoided at all costs.</p></li>
+<li><p>Use const whenever it makes sense to do so.</p></li>
+<li><p>The use of Boost is not allowed, except for unit_test_framework and shared_ptr.</p></li>
+<li><p>Default function arguments are not allowed.</p></li>
+<li><p>Class members should start by <a href="#id1"><span class="problematic" id="id2">m_</span></a> and use camelCase.</p></li>
+</ul>
+</div>
+<div class="section" id="bottom-line">
+<h2>Bottom Line<a class="headerlink" href="#bottom-line" title="Permalink to this headline">¶</a></h2>
+<p>When in doubt, look elsewhere in the code base for examples of similar structures and try to format your code in the same manner.</p>
+<p>Portions of this document have been blatantly lifted from <a class="reference external" href="http://openimageio.org/wiki/index.php?title=Coding_Style_Guide">OpenImageIO</a>,
+and <a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">Google</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="documentation_guidelines.html" class="btn btn-neutral float-right" title="Documentation guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

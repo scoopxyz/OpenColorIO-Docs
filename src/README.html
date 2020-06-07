@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OpenColorIO &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="users/_index.html">User Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="configs/_index.html">Configurations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OpenColorIO</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/src/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <!-- SPDX-License-Identifier: CC-BY-4.0 --><!-- Copyright Contributors to the OpenColorIO Project. --><div class="section" id="opencolorio">
+<h1>OpenColorIO<a class="headerlink" href="#opencolorio" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://opensource.org/licenses/BSD-3-Clause"><img alt="License" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" /></a>
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/actions?query=workflow%3ACI"><img alt="Build Status" src="https://github.com/AcademySoftwareFoundation/OpenColorIO/workflows/CI/badge.svg" /></a>
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/actions?query=workflow%3AAnalysis"><img alt="Analysis Status" src="https://github.com/AcademySoftwareFoundation/OpenColorIO/workflows/Analysis/badge.svg" /></a>
+<a class="reference external" href="https://sonarcloud.io/dashboard?id=AcademySoftwareFoundation_OpenColorIO"><img alt="Quality Gate Status" src="https://sonarcloud.io/api/project_badges/measure?project=AcademySoftwareFoundation_OpenColorIO&amp;metric=alert_status" /></a>
+<a class="reference external" href="https://bestpractices.coreinfrastructure.org/projects/2612"><img alt="CII Best Practices" src="https://bestpractices.coreinfrastructure.org/projects/2612/badge" /></a></p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p><img alt="lnh" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy1.jpg" /> <img alt="lm10" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy3.jpg" /> <img alt="vd8" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy2.jpg" /></p>
+<p>OpenColorIO (OCIO) is a complete color management solution geared towards
+motion picture production with an emphasis on visual effects and computer
+animation. OCIO provides a straightforward and consistent user experience
+across all supporting applications while allowing for sophisticated back-end
+configuration options suitable for high-end production usage. OCIO is
+compatible with the Academy Color Encoding Specification (ACES) and is
+LUT-format agnostic, supporting many popular formats.</p>
+<p>OpenColorIO is released as version 1.0 and has been in development since 2003.
+OCIO represents the culmination of years of production experience earned on
+such films as SpiderMan 2 (2004), Surf’s Up (2007), Cloudy with a Chance of
+Meatballs (2009), Alice in Wonderland (2010), and many more. OpenColorIO is
+natively supported in commercial applications like Katana, Mari, Nuke, Maya,
+Houdini, Silhouette FX, and
+<a class="reference external" href="https://opencolorio.org/CompatibleSoftware.html">others</a>.</p>
+<p>OpenColorIO is free and open source software (<a class="reference internal" href="overview/license.html#license"><span class="std std-ref">LICENSE</span></a>), and
+one of several projects actvively sponsored by the ASWF
+(<a class="reference external" href="https://www.aswf.io/">Academy Software Foundation</a>).</p>
+</div>
+<div class="section" id="opencolorio-project-mission">
+<h2>OpenColorIO Project Mission<a class="headerlink" href="#opencolorio-project-mission" title="Permalink to this headline">¶</a></h2>
+<p>The OpenColorIO project is committed to providing an industry standard solution
+for highly precise, performant, and consistent color management across digital
+content creation applications and pipelines.</p>
+<p>OpenColorIO aims to:</p>
+<ul class="simple">
+<li><p>be stable, secure, and thouroughly tested on Linux, macOS, and Windows</p></li>
+<li><p>be performant on modern CPUs and GPUs</p></li>
+<li><p>be simple, scalable, and well documented</p></li>
+<li><p>be compatible with critical color and imaging standards</p></li>
+<li><p>provide lossless color processing wherever possible</p></li>
+<li><p>maintain config backwards compatability across major versions</p></li>
+<li><p>have every new feature carefully reviewed by leaders from the motion picture,
+VFX, animation, and video game industries</p></li>
+<li><p>have a healthy and active community</p></li>
+<li><p>receive wide industry adoption</p></li>
+</ul>
+</div>
+<div class="section" id="opencolorio-project-governance">
+<h2>OpenColorIO Project Governance<a class="headerlink" href="#opencolorio-project-governance" title="Permalink to this headline">¶</a></h2>
+<p>OpenColorIO is governed by the Academy Software Foundation (ASWF). See
+<a class="reference external" href="GOVERNANCE">GOVERNANCE.md</a> for detailed infomation about how the project
+operates.</p>
+</div>
+<div class="section" id="web-resources">
+<h2>Web Resources<a class="headerlink" href="#web-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Web page: <a class="reference external" href="http://opencolorio.org">http://opencolorio.org</a></p></li>
+<li><p>Mail lists:</p>
+<ul>
+<li><p>Developer: <a class="reference external" href="mailto:ocio-dev&#37;&#52;&#48;lists&#46;aswf&#46;io">ocio-dev<span>&#64;</span>lists<span>&#46;</span>aswf<span>&#46;</span>io</a></p></li>
+<li><p>User: <a class="reference external" href="mailto:ocio-user&#37;&#52;&#48;lists&#46;aswf&#46;io">ocio-user<span>&#64;</span>lists<span>&#46;</span>aswf<span>&#46;</span>io</a></p></li>
+</ul>
+</li>
+<li><p>Slack channel: <a class="reference external" href="https://opencolorio.slack.com">https://opencolorio.slack.com</a></p>
+<ul>
+<li><p>Please request access on the ocio-dev list with the email address you
+would like to be invited on.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="reference-configs">
+<h2>Reference Configs<a class="headerlink" href="#reference-configs" title="Permalink to this headline">¶</a></h2>
+<p>Reference OCIO configuration files and associated LUTs can be found at the
+Imageworks <a class="reference external" href="https://github.com/imageworks/OpenColorIO-Configs">OpenColorIO-Configs</a>
+repository.</p>
+<p>The following reference implementations are provided:</p>
+<ul class="simple">
+<li><p>SPI: Sony Pictures Imageworks</p>
+<ul>
+<li><p>spi-anim</p></li>
+<li><p>spi-vfx</p></li>
+</ul>
+</li>
+<li><p>ACES: Academy Color Encoding System</p>
+<ul>
+<li><p>aces_1.0.3</p></li>
+<li><p>aces_1.0.2</p></li>
+<li><p>aces_1.0.1</p></li>
+<li><p>aces_0.7.1</p></li>
+<li><p>aces_0.1.1</p></li>
+</ul>
+</li>
+<li><p>Other</p>
+<ul>
+<li><p>nuke-default</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p>OpenColorIO represents the generous contributions of many organizations and
+individuals. The “Contributors to the OpenColorIO Project” copyright statement
+used throughout the project reflects that the OCIO source is a collaborative
+effort, often with multiple copyright holders within a single file. Copyright
+for specific portions of code can be traced to an originating contributor using
+git commit history.</p>
+<p>OpenColorIO was originally developed and made open source by
+<a class="reference external" href="http://opensource.imageworks.com">Sony Pictures Imageworks</a>. The core design,
+and the majority of OCIO 1.0 code was authored by Imageworks, who continue to
+support and contribute to OCIO 2.0 development.</p>
+<p>The design and development of OpenColorIO 2.0 is being led by Autodesk.
+Autodesk submitted a proposal to revitalize the project in 2017, and have
+authored the majority of OCIO 2.0 code in the years since.</p>
+<p>Significant contributions have also been made by Industrial Light &amp; Magic,
+DNEG, and many individuals. See
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/graphs/contributors">Contributors</a>
+for a complete list.</p>
+<p>See <a class="reference external" href="THIRD-PARTY">THIRD-PARTY.md</a> for license information
+about portions of OpenColorIO that have been imported from other projects.</p>
+<hr class="docutils" />
+<p>Images from “Cloudy With A Chance of Meatballs” Copyright 2011 Sony Pictures Inc.
+All Rights Reserved.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

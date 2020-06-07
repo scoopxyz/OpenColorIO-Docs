@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to Configure ColorSpace Allocation &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Config syntax" href="config_syntax.html" />
+    <link rel="prev" title="aces_1.0.3" href="aces_1.0.3.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Configurations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#public-configs">Public Configs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="spi_vfx.html">spi-vfx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi_anim.html">spi-anim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nuke_default.html">nuke-default</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aces_1.0.3.html">aces_1.0.3</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">How to Configure ColorSpace Allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="config_syntax.html">Config syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contexts.html">Contexts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="looks.html">Looks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">Configurations</a> &raquo;</li>
+        
+      <li>How to Configure ColorSpace Allocation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/configs/allocation_vars.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-configure-colorspace-allocation">
+<span id="allocationvars"></span><h1>How to Configure ColorSpace Allocation<a class="headerlink" href="#how-to-configure-colorspace-allocation" title="Permalink to this headline">¶</a></h1>
+<p>The allocation / allocation vars are utilized using during GPU 3dlut / shader
+text generation. (Processor::getGpuShaderText, Processor::getGpuLut3D).</p>
+<p>If, in the course of GPU processing, a 3D lut is required, the “allocation /
+allocation vars” direct how OCIO should sample the colorspace, with the intent
+being to maintain maximum fidelity and minimize clamping.</p>
+<p>Currently support allocations / variables:</p>
+<dl class="simple">
+<dt>ALLOCATION_UNIFORM::</dt><dd><p>2 vars: [min, max]</p>
+</dd>
+<dt>ALLOCATION_LG2::</dt><dd><p>2 vars: [lg2min, lg2max]
+3 vars: [lg2min, lg2max, linear_offset]</p>
+</dd>
+</dl>
+<p>So say you have an srgb image (such as an 8-bit tif), where you know the data
+ranges between 0.0 - 1.0 (after converting to float).  If you wanted to apply
+a 3d lut to this data, there is no danger in sampling that space uniformly and
+clamping data outside (0,1).   So for this colorspace we would tag it:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">allocation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uniform</span>
+<span class="nt">allocationvars</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">0.0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>These are the defaults, so the tagging could also be skipped.</p>
+<p>But what if you were actually first processing the data, where occasionally
+small undershoot and overshoot values were encountered? If you wanted OCIO to
+preserve this overshoot / undershoot pixel information, you would do so by
+modifying the allocation vars.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">allocation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uniform</span>
+<span class="nt">allocationvars</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">-0.125</span><span class="p p-Indicator">,</span> <span class="nv">1.125</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>This would mean that any image data originally within [-0.125, 1.125] will be
+preserved during GPU processing.  (Protip: Data outside this range <em>may</em>
+actually be preserved in some circumstances - such as if a 3d lut is not needed
+- but it’s not required to be preserved).</p>
+<p>So why not leave this at huge values (such as [-1000.0, 1000.0]) all the time?
+Well, there’s a cost to supporting this larger dynamic range, and that cost is
+reduced precision within the 3D luts sample space.   So in general you’re best
+served by using sensible allocations (the smallest you can get away with, but
+no smaller).</p>
+<p>Now in the case of high-dynamic range color spaces (such as float linear), a
+uniform sampling is not sufficient because the max value we need to preserve is
+so high.</p>
+<p>Say you were using a 32x32x32 3d lookup table (a common size).  Middle gray is
+at 0.18, and specular values are very much above that.  Say the max value we
+wanted to preserve in our coding space is 256.0, each 3d lut lattice coordinates
+would represent 8.0 units of linear light! That means the vast majority of the
+perceptually significant portions of the space wouldn’t be sampled at all!</p>
+<p>unform allocation from 0-256:
+0
+8.0
+16.0
+…
+240.0
+256.0</p>
+<p>So another allocation is defined, lg2</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">linear</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+      <span class="no">Scene-linear, high dynamic range. Used for rendering and compositing.</span>
+  <span class="nt">allocation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg2</span>
+  <span class="nt">allocationvars</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">-8</span><span class="p p-Indicator">,</span> <span class="nv">8</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>In this case, we’re saying that the appropriate ways to sample the 3d lut are
+logarithmically, from 2^-8 stops to 2^8 stops.</p>
+<p>Sample locations:
+2^-8: 0.0039
+2^-7: 0.0078
+2^-6: 0.0156
+…
+2^0:  1.0
+…
+2^6:  64.0
+2^7:  128.0
+2^8:  256.0</p>
+<p>Which gives us a much better perceptual sampling of the space.</p>
+<p>The one downside of this approach is that it can’t represent 0.0,
+which is why we optionally allow a 3d allocation var, a black point
+offset.  If you need to preserve 0.0 values, and you have a high
+dynamic range space, you can specify a small offset.</p>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">allocation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg2</span>
+<span class="nt">allocationvars</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">-8</span><span class="p p-Indicator">,</span> <span class="nv">8</span><span class="p p-Indicator">,</span> <span class="nv">0.00390625</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>The [-15.0, 6.0] values in spi-vfx come from the fact that all of the
+linearizations provided in that profile span the region from 2^-15
+stops, to 2^6 stops.   One could probably change that black point to a
+higher number (such as -8), but if you raised it too much you would
+start seeing black values be clipped.   Conversely, on the high end
+one could raise it a bit but if you raised it too far the precision
+would suffer around gray, and if you lowered it further you’d start to
+see highlight clipping.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="config_syntax.html" class="btn btn-neutral float-right" title="Config syntax" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="aces_1.0.3.html" class="btn btn-neutral float-left" title="aces_1.0.3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

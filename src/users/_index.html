@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Guide &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tool overview" href="tool_overview.html" />
+    <link rel="prev" title="License" href="../overview/license.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html">Tool overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="baking_luts.html">Baking LUT’s</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configs/_index.html">Configurations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>User Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/users/_index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<p>These guides will focus on a specific task (for example, writing a basic config, or setting up per-shot LUT’s).
+For a “broader picture” expiation of how to use OCIO, see the <a class="reference internal" href="../configs/_index.html#configurations"><span class="std std-ref">Configurations</span></a> section</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tool_overview.html">Tool overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#the-api">The API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#ociocheck">ociocheck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#ociobakelut">ociobakelut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#ocio2icc">ocio2icc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#ocioconvert">ocioconvert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#ociodisplay">ociodisplay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tool_overview.html#nuke-plugins">Nuke plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="baking_luts.html">Baking LUT’s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="baking_luts.html#config-based-baking">Config-based baking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#log-input-display-lut">Log-input display LUT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#shaper-spaces">Shaper spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#linear-light-input-display-lut">Linear-light input display LUT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#allocation-based-prelut">Allocation-based prelut</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="baking_luts.html#config-free-baking">Config-free baking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#converting-between-formats">Converting between formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#reversing-a-1d-lut">Reversing a 1D LUT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#creating-a-grade-lut">Creating a grade LUT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#combining-options">Combining options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="baking_luts.html#icc-profiles-photoshop">ICC profiles (Photoshop)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#a-working-space">A working space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#creating-display-lut">Creating display LUT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#determine-display-icc">Determine display ICC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#create-the-icc-profile">Create the ICC profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#loading-the-display-lut">Loading the “display LUT”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking_luts.html#other-color-settings">Other color settings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tool_overview.html" class="btn btn-neutral float-right" title="Tool overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../overview/license.html" class="btn btn-neutral float-left" title="License" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

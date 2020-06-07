@@ -1,0 +1,121 @@
+..
+  SPDX-License-Identifier: CC-BY-4.0
+  Copyright Contributors to the OpenColorIO Project.
+
+Baker
+=====
+
+.. doxygenclass:: OpenColorIO::Baker
+
+Initialization
+**************
+
+.. tabs::
+
+    .. group-tab:: C++
+
+        .. doxygenfunction:: OpenColorIO::Baker::Create
+
+        .. doxygenfunction:: OpenColorIO::Baker::createEditableCopy
+
+    .. group-tab:: Python
+
+        .. autoclass:: PyOpenColorIO.Baker.__init__
+
+Getters/Setters
+***************
+
+.. tabs::
+
+    .. group-tab:: C++
+
+        .. doxygenfunction:: OpenColorIO::Baker::getConfig
+
+        .. doxygenfunction:: OpenColorIO::Baker::setConfig
+
+        .. doxygenfunction:: OpenColorIO::Baker::getFormat
+
+        .. doxygenfunction:: OpenColorIO::Baker::setFormat
+
+        .. doxygenfunction:: OpenColorIO::Baker::getFormatMetadata
+
+        .. doxygenfunction:: OpenColorIO::Baker::getInputSpace
+
+        .. doxygenfunction:: OpenColorIO::Baker::setInputSpace
+
+        .. doxygenfunction:: OpenColorIO::Baker::getShaperSpace
+
+        .. doxygenfunction:: OpenColorIO::Baker::setShaperSpace
+
+        .. doxygenfunction:: OpenColorIO::Baker::getLooks
+
+        .. doxygenfunction:: OpenColorIO::Baker::setLooks
+
+        .. doxygenfunction:: OpenColorIO::Baker::getTargetSpace
+
+        .. doxygenfunction:: OpenColorIO::Baker::setTargetSpace
+
+        .. doxygenfunction:: OpenColorIO::Baker::getShaperSize
+
+        .. doxygenfunction:: OpenColorIO::Baker::setShaperSize
+
+        .. doxygenfunction:: OpenColorIO::Baker::getCubeSize
+
+        .. doxygenfunction:: OpenColorIO::Baker::setCubeSize
+
+        .. doxygenfunction:: OpenColorIO::Baker::getNumFormats
+
+        .. doxygenfunction:: OpenColorIO::Baker::getFormatNameByIndex
+
+        .. doxygenfunction:: OpenColorIO::Baker::getFormatExtensionByIndex
+
+    .. group-tab:: Python
+
+        .. autoclass:: PyOpenColorIO.Baker.getFormats
+
+        .. autoclass:: PyOpenColorIO.Baker.getConfig
+
+        .. autoclass:: PyOpenColorIO.Baker.setConfig
+
+        .. autoclass:: PyOpenColorIO.Baker.getFormat
+
+        .. autoclass:: PyOpenColorIO.Baker.setFormat
+
+        .. autoclass:: PyOpenColorIO.Baker.getFormatMetadata
+
+        .. autoclass:: PyOpenColorIO.Baker.getInputSpace
+
+        .. autoclass:: PyOpenColorIO.Baker.setInputSpace
+
+        .. autoclass:: PyOpenColorIO.Baker.getShaperSpace
+
+        .. autoclass:: PyOpenColorIO.Baker.setShaperSpace
+
+        .. autoclass:: PyOpenColorIO.Baker.getLooks
+
+        .. autoclass:: PyOpenColorIO.Baker.setLooks
+
+        .. autoclass:: PyOpenColorIO.Baker.getTargetSpace
+
+        .. autoclass:: PyOpenColorIO.Baker.setTargetSpace
+
+        .. autoclass:: PyOpenColorIO.Baker.getShaperSize
+
+        .. autoclass:: PyOpenColorIO.Baker.setShaperSize
+
+        .. autoclass:: PyOpenColorIO.Baker.getCubeSize
+
+        .. autoclass:: PyOpenColorIO.Baker.setCubeSize
+
+Execute
+*******
+
+.. tabs::
+
+    .. group-tab:: C++
+
+        .. doxygenfunction:: OpenColorIO::Baker::bake
+
+    .. group-tab:: Python
+
+        .. autoclass:: PyOpenColorIO.Baker.bake

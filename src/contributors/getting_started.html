@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Coding guidelines" href="coding_guidelines.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configs/_index.html">Configurations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#checking-out-the-codebase">Checking Out The Codebase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reference-build-environment">Reference Build Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#merging-changes">Merging changes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">&lt;no title&gt;</a> &raquo;</li>
+        
+      <li>Getting started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/contributors/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="checking-out-the-codebase">
+<h2>Checking Out The Codebase<a class="headerlink" href="#checking-out-the-codebase" title="Permalink to this headline">¶</a></h2>
+<p>The master code repository is available on Github:  <a class="reference external" href="http://github.com/AcademySoftwareFoundation/OpenColorIO">http://github.com/AcademySoftwareFoundation/OpenColorIO</a></p>
+<p>For those unfamiliar with git, the wonderful part about it is that even though
+only a limited number people have write access to the master repository, anyone
+is free to create, and even check in, changes to their own local git repository.
+Your local changes will not automatically be pushed back to the master
+repository, so everyone feel free to informally play around with the codebase.
+Also - unlike svn - when you download the git repository you have a full copy of
+the project’s history (including revision history, logs, etc), so the majority
+of code changes you will make, including commits, do not require network server
+access.</p>
+<p>The first step is to install git on your system.  For those new to the world of
+git, GitHub has an excellent tutorial stepping you through the process,
+available at: <a class="reference external" href="http://help.github.com/">http://help.github.com/</a></p>
+<p>To check out a read-only version of the repository (no GitHub signup required):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">AcademySoftwareFoundation</span><span class="o">/</span><span class="n">OpenColorIO</span><span class="o">.</span><span class="n">git</span> <span class="n">ocio</span>
+</pre></div>
+</div>
+<p>For write-access, you must first register for a GitHub account (free).  Then,
+you must create a local fork of the OpenColorIO repository by visiting
+<a class="reference external" href="http://github.com/AcademySoftwareFoundation/OpenColorIO">http://github.com/AcademySoftwareFoundation/OpenColorIO</a> and clicking the “Fork” icon. If you
+get hung up on this, further instructions on this process are available at
+<a class="reference external" href="http://help.github.com/forking/">http://help.github.com/forking/</a></p>
+<p>To check out a read-write version of the repository (GitHub acct required):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:$USER/OpenColorIO.git ocio
+
+Initialized empty Git repository in /mcp/ocio/.git/
+remote: Counting objects: 2220, done.
+remote: Compressing objects: 100% (952/952), done.
+remote: Total 2220 (delta 1434), reused 1851 (delta 1168)
+Receiving objects: 100% (2220/2220), 2.89 MiB | 2.29 MiB/s, done.
+Resolving deltas: 100% (1434/1434), done.
+</pre></div>
+</div>
+<p>Both read + read/write users should then add the <a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO">AcademySoftwareFoundation/OpenColorIO</a> master branch
+as a remote. This will allow you to more easily fetch updates as they become
+available:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">ocio</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">AcademySoftwareFoundation</span><span class="o">/</span><span class="n">OpenColorIO</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Optionally, you may then add any additional users who have individual working
+forks (just as you’ve done).  This will allow you to track, view, and
+potentially merge intermediate changes before they’re been pushed into the main
+trunk. (For really bleeding edge folks).  For example, to add Jeremy Selan’s
+working fork:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">js</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeremyselan</span><span class="o">/</span><span class="n">OpenColorIO</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>You should then do a git fetch, and git merge (detailed below) to download the
+remote branches you’ve just added.</p>
+</div>
+<div class="section" id="reference-build-environment">
+<h2>Reference Build Environment<a class="headerlink" href="#reference-build-environment" title="Permalink to this headline">¶</a></h2>
+<p>To aid new developers to the project and provide a baseline standard,
+OCIO provides a reference build environment through Docker. Docker essentially is a
+container that consists of both a Linux distro and the dependencies needed to run
+a client application. This is typically used for deploying apps and services to
+servers, but we are using it to provide an isolated development environment to build
+and test OCIO with. With this environment you are guaranteed to be able to compile OCIO
+and run its non-GUI command line applications.</p>
+<p>For more information on Docker, start here:
+<a class="reference external" href="https://docs.docker.com/engine/docker-overview/">https://docs.docker.com/engine/docker-overview/</a></p>
+<p>In order to run the Docker environment you will have to build it from the Dockerfile
+provided in the repo directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OpenColorIO</span><span class="o">/</span><span class="n">shared</span><span class="o">/</span><span class="n">docker</span>
+</pre></div>
+</div>
+<p>Run this command in order to build the Docker image (aprox. 20min):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">build</span> <span class="o">.</span> <span class="o">-</span><span class="n">t</span> <span class="n">ocio</span><span class="p">:</span><span class="n">centos7_gcc48</span> <span class="o">-</span><span class="n">f</span> <span class="n">dockerfile_centos7_gcc48</span>
+</pre></div>
+</div>
+<p>You can then mount the current OCIO directory and compile using the Docker image with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker run --volume $PWD/../../:/src/ociosrc -t ocio:centos7_gcc48 bash -c &#39;mkdir /build &amp;&amp; cd /build &amp;&amp; cmake /src/ociosrc &amp;&amp; make -j2`
+</pre></div>
+</div>
+</div>
+<div class="section" id="merging-changes">
+<h2>Merging changes<a class="headerlink" href="#merging-changes" title="Permalink to this headline">¶</a></h2>
+<p>More detailed guide coming soon, for now, see <a class="reference external" href="http://help.github.com/remotes/">http://help.github.com/remotes/</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="coding_guidelines.html" class="btn btn-neutral float-right" title="Coding guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_index.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

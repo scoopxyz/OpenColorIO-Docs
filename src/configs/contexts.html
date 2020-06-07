@@ -1,0 +1,568 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contexts &mdash; OpenColorIO  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Looks" href="looks.html" />
+    <link rel="prev" title="Config syntax" href="config_syntax.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenColorIO
+          
+
+          
+            
+            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                .
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Configurations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#public-configs">Public Configs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="spi_vfx.html">spi-vfx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi_anim.html">spi-anim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nuke_default.html">nuke-default</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aces_1.0.3.html">aces_1.0.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="allocation_vars.html">How to Configure ColorSpace Allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="config_syntax.html">Config syntax</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Contexts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#a-contrived-example">A contrived example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#per-shot-grades">Per-shot grades</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-complete-example">A complete example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="looks.html">Looks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenColorIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="_index.html">Configurations</a> &raquo;</li>
+        
+      <li>Contexts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/configs/contexts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contexts">
+<h1>Contexts<a class="headerlink" href="#contexts" title="Permalink to this headline">¶</a></h1>
+<p>OCIO’s allows different LUT’s or grades to be applied based on the
+current context.</p>
+<p>These contexts are usually based on environment variables, but also
+allows on-the-fly context switching in applications that operate on
+multiple shots (such as playback tools)</p>
+<p>Typically these would be used as part of the display transform, to
+apply shot-specific looks (such as a CDL color correction, or a 1D
+grade LUT)</p>
+<div class="section" id="a-contrived-example">
+<span id="context-per-shot-luts"></span><h2>A contrived example<a class="headerlink" href="#a-contrived-example" title="Permalink to this headline">¶</a></h2>
+<p>The simplest way to explain this feature is with examples. Say we have
+two shots, <code class="docutils literal notranslate"><span class="pre">ab-123</span></code> and <code class="docutils literal notranslate"><span class="pre">sf-432</span></code>, and each shot requires a
+different LUT to view. The current shot name is stored in the
+environment variable SHOT.</p>
+<p>In the OCIO config, you can use this SHOT environment variable to
+construct the LUT’s path/filename. This path can be absolute (e.g
+<code class="docutils literal notranslate"><span class="pre">/example/path/${SHOT}.spi1d</span></code>), or relative to any directory on the
+OCIO search path, which includes the resource path (e.g
+<code class="docutils literal notranslate"><span class="pre">${SHOT}.spi1d</span></code>)</p>
+<p>This is a simplified example, to demonstrate the context
+feature. Typically this “contextual LUT” would be used in conjunction
+with other LUT’s (e.g before a scene-linear to log transform, followed
+by a 3D film emulation LUT), this will be covered in
+<a class="reference internal" href="#context-per-shot-grade"><span class="std std-ref">Per-shot grades</span></a></p>
+<p>So, we have our empty OCIO config in <code class="docutils literal notranslate"><span class="pre">~/showcfg</span></code>, and our two LUTs
+in <code class="docutils literal notranslate"><span class="pre">~/showcfg/luts</span></code> which are named <code class="docutils literal notranslate"><span class="pre">af-123.spi1d</span></code> and
+<code class="docutils literal notranslate"><span class="pre">sf-432.spi1d</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">showcfg</span><span class="o">/</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">ocio</span>
+    <span class="n">luts</span><span class="o">/</span>
+        <span class="n">af</span><span class="o">-</span><span class="mf">123.</span><span class="n">spi1d</span>
+        <span class="n">sf</span><span class="o">-</span><span class="mf">432.</span><span class="n">spi1d</span>
+</pre></div>
+</div>
+<p>In the config, we first specify the config version, and the resource
+path (usually this is relative to the directory containing
+<code class="docutils literal notranslate"><span class="pre">config.ocio</span></code>, although can be an absolute path):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ocio_profile_version</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">resource_path</span><span class="p">:</span> <span class="n">luts</span>
+</pre></div>
+</div>
+<p>Next, we define a colorspace that transforms from the show reference
+space to the display colorspace:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">colorspaces</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb8</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8ui</span>
+    <span class="nt">from_reference</span><span class="p">:</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">$</span><span class="p p-Indicator">{</span><span class="nv">SHOT</span><span class="p p-Indicator">}</span><span class="nv">.spi1d</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+<p>Then add a display alias for this transform:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;Display&gt;</span> <span class="p p-Indicator">{</span><span class="nt">device</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">,</span><span class="nt"> name</span><span class="p">:</span> <span class="s">&quot;Shot</span><span class="nv"> </span><span class="s">LUT&quot;</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">srgb8</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+<p>Finally, we point the OCIO env-variable to the config, set the SHOT
+env-variable to the shot being worked on, and launch Nuke (or any
+other OCIO-enabled application):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">OCIO</span><span class="o">=~/</span><span class="n">showcfg</span><span class="o">/</span><span class="n">config</span><span class="o">.</span><span class="n">ocio</span>
+<span class="n">export</span> <span class="n">SHOT</span><span class="o">=</span><span class="n">af</span><span class="o">-</span><span class="mi">123</span>
+<span class="n">nuke</span>
+</pre></div>
+</div>
+<p>In Nuke, we create an OCIODisplay node, select our “sRGB” device with
+the “Shot LUT” transform, and this will apply the <code class="docutils literal notranslate"><span class="pre">af-123.spi1d</span></code>
+LUT.</p>
+</div>
+<div class="section" id="per-shot-grades">
+<span id="context-per-shot-grade"></span><h2>Per-shot grades<a class="headerlink" href="#per-shot-grades" title="Permalink to this headline">¶</a></h2>
+<p>Similarly to LUTs, we use a <code class="docutils literal notranslate"><span class="pre">.cc</span></code> file (an XML file containing a
+single ASC CDL <code class="docutils literal notranslate"><span class="pre">&lt;ColorCorrection&gt;</span></code>), or a <code class="docutils literal notranslate"><span class="pre">.ccc</span></code> file (an XML file
+containing multiple ASC CDL color corrections, each with a unique ID)</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.cc</span></code> file is applied identically to a regular LUT files, using
+a <code class="docutils literal notranslate"><span class="pre">FileTransform</span></code>. For example, if we have <code class="docutils literal notranslate"><span class="pre">af-123.cc</span></code> in the
+<code class="docutils literal notranslate"><span class="pre">luts/</span></code> directory:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;mygrade&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;SOPNode&gt;</span>
+             <span class="nt">&lt;Slope&gt;</span>2 1 1<span class="nt">&lt;/Slope&gt;</span>
+             <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+             <span class="nt">&lt;Power&gt;</span>1 1 1<span class="nt">&lt;/Power&gt;</span>
+        <span class="nt">&lt;/SOPNode&gt;</span>
+        <span class="nt">&lt;SatNode&gt;</span>
+             <span class="nt">&lt;Saturation&gt;</span>1<span class="nt">&lt;/Saturation&gt;</span>
+        <span class="nt">&lt;/SatNode&gt;</span>
+  <span class="nt">&lt;/ColorCorrection&gt;</span>
+</pre></div>
+</div>
+<p>We wish to apply this grade on the scene-linear image, then transform
+into log and apply a 3D print emulation LUT. Since this requires
+multiple transforms, instead of using a single <code class="docutils literal notranslate"><span class="pre">FileTransform</span></code>, we
+use a <code class="docutils literal notranslate"><span class="pre">GroupTransform</span></code> (which is is just a collection of other
+transforms):</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">colorspaces</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lnh</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ln</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="nt">16f</span><span class="p">:</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg10</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10ui</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">to_reference</span><span class="p">:</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lg10.spi1d</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">nearest</span><span class="p p-Indicator">}</span>
+
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb8</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8ui</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">from_reference</span><span class="p">:</span> <span class="kt">!&lt;GroupTransform&gt;</span>
+      <span class="nt">children</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">$</span><span class="p p-Indicator">{</span><span class="nv">SHOT</span><span class="p p-Indicator">}</span><span class="nv">.cc</span><span class="p p-Indicator">}</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpaceTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lnh</span><span class="p p-Indicator">,</span><span class="nt"> dst</span><span class="p">:</span> <span class="nv">lg10</span><span class="p p-Indicator">}</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">film_emulation.spi3d</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">linear</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+<p>A .ccc file is a collection of <code class="docutils literal notranslate"><span class="pre">&lt;ColorCorrection&gt;</span></code>’s. The only
+difference is when defining the <code class="docutils literal notranslate"><span class="pre">FileTransform</span></code>, you must specify
+the <code class="docutils literal notranslate"><span class="pre">cccdid</span></code> key, which you can also construct using the context’s
+environment variables. This means we could create a <code class="docutils literal notranslate"><span class="pre">grades.ccc</span></code>
+file containing the grade for all our shots:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ColorCorrectionCollection</span> <span class="na">xmlns=</span><span class="s">&quot;urn:ASC:CDL:v1.2&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;af-123&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;SOPNode&gt;</span>
+                   <span class="nt">&lt;Slope&gt;</span>2 1 1<span class="nt">&lt;/Slope&gt;</span>
+                   <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+                   <span class="nt">&lt;Power&gt;</span>1 1 1<span class="nt">&lt;/Power&gt;</span>
+              <span class="nt">&lt;/SOPNode&gt;</span>
+              <span class="nt">&lt;SatNode&gt;</span>
+                   <span class="nt">&lt;Saturation&gt;</span>1<span class="nt">&lt;/Saturation&gt;</span>
+              <span class="nt">&lt;/SatNode&gt;</span>
+        <span class="nt">&lt;/ColorCorrection&gt;</span>
+        <span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;mygrade&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;SOPNode&gt;</span>
+                     <span class="nt">&lt;Slope&gt;</span>0.9 0.7 0.9<span class="nt">&lt;/Slope&gt;</span>
+                     <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+                     <span class="nt">&lt;Power&gt;</span>1 1 1<span class="nt">&lt;/Power&gt;</span>
+                <span class="nt">&lt;/SOPNode&gt;</span>
+                <span class="nt">&lt;SatNode&gt;</span>
+                     <span class="nt">&lt;Saturation&gt;</span>1<span class="nt">&lt;/Saturation&gt;</span>
+                <span class="nt">&lt;/SatNode&gt;</span>
+          <span class="nt">&lt;/ColorCorrection&gt;</span>
+<span class="nt">&lt;/ColorCorrectionCollection&gt;</span>
+</pre></div>
+</div>
+<p>And the colorspace definition to utilise this:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb8</span>
+  <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb</span>
+  <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8ui</span>
+  <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="nt">from_reference</span><span class="p">:</span> <span class="kt">!&lt;GroupTransform&gt;</span>
+    <span class="nt">children</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">grades.ccc</span><span class="p p-Indicator">,</span><span class="nt"> cccid</span><span class="p">:</span> <span class="nv">$</span><span class="p p-Indicator">{</span><span class="nv">SHOT</span><span class="p p-Indicator">}}</span>
+      <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpaceTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lnh</span><span class="p p-Indicator">,</span><span class="nt"> dst</span><span class="p">:</span> <span class="nv">lg10</span><span class="p p-Indicator">}</span>
+      <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">film_emulation.spi3d</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">linear</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-complete-example">
+<span id="context-complete-example"></span><h2>A complete example<a class="headerlink" href="#a-complete-example" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is incomplete, the lnh_graded space is likely wrong</p>
+</div>
+<p>The context feature can be used to accommodate complex grading
+pipelines. In this example, we have a “neutral grade” for each shot,
+to neutralise color casts and exposure variations, keeping plates
+consistent throughout a sequence.</p>
+<p>To view a shot, we reverse this neutral grade, apply a “beauty grade”,
+then apply the display transform (the usual lin-to-log and a film
+emulation LUT)</p>
+<p>We will use the same two example shots from before, af-123 (which is
+in the af sequence) and sg-432 (in the sg sequence). Imagine we have
+many shots in each sequence, so we wish to put the grades for each
+sequence in a separate file.</p>
+<p>Using the same directory structure as above, in <code class="docutils literal notranslate"><span class="pre">~/showcfg/luts</span></code> we
+first create two grade files, <code class="docutils literal notranslate"><span class="pre">grades_af.ccc</span></code>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ColorCorrectionCollection</span> <span class="na">xmlns=</span><span class="s">&quot;urn:ASC:CDL:v1.2&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;af/af-123/neutral&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;SOPNode&gt;</span>
+                   <span class="nt">&lt;Slope&gt;</span>2 1 1<span class="nt">&lt;/Slope&gt;</span>
+                   <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+                   <span class="nt">&lt;Power&gt;</span>1 1 1<span class="nt">&lt;/Power&gt;</span>
+              <span class="nt">&lt;/SOPNode&gt;</span>
+              <span class="nt">&lt;SatNode&gt;</span>
+                   <span class="nt">&lt;Saturation&gt;</span>1<span class="nt">&lt;/Saturation&gt;</span>
+              <span class="nt">&lt;/SatNode&gt;</span>
+        <span class="nt">&lt;/ColorCorrection&gt;</span>
+
+      <span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;af/af-123/beauty&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;SOPNode&gt;</span>
+                   <span class="nt">&lt;Slope&gt;</span>1.5 1.2 0.9<span class="nt">&lt;/Slope&gt;</span>
+                   <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+                   <span class="nt">&lt;Power&gt;</span>1 1 1<span class="nt">&lt;/Power&gt;</span>
+              <span class="nt">&lt;/SOPNode&gt;</span>
+              <span class="nt">&lt;SatNode&gt;</span>
+                   <span class="nt">&lt;Saturation&gt;</span>0.8<span class="nt">&lt;/Saturation&gt;</span>
+              <span class="nt">&lt;/SatNode&gt;</span>
+        <span class="nt">&lt;/ColorCorrection&gt;</span>
+
+        <span class="c">&lt;!-- More ColorCorrection&#39;s... --&gt;</span>
+<span class="nt">&lt;/ColorCorrectionCollection&gt;</span>
+</pre></div>
+</div>
+<p>And <code class="docutils literal notranslate"><span class="pre">grades_sg.ccc</span></code>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ColorCorrectionCollection</span> <span class="na">xmlns=</span><span class="s">&quot;urn:ASC:CDL:v1.2&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;sg/sg-432/neutral&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;SOPNode&gt;</span>
+                     <span class="nt">&lt;Slope&gt;</span>0.9 0.7 0.9<span class="nt">&lt;/Slope&gt;</span>
+                     <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+                     <span class="nt">&lt;Power&gt;</span>1 1 1<span class="nt">&lt;/Power&gt;</span>
+                <span class="nt">&lt;/SOPNode&gt;</span>
+                <span class="nt">&lt;SatNode&gt;</span>
+                     <span class="nt">&lt;Saturation&gt;</span>1<span class="nt">&lt;/Saturation&gt;</span>
+                <span class="nt">&lt;/SatNode&gt;</span>
+          <span class="nt">&lt;/ColorCorrection&gt;</span>
+
+        <span class="nt">&lt;ColorCorrection</span> <span class="na">id=</span><span class="s">&quot;sg/sg-432/beauty&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;SOPNode&gt;</span>
+                     <span class="nt">&lt;Slope&gt;</span>1.1 0.9 0.8<span class="nt">&lt;/Slope&gt;</span>
+                     <span class="nt">&lt;Offset&gt;</span>0 0 0<span class="nt">&lt;/Offset&gt;</span>
+                     <span class="nt">&lt;Power&gt;</span>1.2 0.9 1.5<span class="nt">&lt;/Power&gt;</span>
+                <span class="nt">&lt;/SOPNode&gt;</span>
+                <span class="nt">&lt;SatNode&gt;</span>
+                     <span class="nt">&lt;Saturation&gt;</span>1<span class="nt">&lt;/Saturation&gt;</span>
+                <span class="nt">&lt;/SatNode&gt;</span>
+          <span class="nt">&lt;/ColorCorrection&gt;</span>
+
+          <span class="c">&lt;!-- More ColorCorrection&#39;s.. --&gt;</span>
+<span class="nt">&lt;/ColorCorrectionCollection&gt;</span>
+</pre></div>
+</div>
+<p>Next, we create the <code class="docutils literal notranslate"><span class="pre">config.ocio</span></code> file, containing a colorspace to
+define several colorspaces:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lnh</span></code>, the scene-linear, 16-bit half-float space in which
+compositing will happen</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lg10</span></code>, the 10-bit log space in which material will be received
+(e.g in .dpx format)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">srgb8</span></code>, the display colorspace, for viewing the neutrally graded
+footage on an sRGB display</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">srgb8graded</span></code>, another display colorspace, for viewing the final
+“beauty grade”</p></li>
+</ul>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">ocio_profile_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="c1"># The directory relative to the location of this config</span>
+<span class="nt">resource_path</span><span class="p">:</span> <span class="s">&quot;luts&quot;</span>
+
+<span class="nt">roles</span><span class="p">:</span>
+  <span class="nt">scene_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lnh</span>
+  <span class="nt">compositing_log</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lgf</span>
+
+<span class="nt">displays</span><span class="p">:</span>
+  <span class="c1"># Reference to display transform, without reversing the working grade</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;Display&gt;</span> <span class="p p-Indicator">{</span><span class="nt">device</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">,</span><span class="nt"> name</span><span class="p">:</span> <span class="nv">Film1D</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">srgb8</span><span class="p p-Indicator">}</span>
+
+  <span class="c1"># Reference to display, reversing the working grade, and applying</span>
+  <span class="c1"># the beauty grade</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;Display&gt;</span> <span class="p p-Indicator">{</span><span class="nt">device</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">,</span><span class="nt"> name</span><span class="p">:</span> <span class="nv">Film1DGraded</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">srgb8graded</span><span class="p p-Indicator">}</span>
+
+<span class="nt">colorspaces</span><span class="p">:</span>
+
+  <span class="c1"># The source space, containing a log to scene-linear LUT</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg10</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10ui</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">to_reference</span><span class="p">:</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lg10.spi1d</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">nearest</span><span class="p p-Indicator">}</span>
+
+  <span class="c1"># Our scene-linear space (reference space)</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lnh</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ln</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">16f</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+  <span class="c1"># Neutrally graded scene-linear</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lnh_graded</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ln</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">16f</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">to_reference</span><span class="p">:</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="s">&quot;grades_${SEQ}.ccc&quot;</span><span class="p p-Indicator">,</span><span class="nt"> cccid</span><span class="p">:</span> <span class="s">&quot;${SEQ}/${SHOT}/neutral&quot;</span><span class="p p-Indicator">}</span>
+
+
+  <span class="c1"># The display colorspace - how to get from scene-linear to sRGB</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb8</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8ui</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">from_reference</span><span class="p">:</span> <span class="kt">!&lt;GroupTransform&gt;</span>
+      <span class="nt">children</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpaceTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lnh</span><span class="p p-Indicator">,</span><span class="nt"> dst</span><span class="p">:</span> <span class="nv">lg10</span><span class="p p-Indicator">}</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lg_to_srgb.spi3d</span><span class="p p-Indicator">,</span><span class="nt"> interpolation</span><span class="p">:</span> <span class="nv">linear</span><span class="p p-Indicator">}</span>
+
+  <span class="c1"># Display color, with neutral grade reversed, and beauty grade applied</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb8graded</span>
+    <span class="nt">family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">srgb</span>
+    <span class="nt">bitdepth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8ui</span>
+    <span class="nt">isdata</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">from_reference</span><span class="p">:</span> <span class="kt">!&lt;GroupTransform&gt;</span>
+      <span class="nt">children</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="s">&quot;grades_${SEQ}.ccc&quot;</span><span class="p p-Indicator">,</span><span class="nt"> cccid</span><span class="p">:</span> <span class="s">&quot;${SEQ}/${SHOT}/neutral&quot;</span><span class="p p-Indicator">,</span><span class="nt"> direction</span><span class="p">:</span> <span class="nv">inverse</span><span class="p p-Indicator">}</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;FileTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="s">&quot;grades_${SEQ}.ccc&quot;</span><span class="p p-Indicator">,</span><span class="nt"> cccid</span><span class="p">:</span> <span class="s">&quot;${SEQ}/${SHOT}/beauty&quot;</span><span class="p p-Indicator">,</span><span class="nt"> direction</span><span class="p">:</span> <span class="nv">forward</span><span class="p p-Indicator">}</span>
+        <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpaceTransform&gt;</span> <span class="p p-Indicator">{</span><span class="nt">src</span><span class="p">:</span> <span class="nv">lnh</span><span class="p p-Indicator">,</span><span class="nt"> dst</span><span class="p">:</span> <span class="nv">srgb8</span><span class="p p-Indicator">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="looks.html" class="btn btn-neutral float-right" title="Looks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="config_syntax.html" class="btn btn-neutral float-left" title="Config syntax" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Contributors to the OpenColorIO Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
