@@ -1,195 +1,413 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>nuke-default &mdash; OpenColorIO  documentation</title>
-  
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>nuke-default</title>
     
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/sphinx_press_theme.css">
+      
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="aces_1.0.3" href="aces_1.0.3.html" />
-    <link rel="prev" title="spi-anim" href="spi_anim.html" /> 
-</head>
-
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> OpenColorIO
-          
-
-          
-            
-            <img src="../../_static/OpenColorIO_withText.svg" class="logo" alt="Logo"/>
-          
-          </a>
-
-          
-            
-            
-              <div class="version">
-                .
-              </div>
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../overview/compatible_software.html">Compatible Software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/downloads.html">Downloads</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview/license.html">License</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../users/_index.html">User Guide</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Configurations</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="_index.html#public-configs">Public Configs</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="spi_vfx.html">spi-vfx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="spi_anim.html">spi-anim</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">nuke-default</a></li>
-<li class="toctree-l3"><a class="reference internal" href="aces_1.0.3.html">aces_1.0.3</a></li>
-<li class="toctree-l3"><a class="reference internal" href="allocation_vars.html">How to Configure ColorSpace Allocation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="config_syntax.html">Config syntax</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contexts.html">Contexts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="looks.html">Looks</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../api/_index.html">API</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/coding_guidelines.html">Coding guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/documentation_guidelines.html">Documentation guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/internal_architecture.html">Internal Architecture Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/issues.html">Issues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/submitting_changes.html">Submitting Changes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributors/usage_examples.html">Usage Examples</a></li>
-</ul>
-
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">OpenColorIO</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="_index.html">Configurations</a> &raquo;</li>
-        
-      <li>nuke-default</li>
+  <link rel="index" title="Index" href="../../genindex.html" />
+  <link rel="search" title="Search" href="../../search.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../../index.html" class="home-link">
     
+      <img class="logo" src="../../_static/OpenColorIO_withText.svg" alt="doit logo"/>
     
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../../_sources/src/configs/nuke_default.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
 
   
-  <hr/>
+    <div class="nav-item">
+      <a href="../../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../api/_index.html#api">API</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../api/change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../api/c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../contributors/_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contributors/getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+    <li>nuke-default</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
             
   <div class="section" id="nuke-default">
 <h1>nuke-default<a class="headerlink" href="#nuke-default" title="Permalink to this headline">¶</a></h1>
@@ -211,52 +429,19 @@
 </div>
 
 
-           </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="aces_1.0.3.html" class="btn btn-neutral float-right" title="aces_1.0.3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="spi_anim.html" class="btn btn-neutral float-left" title="spi-anim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright Contributors to the OpenColorIO Project
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
     
-   
-
-</body>
+    
+  </body>
 </html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Usage Examples</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="prev" title="Submitting Changes" href="submitting_changes.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <img class="logo" src="../_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="_index.html#"
+         class="nav-link  router-link-active">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="_index.html#"
+         class="nav-link  router-link-active">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../api/_index.html#api">API</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../api/change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../api/c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="_index.html#">Contributors</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Usage Examples</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#applying-a-basic-colorspace-transform-using-the-cpu" class="reference internal">Applying a basic ColorSpace transform, using the CPU</a></li>
+                
+                  <li class="toctree-l2"><a href="#displaying-an-image-using-the-cpu-simple-colorspace-conversion" class="reference internal">Displaying an image, using the CPU (simple ColorSpace conversion)</a></li>
+                
+                  <li class="toctree-l2"><a href="#displaying-an-image-using-the-cpu-full-display-pipeline" class="reference internal">Displaying an image, using the CPU (Full Display Pipeline)</a></li>
+                
+                  <li class="toctree-l2"><a href="#displaying-an-image-using-the-gpu" class="reference internal">Displaying an image, using the GPU</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="_index.html">&lt;no title&gt;</a> &raquo;</li>
+    
+    <li>Usage Examples</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="submitting_changes.html"
+       title="previous chapter">← Submitting Changes</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="usage-examples">
+<span id="developers-usageexamples"></span><h1>Usage Examples<a class="headerlink" href="#usage-examples" title="Permalink to this headline">¶</a></h1>
+<p>Some examples of using the OCIO API, via both C++ and the Python bindings.</p>
+<p>For further examples, see the <code class="docutils literal notranslate"><span class="pre">src/apps/</span></code> directory in the git repository</p>
+<div class="section" id="applying-a-basic-colorspace-transform-using-the-cpu">
+<span id="usage-applybasic"></span><h2>Applying a basic ColorSpace transform, using the CPU<a class="headerlink" href="#applying-a-basic-colorspace-transform-using-the-cpu" title="Permalink to this headline">¶</a></h2>
+<p>This describes what code is used to convert from a specified source
+<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ColorSpace</span></code> to a specified destination <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ColorSpace</span></code>.
+If you are using the OCIO Nuke plugins, the OCIOColorSpace node performs these
+steps internally.</p>
+<ol class="arabic simple">
+<li><p><strong>Get the Config.</strong>
+This represents the entirety of the current color “universe”. It can either
+be initialized by your app at startup or created explicitly. In common
+usage, you can just query <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">GetCurrentConfig()</span></code>, which will auto
+initialize on first use using the <span class="target" id="index-0"></span><a class="reference internal" href="../src/overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a> environment variable.</p></li>
+<li><p><strong>Get Processor from the Config.</strong>
+A processor corresponds to a ‘baked’ color transformation. You specify two
+arguments when querying a processor: the <span class="xref std std-ref">colorspace_section</span> you are
+coming from, and the <span class="xref std std-ref">colorspace_section</span> you are going to.
+<span class="xref std std-ref">cfgcolorspaces_section</span> ColorSpaces can be either explicitly named
+strings (defined by the current configuration) or can be
+<span class="xref std std-ref">cfgroles_section</span> (essentially <span class="xref std std-ref">colorspace_section</span> aliases)
+which are consistent across configurations. Constructing a
+<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">Processor</span></code> object is likely a blocking operation (thread-wise)
+so care should be taken to do this as infrequently as is sensible. Once per
+render ‘setup’ would be appropriate, once per scanline would be
+inappropriate.</p></li>
+<li><p><strong>Convert your image, using the Processor.</strong>
+Once you have the processor, you can apply the color transformation using
+the “apply” function.  In <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic-cpp"><span class="std std-ref">C++</span></a>, you apply the
+processing in-place, by first wrapping your image in an
+<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ImageDesc</span></code> class.  This approach is intended to be used in high
+performance applications, and can be used on multiple threads (per scanline,
+per tile, etc).   In <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic-python"><span class="std std-ref">Python</span></a> you call
+“applyRGB” / “applyRGBA” on your sequence of pixels.   Note that in both
+languages, it is far more efficient to call “apply” on batches of pixels at
+a time.</p></li>
+</ol>
+<div class="section" id="c">
+<span id="usage-applybasic-cpp"></span><h3>C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;OpenColorIO/OpenColorIO.h&gt;</span><span class="cp"></span>
+<span class="k">namespace</span> <span class="n">OCIO</span> <span class="o">=</span> <span class="n">OCIO_NAMESPACE</span><span class="p">;</span>
+
+<span class="k">try</span>
+<span class="p">{</span>
+    <span class="n">OCIO</span><span class="o">::</span><span class="n">ConstConfigRcPtr</span> <span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">GetCurrentConfig</span><span class="p">();</span>
+    <span class="n">ConstProcessorRcPtr</span> <span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">OCIO</span><span class="o">::</span><span class="n">ROLE_COMPOSITING_LOG</span><span class="p">,</span>
+                                                         <span class="n">OCIO</span><span class="o">::</span><span class="n">ROLE_SCENE_LINEAR</span><span class="p">);</span>
+
+    <span class="n">OCIO</span><span class="o">::</span><span class="n">PackedImageDesc</span> <span class="n">img</span><span class="p">(</span><span class="n">imageData</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">processor</span><span class="o">-&gt;</span><span class="n">apply</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">catch</span><span class="p">(</span><span class="n">OCIO</span><span class="o">::</span><span class="n">Exception</span> <span class="o">&amp;</span> <span class="n">exception</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;OpenColorIO Error: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">exception</span><span class="p">.</span><span class="n">what</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="python">
+<span id="usage-applybasic-python"></span><h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">PyOpenColorIO</span> <span class="k">as</span> <span class="nn">OCIO</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">GetCurrentConfig</span><span class="p">()</span>
+    <span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">OCIO</span><span class="o">.</span><span class="n">Constants</span><span class="o">.</span><span class="n">ROLE_COMPOSITING_LOG</span><span class="p">,</span>
+                                    <span class="n">OCIO</span><span class="o">.</span><span class="n">Constants</span><span class="o">.</span><span class="n">ROLE_SCENE_LINEAR</span><span class="p">)</span>
+
+    <span class="c1"># Apply the color transform to the existing RGBA pixel data</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">applyRGBA</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s2">&quot;OpenColorIO Error&quot;</span><span class="p">,</span><span class="n">e</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="displaying-an-image-using-the-cpu-simple-colorspace-conversion">
+<span id="usage-displayimage"></span><h2>Displaying an image, using the CPU (simple ColorSpace conversion)<a class="headerlink" href="#displaying-an-image-using-the-cpu-simple-colorspace-conversion" title="Permalink to this headline">¶</a></h2>
+<p>Converting an image for display is similar to a normal color space conversion.
+The only difference is that one has to first determine the name of the display
+(destination) ColorSpace by querying the config with the device name and
+transform name.</p>
+<ol class="arabic simple">
+<li><p><strong>Get the Config.</strong>
+See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+<li><p><strong>Lookup the display ColorSpace.</strong>
+The display <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ColorSpace</span></code> is queried from the configuration using
+<code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Config::getDisplayColorSpaceName()</span></code>.   If the user has specified
+value for the <code class="docutils literal notranslate"><span class="pre">device</span></code> or the <code class="docutils literal notranslate"><span class="pre">displayTransformName</span></code>, use them. If these
+values are unknown default values can be queried (as shown below).</p></li>
+<li><p><strong>Get the processor from the Config.</strong>
+See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+<li><p><strong>Convert your image, using the processor.</strong>
+See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+</ol>
+<div class="section" id="id1">
+<h3>C++<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;OpenColorIO/OpenColorIO.h&gt;</span><span class="cp"></span>
+<span class="k">namespace</span> <span class="n">OCIO</span> <span class="o">=</span> <span class="n">OCIO_NAMESPACE</span><span class="p">;</span>
+
+<span class="n">OCIO</span><span class="o">::</span><span class="n">ConstConfigRcPtr</span> <span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">GetCurrentConfig</span><span class="p">();</span>
+
+<span class="c1">// If the user hasn&#39;t picked a display, use the defaults...</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">device</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDefaultDisplayDeviceName</span><span class="p">();</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">transformName</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDefaultDisplayTransformName</span><span class="p">(</span><span class="n">device</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">displayColorSpace</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDisplayColorSpaceName</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">transformName</span><span class="p">);</span>
+
+<span class="n">ConstProcessorRcPtr</span> <span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">OCIO</span><span class="o">::</span><span class="n">ROLE_SCENE_LINEAR</span><span class="p">,</span>
+                                                     <span class="n">displayColorSpace</span><span class="p">);</span>
+
+<span class="n">OCIO</span><span class="o">::</span><span class="n">PackedImageDesc</span> <span class="n">img</span><span class="p">(</span><span class="n">imageData</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="n">processor</span><span class="o">-&gt;</span><span class="n">apply</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Python<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">PyOpenColorIO</span> <span class="k">as</span> <span class="nn">OCIO</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">GetCurrentConfig</span><span class="p">()</span>
+
+<span class="n">device</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getDefaultDisplayDeviceName</span><span class="p">()</span>
+<span class="n">transformName</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getDefaultDisplayTransformName</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<span class="n">displayColorSpace</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getDisplayColorSpaceName</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">transformName</span><span class="p">)</span>
+
+<span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">OCIO</span><span class="o">.</span><span class="n">Constants</span><span class="o">.</span><span class="n">ROLE_SCENE_LINEAR</span><span class="p">,</span> <span class="n">displayColorSpace</span><span class="p">)</span>
+
+<span class="n">processor</span><span class="o">.</span><span class="n">applyRGB</span><span class="p">(</span><span class="n">imageData</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="displaying-an-image-using-the-cpu-full-display-pipeline">
+<h2>Displaying an image, using the CPU (Full Display Pipeline)<a class="headerlink" href="#displaying-an-image-using-the-cpu-full-display-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>This alternative version allows for a more complex displayTransform, allowing
+for all of the controls typically added to real-world viewer interfaces. For
+example, options are allowed to control which channels (red, green, blue,
+alpha, luma) are visible, as well as allowing for optional color corrections
+(such as an exposure offset in scene linear). If you are using the OCIO Nuke
+plugins, the OCIODisplay node performs these steps internally.</p>
+<ol class="arabic simple">
+<li><p><strong>Get the Config.</strong>
+See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+<li><p><strong>Lookup the display ColorSpace.</strong>
+See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-displayimage"><span class="std std-ref">Displaying an image, using the CPU (simple ColorSpace conversion)</span></a> for details</p></li>
+<li><p><strong>Create a new DisplayTransform.</strong>
+This transform will embody the full ‘display’ pipeline you wish to control.
+The user is required to call
+<code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">DisplayTransform::setInputColorSpaceName()</span></code> to set the input
+ColorSpace, as well as
+<code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">DisplayTransform::setDisplayColorSpaceName()</span></code> (with the results of
+<code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Config::getDisplayColorSpaceName()</span></code>).</p></li>
+<li><p><strong>Set any additional DisplayTransform options.</strong>
+If the user wants to specify a channel swizzle, a scene-linear exposure
+offset, an artistic look, this is the place to add it. See below for an
+example. Note that although we provide recommendations for display, any
+transforms are allowed to be added into any of the slots. So if for your app
+you want to add 3 transforms into a particular slot (chained together), you
+are free to wrap them in a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">GroupTransform</span></code> and set it
+accordingly!</p></li>
+<li><p><strong>Get the processor from the Config.</strong>
+The processor is then queried from the config passing the new
+<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">DisplayTransform</span></code> as the argument.   Once the processor has been
+returned, the original <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">DisplayTransform</span></code> is no longer necessary
+to hold onto. (Though if you’d like to for re-use, there is no problem doing
+so).</p></li>
+<li><p><strong>Convert your image, using the processor.</strong>
+See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+</ol>
+<div class="section" id="id3">
+<h3>C++<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Step 1: Get the config</span>
+<span class="n">OCIO</span><span class="o">::</span><span class="n">ConstConfigRcPtr</span> <span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">GetCurrentConfig</span><span class="p">();</span>
+
+<span class="c1">// Step 2: Lookup the display ColorSpace</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">device</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDefaultDisplayDeviceName</span><span class="p">();</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">transformName</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDefaultDisplayTransformName</span><span class="p">(</span><span class="n">device</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">displayColorSpace</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDisplayColorSpaceName</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">transformName</span><span class="p">);</span>
+
+<span class="c1">// Step 3: Create a DisplayTransform, and set the input and display ColorSpaces</span>
+<span class="c1">// (This example assumes the input is scene linear. Adapt as needed.)</span>
+
+<span class="n">OCIO</span><span class="o">::</span><span class="n">DisplayTransformRcPtr</span> <span class="n">transform</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">DisplayTransform</span><span class="o">::</span><span class="n">Create</span><span class="p">();</span>
+<span class="n">transform</span><span class="o">-&gt;</span><span class="n">setInputColorSpaceName</span><span class="p">(</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">ROLE_SCENE_LINEAR</span> <span class="p">);</span>
+<span class="n">transform</span><span class="o">-&gt;</span><span class="n">setDisplayColorSpaceName</span><span class="p">(</span> <span class="n">displayColorSpace</span> <span class="p">);</span>
+
+<span class="c1">// Step 4: Add custom transforms for a &#39;canonical&#39; Display Pipeline</span>
+
+<span class="c1">// Add an fstop exposure control (in SCENE_LINEAR)</span>
+<span class="kt">float</span> <span class="n">gain</span> <span class="o">=</span> <span class="n">powf</span><span class="p">(</span><span class="mf">2.0f</span><span class="p">,</span> <span class="n">exposure_in_stops</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">float</span> <span class="n">slope3f</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="n">gain</span><span class="p">,</span> <span class="n">gain</span><span class="p">,</span> <span class="n">gain</span> <span class="p">};</span>
+<span class="n">OCIO</span><span class="o">::</span><span class="n">CDLTransformRcPtr</span> <span class="n">cc</span> <span class="o">=</span>  <span class="n">OCIO</span><span class="o">::</span><span class="n">CDLTransform</span><span class="o">::</span><span class="n">Create</span><span class="p">();</span>
+<span class="n">cc</span><span class="o">-&gt;</span><span class="n">setSlope</span><span class="p">(</span><span class="n">slope3f</span><span class="p">);</span>
+<span class="n">transform</span><span class="o">-&gt;</span><span class="n">setLinearCC</span><span class="p">(</span><span class="n">cc</span><span class="p">);</span>
+
+<span class="c1">// Add a Channel view &#39;swizzle&#39;</span>
+
+<span class="c1">// &#39;channelHot&#39; controls which channels are viewed.</span>
+<span class="kt">int</span> <span class="n">channelHot</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="p">};</span>  <span class="c1">// show rgb</span>
+<span class="c1">//int channelHot[4] = { 1, 0, 0, 0 };  // show red</span>
+<span class="c1">//int channelHot[4] = { 0, 0, 0, 1 };  // show alpha</span>
+<span class="c1">//int channelHot[4] = { 1, 1, 1, 0 };  // show luma</span>
+
+<span class="kt">float</span> <span class="n">lumacoef</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+<span class="n">config</span><span class="p">.</span><span class="n">getDefaultLumaCoefs</span><span class="p">(</span><span class="n">lumacoef</span><span class="p">);</span>
+
+<span class="kt">float</span> <span class="n">m44</span><span class="p">[</span><span class="mi">16</span><span class="p">];</span>
+<span class="kt">float</span> <span class="n">offset</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+<span class="n">OCIO</span><span class="o">::</span><span class="n">MatrixTransform</span><span class="o">::</span><span class="n">View</span><span class="p">(</span><span class="n">m44</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">channelHot</span><span class="p">,</span> <span class="n">lumacoef</span><span class="p">);</span>
+<span class="n">OCIO</span><span class="o">::</span><span class="n">MatrixTransformRcPtr</span> <span class="n">swizzle</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">MatrixTransform</span><span class="o">::</span><span class="n">Create</span><span class="p">();</span>
+<span class="n">swizzle</span><span class="o">-&gt;</span><span class="n">setValue</span><span class="p">(</span><span class="n">m44</span><span class="p">,</span> <span class="n">offset</span><span class="p">);</span>
+<span class="n">transform</span><span class="o">-&gt;</span><span class="n">setChannelView</span><span class="p">(</span><span class="n">swizzle</span><span class="p">);</span>
+
+<span class="c1">// And then process the image normally.</span>
+<span class="n">OCIO</span><span class="o">::</span><span class="n">ConstProcessorRcPtr</span> <span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">transform</span><span class="p">);</span>
+
+<span class="n">OCIO</span><span class="o">::</span><span class="n">PackedImageDesc</span> <span class="n">img</span><span class="p">(</span><span class="n">imageData</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="n">processor</span><span class="o">-&gt;</span><span class="n">apply</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Python<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">PyOpenColorIO</span> <span class="k">as</span> <span class="nn">OCIO</span>
+
+<span class="c1"># Step 1: Get the config</span>
+<span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">GetCurrentConfig</span><span class="p">()</span>
+
+<span class="c1"># Step 2: Lookup the display ColorSpace</span>
+<span class="n">display</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getDefaultDisplay</span><span class="p">()</span>
+<span class="n">view</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getDefaultView</span><span class="p">(</span><span class="n">display</span><span class="p">)</span>
+
+<span class="c1"># Step 3: Create a DisplayTransform, and set the input, display, and view</span>
+<span class="c1"># (This example assumes the input is scene linear. Adapt as needed.)</span>
+
+<span class="n">transform</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">DisplayTransform</span><span class="p">()</span>
+<span class="n">transform</span><span class="o">.</span><span class="n">setInputColorSpaceName</span><span class="p">(</span><span class="n">OCIO</span><span class="o">.</span><span class="n">Constants</span><span class="o">.</span><span class="n">ROLE_SCENE_LINEAR</span><span class="p">)</span>
+<span class="n">transform</span><span class="o">.</span><span class="n">setDisplay</span><span class="p">(</span><span class="n">display</span><span class="p">)</span>
+<span class="n">transform</span><span class="o">.</span><span class="n">setView</span><span class="p">(</span><span class="n">view</span><span class="p">)</span>
+
+<span class="c1"># Step 4: Add custom transforms for a &#39;canonical&#39; Display Pipeline</span>
+
+<span class="c1"># Add an fstop exposure control (in SCENE_LINEAR)</span>
+<span class="n">exposure</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Example data: zero exposure adjustment</span>
+<span class="n">gain</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="n">exposure</span>
+<span class="n">slope3f</span> <span class="o">=</span> <span class="p">(</span><span class="n">gain</span><span class="p">,</span> <span class="n">gain</span><span class="p">,</span> <span class="n">gain</span><span class="p">)</span>
+
+<span class="n">cc</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">CDLTransform</span><span class="p">()</span>
+<span class="n">cc</span><span class="o">.</span><span class="n">setSlope</span><span class="p">(</span><span class="n">slope3f</span><span class="p">)</span>
+
+<span class="n">transform</span><span class="o">.</span><span class="n">setLinearCC</span><span class="p">(</span><span class="n">cc</span><span class="p">)</span>
+
+<span class="c1"># Add a Channel view &#39;swizzle&#39;</span>
+
+<span class="n">channelHot</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># show rgb</span>
+<span class="c1"># channelHot = (1, 0, 0, 0) # show red</span>
+<span class="c1"># channelHot = (0, 0, 0, 1) # show alpha</span>
+<span class="c1"># channelHot = (1, 1, 1, 0) # show luma</span>
+
+<span class="n">lumacoef</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getDefaultLumaCoefs</span><span class="p">()</span>
+
+<span class="n">m44</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">MatrixTransform</span><span class="o">.</span><span class="n">View</span><span class="p">(</span><span class="n">channelHot</span><span class="p">,</span> <span class="n">lumacoef</span><span class="p">)</span>
+
+<span class="n">swizzle</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">.</span><span class="n">MatrixTransform</span><span class="p">()</span>
+<span class="n">swizzle</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">m44</span><span class="p">,</span> <span class="n">offset</span><span class="p">)</span>
+<span class="n">transform</span><span class="o">.</span><span class="n">setChannelView</span><span class="p">(</span><span class="n">swizzle</span><span class="p">)</span>
+
+<span class="c1"># And then process the image normally.</span>
+<span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">transform</span><span class="p">)</span>
+
+<span class="n">imageData</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Example data: A black and a red pixel</span>
+<span class="nb">print</span> <span class="n">processor</span><span class="o">.</span><span class="n">applyRGB</span><span class="p">(</span><span class="n">imageData</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="displaying-an-image-using-the-gpu">
+<h2>Displaying an image, using the GPU<a class="headerlink" href="#displaying-an-image-using-the-gpu" title="Permalink to this headline">¶</a></h2>
+<p>Applying OpenColorIO’s color processing using GPU processing is
+straightforward, provided you have the capability to upload custom shader code
+and a custom 3D Lookup Table (3DLUT).</p>
+<ol class="arabic simple">
+<li><p><strong>Get the Processor.</strong>
+This portion of the pipeline is identical to the CPU approach. Just get the
+processor as you normally would have, see above for details.</p></li>
+<li><p><strong>Create a GpuShaderDesc.</strong></p></li>
+<li><p><strong>Query the GPU Shader Text + 3D LUT.</strong></p></li>
+<li><p><strong>Configure the GPU State.</strong></p></li>
+<li><p><strong>Draw your image.</strong></p></li>
+</ol>
+<div class="section" id="id5">
+<h3>C++<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>This example is available as a working app in the OCIO source: src/apps/ociodisplay.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Step 0: Get the processor using any of the pipelines mentioned above.</span>
+<span class="n">OCIO</span><span class="o">::</span><span class="n">ConstConfigRcPtr</span> <span class="n">config</span> <span class="o">=</span> <span class="n">OCIO</span><span class="o">::</span><span class="n">GetCurrentConfig</span><span class="p">();</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">device</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDefaultDisplayDeviceName</span><span class="p">();</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">transformName</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDefaultDisplayTransformName</span><span class="p">(</span><span class="n">device</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">displayColorSpace</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getDisplayColorSpaceName</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">transformName</span><span class="p">);</span>
+<span class="n">ConstProcessorRcPtr</span> <span class="n">processor</span> <span class="o">=</span> <span class="n">config</span><span class="o">-&gt;</span><span class="n">getProcessor</span><span class="p">(</span><span class="n">OCIO</span><span class="o">::</span><span class="n">ROLE_SCENE_LINEAR</span><span class="p">,</span>
+                                                     <span class="n">displayColorSpace</span><span class="p">);</span>
+
+<span class="c1">// Step 1: Create a GPU Shader Description</span>
+<span class="n">GpuShaderDesc</span> <span class="n">shaderDesc</span><span class="p">;</span>
+<span class="n">shaderDesc</span><span class="p">.</span><span class="n">setLanguage</span><span class="p">(</span><span class="n">OCIO</span><span class="o">::</span><span class="n">GPU_LANGUAGE_GLSL_1_0</span><span class="p">);</span>
+<span class="n">shaderDesc</span><span class="p">.</span><span class="n">setFunctionName</span><span class="p">(</span><span class="s">&quot;OCIODisplay&quot;</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">LUT3D_EDGE_SIZE</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+<span class="n">shaderDesc</span><span class="p">.</span><span class="n">setLut3DEdgeLen</span><span class="p">(</span><span class="n">LUT3D_EDGE_SIZE</span><span class="p">);</span>
+
+<span class="c1">// Step 2: Compute and the 3D LUT</span>
+<span class="c1">// Optional Optimization:</span>
+<span class="c1">//     Only do this the 3D LUT&#39;s contents</span>
+<span class="c1">//     are different from the last drawn frame.</span>
+<span class="c1">//     Use getGpuLut3DCacheID to compute the cacheID.</span>
+<span class="c1">//     cheaply.</span>
+<span class="c1">//</span>
+<span class="c1">// std::string lut3dCacheID = processor-&gt;getGpuLut3DCacheID(shaderDesc);</span>
+<span class="kt">int</span> <span class="n">num3Dentries</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">LUT3D_EDGE_SIZE</span><span class="o">*</span><span class="n">LUT3D_EDGE_SIZE</span><span class="o">*</span><span class="n">LUT3D_EDGE_SIZE</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span> <span class="n">g_lut3d</span><span class="p">;</span>
+<span class="n">g_lut3d</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">num3Dentries</span><span class="p">);</span>
+<span class="n">processor</span><span class="o">-&gt;</span><span class="n">getGpuLut3D</span><span class="p">(</span><span class="o">&amp;</span><span class="n">g_lut3d</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">shaderDesc</span><span class="p">);</span>
+
+<span class="c1">// Load the data into an OpenGL 3D Texture</span>
+<span class="n">glGenTextures</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">g_lut3d_textureID</span><span class="p">);</span>
+<span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL_TEXTURE_3D</span><span class="p">,</span> <span class="n">g_lut3d_textureID</span><span class="p">);</span>
+<span class="n">glTexImage3D</span><span class="p">(</span><span class="n">GL_TEXTURE_3D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_RGB</span><span class="p">,</span>
+             <span class="n">LUT3D_EDGE_SIZE</span><span class="p">,</span> <span class="n">LUT3D_EDGE_SIZE</span><span class="p">,</span> <span class="n">LUT3D_EDGE_SIZE</span><span class="p">,</span>
+             <span class="mi">0</span><span class="p">,</span> <span class="n">GL_RGB</span><span class="p">,</span><span class="n">GL_FLOAT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">g_lut3d</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+
+<span class="c1">// Step 3: Query</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="submitting_changes.html"
+       title="previous chapter">← Submitting Changes</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

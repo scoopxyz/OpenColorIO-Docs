@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>OCIO TSC Meeting Notes</title>
+    
+      <link rel="stylesheet" href="../../../_static/pygments.css">
+      <link rel="stylesheet" href="../../../_static/theme.css">
+      <link rel="stylesheet" href="../../../_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+
+      
+      <script src="../../../_static/theme-vendors.js"></script>
+      <script src="../../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../search.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../../../index.html" class="home-link">
+    
+      <img class="logo" src="../../../_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../../api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../../api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../../overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../../overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../../users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../../users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../../configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../../configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../../api/_index.html#api">API</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../../api/change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../../api/c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+    
+    <li><strong>OCIO TSC Meeting Notes</strong></li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <!-- SPDX-License-Identifier: CC-BY-4.0 --><!-- Copyright Contributors to the OpenColorIO Project. --><p>March 23, 2020</p>
+<p>Host: Doug Walker</p>
+<p>Rotating Secretary: Doug Walker</p>
+<p>Attendees:</p>
+<ul class="simple">
+<li><p>[X] Mark Boorer (<em>TSC</em>) - Industrial Light &amp; Magic</p></li>
+<li><p>[X] Sean Cooper (<em>TSC</em>) - DNEG</p></li>
+<li><p>[ ] Michael Dolan (<em>TSC Chair</em>) - Epic Games</p></li>
+<li><p>[X] Larry Gritz (<em>TSC</em>) - Sony Pictures Imageworks</p></li>
+<li><p>[X] Patrick Hodoul (<em>TSC</em>) - Autodesk</p></li>
+<li><p>[ ] John Mertic - Academy Software Foundation / Linux Foundation</p></li>
+<li><p>[ ] Carl Rand (<em>TSC</em>) - Weta Digital</p></li>
+<li><p>[X] Doug Walker (<em>TSC Chief Architect</em>) - Autodesk</p></li>
+<li><p>[X] Kevin Wheatley (<em>TSC</em>) - Framestore</p></li>
+<li><p>[X] Mei Chu - Sony Pictures Imageworks</p></li>
+<li><p>[X] Bernard Lefebvre - Autodesk</p></li>
+<li><p>[X] Michael Min - Netflix</p></li>
+<li><p>[X] Carol Payne - Netflix</p></li>
+<li><p>[X] Rashil Gandhi - student</p></li>
+</ul>
+<p>Apologies: Michael Dolan</p>
+<div class="section" id="ocio-tsc-meeting-notes">
+<h1><strong>OCIO TSC Meeting Notes</strong><a class="headerlink" href="#ocio-tsc-meeting-notes" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Google Summer of Code Proposal about Ffmpeg</p>
+<ul>
+<li><p>Doug: Michael, Patrick, and I are working with Rashil Gandhi on his GSoC proposal
+which is to add OCIO support to Ffmpeg.  Do people think that is enough work
+for a 3 month, 40 hour/week summer project?</p></li>
+<li><p>Mark, Kevin:  Probably.  Adding it as a video filter should be very do-able although
+trying to add it to the core may be a big task.  Also, keep in mind it is C, not C++,
+and the dev process is via patches to the email forum rather than GitHub PRs.
+Also, their community expects strict adherence to their communication style.
+It may take awhile to get the code approved, especially if it is to the core lib.
+They have their own fork of OpenEXR to allow access from straight C.</p></li>
+<li><p>Larry: There is some inherent uncertainty in the amount of work but it should not
+prevent moving forward with a proposal, we can suggest other tasks if it turns
+out to go faster than expected.</p></li>
+<li><p>Rashil: (Via chat) For some reason my microphone isn’t working.</p></li>
+<li><p>Rashil: I can probably work on making the versioned documentation too, if the FFmpeg
+project is too small :)</p></li>
+<li><p>Larry: We should reach out to the ffmpeg community to line up someone to advise.</p></li>
+<li><p>Doug: Is there another OSS project that people would suggest Rashil work on that
+would be even better than Ffmpeg?</p>
+<ul>
+<li><p>Group: Ffmpeg is widely used at our studios today and we still think it would be
+a great project.</p></li>
+</ul>
+</li>
+<li><p>Carol: What other tools in Ffmpeg are needed, could EXR images be scaled and cropped?</p></li>
+<li><p>Larry: We should solicit input from those at our studios that work with Ffmpeg to
+get input on the workflow and any gotchas.  (Mei, Mark, and Kevin all raised their
+hands as being active users.)</p></li>
+<li><p>Doug: The GSoC proposal needs to have a proposed schedule broken down into milestones
+and we need to give pass/fail marks at the end of each milestone.  How should we
+approach this given the uncertainty in how much time it will take.</p></li>
+<li><p>Larry: We can use our best judgement.  As long as the student is making good progress
+we are able to pass them even if it is not exactly what the milestone proposed.</p></li>
+<li><p>Mark: The core library does not support float pixel types.  Also it is very limited
+in what types of EXR images may be read (e.g. looking for a specific channel layout,
+no multi-part support).</p></li>
+<li><p>Kevin: A quick scan of the EXR codec shows it only really outputs 16 bit RGB, RGBA, YCbCr.
+ https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/exr.c#L1691</p>
+<ul>
+<li><p>Mark: Is that integer 16 bit?</p></li>
+<li><p>Kevin: Yes, integers.</p></li>
+</ul>
+</li>
+<li><p>Mark: One approach would be to make video filters for OCIO ColorSpaceTransform and
+OCIO DisplayTransform, similar to the tools in Nuke, etc.</p></li>
+</ul>
+</li>
+<li><p>Documentation</p>
+<ul>
+<li><p>Doug: Any updates/thoughts from anyone on efforts to improve the documentation?</p></li>
+<li><p>Carol: I will try to find time to look into wiki options some more.</p></li>
+<li><p>Doug: Should I enable GitHub Wikis on our OCIO site to enable experimentation?</p>
+<ul>
+<li><p>Group: Yes.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>GSoC Mentoring</p>
+<ul>
+<li><p>Larry: If you are interested in being a GSoC mentor, make sure you sign up.</p>
+<ul>
+<li><p>Doug: I may have missed the email.  Note: I found it and signed up.  Thanks Larry!</p></li>
+<li><p>Patrick: I’m already signed up.</p></li>
+</ul>
+</li>
+<li><p>Doug/Group: Thank you Rashil for joining the meeting today!</p></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

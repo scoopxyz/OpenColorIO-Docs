@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>GpuShaderDesc</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+          <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="ImageDesc" href="c_imagedesc.html" />
+  <link rel="prev" title="GpuShaderCreator" href="c_gpushadercreator.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <img class="logo" src="../_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="_index.html#api"
+         class="nav-link  router-link-active">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="_index.html#api"
+         class="nav-link  router-link-active">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="_index.html#api">API</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">GpuShaderDesc</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#initialization" class="reference internal">Initialization</a></li>
+                
+                  <li class="toctree-l2"><a href="#getters-setters" class="reference internal">Getters/Setters</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../contributors/_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../contributors/getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="_index.html">API</a> &raquo;</li>
+    
+    <li>GpuShaderDesc</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="c_gpushadercreator.html"
+       title="previous chapter">← GpuShaderCreator</a>
+  </li>
+  <li class="next">
+    <a href="c_imagedesc.html"
+       title="next chapter">ImageDesc →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="gpushaderdesc">
+<h1>GpuShaderDesc<a class="headerlink" href="#gpushaderdesc" title="Permalink to this headline">¶</a></h1>
+<dl class="cpp class">
+<dt id="_CPPv4N11OpenColorIO13GpuShaderDescE">
+<span id="_CPPv3N11OpenColorIO13GpuShaderDescE"></span><span id="_CPPv2N11OpenColorIO13GpuShaderDescE"></span><span id="OpenColorIO::GpuShaderDesc"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc"></span><em class="property">class </em><code class="sig-name descname">GpuShaderDesc</code> : <em class="property">public</em> OpenColorIO::<a class="reference internal" href="c_gpushadercreator.html#_CPPv4N11OpenColorIO16GpuShaderCreatorE" title="OpenColorIO::GpuShaderCreator">GpuShaderCreator</a><a class="headerlink" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<div class="section" id="initialization">
+<h2>Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9u docutils container">
+<div class="docutils container">
+<p>Python</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO13GpuShaderDesc22CreateLegacyShaderDescEj">
+<span id="_CPPv3N11OpenColorIO13GpuShaderDesc22CreateLegacyShaderDescEj"></span><span id="_CPPv2N11OpenColorIO13GpuShaderDesc22CreateLegacyShaderDescEj"></span><span id="OpenColorIO::GpuShaderDesc::CreateLegacyShaderDesc__unsigned"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a5685cdc8dca87ed4ac8d5f4e33d1b1cc"></span>GpuShaderDescRcPtr <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">CreateLegacyShaderDesc</code><span class="sig-paren">(</span>unsigned <em>edgelen</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO13GpuShaderDesc22CreateLegacyShaderDescEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create the legacy shader description. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO13GpuShaderDesc16CreateShaderDescEv">
+<span id="_CPPv3N11OpenColorIO13GpuShaderDesc16CreateShaderDescEv"></span><span id="_CPPv2N11OpenColorIO13GpuShaderDesc16CreateShaderDescEv"></span><span id="OpenColorIO::GpuShaderDesc::CreateShaderDesc"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a86e4508e73a29187fd3548bde16cda21"></span>GpuShaderDescRcPtr <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">CreateShaderDesc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO13GpuShaderDesc16CreateShaderDescEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create the default shader description. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc5cloneEv">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc5cloneEv"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc5cloneEv"></span><span id="OpenColorIO::GpuShaderDesc::cloneC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a79e3ff2312d224ce4f3ffbafa2f55995"></span>GpuShaderCreatorRcPtr <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">clone</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc5cloneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9u docutils container">
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.CreateLegacyShaderDesc">
+<em class="property">static </em><code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">CreateLegacyShaderDesc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edgelen</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">lang</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuLanguage</span> <span class="o">=</span> <span class="default_value">GpuLanguage.GPU_LANGUAGE_UNKNOWN</span></em>, <em class="sig-param"><span class="n">functionName</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'OCIOMain'</span></em>, <em class="sig-param"><span class="n">pixelName</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'outColor'</span></em>, <em class="sig-param"><span class="n">resourcePrefix</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'ocio'</span></em>, <em class="sig-param"><span class="n">uid</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.GpuShaderDesc<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.CreateLegacyShaderDesc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the legacy shader description.</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+<div class="section" id="getters-setters">
+<h2>Getters/Setters<a class="headerlink" href="#getters-setters" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9u docutils container">
+<div class="docutils container">
+<p>Python</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc14getNumUniformsEv">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc14getNumUniformsEv"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc14getNumUniformsEv"></span><span id="OpenColorIO::GpuShaderDesc::getNumUniformsC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a57a5b0ffcfb5f1998e19b1eaef664b34"></span>unsigned <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getNumUniforms</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc14getNumUniformsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Dynamic Property related methods. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc10getUniformEjRPKcR20DynamicPropertyRcPtr">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc10getUniformEjRPKcR20DynamicPropertyRcPtr"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc10getUniformEjRPKcR20DynamicPropertyRcPtr"></span><span id="OpenColorIO::GpuShaderDesc::getUniform__unsigned.cCPR.DynamicPropertyRcPtrRC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a634df48cd78bbfe47abffa44338aa178"></span>void <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getUniform</code><span class="sig-paren">(</span>unsigned <em>index</em>, <em class="property">const</em> char *&amp;<em>name</em>, DynamicPropertyRcPtr &amp;<em>value</em><span class="sig-paren">)</span> <em class="property">const</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc10getUniformEjRPKcR20DynamicPropertyRcPtr" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc14getNumTexturesEv">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc14getNumTexturesEv"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc14getNumTexturesEv"></span><span id="OpenColorIO::GpuShaderDesc::getNumTexturesC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a5dcd6ea35531828de054bedfff4ca054"></span>unsigned <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getNumTextures</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc14getNumTexturesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>1D lut related methods </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc10getTextureEjRPKcRPKcRPKcRjRjR11TextureTypeR13Interpolation">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc10getTextureEjRPKcRPKcRPKcRjRjR11TextureTypeR13Interpolation"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc10getTextureEjRPKcRPKcRPKcRjRjR11TextureTypeR13Interpolation"></span><span id="OpenColorIO::GpuShaderDesc::getTexture__unsigned.cCPR.cCPR.cCPR.unsignedR.unsignedR.TextureTypeR.InterpolationRC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1ae656a67518320c8006cdba084015142b"></span>void <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getTexture</code><span class="sig-paren">(</span>unsigned <em>index</em>, <em class="property">const</em> char *&amp;<em>textureName</em>, <em class="property">const</em> char *&amp;<em>samplerName</em>, <em class="property">const</em> char *&amp;<em>uid</em>, unsigned &amp;<em>width</em>, unsigned &amp;<em>height</em>, TextureType &amp;<em>channel</em>, Interpolation &amp;<em>interpolation</em><span class="sig-paren">)</span> <em class="property">const</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc10getTextureEjRPKcRPKcRPKcRjRjR11TextureTypeR13Interpolation" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc16getTextureValuesEjRPKf">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc16getTextureValuesEjRPKf"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc16getTextureValuesEjRPKf"></span><span id="OpenColorIO::GpuShaderDesc::getTextureValues__unsigned.floatCPRC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a4e0f79bcf993c8ba0e4282d3cfa465ad"></span>void <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getTextureValues</code><span class="sig-paren">(</span>unsigned <em>index</em>, <em class="property">const</em> float *&amp;<em>values</em><span class="sig-paren">)</span> <em class="property">const</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc16getTextureValuesEjRPKf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc16getNum3DTexturesEv">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc16getNum3DTexturesEv"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc16getNum3DTexturesEv"></span><span id="OpenColorIO::GpuShaderDesc::getNum3DTexturesC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a3b50e598113933e55e9046c18c763684"></span>unsigned <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getNum3DTextures</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc16getNum3DTexturesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>3D lut related methods </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc12get3DTextureEjRPKcRPKcRPKcRjR13Interpolation">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc12get3DTextureEjRPKcRPKcRPKcRjR13Interpolation"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc12get3DTextureEjRPKcRPKcRPKcRjR13Interpolation"></span><span id="OpenColorIO::GpuShaderDesc::get3DTexture__unsigned.cCPR.cCPR.cCPR.unsignedR.InterpolationRC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1adc8975c96a23a5debe92c9940a9a9f92"></span>void <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">get3DTexture</code><span class="sig-paren">(</span>unsigned <em>index</em>, <em class="property">const</em> char *&amp;<em>textureName</em>, <em class="property">const</em> char *&amp;<em>samplerName</em>, <em class="property">const</em> char *&amp;<em>uid</em>, unsigned &amp;<em>edgelen</em>, Interpolation &amp;<em>interpolation</em><span class="sig-paren">)</span> <em class="property">const</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc12get3DTextureEjRPKcRPKcRPKcRjR13Interpolation" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc18get3DTextureValuesEjRPKf">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc18get3DTextureValuesEjRPKf"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc18get3DTextureValuesEjRPKf"></span><span id="OpenColorIO::GpuShaderDesc::get3DTextureValues__unsigned.floatCPRC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1a21a2f2cc88d1c5913a09ffad955f8134"></span>void <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">get3DTextureValues</code><span class="sig-paren">(</span>unsigned <em>index</em>, <em class="property">const</em> float *&amp;<em>values</em><span class="sig-paren">)</span> <em class="property">const</em> = 0<a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc18get3DTextureValuesEjRPKf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO13GpuShaderDesc13getShaderTextEv">
+<span id="_CPPv3NK11OpenColorIO13GpuShaderDesc13getShaderTextEv"></span><span id="_CPPv2NK11OpenColorIO13GpuShaderDesc13getShaderTextEv"></span><span id="OpenColorIO::GpuShaderDesc::getShaderTextC"></span><span class="target" id="classOpenColorIO_1_1GpuShaderDesc_1adc15b6e410fa7aaf25883b9eaa75e8c6"></span><em class="property">const</em> char *<code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO13GpuShaderDescE" title="OpenColorIO::GpuShaderDesc">GpuShaderDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getShaderText</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO13GpuShaderDesc13getShaderTextEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the complete OCIO shader program. </p>
+</dd></dl>
+
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9u docutils container">
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.addUniform">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">addUniform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">PyOpenColorIO.DynamicProperty</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.addUniform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.getUniforms">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">getUniforms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::GpuShaderDesc&gt;, 0&gt;<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.getUniforms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.getNumTextures">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">getNumTextures</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.getNumTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>1D lut related methods</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.addTexture">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">addTexture</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em>, <em class="sig-param"><span class="n">textureName</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">samplerName</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">uid</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">channel</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderCreator.TextureType</span></em>, <em class="sig-param"><span class="n">interpolation</span><span class="p">:</span> <span class="n">PyOpenColorIO.Interpolation</span></em>, <em class="sig-param"><span class="n">values</span><span class="p">:</span> <span class="n">buffer</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.addTexture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.getTextures">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">getTextures</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::GpuShaderDesc&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.getTextures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.getTextureValues">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">getTextureValues</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em>, <em class="sig-param"><span class="n">index</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; array<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.getTextureValues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.getNum3DTextures">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">getNum3DTextures</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.getNum3DTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>3D lut related methods</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.add3DTexture">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">add3DTexture</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em>, <em class="sig-param"><span class="n">textureName</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">samplerName</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">uid</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">edgelen</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">interpolation</span><span class="p">:</span> <span class="n">PyOpenColorIO.Interpolation</span></em>, <em class="sig-param"><span class="n">values</span><span class="p">:</span> <span class="n">buffer</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.add3DTexture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.GpuShaderDesc.get3DTextureValues">
+<code class="sig-prename descclassname">GpuShaderDesc.</code><code class="sig-name descname">get3DTextureValues</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.GpuShaderDesc</span></em>, <em class="sig-param"><span class="n">index</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; array<a class="headerlink" href="#PyOpenColorIO.GpuShaderDesc.get3DTextureValues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="c_gpushadercreator.html"
+       title="previous chapter">← GpuShaderCreator</a>
+  </li>
+  <li class="next">
+    <a href="c_imagedesc.html"
+       title="next chapter">ImageDesc →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

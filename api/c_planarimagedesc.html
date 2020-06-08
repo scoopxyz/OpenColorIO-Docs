@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>PlanarImageDesc</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+          <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="&lt;no title&gt;" href="../contributors/_index.html" />
+  <link rel="prev" title="PackedImageDesc" href="c_packedimagedesc.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <img class="logo" src="../_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="_index.html#api"
+         class="nav-link  router-link-active">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="_index.html#api"
+         class="nav-link  router-link-active">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="_index.html#api">API</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">PlanarImageDesc</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#initialization" class="reference internal">Initialization</a></li>
+                
+                  <li class="toctree-l2"><a href="#getters-setters" class="reference internal">Getters/Setters</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../contributors/_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../contributors/getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../contributors/usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="_index.html">API</a> &raquo;</li>
+    
+    <li>PlanarImageDesc</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="c_packedimagedesc.html"
+       title="previous chapter">← PackedImageDesc</a>
+  </li>
+  <li class="next">
+    <a href="../contributors/_index.html"
+       title="next chapter">&lt;no title&gt; →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="planarimagedesc">
+<h1>PlanarImageDesc<a class="headerlink" href="#planarimagedesc" title="Permalink to this headline">¶</a></h1>
+<dl class="cpp class">
+<dt id="_CPPv4N11OpenColorIO15PlanarImageDescE">
+<span id="_CPPv3N11OpenColorIO15PlanarImageDescE"></span><span id="_CPPv2N11OpenColorIO15PlanarImageDescE"></span><span id="OpenColorIO::PlanarImageDesc"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc"></span><em class="property">class </em><code class="sig-name descname">PlanarImageDesc</code> : <em class="property">public</em> OpenColorIO::<a class="reference internal" href="c_imagedesc.html#_CPPv4N11OpenColorIO9ImageDescE" title="OpenColorIO::ImageDesc">ImageDesc</a><a class="headerlink" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>All the constructors expect pointers to the specified image planes (i.e. rrrr gggg bbbb) starting at the first color channel of the first pixel to process (which need not be the first pixel of the image). Pass NULL for aData if no alpha exists (r/g/bData must not be NULL).</p>
+<p><dl class="simple">
+<dt><strong>Note</strong></dt><dd><p>The methods assume the CPUProcessor bit-depth type for the R/G/B/A data pointers. </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<div class="section" id="initialization">
+<h2>Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9u docutils container">
+<div class="docutils container">
+<p>Python</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO15PlanarImageDesc15PlanarImageDescEv">
+<span id="_CPPv3N11OpenColorIO15PlanarImageDesc15PlanarImageDescEv"></span><span id="_CPPv2N11OpenColorIO15PlanarImageDesc15PlanarImageDescEv"></span><span id="OpenColorIO::PlanarImageDesc::PlanarImageDesc"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1a8ed91c8b2eb51e04bb513b1603df09fd"></span><code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">PlanarImageDesc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO15PlanarImageDesc15PlanarImageDescEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9u docutils container">
+<dl class="py method">
+<dt id="PyOpenColorIO.PlanarImageDesc.__init__">
+<code class="sig-prename descclassname">PlanarImageDesc.</code><code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyOpenColorIO.PlanarImageDesc.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>__init__(self: PyOpenColorIO.PlanarImageDesc, rData: buffer, gData: buffer, bData: buffer, width: int, height: int) -&gt; None</p></li>
+<li><p>__init__(self: PyOpenColorIO.PlanarImageDesc, rData: buffer, gData: buffer, bData: buffer, aData: buffer, width: int, height: int) -&gt; None</p></li>
+</ol>
+<p>note that although PlanarImageDesc is powerful enough to also
+describe all PackedImageDesc scenarios, it is recommended to use a
+PackedImageDesc where possible since that allows for additional
+optimizations.</p>
+<ol class="arabic simple" start="3">
+<li><p>__init__(self: PyOpenColorIO.PlanarImageDesc, rData: buffer, gData: buffer, bData: buffer, width: int, height: int, bitDepth: PyOpenColorIO.BitDepth, xStrideBytes: int, yStrideBytes: int) -&gt; None</p></li>
+<li><p>__init__(self: PyOpenColorIO.PlanarImageDesc, rData: buffer, gData: buffer, bData: buffer, aData: buffer, width: int, height: int, bitDepth: PyOpenColorIO.BitDepth, xStrideBytes: int, yStrideBytes: int) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+</div>
+</div>
+</div>
+<div class="section" id="getters-setters">
+<h2>Getters/Setters<a class="headerlink" href="#getters-setters" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9u docutils container">
+<div class="docutils container">
+<p>Python</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc8getRDataEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc8getRDataEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc8getRDataEv"></span><span id="OpenColorIO::PlanarImageDesc::getRDataC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1afb8c08b74b427bfb86ad6abda0f80d06"></span>void *<code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getRData</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc8getRDataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the red channel of the first pixel. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc8getGDataEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc8getGDataEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc8getGDataEv"></span><span id="OpenColorIO::PlanarImageDesc::getGDataC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1a76f6cfea5b7c969fb972bfb3c2a3f718"></span>void *<code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getGData</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc8getGDataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the green channel of the first pixel. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc8getBDataEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc8getBDataEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc8getBDataEv"></span><span id="OpenColorIO::PlanarImageDesc::getBDataC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1abdb57ad44fa525b570163da9e84dd471"></span>void *<code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getBData</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc8getBDataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the blue channel of the first pixel. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc8getADataEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc8getADataEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc8getADataEv"></span><span id="OpenColorIO::PlanarImageDesc::getADataC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1a50c5efc02b8d2f22264b758bab926a89"></span>void *<code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getAData</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc8getADataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a pointer to the alpha channel of the first pixel or null as alpha channel is optional. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc11getBitDepthEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc11getBitDepthEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc11getBitDepthEv"></span><span id="OpenColorIO::PlanarImageDesc::getBitDepthC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1abdeb7aeacc646b599a9990e0f5b9ab26"></span>BitDepth <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getBitDepth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc11getBitDepthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the bit-depth. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc8getWidthEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc8getWidthEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc8getWidthEv"></span><span id="OpenColorIO::PlanarImageDesc::getWidthC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1a240b738f8bdb09103b138c556af6f06c"></span>long <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getWidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc8getWidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the width to process (where x position starts at 0 and ends at width-1). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc9getHeightEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc9getHeightEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc9getHeightEv"></span><span id="OpenColorIO::PlanarImageDesc::getHeightC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1aadbc8a796bb1fbd25c0bbbd55e149878"></span>long <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc9getHeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the height to process (where y position starts at 0 and ends at height-1). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc15getXStrideBytesEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc15getXStrideBytesEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc15getXStrideBytesEv"></span><span id="OpenColorIO::PlanarImageDesc::getXStrideBytesC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1a5ca988cdd666e77fb6e5d8078c5d39ec"></span>ptrdiff_t <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getXStrideBytes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc15getXStrideBytesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the step in bytes to find the same color channel of the next pixel. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc15getYStrideBytesEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc15getYStrideBytesEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc15getYStrideBytesEv"></span><span id="OpenColorIO::PlanarImageDesc::getYStrideBytesC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1ae329cad3471856c44941d228585b332c"></span>ptrdiff_t <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">getYStrideBytes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc15getYStrideBytesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the step in bytes to find the same color channel of the pixel at the same position in the next line. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc12isRGBAPackedEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc12isRGBAPackedEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc12isRGBAPackedEv"></span><span id="OpenColorIO::PlanarImageDesc::isRGBAPackedC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1aeff9afdbecd70c9f9327e202d1a0a17f"></span>bool <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">isRGBAPacked</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc12isRGBAPackedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Is the image buffer in packed mode with the 4 color channels? (“Packed” here means that XStrideBytes is 4x the bytes per channel, so it is more specific than simply any <a class="reference internal" href="../src/api/c_packedimagedesc.html#classOpenColorIO_1_1PackedImageDesc"><span class="std std-ref">PackedImageDesc</span></a>.) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO15PlanarImageDesc7isFloatEv">
+<span id="_CPPv3NK11OpenColorIO15PlanarImageDesc7isFloatEv"></span><span id="_CPPv2NK11OpenColorIO15PlanarImageDesc7isFloatEv"></span><span id="OpenColorIO::PlanarImageDesc::isFloatC"></span><span class="target" id="classOpenColorIO_1_1PlanarImageDesc_1a264e7b1afdcff91f580385b81899030b"></span>bool <code class="sig-prename descclassname">OpenColorIO::<a class="reference internal" href="#_CPPv4N11OpenColorIO15PlanarImageDescE" title="OpenColorIO::PlanarImageDesc">PlanarImageDesc</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">isFloat</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO15PlanarImageDesc7isFloatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Is the image buffer 32-bit float? </p>
+</dd></dl>
+
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9u docutils container">
+<dl class="py method">
+<dt id="PyOpenColorIO.PlanarImageDesc.getRData">
+<code class="sig-prename descclassname">PlanarImageDesc.</code><code class="sig-name descname">getRData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.PlanarImageDesc</span></em><span class="sig-paren">)</span> &#x2192; array<a class="headerlink" href="#PyOpenColorIO.PlanarImageDesc.getRData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.PlanarImageDesc.getGData">
+<code class="sig-prename descclassname">PlanarImageDesc.</code><code class="sig-name descname">getGData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.PlanarImageDesc</span></em><span class="sig-paren">)</span> &#x2192; array<a class="headerlink" href="#PyOpenColorIO.PlanarImageDesc.getGData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.PlanarImageDesc.getBData">
+<code class="sig-prename descclassname">PlanarImageDesc.</code><code class="sig-name descname">getBData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.PlanarImageDesc</span></em><span class="sig-paren">)</span> &#x2192; array<a class="headerlink" href="#PyOpenColorIO.PlanarImageDesc.getBData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.PlanarImageDesc.getAData">
+<code class="sig-prename descclassname">PlanarImageDesc.</code><code class="sig-name descname">getAData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n">PyOpenColorIO.PlanarImageDesc</span></em><span class="sig-paren">)</span> &#x2192; array<a class="headerlink" href="#PyOpenColorIO.PlanarImageDesc.getAData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="c_packedimagedesc.html"
+       title="previous chapter">← PackedImageDesc</a>
+  </li>
+  <li class="next">
+    <a href="../contributors/_index.html"
+       title="next chapter">&lt;no title&gt; →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>
