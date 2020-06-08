@@ -1,0 +1,2220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1Config" kind="class" language="C++" prot="public">
+    <compoundname>OpenColorIO::Config</compoundname>
+    <includes refid="OpenColorIO_8h" local="no">OpenColorIO.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenColorIO_1_1Config_1ab3116ffec2a1a625a19e240b2229a2c1" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::Config::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="638" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a1f79cfe215d8221ac7cf64528beb021d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConfigRcPtr</type>
+        <definition>static ConfigRcPtr OpenColorIO::Config::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Create a default empty configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="166" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a75947e3f8f2a026a97f2ee6d1dfe9bb4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstConfigRcPtr</type>
+        <definition>static ConstConfigRcPtr OpenColorIO::Config::CreateRaw</definition>
+        <argsstring>()</argsstring>
+        <name>CreateRaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a fall-back config. This may be useful to allow client apps to launch in cases when the supplied config path is not loadable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="170" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a4dad8dcee7a8b915ad1041918280e77d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstConfigRcPtr</type>
+        <definition>static ConstConfigRcPtr OpenColorIO::Config::CreateFromEnv</definition>
+        <argsstring>()</argsstring>
+        <name>CreateFromEnv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a configuration using the OCIO environment variable. If the variable is missing or empty, returns the same result as <ref refid="classOpenColorIO_1_1Config_1a75947e3f8f2a026a97f2ee6d1dfe9bb4" kindref="member">Config::CreateRaw</ref>`. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="174" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ac81e174039e5b63fe3ff87f8636f6526" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstConfigRcPtr</type>
+        <definition>static ConstConfigRcPtr OpenColorIO::Config::CreateFromFile</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>CreateFromFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Create a configuration using a specific config file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="177" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1acde8804e3aaf8b0ce7cdc28c855a8fc1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstConfigRcPtr</type>
+        <definition>static ConstConfigRcPtr OpenColorIO::Config::CreateFromStream</definition>
+        <argsstring>(std::istream &amp;istream)</argsstring>
+        <name>CreateFromStream</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>istream</declname>
+        </param>
+        <briefdescription>
+<para>Create a configuration using a stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="179" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a707719f7dd299fe9500d8bd8cedb0c7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>static ConstProcessorRcPtr OpenColorIO::Config::GetProcessor</definition>
+        <argsstring>(const ConstConfigRcPtr &amp;srcConfig, const char *srcName, const ConstConfigRcPtr &amp;dstConfig, const char *dstName)</argsstring>
+        <name>GetProcessor</name>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>srcConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcName</declname>
+        </param>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>dstConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a processor to convert between color spaces in two separate configs.</para>
+<para>This relies on both configs having the aces_interchange role (when srcName is scene-referred) or the role cie_xyz_d65_interchange (when srcName is display-referred) defined. An exception is thrown if that is not the case. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="600" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a130519c6aa3e0261bfc9432de8964876" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>static ConstProcessorRcPtr OpenColorIO::Config::GetProcessor</definition>
+        <argsstring>(const ConstContextRcPtr &amp;srcContext, const ConstConfigRcPtr &amp;srcConfig, const char *srcName, const ConstContextRcPtr &amp;dstContext, const ConstConfigRcPtr &amp;dstConfig, const char *dstName)</argsstring>
+        <name>GetProcessor</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>srcContext</declname>
+        </param>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>srcConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcName</declname>
+        </param>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>dstContext</declname>
+        </param>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>dstConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="604" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1adcacfe3974ca8ab8484f6c8eee9014f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>static ConstProcessorRcPtr OpenColorIO::Config::GetProcessor</definition>
+        <argsstring>(const ConstConfigRcPtr &amp;srcConfig, const char *srcName, const char *srcInterchangeName, const ConstConfigRcPtr &amp;dstConfig, const char *dstName, const char *dstInterchangeName)</argsstring>
+        <name>GetProcessor</name>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>srcConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcInterchangeName</declname>
+        </param>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>dstConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstInterchangeName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The srcInterchangeName and dstInterchangeName must refer to a pair of color spaces in the two configs that are the same. A role name may also be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="613" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a13181a8733f20590b231f2f57d9958ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>static ConstProcessorRcPtr OpenColorIO::Config::GetProcessor</definition>
+        <argsstring>(const ConstContextRcPtr &amp;srcContext, const ConstConfigRcPtr &amp;srcConfig, const char *srcName, const char *srcInterchangeName, const ConstContextRcPtr &amp;dstContext, const ConstConfigRcPtr &amp;dstConfig, const char *dstName, const char *dstInterchangeName)</argsstring>
+        <name>GetProcessor</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>srcContext</declname>
+        </param>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>srcConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcInterchangeName</declname>
+        </param>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>dstContext</declname>
+        </param>
+        <param>
+          <type>const ConstConfigRcPtr &amp;</type>
+          <declname>dstConfig</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstInterchangeName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="619" column="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a8ee7349b03bc8ef6516589b978314539" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConfigRcPtr</type>
+        <definition>ConfigRcPtr OpenColorIO::Config::createEditableCopy</definition>
+        <argsstring>() const</argsstring>
+        <name>createEditableCopy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="181" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ae3d95e61a9bd3bb0ae6565110202df1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int OpenColorIO::Config::getMajorVersion</definition>
+        <argsstring>() const</argsstring>
+        <name>getMajorVersion</name>
+        <briefdescription>
+<para>Get the configuration major version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="184" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a8d89e9863477396c6e2f94f3f106b9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setMajorVersion</definition>
+        <argsstring>(unsigned int major)</argsstring>
+        <name>setMajorVersion</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>major</declname>
+        </param>
+        <briefdescription>
+<para>Set the configuration major version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="187" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a7f1d25d5abdce4aad062737ec43f2bfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int OpenColorIO::Config::getMinorVersion</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinorVersion</name>
+        <briefdescription>
+<para>Get the configuration minor version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="190" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a436ffdcf11f8a40724a6b905cd75ca12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setMinorVersion</definition>
+        <argsstring>(unsigned int minor)</argsstring>
+        <name>setMinorVersion</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>minor</declname>
+        </param>
+        <briefdescription>
+<para>Set the configuration minor version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="193" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a988174809a1b5b619fe7540686fa7250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::upgradeToLatestVersion</definition>
+        <argsstring>()</argsstring>
+        <name>upgradeToLatestVersion</name>
+        <briefdescription>
+<para>Allows an older config to be serialized as the current version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="196" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a78aa9f6b63a2adaad4b9539d3aa5101c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::sanityCheck</definition>
+        <argsstring>() const</argsstring>
+        <name>sanityCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will throw an exception if the config is malformed. The most common error occurs when references are made to colorspaces that do not exist. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="201" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a8caa4361d253e03bb3712b83ff8ec975" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char OpenColorIO::Config::getFamilySeparator</definition>
+        <argsstring>() const</argsstring>
+        <name>getFamilySeparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If not empty or null a single character to separate the family string in levels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="205" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a228ec09120005234074f0aa497eba4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setFamilySeparator</definition>
+        <argsstring>(char separator)</argsstring>
+        <name>setFamilySeparator</name>
+        <param>
+          <type>char</type>
+          <declname>separator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Succeeds if the characters is null or a valid character from the ASCII table i.e. from value 32 (i.e. space) to 126 (i.e. &apos;~&apos;); otherwise, it throws an exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="210" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ab95ec9886c1e7afa1f40a991001c0235" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>getDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="212" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ab31dd39a9fa3c73a835cc441c292693b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setDescription</definition>
+        <argsstring>(const char *description)</argsstring>
+        <name>setDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="214" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a77a8ffc841018c3965b5cc18b8507b8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::serialize</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the string representation of the <ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref> in YAML text form. This is typically stored on disk in a file with the extension .ocio. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="219" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aba0a1fa543fcadf13bcbf50f94c36a8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getCacheID</definition>
+        <argsstring>() const</argsstring>
+        <name>getCacheID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will produce a hash of the all colorspace definitions, etc. All external references, such as files used in FileTransforms, etc., will be incorporated into the cacheID. While the contents of the files are not read, the file system is queried for relevant information (mtime, inode) so that the config&apos;s cacheID will change when the underlying luts are updated. If a context is not provided, the current <ref refid="classOpenColorIO_1_1Context" kindref="compound">Context</ref> will be used. If a null context is provided, file references will not be taken into account (this is essentially a hash of <ref refid="classOpenColorIO_1_1Config_1a77a8ffc841018c3965b5cc18b8507b8b" kindref="member">Config::serialize</ref>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="232" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a3bf6314d3ca6c89986bcabab04b16785" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getCacheID</definition>
+        <argsstring>(const ConstContextRcPtr &amp;context) const</argsstring>
+        <name>getCacheID</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="234" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a56c93ebeb8b24f413591dfdf66d2ca49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstContextRcPtr</type>
+        <definition>ConstContextRcPtr OpenColorIO::Config::getCurrentContext</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="237" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a1101810dd7c382c04b27e56935ff16f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addEnvironmentVar</definition>
+        <argsstring>(const char *name, const char *defaultValue)</argsstring>
+        <name>addEnvironmentVar</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a4e6cb7bc7b90abfc48656d275032de53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumEnvironmentVars</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumEnvironmentVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="242" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a5ba122ba9c401bbd507cfc560c4a543f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getEnvironmentVarNameByIndex</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getEnvironmentVarNameByIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="244" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a3246f1d7e2c13f2b947fb88ccf37e25b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getEnvironmentVarDefault</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>getEnvironmentVarDefault</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="246" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aa93a16cfad8cde4b84b99df657d1fb15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::clearEnvironmentVars</definition>
+        <argsstring>()</argsstring>
+        <name>clearEnvironmentVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="248" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1add3a9a74bf593dc3944dd49bd995c4b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setEnvironmentMode</definition>
+        <argsstring>(EnvironmentMode mode)</argsstring>
+        <name>setEnvironmentMode</name>
+        <param>
+          <type>EnvironmentMode</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="250" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a0eccfdbc2d2e79e9ae44d224f8c71266" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>EnvironmentMode</type>
+        <definition>EnvironmentMode OpenColorIO::Config::getEnvironmentMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnvironmentMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="252" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ada25f36648c93e30c74f20bea6b8947e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::loadEnvironment</definition>
+        <argsstring>()</argsstring>
+        <name>loadEnvironment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="254" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a1dff0c0e159ef66c27cf654830f20c03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getSearchPath</definition>
+        <argsstring>() const</argsstring>
+        <name>getSearchPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="257" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aefdecf9fe86d3368fa80e087e77ea3b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setSearchPath</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>setSearchPath</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set all search paths as a concatenated string, using &apos;:&apos; to separate the paths. See addSearchPath for a more robust and platform-agnostic method of setting the search paths. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="264" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a5cf5d353cf3e0eb5edafa2a90ad8ac2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumSearchPaths</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumSearchPaths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="266" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a3808b5ae89ed47714b6caebff5982651" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getSearchPath</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getSearchPath</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a search path from the list. The paths are in the order they will be searched (that is, highest to lowest priority). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="270" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a786200efd229a33340d7b962e1455e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::clearSearchPaths</definition>
+        <argsstring>()</argsstring>
+        <name>clearSearchPaths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="273" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a31330ea5305663b6246efa9d8ac7bdfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addSearchPath</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>addSearchPath</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a single search path to the end of the list. Paths may be either absolute or relative. Relative paths are relative to the working directory. Forward slashes will be normalized to reverse for Windows. Environment (context) variables may be used in paths. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="282" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a124b9db4d5235db5a61c2aa326c9bb14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getWorkingDir</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorkingDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="284" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aafca4d15dabd846376865419902da5a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setWorkingDir</definition>
+        <argsstring>(const char *dirname)</argsstring>
+        <name>setWorkingDir</name>
+        <param>
+          <type>const char *</type>
+          <declname>dirname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The working directory defaults to the location of the config file. It is used to convert any relative paths to absolute. If no search paths have been set, the working directory will be used as the fallback search path. No environment (context) variables may be used in the working directory. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="293" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aaefb1e5d762de21416c0934f951d1bb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ColorSpaceSetRcPtr</type>
+        <definition>ColorSpaceSetRcPtr OpenColorIO::Config::getColorSpaces</definition>
+        <argsstring>(const char *category) const</argsstring>
+        <name>getColorSpaces</name>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get all active color spaces having a specific category in the order they appear in the config file.</para>
+<para><simplesect kind="note"><para>If the category is null or empty, the method returns all the active color spaces like <ref refid="classOpenColorIO_1_1Config_1a966d1569c492ed95fc66953d0ac77d8f" kindref="member">Config::getNumColorSpaces&lt;tt&gt;</ref> and \ref <ref refid="classOpenColorIO_1_1Config_1ad606078da6d5726e31726129e97a2424" kindref="member">Config::getColorSpaceNameByIndex</ref> do.</para>
+</simplesect>
+<simplesect kind="note"><para>It&apos;s worth noticing that the method returns a copy of the selected color spaces decoupling the result from the config. Hence, any changes on the config do not affect the existing color space sets, and vice-versa. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="310" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a966d1569c492ed95fc66953d0ac77d8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumColorSpaces</definition>
+        <argsstring>(SearchReferenceSpaceType searchReferenceType, ColorSpaceVisibility visibility) const</argsstring>
+        <name>getNumColorSpaces</name>
+        <param>
+          <type>SearchReferenceSpaceType</type>
+          <declname>searchReferenceType</declname>
+        </param>
+        <param>
+          <type>ColorSpaceVisibility</type>
+          <declname>visibility</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Work on the color spaces selected by the reference color space type and visibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="314" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ad606078da6d5726e31726129e97a2424" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getColorSpaceNameByIndex</definition>
+        <argsstring>(SearchReferenceSpaceType searchReferenceType, ColorSpaceVisibility visibility, int index) const</argsstring>
+        <name>getColorSpaceNameByIndex</name>
+        <param>
+          <type>SearchReferenceSpaceType</type>
+          <declname>searchReferenceType</declname>
+        </param>
+        <param>
+          <type>ColorSpaceVisibility</type>
+          <declname>visibility</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Work on the color spaces selected by the reference color space type and visibility (active or inactive). Return empty for invalid index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="319" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a37098eee7360961da227551948e8be07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstColorSpaceRcPtr</type>
+        <definition>ConstColorSpaceRcPtr OpenColorIO::Config::getColorSpace</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>getColorSpace</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the color space from all the color spaces (i.e. active and inactive) and return null if the name is not found.</para>
+<para><simplesect kind="note"><para>The fcn accepts either a color space OR role name. (Color space names take precedence over roles.) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="330" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a7872c1288f40fff1933a651d926a6d0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumColorSpaces</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumColorSpaces</name>
+        <briefdescription>
+<para>Work on the active color spaces only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="335" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aaa8de2307bce03b5f17cb7c175806c26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getColorSpaceNameByIndex</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getColorSpaceNameByIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Work on the active color spaces only and return null for invalid index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="338" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ab0e2b5adcde14f1e62cf993d5f56cf99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getIndexForColorSpace</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>getIndexForColorSpace</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an index from the active color spaces only and return -1 if the name is not found.</para>
+<para><simplesect kind="note"><para>The fcn accepts either a color space OR role name. (Color space names take precedence over roles.) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="348" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a32b5555c1aa9c1545fc0158857175914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addColorSpace</definition>
+        <argsstring>(const ConstColorSpaceRcPtr &amp;cs)</argsstring>
+        <name>addColorSpace</name>
+        <param>
+          <type>const ConstColorSpaceRcPtr &amp;</type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a color space to the configuration.</para>
+<para><simplesect kind="note"><para>If another color space is already present with the same name, this will overwrite it. This stores a copy of the specified color space. </para>
+</simplesect>
+<simplesect kind="note"><para>Adding a color space to a <computeroutput><ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref></computeroutput> does not affect any <computeroutput><ref refid="classOpenColorIO_1_1ColorSpaceSet" kindref="compound">ColorSpaceSet</ref></computeroutput> sets that have already been created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="361" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a49b161b7dc6b04e683f792a84f87b340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::removeColorSpace</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>removeColorSpace</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a color space from the configuration.</para>
+<para><simplesect kind="note"><para>It does not throw an exception if the color space is not present or used by an existing role. Role name arguments are ignored. </para>
+</simplesect>
+<simplesect kind="note"><para>Removing a color space to a <computeroutput><ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref></computeroutput> does not affect any <computeroutput><ref refid="classOpenColorIO_1_1ColorSpaceSet" kindref="compound">ColorSpaceSet</ref></computeroutput> sets that have already been created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="373" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a7534c8b4b20c7560807b1ae93f598606" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::Config::isColorSpaceUsed</definition>
+        <argsstring>(const char *name) const noexcept</argsstring>
+        <name>isColorSpaceUsed</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return true if the color space is used by a transform, a role, or a look. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="376" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a683a566b250a12c803ad8ea218288a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::clearColorSpaces</definition>
+        <argsstring>()</argsstring>
+        <name>clearColorSpaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all the color spaces from the configuration.</para>
+<para><simplesect kind="note"><para>Removing color spaces from a <computeroutput><ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref></computeroutput> does not affect any <computeroutput><ref refid="classOpenColorIO_1_1ColorSpaceSet" kindref="compound">ColorSpaceSet</ref></computeroutput> sets that have already been created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="385" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aff65335a1b13bbb08803d7d9ac5fbde0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::parseColorSpaceFromString</definition>
+        <argsstring>(const char *str) const</argsstring>
+        <name>parseColorSpaceFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Given the specified string, get the longest, right-most, colorspace substring that appears.</para>
+<para><itemizedlist>
+<listitem><para>If strict parsing is enabled, and no color space is found, return an empty string.</para>
+</listitem><listitem><para>If strict parsing is disabled, return ROLE_DEFAULT (if defined).</para>
+</listitem><listitem><para>If the default role is not defined, return an empty string. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="396" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a44741e54cf4f45809f81fa018ef023fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::Config::isStrictParsingEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isStrictParsingEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="399" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aedd82673c199736142157d7c35a4824c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setStrictParsingEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setStrictParsingEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="401" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a75073a1f64a404e21ceac8a756e1c005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setInactiveColorSpaces</definition>
+        <argsstring>(const char *inactiveColorSpaces)</argsstring>
+        <name>setInactiveColorSpaces</name>
+        <param>
+          <type>const char *</type>
+          <declname>inactiveColorSpaces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set/get a list of inactive color space names.</para>
+<para><itemizedlist>
+<listitem><para>The inactive spaces are color spaces that should not appear in application menus.</para>
+</listitem><listitem><para>These color spaces will still work in <ref refid="classOpenColorIO_1_1Config_1a9d95b8748be3724109b8dcb439bda28b" kindref="member">Config::getProcessor</ref> calls.</para>
+</listitem><listitem><para>The argument is a comma-delimited string. A null or empty string empties the list.</para>
+</listitem><listitem><para>The environment variable OCIO_INACTIVE_COLORSPACES may also be used to set the inactive color space list.</para>
+</listitem><listitem><para>The env. var. takes precedence over the inactive_colorspaces list in the config file.</para>
+</listitem><listitem><para>Setting the list via the API takes precedence over either the env. var. or the config file list.</para>
+</listitem><listitem><para>Roles may not be used. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="416" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a94b51b6cf0d7426d204f35b3d6d779fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getInactiveColorSpaces</definition>
+        <argsstring>() const</argsstring>
+        <name>getInactiveColorSpaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="418" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a67c155c86807fddc265d8815346fed8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setRole</definition>
+        <argsstring>(const char *role, const char *colorSpaceName)</argsstring>
+        <name>setRole</name>
+        <param>
+          <type>const char *</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>colorSpaceName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Setting the colorSpaceName name to a null string unsets it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="423" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a2c9cbadc9aecb3cfa94d58924445c7d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumRoles</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumRoles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="424" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a2ab3a9bd11f86b16f938f7e9e349a38f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::Config::hasRole</definition>
+        <argsstring>(const char *role) const</argsstring>
+        <name>hasRole</name>
+        <param>
+          <type>const char *</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Return true if the role has been defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="426" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ae8b8848dd1756d04a39d0b58e35bf13d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getRoleName</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getRoleName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the role name at index, this will return values like &apos;scene_linear&apos;, &apos;compositing_log&apos;. Return empty string if index is out of range. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="430" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a1c7a5b5e2cda93f35743d7ca8964dc48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getRoleColorSpace</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getRoleColorSpace</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the role color space at index. Return empty string if index is out of range. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="433" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ada826ddb40835251ed3b08cf5ef28fe2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDefaultDisplay</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="435" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a9c0a0c550d12f1abdffccb123a32aecd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumDisplays</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumDisplays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="436" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a62af7ebf0fdf2b347ca92015a0e162d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDisplay</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getDisplay</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="437" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a99248c9eddd8c306601a5bc57fffdcef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDefaultView</definition>
+        <argsstring>(const char *display) const</argsstring>
+        <name>getDefaultView</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="439" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1acc8724c78c131e764fde8dfa8183306e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumViews</definition>
+        <argsstring>(const char *display) const</argsstring>
+        <name>getNumViews</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="440" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a3e14aa4fb1ef5ad7fdc585aaa48600af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getView</definition>
+        <argsstring>(const char *display, int index) const</argsstring>
+        <name>getView</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="441" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1afc1a4f3bf6d159cf8fab1fe45af67491" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDisplayViewTransformName</definition>
+        <argsstring>(const char *display, const char *view) const</argsstring>
+        <name>getDisplayViewTransformName</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Returns the view_transform attribute of the (display, view) pair. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="444" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a76929a4dadcf856f978aced5fe384f99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDisplayColorSpaceName</definition>
+        <argsstring>(const char *display, const char *view) const</argsstring>
+        <name>getDisplayColorSpaceName</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the colorspace attribute of the (display, view) pair. (Note that this may be either a color space or a display color space.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="447" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a4242261b3b1dc3389bf64672127670cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getDisplayLooks</definition>
+        <argsstring>(const char *display, const char *view) const</argsstring>
+        <name>getDisplayLooks</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Returns the looks attribute of a (display, view) pair. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="449" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a839102f994f311647a5fe905cce031d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addDisplay</definition>
+        <argsstring>(const char *display, const char *view, const char *colorSpaceName, const char *looks)</argsstring>
+        <name>addDisplay</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>colorSpaceName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>looks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For the (display, view) pair, specify which color space and look to use. If a look is not desired, then just pass a null or empty string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="453" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a6a16f9ac7042d51453b506c9ca122378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addDisplay</definition>
+        <argsstring>(const char *display, const char *view, const char *viewTransform, const char *displayColorSpaceName, const char *looks)</argsstring>
+        <name>addDisplay</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>viewTransform</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>displayColorSpaceName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>looks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For the (display, view) pair, specify a viewTransform + displayColorSpace to use. (Looks work the same as above.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="458" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a9c8605c7cab5ba3326d1cbcd83923777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::removeDisplay</definition>
+        <argsstring>(const char *display, const char *view)</argsstring>
+        <name>removeDisplay</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the view and the display if no more views. It does not remove the associated color space. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="463" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ab1c5ec34fafec89bca0cd784196c1c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::clearDisplays</definition>
+        <argsstring>()</argsstring>
+        <name>clearDisplays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="465" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ae932d6737d345e9ac9079fa25aa353ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setActiveDisplays</definition>
+        <argsstring>(const char *displays)</argsstring>
+        <name>setActiveDisplays</name>
+        <param>
+          <type>const char *</type>
+          <declname>displays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comma-delimited list of names to filter and order the active displays. .. note:: The setter does not override the envvar. The getter does not take into account the envvar value and thus may not represent what the user is seeing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="475" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ae7bb0fa6ee3aea6b79e45913885afbe4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getActiveDisplays</definition>
+        <argsstring>() const</argsstring>
+        <name>getActiveDisplays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="476" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1acf2eae0f4402374561eac141163398f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setActiveViews</definition>
+        <argsstring>(const char *views)</argsstring>
+        <name>setActiveViews</name>
+        <param>
+          <type>const char *</type>
+          <declname>views</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comma-delimited list of names to filter and order the active views. <simplesect kind="note"><para>The setter does not override the envvar. The getter does not take into account the envvar value and thus may not represent what the user is seeing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="486" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a0835ca42e637ea656fcf3051255121d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getActiveViews</definition>
+        <argsstring>() const</argsstring>
+        <name>getActiveViews</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="487" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1afe8a9544b8080ea1ffc542b6f2c2a38e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::getDefaultLumaCoefs</definition>
+        <argsstring>(double *rgb) const</argsstring>
+        <name>getDefaultLumaCoefs</name>
+        <param>
+          <type>double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default coefficients for computing luma.</para>
+<para><simplesect kind="note"><para>There is no &quot;1 size fits all&quot; set of luma coefficients. (The values are typically different for each colorspace, and the application of them may be nonsensical depending on the intensity coding anyways). Thus, the &apos;right&apos; answer is to make these functions on the <computeroutput><ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref></computeroutput> class. However, it&apos;s often useful to have a config-wide default so here it is. We will add the colorspace specific luma call if/when another client is interesting in using it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="502" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a5689547b58dbe2f9de18c87277711501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setDefaultLumaCoefs</definition>
+        <argsstring>(const double *rgb)</argsstring>
+        <name>setDefaultLumaCoefs</name>
+        <param>
+          <type>const double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+<para>These should be normalized (sum to 1.0 exactly). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="504" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a31349f83fe5c6fead9c6c6e927358db3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstLookRcPtr</type>
+        <definition>ConstLookRcPtr OpenColorIO::Config::getLook</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>getLook</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="506" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1abeeb33a80ca5d508864d1606eeb137c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumLooks</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumLooks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="508" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ab62decc5eb0cf1c11d071b82513c3a53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getLookNameByIndex</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getLookNameByIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="510" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a557b4d9402bdbf3c11190fad755329c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addLook</definition>
+        <argsstring>(const ConstLookRcPtr &amp;look)</argsstring>
+        <name>addLook</name>
+        <param>
+          <type>const ConstLookRcPtr &amp;</type>
+          <declname>look</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="512" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a885fa35e1748c449dd1dd07273a71022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::clearLooks</definition>
+        <argsstring>()</argsstring>
+        <name>clearLooks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="514" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a8be55f1c4b24ce39bcb09dc892a9e91d" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::Config::getNumViewTransforms</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getNumViewTransforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="516" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1acdb2b5f3601da611e418dafc6075cd48" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ConstViewTransformRcPtr</type>
+        <definition>ConstViewTransformRcPtr OpenColorIO::Config::getViewTransform</definition>
+        <argsstring>(const char *name) const noexcept</argsstring>
+        <name>getViewTransform</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="518" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ae299a4a1a494445504dd95c0aa5a51aa" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getViewTransformNameByIndex</definition>
+        <argsstring>(int i) const noexcept</argsstring>
+        <name>getViewTransformNameByIndex</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="520" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a4a05ba2b5adcefce27eb5a73c3dad944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::addViewTransform</definition>
+        <argsstring>(const ConstViewTransformRcPtr &amp;viewTransform)</argsstring>
+        <name>addViewTransform</name>
+        <param>
+          <type>const ConstViewTransformRcPtr &amp;</type>
+          <declname>viewTransform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="522" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a6967f7c88aab978c85ea56878e930ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstViewTransformRcPtr</type>
+        <definition>ConstViewTransformRcPtr OpenColorIO::Config::getDefaultSceneToDisplayViewTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultSceneToDisplayViewTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The default transform to use for scene-referred to display-referred reference space conversions is the first scene-referred view transform listed in that section of the config (the one with the lowest index). Returns a null ConstTransformRcPtr if there isn&apos;t one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="528" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a98f6e4971a9d585da16e46dd90043eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::clearViewTransforms</definition>
+        <argsstring>()</argsstring>
+        <name>clearViewTransforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="530" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a2fa1215cb2d66c7c5fca26d1dcae28c3" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ConstFileRulesRcPtr</type>
+        <definition>ConstFileRulesRcPtr OpenColorIO::Config::getFileRules</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getFileRules</name>
+        <briefdescription>
+<para>Get read-only version of the file rules. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="533" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a0d0d5a075f3bc98898b472a152931dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::Config::setFileRules</definition>
+        <argsstring>(ConstFileRulesRcPtr fileRules)</argsstring>
+        <name>setFileRules</name>
+        <param>
+          <type>ConstFileRulesRcPtr</type>
+          <declname>fileRules</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set file rules. <simplesect kind="note"><para>The argument is cloned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="538" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aa6b4fc4a12dcc56037551a295c8f5016" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getColorSpaceFromFilepath</definition>
+        <argsstring>(const char *filePath) const</argsstring>
+        <name>getColorSpaceFromFilepath</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Get the color space of the first rule that matched filePath. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="541" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a97c03040c8cb83840b9d096e13a2063d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::Config::getColorSpaceFromFilepath</definition>
+        <argsstring>(const char *filePath, size_t &amp;ruleIndex) const</argsstring>
+        <name>getColorSpaceFromFilepath</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Most applications will use the preceding method, but this method may be used for applications that want to know which was the highest priority rule to match filePath. The <ref refid="classOpenColorIO_1_1FileRules_1ac598d774e302baa851249d10817f5082" kindref="member">FileRules::getNumCustomKeys</ref> and custom keys methods may then be used to get additional information about the matching rule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="547" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ac5f83674e5b0362ee48d73b6553d02cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::Config::filepathOnlyMatchesDefaultRule</definition>
+        <argsstring>(const char *filePath) const</argsstring>
+        <name>filepathOnlyMatchesDefaultRule</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the only rule matched by filePath is the default rule. This is a convenience method for applications that want to require the user to manually choose a color space when strictParsing is true and no other rules match. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="552" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a9d95b8748be3724109b8dcb439bda28b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstContextRcPtr &amp;context, const ConstColorSpaceRcPtr &amp;srcColorSpace, const ConstColorSpaceRcPtr &amp;dstColorSpace) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ConstColorSpaceRcPtr &amp;</type>
+          <declname>srcColorSpace</declname>
+        </param>
+        <param>
+          <type>const ConstColorSpaceRcPtr &amp;</type>
+          <declname>dstColorSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the processor to apply a <ref refid="classOpenColorIO_1_1ColorSpaceTransform" kindref="compound">ColorSpaceTransform</ref> from a source to a destination color space. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="560" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a7a3ab906cfe7fa41436f845afe5fd41b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstColorSpaceRcPtr &amp;srcColorSpace, const ConstColorSpaceRcPtr &amp;dstColorSpace) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstColorSpaceRcPtr &amp;</type>
+          <declname>srcColorSpace</declname>
+        </param>
+        <param>
+          <type>const ConstColorSpaceRcPtr &amp;</type>
+          <declname>dstColorSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="563" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aa14d2113f026306f3eda7f019b116369" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const char *srcName, const char *dstName) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const char *</type>
+          <declname>srcName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Names can be colorspace name, role name, or a combination of both. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="568" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1afb7ebf1d9a64dd5f1d0949a1c4ffccf9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstContextRcPtr &amp;context, const char *srcName, const char *dstName) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="571" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aef9acdcc36f88e833fd75c528427caf3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const char *inputColorSpaceName, const char *display, const char *view) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const char *</type>
+          <declname>inputColorSpaceName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the processor to apply a <ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref> for a display and view. Refer to the Display/View Registration section above for more info on the display and view arguments. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="577" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a2fcc492b5751562d4ebd8953c496f818" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstContextRcPtr &amp;context, const char *inputColorSpaceName, const char *display, const char *view) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>inputColorSpaceName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="579" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1ab80f17e342edebaabeafd5b219e6e624" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;transform) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the processor for the specified transform.</para>
+<para>Not often needed, but will allow for the re-use of atomic OCIO functionality (such as to apply an individual LUT file). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="587" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a04c3e3f7e353ea3240866afc0ee06c40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;transform, TransformDirection direction) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>TransformDirection</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="588" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a30036733f7d76b9048248387cd68f88b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstProcessorRcPtr</type>
+        <definition>ConstProcessorRcPtr OpenColorIO::Config::getProcessor</definition>
+        <argsstring>(const ConstContextRcPtr &amp;context, const ConstTransformRcPtr &amp;transform, TransformDirection direction) const</argsstring>
+        <name>getProcessor</name>
+        <param>
+          <type>const ConstContextRcPtr &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>TransformDirection</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="590" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aa01d5674bf2d92c1cc81ec89501daafb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Config::Config</definition>
+        <argsstring>(const Config &amp;)=delete</argsstring>
+        <name>Config</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="628" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a38bc2f793c0704210c207b3a9be022c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref> &amp;</type>
+        <definition>Config&amp; OpenColorIO::Config::operator=</definition>
+        <argsstring>(const Config &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="629" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a45119b0d2bf8efc7432cc2d59a5c840d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Config::~Config</definition>
+        <argsstring>()</argsstring>
+        <name>~Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="630" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a6f4d05c06f86e6fc1a53604ee8d7e36b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Config::Config</definition>
+        <argsstring>()</argsstring>
+        <name>Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="633" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1aad32f336729767f6c2a3ea8f3c6fa907" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::Config::getImpl</definition>
+        <argsstring>()</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="639" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="639" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1acca27ce7acf881fe02dd0efd9fdd283f" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl *</type>
+        <definition>const Impl* OpenColorIO::Config::getImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="640" column="17" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="640" bodyend="640"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Config_1a8a7eded13edac2c529253fed38f8dc36" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenColorIO::Config::deleter</definition>
+        <argsstring>(Config *c)</argsstring>
+        <name>deleter</name>
+        <param>
+          <type><ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="635" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A config defines all the color spaces to be available at runtime.</para>
+<para>The color configuration <ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref> is the main object for interacting with this library. It encapsulates all of the information necessary to use customized <computeroutput><ref refid="classOpenColorIO_1_1ColorSpaceTransform" kindref="compound">ColorSpaceTransform</ref></computeroutput> and <computeroutput><ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref></computeroutput> operations.</para>
+<para>See the user-guide for more information on selecting, creating, and working with custom color configurations.</para>
+<para>For applications interested in using only one color config at a time (this is the vast majority of apps), their API would traditionally get the global configuration and use that, as opposed to creating a new one. This simplifies the use case for plugins and bindings, as it alleviates the need to pass around configuration handles.</para>
+<para>An example of an application where this would not be sufficient would be a multi-threaded image proxy server (daemon), which wished to handle multiple show configurations in a single process concurrently. This app would need to keep multiple configurations alive, and to manage them appropriately.</para>
+<para>Roughly speaking, a novice user should select a default configuration that most closely approximates the use case (animation, visual effects, etc.), and set the :envvar:<computeroutput>OCIO</computeroutput> environment variable to point at the root of that configuration.</para>
+<para><simplesect kind="note"><para>Initialization using environment variables is typically preferable in a multi-app ecosystem, as it allows all applications to be consistently configured.</para>
+</simplesect>
+See developers-usageexamples </para>
+    </detaileddescription>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="162" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="161" bodyend="641"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1Config_1a32b5555c1aa9c1545fc0158857175914" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a839102f994f311647a5fe905cce031d6" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addDisplay</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a6a16f9ac7042d51453b506c9ca122378" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addDisplay</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a1101810dd7c382c04b27e56935ff16f9" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addEnvironmentVar</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a557b4d9402bdbf3c11190fad755329c9" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addLook</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a31330ea5305663b6246efa9d8ac7bdfc" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addSearchPath</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a4a05ba2b5adcefce27eb5a73c3dad944" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>addViewTransform</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a683a566b250a12c803ad8ea218288a96" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>clearColorSpaces</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab1c5ec34fafec89bca0cd784196c1c36" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>clearDisplays</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aa93a16cfad8cde4b84b99df657d1fb15" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>clearEnvironmentVars</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a885fa35e1748c449dd1dd07273a71022" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>clearLooks</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a786200efd229a33340d7b962e1455e17" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>clearSearchPaths</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a98f6e4971a9d585da16e46dd90043eb1" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>clearViewTransforms</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aa01d5674bf2d92c1cc81ec89501daafb" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>Config</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a6f4d05c06f86e6fc1a53604ee8d7e36b" prot="private" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>Config</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a1f79cfe215d8221ac7cf64528beb021d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a8ee7349b03bc8ef6516589b978314539" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a4dad8dcee7a8b915ad1041918280e77d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>CreateFromEnv</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ac81e174039e5b63fe3ff87f8636f6526" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>CreateFromFile</name></member>
+      <member refid="classOpenColorIO_1_1Config_1acde8804e3aaf8b0ce7cdc28c855a8fc1" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>CreateFromStream</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a75947e3f8f2a026a97f2ee6d1dfe9bb4" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>CreateRaw</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a8a7eded13edac2c529253fed38f8dc36" prot="private" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>deleter</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ac5f83674e5b0362ee48d73b6553d02cc" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>filepathOnlyMatchesDefaultRule</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ae7bb0fa6ee3aea6b79e45913885afbe4" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getActiveDisplays</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a0835ca42e637ea656fcf3051255121d5" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getActiveViews</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aba0a1fa543fcadf13bcbf50f94c36a8a" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getCacheID</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a3bf6314d3ca6c89986bcabab04b16785" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getCacheID</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a37098eee7360961da227551948e8be07" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aa6b4fc4a12dcc56037551a295c8f5016" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getColorSpaceFromFilepath</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a97c03040c8cb83840b9d096e13a2063d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getColorSpaceFromFilepath</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ad606078da6d5726e31726129e97a2424" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getColorSpaceNameByIndex</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aaa8de2307bce03b5f17cb7c175806c26" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getColorSpaceNameByIndex</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aaefb1e5d762de21416c0934f951d1bb0" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getColorSpaces</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a56c93ebeb8b24f413591dfdf66d2ca49" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getCurrentContext</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ada826ddb40835251ed3b08cf5ef28fe2" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDefaultDisplay</name></member>
+      <member refid="classOpenColorIO_1_1Config_1afe8a9544b8080ea1ffc542b6f2c2a38e" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDefaultLumaCoefs</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a6967f7c88aab978c85ea56878e930ed2" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDefaultSceneToDisplayViewTransform</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a99248c9eddd8c306601a5bc57fffdcef" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDefaultView</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab95ec9886c1e7afa1f40a991001c0235" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDescription</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a62af7ebf0fdf2b347ca92015a0e162d0" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDisplay</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a76929a4dadcf856f978aced5fe384f99" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDisplayColorSpaceName</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a4242261b3b1dc3389bf64672127670cd" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDisplayLooks</name></member>
+      <member refid="classOpenColorIO_1_1Config_1afc1a4f3bf6d159cf8fab1fe45af67491" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getDisplayViewTransformName</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a0eccfdbc2d2e79e9ae44d224f8c71266" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getEnvironmentMode</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a3246f1d7e2c13f2b947fb88ccf37e25b" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getEnvironmentVarDefault</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a5ba122ba9c401bbd507cfc560c4a543f" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getEnvironmentVarNameByIndex</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a8caa4361d253e03bb3712b83ff8ec975" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getFamilySeparator</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a2fa1215cb2d66c7c5fca26d1dcae28c3" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getFileRules</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aad32f336729767f6c2a3ea8f3c6fa907" prot="private" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1Config_1acca27ce7acf881fe02dd0efd9fdd283f" prot="private" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a94b51b6cf0d7426d204f35b3d6d779fe" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getInactiveColorSpaces</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab0e2b5adcde14f1e62cf993d5f56cf99" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getIndexForColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a31349f83fe5c6fead9c6c6e927358db3" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getLook</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab62decc5eb0cf1c11d071b82513c3a53" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getLookNameByIndex</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ae3d95e61a9bd3bb0ae6565110202df1a" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getMajorVersion</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a7f1d25d5abdce4aad062737ec43f2bfc" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getMinorVersion</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a966d1569c492ed95fc66953d0ac77d8f" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumColorSpaces</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a7872c1288f40fff1933a651d926a6d0c" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumColorSpaces</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a9c0a0c550d12f1abdffccb123a32aecd" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumDisplays</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a4e6cb7bc7b90abfc48656d275032de53" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumEnvironmentVars</name></member>
+      <member refid="classOpenColorIO_1_1Config_1abeeb33a80ca5d508864d1606eeb137c7" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumLooks</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a2c9cbadc9aecb3cfa94d58924445c7d1" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumRoles</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a5cf5d353cf3e0eb5edafa2a90ad8ac2a" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumSearchPaths</name></member>
+      <member refid="classOpenColorIO_1_1Config_1acc8724c78c131e764fde8dfa8183306e" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumViews</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a8be55f1c4b24ce39bcb09dc892a9e91d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getNumViewTransforms</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a707719f7dd299fe9500d8bd8cedb0c7f" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>GetProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a130519c6aa3e0261bfc9432de8964876" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>GetProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1adcacfe3974ca8ab8484f6c8eee9014f7" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>GetProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a13181a8733f20590b231f2f57d9958ae" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>GetProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a9d95b8748be3724109b8dcb439bda28b" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a7a3ab906cfe7fa41436f845afe5fd41b" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aa14d2113f026306f3eda7f019b116369" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1afb7ebf1d9a64dd5f1d0949a1c4ffccf9" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aef9acdcc36f88e833fd75c528427caf3" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a2fcc492b5751562d4ebd8953c496f818" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab80f17e342edebaabeafd5b219e6e624" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a04c3e3f7e353ea3240866afc0ee06c40" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a30036733f7d76b9048248387cd68f88b" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getProcessor</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a1c7a5b5e2cda93f35743d7ca8964dc48" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getRoleColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ae8b8848dd1756d04a39d0b58e35bf13d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getRoleName</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a1dff0c0e159ef66c27cf654830f20c03" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getSearchPath</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a3808b5ae89ed47714b6caebff5982651" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getSearchPath</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a3e14aa4fb1ef5ad7fdc585aaa48600af" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getView</name></member>
+      <member refid="classOpenColorIO_1_1Config_1acdb2b5f3601da611e418dafc6075cd48" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getViewTransform</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ae299a4a1a494445504dd95c0aa5a51aa" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getViewTransformNameByIndex</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a124b9db4d5235db5a61c2aa326c9bb14" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>getWorkingDir</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a2ab3a9bd11f86b16f938f7e9e349a38f" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>hasRole</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a7534c8b4b20c7560807b1ae93f598606" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>isColorSpaceUsed</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a44741e54cf4f45809f81fa018ef023fa" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>isStrictParsingEnabled</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ada25f36648c93e30c74f20bea6b8947e" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>loadEnvironment</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab3116ffec2a1a625a19e240b2229a2c1" prot="private" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>m_impl</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a38bc2f793c0704210c207b3a9be022c3" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aff65335a1b13bbb08803d7d9ac5fbde0" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>parseColorSpaceFromString</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a49b161b7dc6b04e683f792a84f87b340" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>removeColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a9c8605c7cab5ba3326d1cbcd83923777" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>removeDisplay</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a78aa9f6b63a2adaad4b9539d3aa5101c" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>sanityCheck</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a77a8ffc841018c3965b5cc18b8507b8b" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>serialize</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ae932d6737d345e9ac9079fa25aa353ac" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setActiveDisplays</name></member>
+      <member refid="classOpenColorIO_1_1Config_1acf2eae0f4402374561eac141163398f2" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setActiveViews</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a5689547b58dbe2f9de18c87277711501" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setDefaultLumaCoefs</name></member>
+      <member refid="classOpenColorIO_1_1Config_1ab31dd39a9fa3c73a835cc441c292693b" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setDescription</name></member>
+      <member refid="classOpenColorIO_1_1Config_1add3a9a74bf593dc3944dd49bd995c4b0" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setEnvironmentMode</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a228ec09120005234074f0aa497eba4df" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setFamilySeparator</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a0d0d5a075f3bc98898b472a152931dd5" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setFileRules</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a75073a1f64a404e21ceac8a756e1c005" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setInactiveColorSpaces</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a8d89e9863477396c6e2f94f3f106b9f4" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setMajorVersion</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a436ffdcf11f8a40724a6b905cd75ca12" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setMinorVersion</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a67c155c86807fddc265d8815346fed8d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setRole</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aefdecf9fe86d3368fa80e087e77ea3b3" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setSearchPath</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aedd82673c199736142157d7c35a4824c" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setStrictParsingEnabled</name></member>
+      <member refid="classOpenColorIO_1_1Config_1aafca4d15dabd846376865419902da5a2" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>setWorkingDir</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a988174809a1b5b619fe7540686fa7250" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>upgradeToLatestVersion</name></member>
+      <member refid="classOpenColorIO_1_1Config_1a45119b0d2bf8efc7432cc2d59a5c840d" prot="public" virt="non-virtual"><scope>OpenColorIO::Config</scope><name>~Config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

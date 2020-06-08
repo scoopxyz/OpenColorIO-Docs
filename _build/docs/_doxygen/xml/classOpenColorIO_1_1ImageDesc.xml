@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1ImageDesc" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::ImageDesc</compoundname>
+    <derivedcompoundref refid="classOpenColorIO_1_1PackedImageDesc" prot="public" virt="non-virtual">OpenColorIO::PackedImageDesc</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1PlanarImageDesc" prot="public" virt="non-virtual">OpenColorIO::PlanarImageDesc</derivedcompoundref>
+    <includes refid="OpenColorIO_8h" local="no">OpenColorIO.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1af76dd4b14dd82a438875df2119dbf5a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ImageDesc::ImageDesc</definition>
+        <argsstring>()</argsstring>
+        <name>ImageDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1559" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1af72fd1bc51285ec8093483b4de78fae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::ImageDesc::~ImageDesc</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1560" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1adc6ecdc41da779304d016698330edffd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* OpenColorIO::ImageDesc::getRData</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getRData</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a115cc4df8b19a00aafb2d10b36f207f8">getRData</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1afb8c08b74b427bfb86ad6abda0f80d06">getRData</reimplementedby>
+        <briefdescription>
+<para>Get a pointer to the red channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1563" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1ae052c596ade8ca8b7d1aa5fbb47b553b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* OpenColorIO::ImageDesc::getGData</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getGData</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a7e1c83aae77506010c0eb0dea03ddc9e">getGData</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1a76f6cfea5b7c969fb972bfb3c2a3f718">getGData</reimplementedby>
+        <briefdescription>
+<para>Get a pointer to the green channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1565" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1ae1338b917a4d781f5766000178c58786" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* OpenColorIO::ImageDesc::getBData</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getBData</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a432b314ed7d6be542fd0b336f6b25516">getBData</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1abdb57ad44fa525b570163da9e84dd471">getBData</reimplementedby>
+        <briefdescription>
+<para>Get a pointer to the blue channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1567" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a15c61cbda4c5445834b0a3106c284656" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* OpenColorIO::ImageDesc::getAData</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getAData</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a32a30d1a1508103141dc52e0698049c0">getAData</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1a50c5efc02b8d2f22264b758bab926a89">getAData</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a pointer to the alpha channel of the first pixel or null as alpha channel is optional. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1570" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a587ded419db9bab4b4a26186ac597016" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BitDepth</type>
+        <definition>virtual BitDepth OpenColorIO::ImageDesc::getBitDepth</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getBitDepth</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1aa8d77df11016b07dc2d3851758bedda5">getBitDepth</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1abdeb7aeacc646b599a9990e0f5b9ab26">getBitDepth</reimplementedby>
+        <briefdescription>
+<para>Get the bit-depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1573" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1ac2a83b49fc3b977b6c96715442ded8b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long OpenColorIO::ImageDesc::getWidth</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getWidth</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1ada186e515bae6a9945d5dab7dba7db8b">getWidth</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1a240b738f8bdb09103b138c556af6f06c">getWidth</reimplementedby>
+        <briefdescription>
+<para>Get the width to process (where x position starts at 0 and ends at width-1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1576" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a6d9053b6f97c99a7cfc0704ee13ba913" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long OpenColorIO::ImageDesc::getHeight</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getHeight</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a681729c76c7ce167c2808d9d102cdcab">getHeight</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1aadbc8a796bb1fbd25c0bbbd55e149878">getHeight</reimplementedby>
+        <briefdescription>
+<para>Get the height to process (where y position starts at 0 and ends at height-1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1578" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a0b461dafc6870766bc27e498c83798f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>ptrdiff_t</type>
+        <definition>virtual ptrdiff_t OpenColorIO::ImageDesc::getXStrideBytes</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getXStrideBytes</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1abe1955008e92f8836386474dbef178f6">getXStrideBytes</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1a5ca988cdd666e77fb6e5d8078c5d39ec">getXStrideBytes</reimplementedby>
+        <briefdescription>
+<para>Get the step in bytes to find the same color channel of the next pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1581" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a0d0b79269fc2faa3ed92f5fda392492d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>ptrdiff_t</type>
+        <definition>virtual ptrdiff_t OpenColorIO::ImageDesc::getYStrideBytes</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getYStrideBytes</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1abf00acf369957b0c8fdc133661054fbe">getYStrideBytes</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1ae329cad3471856c44941d228585b332c">getYStrideBytes</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the step in bytes to find the same color channel of the pixel at the same position in the next line. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1584" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1ab8d808fc1bb93ee9b59a3510673c234c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::ImageDesc::isRGBAPacked</definition>
+        <argsstring>() const =0</argsstring>
+        <name>isRGBAPacked</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a12abf80444ccb5d3238e9960e5e5467d">isRGBAPacked</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1aeff9afdbecd70c9f9327e202d1a0a17f">isRGBAPacked</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is the image buffer in packed mode with the 4 color channels? (&quot;Packed&quot; here means that XStrideBytes is 4x the bytes per channel, so it is more specific than simply any <ref refid="classOpenColorIO_1_1PackedImageDesc" kindref="compound">PackedImageDesc</ref>.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1589" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1ab52411976beb929d92dc82fd31d79586" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::ImageDesc::isFloat</definition>
+        <argsstring>() const =0</argsstring>
+        <name>isFloat</name>
+        <reimplementedby refid="classOpenColorIO_1_1PackedImageDesc_1a68447a5d07665bfd97760cabdc12dd79">isFloat</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1PlanarImageDesc_1a264e7b1afdcff91f580385b81899030b">isFloat</reimplementedby>
+        <briefdescription>
+<para>Is the image buffer 32-bit float? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1591" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a962f41029fdefa374b9bd96e7b6329c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ImageDesc::ImageDesc</definition>
+        <argsstring>(const ImageDesc &amp;)</argsstring>
+        <name>ImageDesc</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ImageDesc" kindref="compound">ImageDesc</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1594" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ImageDesc_1a9736129e8e4e739c8df69eed3d60b654" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1ImageDesc" kindref="compound">ImageDesc</ref> &amp;</type>
+        <definition>ImageDesc&amp; OpenColorIO::ImageDesc::operator=</definition>
+        <argsstring>(const ImageDesc &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ImageDesc" kindref="compound">ImageDesc</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1595" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a light-weight wrapper around an image, that provides a context for pixel access. This does NOT claim ownership of the pixels or copy image data. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OpenColorIO::ImageDesc</label>
+        <link refid="classOpenColorIO_1_1ImageDesc"/>
+      </node>
+      <node id="2">
+        <label>OpenColorIO::PackedImageDesc</label>
+        <link refid="classOpenColorIO_1_1PackedImageDesc"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OpenColorIO::PlanarImageDesc</label>
+        <link refid="classOpenColorIO_1_1PlanarImageDesc"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1557" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="1556" bodyend="1596"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a15c61cbda4c5445834b0a3106c284656" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getAData</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1ae1338b917a4d781f5766000178c58786" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getBData</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a587ded419db9bab4b4a26186ac597016" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1ae052c596ade8ca8b7d1aa5fbb47b553b" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getGData</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a6d9053b6f97c99a7cfc0704ee13ba913" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getHeight</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1adc6ecdc41da779304d016698330edffd" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getRData</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1ac2a83b49fc3b977b6c96715442ded8b3" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getWidth</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a0b461dafc6870766bc27e498c83798f5" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getXStrideBytes</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a0d0b79269fc2faa3ed92f5fda392492d" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>getYStrideBytes</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1af76dd4b14dd82a438875df2119dbf5a6" prot="public" virt="non-virtual"><scope>OpenColorIO::ImageDesc</scope><name>ImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a962f41029fdefa374b9bd96e7b6329c6" prot="private" virt="non-virtual"><scope>OpenColorIO::ImageDesc</scope><name>ImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1ab52411976beb929d92dc82fd31d79586" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>isFloat</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1ab8d808fc1bb93ee9b59a3510673c234c" prot="public" virt="pure-virtual"><scope>OpenColorIO::ImageDesc</scope><name>isRGBAPacked</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1a9736129e8e4e739c8df69eed3d60b654" prot="private" virt="non-virtual"><scope>OpenColorIO::ImageDesc</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1af72fd1bc51285ec8093483b4de78fae5" prot="public" virt="virtual"><scope>OpenColorIO::ImageDesc</scope><name>~ImageDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

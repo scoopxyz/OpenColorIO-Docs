@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_94cd3ea2bed9caa032534b7fcd5914b4" kind="dir">
+    <compoundname>/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO</compoundname>
+    <innerfile refid="OpenColorIO_8h">OpenColorIO.h</innerfile>
+    <innerfile refid="OpenColorTransforms_8h">OpenColorTransforms.h</innerfile>
+    <innerfile refid="OpenColorTypes_8h">OpenColorTypes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/"/>
+  </compounddef>
+</doxygen>

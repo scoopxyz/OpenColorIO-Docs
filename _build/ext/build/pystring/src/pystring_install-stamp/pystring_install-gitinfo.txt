@@ -1,0 +1,3 @@
+repository='https://github.com/imageworks/pystring.git'
+module=''
+tag='origin'

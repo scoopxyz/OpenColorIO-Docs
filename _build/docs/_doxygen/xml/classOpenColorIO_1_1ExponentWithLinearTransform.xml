@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1ExponentWithLinearTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::ExponentWithLinearTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a7787b3d86466f357b1e230d0d56f2d94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ExponentWithLinearTransformRcPtr</type>
+        <definition>static ExponentWithLinearTransformRcPtr OpenColorIO::ExponentWithLinearTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="450" column="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a9ba6c802829fb6f31f1fc277c129906b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const <ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual const FormatMetadata&amp; OpenColorIO::ExponentWithLinearTransform::getFormatMetadata</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="452" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a71d2c66334117cb8f1bd088bbe895f98" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual FormatMetadata&amp; OpenColorIO::ExponentWithLinearTransform::getFormatMetadata</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="453" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a91e7de30a3c1ff78b4c049e627318e91" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::ExponentWithLinearTransform::equals</definition>
+        <argsstring>(const ExponentWithLinearTransform &amp;other) const noexcept=0</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ExponentWithLinearTransform" kindref="compound">ExponentWithLinearTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Checks if this exactly equals other. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="456" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a2d2c33c1a0de6b218617bfcc86103127" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::ExponentWithLinearTransform::getGamma</definition>
+        <argsstring>(double(&amp;values)[4]) const noexcept=0</argsstring>
+        <name>getGamma</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>values</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="458" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a4d15ddffdd1ab42b0e70cb0352c02759" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::ExponentWithLinearTransform::setGamma</definition>
+        <argsstring>(const double(&amp;values)[4]) noexcept=0</argsstring>
+        <name>setGamma</name>
+        <param>
+          <type>const double(&amp;)</type>
+          <declname>values</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the exponent value for the power function for R, G, B, A.</para>
+<para><simplesect kind="note"><para>The gamma values must be in the range of [1, 10]. Set the transform direction to inverse to obtain the effect of values less than 1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="464" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1aa8eb330a7c02548ffff003f77ba335b9" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::ExponentWithLinearTransform::getOffset</definition>
+        <argsstring>(double(&amp;values)[4]) const noexcept=0</argsstring>
+        <name>getOffset</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>values</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="466" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a63dbd918ff7b91f4f093504d5d2d0dd4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::ExponentWithLinearTransform::setOffset</definition>
+        <argsstring>(const double(&amp;values)[4]) noexcept=0</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>const double(&amp;)</type>
+          <declname>values</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the offset value for the power function for R, G, B, A.</para>
+<para><simplesect kind="note"><para>The offset values must be in the range [0, 0.9]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="471" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a5023a81b1d29d5804c1a708c939caa99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>NegativeStyle</type>
+        <definition>virtual NegativeStyle OpenColorIO::ExponentWithLinearTransform::getNegativeStyle</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getNegativeStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies how negative values are handled. Legal values:</para>
+<para><itemizedlist>
+<listitem><para>NEGATIVE_LINEAR <ndash/> Linear segment continues into negatives (default).</para>
+</listitem><listitem><para>NEGATIVE_MIRROR <ndash/> Positive curve is rotated 180 degrees around the origin to handle negatives. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="478" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a26f49d2a48553cc29b6a6ff189d2a951" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::ExponentWithLinearTransform::setNegativeStyle</definition>
+        <argsstring>(NegativeStyle style)=0</argsstring>
+        <name>setNegativeStyle</name>
+        <param>
+          <type>NegativeStyle</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="479" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1ac0f087afd2fff95d95e558ec49f33b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ExponentWithLinearTransform::ExponentWithLinearTransform</definition>
+        <argsstring>(const ExponentWithLinearTransform &amp;)=delete</argsstring>
+        <name>ExponentWithLinearTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ExponentWithLinearTransform" kindref="compound">ExponentWithLinearTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="481" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a7dda8d2c0f477a68a20a71f2d0c9f613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1ExponentWithLinearTransform" kindref="compound">ExponentWithLinearTransform</ref> &amp;</type>
+        <definition>ExponentWithLinearTransform&amp; OpenColorIO::ExponentWithLinearTransform::operator=</definition>
+        <argsstring>(const ExponentWithLinearTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ExponentWithLinearTransform" kindref="compound">ExponentWithLinearTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="482" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1ad4f69e1bae849b12ac79a4dfe34a25a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::ExponentWithLinearTransform::~ExponentWithLinearTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ExponentWithLinearTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="483" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ExponentWithLinearTransform_1a45294ecf9f3a387fe7f728ee55045acd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ExponentWithLinearTransform::ExponentWithLinearTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>ExponentWithLinearTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="486" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents power functions with a linear section in the shadows such as sRGB and L*.</para>
+<para>The basic formula is::</para>
+<para>pow( (x + offset)/(1 + offset), gamma ) with the breakpoint at offset/(gamma - 1).</para>
+<para>Negative values are never clamped. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::ExponentWithLinearTransform</label>
+        <link refid="classOpenColorIO_1_1ExponentWithLinearTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::ExponentWithLinearTransform</label>
+        <link refid="classOpenColorIO_1_1ExponentWithLinearTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="448" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="447" bodyend="487"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a7787b3d86466f357b1e230d0d56f2d94" prot="public" virt="non-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a91e7de30a3c1ff78b4c049e627318e91" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>equals</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1ac0f087afd2fff95d95e558ec49f33b3b" prot="public" virt="non-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>ExponentWithLinearTransform</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a45294ecf9f3a387fe7f728ee55045acd" prot="protected" virt="non-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>ExponentWithLinearTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a9ba6c802829fb6f31f1fc277c129906b" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a71d2c66334117cb8f1bd088bbe895f98" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a2d2c33c1a0de6b218617bfcc86103127" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>getGamma</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a5023a81b1d29d5804c1a708c939caa99" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>getNegativeStyle</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1aa8eb330a7c02548ffff003f77ba335b9" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>getOffset</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a7dda8d2c0f477a68a20a71f2d0c9f613" prot="public" virt="non-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a4d15ddffdd1ab42b0e70cb0352c02759" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>setGamma</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a26f49d2a48553cc29b6a6ff189d2a951" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>setNegativeStyle</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1a63dbd918ff7b91f4f093504d5d2d0dd4" prot="public" virt="pure-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>setOffset</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1ExponentWithLinearTransform_1ad4f69e1bae849b12ac79a4dfe34a25a6" prot="public" virt="virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>~ExponentWithLinearTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::ExponentWithLinearTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

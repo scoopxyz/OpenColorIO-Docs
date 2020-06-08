@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1LogAffineTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::LogAffineTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1aafee7ed68399556bddee9c4b0ca359a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LogAffineTransformRcPtr</type>
+        <definition>static LogAffineTransformRcPtr OpenColorIO::LogAffineTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="712" column="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a4875e475fcbd484388790b17f38a5593" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const <ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual const FormatMetadata&amp; OpenColorIO::LogAffineTransform::getFormatMetadata</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="714" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a785932d0b0e33a9ede0f4c1cf089131a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual FormatMetadata&amp; OpenColorIO::LogAffineTransform::getFormatMetadata</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="715" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1af6eadf2e3885dca5f60ff8b16533ec4e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::LogAffineTransform::equals</definition>
+        <argsstring>(const LogAffineTransform &amp;other) const noexcept=0</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1LogAffineTransform" kindref="compound">LogAffineTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Checks if this exactly equals other. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="718" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a75cf663f34e6d5831f448cf0a88cbb12" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::LogAffineTransform::getBase</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="720" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1afc31fd8510b799168264c96e57fd0be9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::setBase</definition>
+        <argsstring>(double base) noexcept=0</argsstring>
+        <name>setBase</name>
+        <param>
+          <type>double</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="721" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a297300384b6f5c7af84efd5806670b4b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::getLogSideSlopeValue</definition>
+        <argsstring>(double(&amp;values)[3]) const noexcept=0</argsstring>
+        <name>getLogSideSlopeValue</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="725" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1aeb788a2260c14e8118fd6090e22274d0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::setLogSideSlopeValue</definition>
+        <argsstring>(const double(&amp;values)[3]) noexcept=0</argsstring>
+        <name>setLogSideSlopeValue</name>
+        <param>
+          <type>const double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="726" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1af6af5bc0e25ca6e37646357a3ca9b98f" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::getLogSideOffsetValue</definition>
+        <argsstring>(double(&amp;values)[3]) const noexcept=0</argsstring>
+        <name>getLogSideOffsetValue</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="727" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a3f8b46b06338b9ff001482aa5fac536d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::setLogSideOffsetValue</definition>
+        <argsstring>(const double(&amp;values)[3]) noexcept=0</argsstring>
+        <name>setLogSideOffsetValue</name>
+        <param>
+          <type>const double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="728" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1ab412b6bdef51a26e0e5bc46629b411bb" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::getLinSideSlopeValue</definition>
+        <argsstring>(double(&amp;values)[3]) const noexcept=0</argsstring>
+        <name>getLinSideSlopeValue</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="729" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a1719ea5462b98cb51f3f56ed0489330e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::setLinSideSlopeValue</definition>
+        <argsstring>(const double(&amp;values)[3]) noexcept=0</argsstring>
+        <name>setLinSideSlopeValue</name>
+        <param>
+          <type>const double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="730" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1aeba162289343026db384647354ee3086" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::getLinSideOffsetValue</definition>
+        <argsstring>(double(&amp;values)[3]) const noexcept=0</argsstring>
+        <name>getLinSideOffsetValue</name>
+        <param>
+          <type>double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="731" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a6d288826653c11a93fd5b553201f970e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::LogAffineTransform::setLinSideOffsetValue</definition>
+        <argsstring>(const double(&amp;values)[3]) noexcept=0</argsstring>
+        <name>setLinSideOffsetValue</name>
+        <param>
+          <type>const double(&amp;)</type>
+          <declname>values</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="732" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1abf4cdae2a33e5c9c5bafacb57ac99dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::LogAffineTransform::LogAffineTransform</definition>
+        <argsstring>(const LogAffineTransform &amp;)=delete</argsstring>
+        <name>LogAffineTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1LogAffineTransform" kindref="compound">LogAffineTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="734" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a839623543d4d4eca4b0d23309d5a73c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1LogAffineTransform" kindref="compound">LogAffineTransform</ref> &amp;</type>
+        <definition>LogAffineTransform&amp; OpenColorIO::LogAffineTransform::operator=</definition>
+        <argsstring>(const LogAffineTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1LogAffineTransform" kindref="compound">LogAffineTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="735" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1a48dcca0e985b0d1a764c6d7b75adb58e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::LogAffineTransform::~LogAffineTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LogAffineTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="736" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1LogAffineTransform_1aea0b66354654ee7d6469191601b6a346" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::LogAffineTransform::LogAffineTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>LogAffineTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="739" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Applies a logarithm with an affine transform before and after. Represents the Cineon lin-to-log type transforms::</para>
+<para>logSideSlope * log( linSideSlope * color + linSideOffset, base) + logSideOffset</para>
+<para><itemizedlist>
+<listitem><para>Default values are: 1. * log( 1. * color + 0., 2.) + 0.</para>
+</listitem><listitem><para>The alpha channel is not affected. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::LogAffineTransform</label>
+        <link refid="classOpenColorIO_1_1LogAffineTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::LogAffineTransform</label>
+        <link refid="classOpenColorIO_1_1LogAffineTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="710" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="709" bodyend="740"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1aafee7ed68399556bddee9c4b0ca359a1" prot="public" virt="non-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1af6eadf2e3885dca5f60ff8b16533ec4e" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>equals</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a75cf663f34e6d5831f448cf0a88cbb12" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getBase</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a4875e475fcbd484388790b17f38a5593" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a785932d0b0e33a9ede0f4c1cf089131a" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1aeba162289343026db384647354ee3086" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getLinSideOffsetValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1ab412b6bdef51a26e0e5bc46629b411bb" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getLinSideSlopeValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1af6af5bc0e25ca6e37646357a3ca9b98f" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getLogSideOffsetValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a297300384b6f5c7af84efd5806670b4b" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>getLogSideSlopeValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1abf4cdae2a33e5c9c5bafacb57ac99dcc" prot="public" virt="non-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>LogAffineTransform</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1aea0b66354654ee7d6469191601b6a346" prot="protected" virt="non-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>LogAffineTransform</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a839623543d4d4eca4b0d23309d5a73c9" prot="public" virt="non-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::LogAffineTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1afc31fd8510b799168264c96e57fd0be9" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>setBase</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a6d288826653c11a93fd5b553201f970e" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>setLinSideOffsetValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a1719ea5462b98cb51f3f56ed0489330e" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>setLinSideSlopeValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a3f8b46b06338b9ff001482aa5fac536d" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>setLogSideOffsetValue</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1aeb788a2260c14e8118fd6090e22274d0" prot="public" virt="pure-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>setLogSideSlopeValue</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1LogAffineTransform_1a48dcca0e985b0d1a764c6d7b75adb58e" prot="public" virt="virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>~LogAffineTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::LogAffineTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1DynamicProperty" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::DynamicProperty</compoundname>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1a0540ac53f51d5ffe15f03e40a2f17447" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>DynamicPropertyType</type>
+        <definition>virtual DynamicPropertyType OpenColorIO::DynamicProperty::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="380" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1a0e9de4601adbf1d9e08c76598de24edc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>DynamicPropertyValueType</type>
+        <definition>virtual DynamicPropertyValueType OpenColorIO::DynamicProperty::getValueType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getValueType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="382" column="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1a2038c1a15e3acd4a0c19928bc4155395" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::DynamicProperty::getDoubleValue</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getDoubleValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="384" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1a142ebed774b47e42865c377b81ea3639" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::DynamicProperty::setValue</definition>
+        <argsstring>(double value)=0</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="385" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1aa0f5dd35260188108da68202ea9bbf45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::DynamicProperty::isDynamic</definition>
+        <argsstring>() const =0</argsstring>
+        <name>isDynamic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="387" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1a8f99cf28e7ff932dac89e1fbcab7b509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1DynamicProperty" kindref="compound">DynamicProperty</ref> &amp;</type>
+        <definition>DynamicProperty&amp; OpenColorIO::DynamicProperty::operator=</definition>
+        <argsstring>(const DynamicProperty &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1DynamicProperty" kindref="compound">DynamicProperty</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="389" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1aba28b917c6572865fc08495a40148dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::DynamicProperty::~DynamicProperty</definition>
+        <argsstring>()</argsstring>
+        <name>~DynamicProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="390" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1afa4dc25d2c324a974a63c7eb6d1813e1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::DynamicProperty::DynamicProperty</definition>
+        <argsstring>()</argsstring>
+        <name>DynamicProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="393" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DynamicProperty_1a5208e27e2898c11b394ae97419758fa9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::DynamicProperty::DynamicProperty</definition>
+        <argsstring>(const DynamicProperty &amp;)</argsstring>
+        <name>DynamicProperty</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1DynamicProperty" kindref="compound">DynamicProperty</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="394" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows transform parameter values to be set on-the-fly (after finalization). For example, to modify the exposure in a viewport. </para>
+    </detaileddescription>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="378" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="377" bodyend="395"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1afa4dc25d2c324a974a63c7eb6d1813e1" prot="protected" virt="non-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>DynamicProperty</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1a5208e27e2898c11b394ae97419758fa9" prot="protected" virt="non-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>DynamicProperty</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1a2038c1a15e3acd4a0c19928bc4155395" prot="public" virt="pure-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>getDoubleValue</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1a0540ac53f51d5ffe15f03e40a2f17447" prot="public" virt="pure-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>getType</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1a0e9de4601adbf1d9e08c76598de24edc" prot="public" virt="pure-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>getValueType</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1aa0f5dd35260188108da68202ea9bbf45" prot="public" virt="pure-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>isDynamic</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1a8f99cf28e7ff932dac89e1fbcab7b509" prot="public" virt="non-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1a142ebed774b47e42865c377b81ea3639" prot="public" virt="pure-virtual"><scope>OpenColorIO::DynamicProperty</scope><name>setValue</name></member>
+      <member refid="classOpenColorIO_1_1DynamicProperty_1aba28b917c6572865fc08495a40148dd8" prot="public" virt="virtual"><scope>OpenColorIO::DynamicProperty</scope><name>~DynamicProperty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

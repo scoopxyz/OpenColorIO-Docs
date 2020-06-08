@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1FileRules" kind="class" language="C++" prot="public">
+    <compoundname>OpenColorIO::FileRules</compoundname>
+    <includes refid="OpenColorIO_8h" local="no">OpenColorIO.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenColorIO_1_1FileRules_1ac3da7e21a05bf8852638db7e4dd1b81a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Config</definition>
+        <argsstring></argsstring>
+        <name>Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="784" column="5" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenColorIO_1_1FileRules_1a1512ad5c61dbfa97ad977b9f1345a2ac" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::FileRules::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="787" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a501bcc7c5c2e2d2dddc79855b3d5965c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FileRulesRcPtr</type>
+        <definition>static FileRulesRcPtr OpenColorIO::FileRules::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates <ref refid="classOpenColorIO_1_1FileRules" kindref="compound">FileRules</ref> for a <ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref>. File rules will contain the default rule using the default role. The default rule cannot be removed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="705" column="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1afd05b37b6bd7a0905918ac6026c86f2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FileRulesRcPtr</type>
+        <definition>FileRulesRcPtr OpenColorIO::FileRules::createEditableCopy</definition>
+        <argsstring>() const</argsstring>
+        <name>createEditableCopy</name>
+        <briefdescription>
+<para>The method clones the content decoupling the two instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="708" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a806573201142e0f8b05fffed5a03c783" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t OpenColorIO::FileRules::getNumEntries</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getNumEntries</name>
+        <briefdescription>
+<para>Does include default rule. Result will be at least 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="711" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a2c39156c81841f5177968744172a19be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t OpenColorIO::FileRules::getIndexForRule</definition>
+        <argsstring>(const char *ruleName) const</argsstring>
+        <name>getIndexForRule</name>
+        <param>
+          <type>const char *</type>
+          <declname>ruleName</declname>
+        </param>
+        <briefdescription>
+<para>Get the index from the rule name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="714" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a6bbd504b63865441b1cf71e20c9934d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getName</definition>
+        <argsstring>(size_t ruleIndex) const</argsstring>
+        <name>getName</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get name of the rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="717" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a08d37aa6a41982e4bdb8a3935375c905" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getPattern</definition>
+        <argsstring>(size_t ruleIndex) const</argsstring>
+        <name>getPattern</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Setting pattern will erase regex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="720" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a3194ca1a18c2e5092d3e41ea4d724058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::setPattern</definition>
+        <argsstring>(size_t ruleIndex, const char *pattern)</argsstring>
+        <name>setPattern</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="721" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1af784c293aa0d88e9e3b692fe5ff487ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getExtension</definition>
+        <argsstring>(size_t ruleIndex) const</argsstring>
+        <name>getExtension</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Setting extension will erase regex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="724" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a96d8389ed2f1a4b787b749945c817a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::setExtension</definition>
+        <argsstring>(size_t ruleIndex, const char *extension)</argsstring>
+        <name>setExtension</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="725" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a77248be1dbea31c85fa57498c28073a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getRegex</definition>
+        <argsstring>(size_t ruleIndex) const</argsstring>
+        <name>getRegex</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Setting a regex will erase pattern &amp; extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="728" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ad42808189339b3df6c85116ed1936106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::setRegex</definition>
+        <argsstring>(size_t ruleIndex, const char *regex)</argsstring>
+        <name>setRegex</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="729" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a7d51b6cd417c9b6fb16bfa1f9f3e10f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getColorSpace</definition>
+        <argsstring>(size_t ruleIndex) const</argsstring>
+        <name>getColorSpace</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Set the rule&apos;s color space (may also be a role). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="732" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a38ea76828d802930f9bf8cab6ce5e5c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::setColorSpace</definition>
+        <argsstring>(size_t ruleIndex, const char *colorSpace)</argsstring>
+        <name>setColorSpace</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>colorSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="733" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ac598d774e302baa851249d10817f5082" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t OpenColorIO::FileRules::getNumCustomKeys</definition>
+        <argsstring>(size_t ruleIndex) const</argsstring>
+        <name>getNumCustomKeys</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get number of key/value pairs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="736" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ab3e1c1884d7e8eb1140544b45211b490" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getCustomKeyName</definition>
+        <argsstring>(size_t ruleIndex, size_t key) const</argsstring>
+        <name>getCustomKeyName</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get name of key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="738" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1aa7fdba72d684291054409ef3f7fa0560" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::FileRules::getCustomKeyValue</definition>
+        <argsstring>(size_t ruleIndex, size_t key) const</argsstring>
+        <name>getCustomKeyValue</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get name of value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="740" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a0e99cb4dbe9650b2ced651d8bb55a225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::setCustomKey</definition>
+        <argsstring>(size_t ruleIndex, const char *key, const char *value)</argsstring>
+        <name>setCustomKey</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a key/value or replace value if key exists. Setting a NULL or an empty value will erase the key. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="743" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a0ea2598fb07a6ea42c67822743a7e34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::insertRule</definition>
+        <argsstring>(size_t ruleIndex, const char *name, const char *colorSpace, const char *pattern, const char *extension)</argsstring>
+        <name>insertRule</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>colorSpace</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert a rule at a given ruleIndex. Rule currently at ruleIndex will be pushed to index: ruleIndex + 1. Name must be unique.<itemizedlist>
+<listitem><para>&quot;Default&quot; is a reserved name for the default rule. The default rule is automatically added and can&apos;t be removed. (see <ref refid="classOpenColorIO_1_1FileRules_1a81ceb40de85ba5e5ba2e8b91c002a15b" kindref="member">FileRules::setDefaultRuleColorSpace</ref>`).</para>
+</listitem><listitem><para>&quot;ColorSpaceNamePathSearch&quot; is also a reserved name (see <ref refid="classOpenColorIO_1_1FileRules_1a67548ec76cc5c258ba0c1b7662094e87" kindref="member">FileRules::insertPathSearchRule</ref>`).</para>
+</listitem></itemizedlist>
+</para>
+<para>Will throw if ruleIndex is not less than <ref refid="classOpenColorIO_1_1FileRules_1a806573201142e0f8b05fffed5a03c783" kindref="member">FileRules::getNumEntries</ref>`. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="754" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ab6a418f149f7fa06b04440f14705b578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::insertRule</definition>
+        <argsstring>(size_t ruleIndex, const char *name, const char *colorSpace, const char *regex)</argsstring>
+        <name>insertRule</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>colorSpace</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="756" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a67548ec76cc5c258ba0c1b7662094e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::insertPathSearchRule</definition>
+        <argsstring>(size_t ruleIndex)</argsstring>
+        <name>insertPathSearchRule</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function to insert a rule that uses cpp:func:&apos;<ref refid="classOpenColorIO_1_1Config" kindref="compound">Config</ref>:parseColorSpaceFromString` to search the path for any of the color spaces named in the config (as per OCIO v1). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="761" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a81ceb40de85ba5e5ba2e8b91c002a15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::setDefaultRuleColorSpace</definition>
+        <argsstring>(const char *colorSpace)</argsstring>
+        <name>setDefaultRuleColorSpace</name>
+        <param>
+          <type>const char *</type>
+          <declname>colorSpace</declname>
+        </param>
+        <briefdescription>
+<para>Helper function tp set the color space for the default rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="763" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a1a777acc9627977992a921051400be6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::removeRule</definition>
+        <argsstring>(size_t ruleIndex)</argsstring>
+        <name>removeRule</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default rule can&apos;t be removed. Will throw if ruleIndex + 1 is not less than <ref refid="classOpenColorIO_1_1FileRules_1a806573201142e0f8b05fffed5a03c783" kindref="member">FileRules::getNumEntries</ref>`. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="767" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1acf6ee6138b5cc931f2b1359cbf77527b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::increaseRulePriority</definition>
+        <argsstring>(size_t ruleIndex)</argsstring>
+        <name>increaseRulePriority</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Move a rule closer to the start of the list by one position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="770" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ab961d8544b24f67a1e7fd6e3d5f99078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::FileRules::decreaseRulePriority</definition>
+        <argsstring>(size_t ruleIndex)</argsstring>
+        <name>decreaseRulePriority</name>
+        <param>
+          <type>size_t</type>
+          <declname>ruleIndex</declname>
+        </param>
+        <briefdescription>
+<para>Move a rule closer to the end of the list by one position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="773" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a6e2981a1fc38309f55068980b2a75dae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::FileRules::FileRules</definition>
+        <argsstring>(const FileRules &amp;)=delete</argsstring>
+        <name>FileRules</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1FileRules" kindref="compound">FileRules</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="775" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ab7f8ce8bc88eae6b7a5bc3dd93ddeb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1FileRules" kindref="compound">FileRules</ref> &amp;</type>
+        <definition>FileRules&amp; OpenColorIO::FileRules::operator=</definition>
+        <argsstring>(const FileRules &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1FileRules" kindref="compound">FileRules</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="776" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1ae2ad3b318a102497f5adef2c40c1f569" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::FileRules::~FileRules</definition>
+        <argsstring>()</argsstring>
+        <name>~FileRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="777" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a91d5f3e9cdf2e4e24e13ac67e3e98ca9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::FileRules::FileRules</definition>
+        <argsstring>()</argsstring>
+        <name>FileRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="780" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a7fdbe063f003e17d9a952fd3f9c53881" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::FileRules::getImpl</definition>
+        <argsstring>()</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="788" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="788" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1a6e00c3eaaade9a1987bd175d64946dc0" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl *</type>
+        <definition>const Impl* OpenColorIO::FileRules::getImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="789" column="17" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="789" bodyend="789"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FileRules_1afce97d4737cf848001ce6373cf64ffd6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenColorIO::FileRules::deleter</definition>
+        <argsstring>(FileRules *c)</argsstring>
+        <name>deleter</name>
+        <param>
+          <type><ref refid="classOpenColorIO_1_1FileRules" kindref="compound">FileRules</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="782" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The File Rules are a set of filepath to color space mappings that are evaluated from first to last. The first rule to match is what determines which color space is returned. There are four types of rules available. Each rule type has a name key that may be used by applications to refer to that rule. Name values must be unique i.e. using a case insensitive comparison. The other keys depend on the rule type:</para>
+<para><itemizedlist>
+<listitem><para>Basic Rule: This is the basic rule type that uses Unix glob style pattern matching and is thus very easy to use. It contains the keys:<itemizedlist>
+<listitem><para>name: Name of the rule</para>
+</listitem><listitem><para>colorspace: Color space name to be returned.</para>
+</listitem><listitem><para>pattern: Glob pattern to be used for the main part of the name/path.</para>
+</listitem><listitem><para>extension: Glob pattern to be used for the file extension. Note that if glob tokens are not used, the extension will be used in a non-case-sensitive way by default.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Regex Rule: This is similar to the basic rule but allows additional capabilities for power-users. It contains the keys:<itemizedlist>
+<listitem><para>name: Name of the rule</para>
+</listitem><listitem><para>colorspace: Color space name to be returned.</para>
+</listitem><listitem><para>regex: Regular expression to be evaluated.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>OCIO v1 style Rule: This rule allows the use of the OCIO v1 style, where the string is searched for color space names from the config. This rule may occur 0 or 1 times in the list. The position in the list prioritizes it with respect to the other rules. StrictParsing is not used. If no color space is found in the path, the rule will not match and the next rule will be considered. See <ref refid="classOpenColorIO_1_1FileRules_1a67548ec76cc5c258ba0c1b7662094e87" kindref="member">FileRules::insertPathSearchRule</ref>`. It has the key:<itemizedlist>
+<listitem><para>name: Must be &quot;ColorSpaceNamePathSearch&quot;.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Default Rule: The file_rules must always end with this rule. If no prior rules match, this rule specifies the color space applications will use. See <ref refid="classOpenColorIO_1_1FileRules_1a81ceb40de85ba5e5ba2e8b91c002a15b" kindref="member">FileRules::setDefaultRuleColorSpace</ref>`. It has the keys:<itemizedlist>
+<listitem><para>name: must be &quot;Default&quot;.</para>
+</listitem><listitem><para>colorspace : Color space name to be returned.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Custom string keys and associated string values may be used to convey app or workflow-specific information, e.g. whether the color space should be left as is or converted into a working space.</para>
+<para>Getters and setters are using the rule position, they will throw if the position is not valid. If the rule at the specified position does not implement the requested property getter will return NULL and setter will throw. </para>
+    </detaileddescription>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="701" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="700" bodyend="790"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1FileRules_1ac3da7e21a05bf8852638db7e4dd1b81a" prot="private" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>Config</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a501bcc7c5c2e2d2dddc79855b3d5965c" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1afd05b37b6bd7a0905918ac6026c86f2c" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ab961d8544b24f67a1e7fd6e3d5f99078" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>decreaseRulePriority</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1afce97d4737cf848001ce6373cf64ffd6" prot="private" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>deleter</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a6e2981a1fc38309f55068980b2a75dae" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>FileRules</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a91d5f3e9cdf2e4e24e13ac67e3e98ca9" prot="private" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>FileRules</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a7d51b6cd417c9b6fb16bfa1f9f3e10f2" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ab3e1c1884d7e8eb1140544b45211b490" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getCustomKeyName</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1aa7fdba72d684291054409ef3f7fa0560" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getCustomKeyValue</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1af784c293aa0d88e9e3b692fe5ff487ea" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getExtension</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a7fdbe063f003e17d9a952fd3f9c53881" prot="private" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a6e00c3eaaade9a1987bd175d64946dc0" prot="private" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a2c39156c81841f5177968744172a19be" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getIndexForRule</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a6bbd504b63865441b1cf71e20c9934d8" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getName</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ac598d774e302baa851249d10817f5082" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getNumCustomKeys</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a806573201142e0f8b05fffed5a03c783" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getNumEntries</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a08d37aa6a41982e4bdb8a3935375c905" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getPattern</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a77248be1dbea31c85fa57498c28073a0" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>getRegex</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1acf6ee6138b5cc931f2b1359cbf77527b" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>increaseRulePriority</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a67548ec76cc5c258ba0c1b7662094e87" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>insertPathSearchRule</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a0ea2598fb07a6ea42c67822743a7e34c" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>insertRule</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ab6a418f149f7fa06b04440f14705b578" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>insertRule</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a1512ad5c61dbfa97ad977b9f1345a2ac" prot="private" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>m_impl</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ab7f8ce8bc88eae6b7a5bc3dd93ddeb2e" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a1a777acc9627977992a921051400be6e" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>removeRule</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a38ea76828d802930f9bf8cab6ce5e5c6" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>setColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a0e99cb4dbe9650b2ced651d8bb55a225" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>setCustomKey</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a81ceb40de85ba5e5ba2e8b91c002a15b" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>setDefaultRuleColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a96d8389ed2f1a4b787b749945c817a87" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>setExtension</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1a3194ca1a18c2e5092d3e41ea4d724058" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>setPattern</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ad42808189339b3df6c85116ed1936106" prot="public" virt="non-virtual"><scope>OpenColorIO::FileRules</scope><name>setRegex</name></member>
+      <member refid="classOpenColorIO_1_1FileRules_1ae2ad3b318a102497f5adef2c40c1f569" prot="public" virt="virtual"><scope>OpenColorIO::FileRules</scope><name>~FileRules</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

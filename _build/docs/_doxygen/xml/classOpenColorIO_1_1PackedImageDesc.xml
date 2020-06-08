@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1PackedImageDesc" kind="class" language="C++" prot="public">
+    <compoundname>OpenColorIO::PackedImageDesc</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1ImageDesc" prot="public" virt="non-virtual">OpenColorIO::ImageDesc</basecompoundref>
+    <includes refid="OpenColorIO_8h" local="no">OpenColorIO.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenColorIO_1_1PackedImageDesc_1a4eb57532e780f77e4f4ad8203adffeb7" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::PackedImageDesc::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1671" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="1670" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a788cb181610080ffc9361d2b4548045b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::PackedImageDesc::PackedImageDesc</definition>
+        <argsstring>(void *data, long width, long height, long numChannels)</argsstring>
+        <name>PackedImageDesc</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>numChannels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>numChannels must be 3 (RGB) or 4 (RGBA). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1615" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1afc65ced10ca559e072c1cdf73c1b41ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::PackedImageDesc::PackedImageDesc</definition>
+        <argsstring>(void *data, long width, long height, long numChannels, BitDepth bitDepth, ptrdiff_t chanStrideBytes, ptrdiff_t xStrideBytes, ptrdiff_t yStrideBytes)</argsstring>
+        <name>PackedImageDesc</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>numChannels</declname>
+        </param>
+        <param>
+          <type>BitDepth</type>
+          <declname>bitDepth</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>chanStrideBytes</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>xStrideBytes</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>yStrideBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>numChannels must be 3 (RGB) or 4 (RGBA). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1622" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1ac5a46eb620be18210aac95fa85844cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::PackedImageDesc::PackedImageDesc</definition>
+        <argsstring>(void *data, long width, long height, ChannelOrdering chanOrder)</argsstring>
+        <name>PackedImageDesc</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>ChannelOrdering</type>
+          <declname>chanOrder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1630" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a0c5a3c52f5b0b08ffb96899680f98113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::PackedImageDesc::PackedImageDesc</definition>
+        <argsstring>(void *data, long width, long height, ChannelOrdering chanOrder, BitDepth bitDepth, ptrdiff_t chanStrideBytes, ptrdiff_t xStrideBytes, ptrdiff_t yStrideBytes)</argsstring>
+        <name>PackedImageDesc</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>ChannelOrdering</type>
+          <declname>chanOrder</declname>
+        </param>
+        <param>
+          <type>BitDepth</type>
+          <declname>bitDepth</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>chanStrideBytes</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>xStrideBytes</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>yStrideBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1634" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1ab848802420f1c99f4f3d4690ebae60ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::PackedImageDesc::~PackedImageDesc</definition>
+        <argsstring>()</argsstring>
+        <name>~PackedImageDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1642" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a401cd1bb0cbe56bc82ae20c3d11aa801" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ChannelOrdering</type>
+        <definition>ChannelOrdering OpenColorIO::PackedImageDesc::getChannelOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>getChannelOrder</name>
+        <briefdescription>
+<para>Get the channel ordering of all the pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1645" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1aa8d77df11016b07dc2d3851758bedda5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>BitDepth</type>
+        <definition>BitDepth OpenColorIO::PackedImageDesc::getBitDepth</definition>
+        <argsstring>() const override</argsstring>
+        <name>getBitDepth</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1a587ded419db9bab4b4a26186ac597016">getBitDepth</reimplements>
+        <briefdescription>
+<para>Get the bit-depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1648" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a46a31af87b9147fed5c23f7ef54ee3ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* OpenColorIO::PackedImageDesc::getData</definition>
+        <argsstring>() const</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get a pointer to the first color channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1651" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a115cc4df8b19a00aafb2d10b36f207f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>void* OpenColorIO::PackedImageDesc::getRData</definition>
+        <argsstring>() const override</argsstring>
+        <name>getRData</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1adc6ecdc41da779304d016698330edffd">getRData</reimplements>
+        <briefdescription>
+<para>Get a pointer to the red channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1653" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a7e1c83aae77506010c0eb0dea03ddc9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>void* OpenColorIO::PackedImageDesc::getGData</definition>
+        <argsstring>() const override</argsstring>
+        <name>getGData</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1ae052c596ade8ca8b7d1aa5fbb47b553b">getGData</reimplements>
+        <briefdescription>
+<para>Get a pointer to the green channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1654" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a432b314ed7d6be542fd0b336f6b25516" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>void* OpenColorIO::PackedImageDesc::getBData</definition>
+        <argsstring>() const override</argsstring>
+        <name>getBData</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1ae1338b917a4d781f5766000178c58786">getBData</reimplements>
+        <briefdescription>
+<para>Get a pointer to the blue channel of the first pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1655" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a32a30d1a1508103141dc52e0698049c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>void* OpenColorIO::PackedImageDesc::getAData</definition>
+        <argsstring>() const override</argsstring>
+        <name>getAData</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1a15c61cbda4c5445834b0a3106c284656">getAData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a pointer to the alpha channel of the first pixel or null as alpha channel is optional. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1656" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1ada186e515bae6a9945d5dab7dba7db8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long OpenColorIO::PackedImageDesc::getWidth</definition>
+        <argsstring>() const override</argsstring>
+        <name>getWidth</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1ac2a83b49fc3b977b6c96715442ded8b3">getWidth</reimplements>
+        <briefdescription>
+<para>Get the width to process (where x position starts at 0 and ends at width-1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1658" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a681729c76c7ce167c2808d9d102cdcab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long OpenColorIO::PackedImageDesc::getHeight</definition>
+        <argsstring>() const override</argsstring>
+        <name>getHeight</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1a6d9053b6f97c99a7cfc0704ee13ba913">getHeight</reimplements>
+        <briefdescription>
+<para>Get the height to process (where y position starts at 0 and ends at height-1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1659" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a52222564d4285e04c08727cd1ef4eb4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long OpenColorIO::PackedImageDesc::getNumChannels</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1660" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a3b91477ec5b408a7f2979d14a2221b1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t OpenColorIO::PackedImageDesc::getChanStrideBytes</definition>
+        <argsstring>() const</argsstring>
+        <name>getChanStrideBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1662" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1abe1955008e92f8836386474dbef178f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t OpenColorIO::PackedImageDesc::getXStrideBytes</definition>
+        <argsstring>() const override</argsstring>
+        <name>getXStrideBytes</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1a0b461dafc6870766bc27e498c83798f5">getXStrideBytes</reimplements>
+        <briefdescription>
+<para>Get the step in bytes to find the same color channel of the next pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1663" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1abf00acf369957b0c8fdc133661054fbe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t OpenColorIO::PackedImageDesc::getYStrideBytes</definition>
+        <argsstring>() const override</argsstring>
+        <name>getYStrideBytes</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1a0d0b79269fc2faa3ed92f5fda392492d">getYStrideBytes</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the step in bytes to find the same color channel of the pixel at the same position in the next line. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1664" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a12abf80444ccb5d3238e9960e5e5467d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::PackedImageDesc::isRGBAPacked</definition>
+        <argsstring>() const override</argsstring>
+        <name>isRGBAPacked</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1ab8d808fc1bb93ee9b59a3510673c234c">isRGBAPacked</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is the image buffer in packed mode with the 4 color channels? (&quot;Packed&quot; here means that XStrideBytes is 4x the bytes per channel, so it is more specific than simply any <ref refid="classOpenColorIO_1_1PackedImageDesc" kindref="compound">PackedImageDesc</ref>.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1666" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a68447a5d07665bfd97760cabdc12dd79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::PackedImageDesc::isFloat</definition>
+        <argsstring>() const override</argsstring>
+        <name>isFloat</name>
+        <reimplements refid="classOpenColorIO_1_1ImageDesc_1ab52411976beb929d92dc82fd31d79586">isFloat</reimplements>
+        <briefdescription>
+<para>Is the image buffer 32-bit float? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1667" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a74ad5577466e8de8e06161eb3fbd099a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::PackedImageDesc::getImpl</definition>
+        <argsstring>()</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1672" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="1672" bodyend="1672"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1adc0221c8dd435e4690c10df035731be5" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl *</type>
+        <definition>const Impl* OpenColorIO::PackedImageDesc::getImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1673" column="17" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="1673" bodyend="1673"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1aef93cf2acae06d05bd03ee6cf7f68fef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::PackedImageDesc::PackedImageDesc</definition>
+        <argsstring>()</argsstring>
+        <name>PackedImageDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1675" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1a66bb33676a09adfdaf043b043df1f230" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::PackedImageDesc::PackedImageDesc</definition>
+        <argsstring>(const PackedImageDesc &amp;)</argsstring>
+        <name>PackedImageDesc</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1PackedImageDesc" kindref="compound">PackedImageDesc</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1676" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1PackedImageDesc_1aa96559920b5b39448f6fb477d667eaf9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1PackedImageDesc" kindref="compound">PackedImageDesc</ref> &amp;</type>
+        <definition>PackedImageDesc&amp; OpenColorIO::PackedImageDesc::operator=</definition>
+        <argsstring>(const PackedImageDesc &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1PackedImageDesc" kindref="compound">PackedImageDesc</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1677" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>All the constructors expect a pointer to packed image data (such as rgbrgbrgb or rgbargbargba) starting at the first color channel of the first pixel to process (which does not need to be the first pixel of the image). The number of channels must be greater than or equal to 3. If a 4th channel is specified, it is assumed to be alpha information. Channels &gt; 4 will be ignored.</para>
+<para><simplesect kind="note"><para>The methods assume the <ref refid="classOpenColorIO_1_1CPUProcessor" kindref="compound">CPUProcessor</ref> bit-depth type for the data pointer. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::ImageDesc</label>
+        <link refid="classOpenColorIO_1_1ImageDesc"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::PackedImageDesc</label>
+        <link refid="classOpenColorIO_1_1PackedImageDesc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::ImageDesc</label>
+        <link refid="classOpenColorIO_1_1ImageDesc"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::PackedImageDesc</label>
+        <link refid="classOpenColorIO_1_1PackedImageDesc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="1610" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="1609" bodyend="1678"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a32a30d1a1508103141dc52e0698049c0" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getAData</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a432b314ed7d6be542fd0b336f6b25516" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getBData</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1aa8d77df11016b07dc2d3851758bedda5" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a401cd1bb0cbe56bc82ae20c3d11aa801" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getChannelOrder</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a3b91477ec5b408a7f2979d14a2221b1b" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getChanStrideBytes</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a46a31af87b9147fed5c23f7ef54ee3ce" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getData</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a7e1c83aae77506010c0eb0dea03ddc9e" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getGData</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a681729c76c7ce167c2808d9d102cdcab" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getHeight</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a74ad5577466e8de8e06161eb3fbd099a" prot="private" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1adc0221c8dd435e4690c10df035731be5" prot="private" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a52222564d4285e04c08727cd1ef4eb4b" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getNumChannels</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a115cc4df8b19a00aafb2d10b36f207f8" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getRData</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1ada186e515bae6a9945d5dab7dba7db8b" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getWidth</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1abe1955008e92f8836386474dbef178f6" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getXStrideBytes</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1abf00acf369957b0c8fdc133661054fbe" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>getYStrideBytes</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1af76dd4b14dd82a438875df2119dbf5a6" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>ImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a68447a5d07665bfd97760cabdc12dd79" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>isFloat</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a12abf80444ccb5d3238e9960e5e5467d" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>isRGBAPacked</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a4eb57532e780f77e4f4ad8203adffeb7" prot="private" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>m_impl</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1aa96559920b5b39448f6fb477d667eaf9" prot="private" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a788cb181610080ffc9361d2b4548045b" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>PackedImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1afc65ced10ca559e072c1cdf73c1b41ce" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>PackedImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1ac5a46eb620be18210aac95fa85844cef" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>PackedImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a0c5a3c52f5b0b08ffb96899680f98113" prot="public" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>PackedImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1aef93cf2acae06d05bd03ee6cf7f68fef" prot="private" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>PackedImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1a66bb33676a09adfdaf043b043df1f230" prot="private" virt="non-virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>PackedImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1ImageDesc_1af72fd1bc51285ec8093483b4de78fae5" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>~ImageDesc</name></member>
+      <member refid="classOpenColorIO_1_1PackedImageDesc_1ab848802420f1c99f4f3d4690ebae60ad" prot="public" virt="virtual"><scope>OpenColorIO::PackedImageDesc</scope><name>~PackedImageDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

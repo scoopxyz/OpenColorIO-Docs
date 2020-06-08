@@ -1,0 +1,13 @@
+# Target labels
+ pystring_install
+# Source files and their labels
+/home/fawlty/temp_dev/OpenColorIO-2/_build/CMakeFiles/pystring_install
+/home/fawlty/temp_dev/OpenColorIO-2/_build/CMakeFiles/pystring_install.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/CMakeFiles/pystring_install-complete.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-install.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-mkdir.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-download.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-update.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-patch.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-configure.rule
+/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-stamp/pystring_install-build.rule

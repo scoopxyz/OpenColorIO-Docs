@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1Lut3DTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::Lut3DTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a9ed010ffc1775c090e82b8697b350e77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Lut3DTransformRcPtr</type>
+        <definition>static Lut3DTransformRcPtr OpenColorIO::Lut3DTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Create an identity 3D-LUT of size 2x2x2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="964" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1aed5d764d00b66a9f009ada7651be9a4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Lut3DTransformRcPtr</type>
+        <definition>static Lut3DTransformRcPtr OpenColorIO::Lut3DTransform::Create</definition>
+        <argsstring>(unsigned long gridSize)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>gridSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an identity 3D-LUT with specific grid size. Will throw for grid size larger than 129. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="968" column="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1aa8f576383ed4bc78f4165888d3550ef7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>BitDepth</type>
+        <definition>virtual BitDepth OpenColorIO::Lut3DTransform::getFileOutputBitDepth</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFileOutputBitDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="970" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a53624857434b59ccd27cde65caca05c9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Lut3DTransform::setFileOutputBitDepth</definition>
+        <argsstring>(BitDepth bitDepth) noexcept=0</argsstring>
+        <name>setFileOutputBitDepth</name>
+        <param>
+          <type>BitDepth</type>
+          <declname>bitDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the bit-depth associated with the LUT values read from a file or set the bit-depth of values to be written to a file (for file formats such as CLF that support multiple bit-depths). However, note that the values stored in the object are always normalized. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="976" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a53c0ef6904e3756dfe56fd50372e4ef2" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const <ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual const FormatMetadata&amp; OpenColorIO::Lut3DTransform::getFormatMetadata</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="978" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a7bef1e13efcb8dc77f6e695317dff2e0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual FormatMetadata&amp; OpenColorIO::Lut3DTransform::getFormatMetadata</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="979" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a7a3c09deee007989052d707ea3014d91" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::Lut3DTransform::equals</definition>
+        <argsstring>(const Lut3DTransform &amp;other) const noexcept=0</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Lut3DTransform" kindref="compound">Lut3DTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Checks if this exactly equals other. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="982" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1ab3de06c250ddc16e28be1b2471325758" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned long</type>
+        <definition>virtual unsigned long OpenColorIO::Lut3DTransform::getGridSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getGridSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="984" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a0ec6bba769be18073f0dd57eefd17487" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Lut3DTransform::setGridSize</definition>
+        <argsstring>(unsigned long gridSize)=0</argsstring>
+        <name>setGridSize</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>gridSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changing the grid size will reset the LUT to identity. Will throw for grid sizes larger than 129. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="987" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1aa7266e3ff4e2f5c2c0a4d9990bf84b24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Lut3DTransform::getValue</definition>
+        <argsstring>(unsigned long indexR, unsigned long indexG, unsigned long indexB, float &amp;r, float &amp;g, float &amp;b) const =0</argsstring>
+        <name>getValue</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>indexR</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>indexG</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>indexB</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="989" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1acb15fe164a6c112f68e839107a402566" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Lut3DTransform::setValue</definition>
+        <argsstring>(unsigned long indexR, unsigned long indexG, unsigned long indexB, float r, float g, float b)=0</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>indexR</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>indexG</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>indexB</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the values of a 3D-LUT. Will throw if an index is outside of the range from 0 to (gridSize-1).</para>
+<para>The LUT values are always for the &quot;forward&quot; LUT, regardless of how the transform direction is set.</para>
+<para>These values are normalized relative to what may be stored in any given LUT files. For example in a CLF file using a &quot;10i&quot; output depth, a value of 1023 in the file is normalized to 1.0. The values here are unclamped and may extend outside [0,1]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1003" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a724e836682ced5d8fdb1092537b2a814" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>Interpolation</type>
+        <definition>virtual Interpolation OpenColorIO::Lut3DTransform::getInterpolation</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getInterpolation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1008" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a0f2125db06ac01b7c7a9be652c464042" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Lut3DTransform::setInterpolation</definition>
+        <argsstring>(Interpolation algo)=0</argsstring>
+        <name>setInterpolation</name>
+        <param>
+          <type>Interpolation</type>
+          <declname>algo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1009" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a32dddd63c2dc3927896d0e65f05ab8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Lut3DTransform::Lut3DTransform</definition>
+        <argsstring>(const Lut3DTransform &amp;)=delete</argsstring>
+        <name>Lut3DTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Lut3DTransform" kindref="compound">Lut3DTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1011" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a765899760c4c227d4f588568385bad47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1Lut3DTransform" kindref="compound">Lut3DTransform</ref> &amp;</type>
+        <definition>Lut3DTransform&amp; OpenColorIO::Lut3DTransform::operator=</definition>
+        <argsstring>(const Lut3DTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Lut3DTransform" kindref="compound">Lut3DTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1012" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a27a37533bff24d97f096aab98c10ddc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::Lut3DTransform::~Lut3DTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Lut3DTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1013" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Lut3DTransform_1a5f45b07de57b1935fff16761bc316b85" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Lut3DTransform::Lut3DTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>Lut3DTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1016" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a 3D-LUT transform. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::Lut3DTransform</label>
+        <link refid="classOpenColorIO_1_1Lut3DTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::Lut3DTransform</label>
+        <link refid="classOpenColorIO_1_1Lut3DTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="961" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="960" bodyend="1017"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a9ed010ffc1775c090e82b8697b350e77" prot="public" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1aed5d764d00b66a9f009ada7651be9a4a" prot="public" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a7a3c09deee007989052d707ea3014d91" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>equals</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1aa8f576383ed4bc78f4165888d3550ef7" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getFileOutputBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a53c0ef6904e3756dfe56fd50372e4ef2" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a7bef1e13efcb8dc77f6e695317dff2e0" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1ab3de06c250ddc16e28be1b2471325758" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getGridSize</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a724e836682ced5d8fdb1092537b2a814" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getInterpolation</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1aa7266e3ff4e2f5c2c0a4d9990bf84b24" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>getValue</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a32dddd63c2dc3927896d0e65f05ab8a6" prot="public" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>Lut3DTransform</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a5f45b07de57b1935fff16761bc316b85" prot="protected" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>Lut3DTransform</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a765899760c4c227d4f588568385bad47" prot="public" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::Lut3DTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a53624857434b59ccd27cde65caca05c9" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>setFileOutputBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a0ec6bba769be18073f0dd57eefd17487" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>setGridSize</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a0f2125db06ac01b7c7a9be652c464042" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>setInterpolation</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1acb15fe164a6c112f68e839107a402566" prot="public" virt="pure-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>setValue</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1Lut3DTransform_1a27a37533bff24d97f096aab98c10ddc5" prot="public" virt="virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>~Lut3DTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::Lut3DTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

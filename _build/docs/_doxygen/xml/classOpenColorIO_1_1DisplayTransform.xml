@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1DisplayTransform" kind="class" language="C++" prot="public">
+    <compoundname>OpenColorIO::DisplayTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenColorIO_1_1DisplayTransform_1a0c1c0ef481fb07a353cd243df9b77776" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::DisplayTransform::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="367" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a663d442bf0923220d58db96db3f1154f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DisplayTransformRcPtr</type>
+        <definition>static DisplayTransformRcPtr OpenColorIO::DisplayTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="294" column="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a283fa2e290c1a2617bef803c39062a44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TransformRcPtr</type>
+        <definition>TransformRcPtr OpenColorIO::DisplayTransform::createEditableCopy</definition>
+        <argsstring>() const override</argsstring>
+        <name>createEditableCopy</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa">createEditableCopy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="296" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a6f092b6c8687dc5e328d22e4b1aff315" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>TransformDirection</type>
+        <definition>TransformDirection OpenColorIO::DisplayTransform::getDirection</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>getDirection</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6">getDirection</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="298" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a6b1afd50cfa0d168ba7dbb47f75c1b61" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setDirection</definition>
+        <argsstring>(TransformDirection dir) noexcept override</argsstring>
+        <name>setDirection</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b">setDirection</reimplements>
+        <param>
+          <type>TransformDirection</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this only affects the evaluation and not the values stored in the object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="299" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a4ee32069c96df6151db94a0e550783f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::validate</definition>
+        <argsstring>() const override</argsstring>
+        <name>validate</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0">validate</reimplements>
+        <briefdescription>
+<para>Will throw if data is not valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="302" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1aa2555f28ab7c10b7e572a6d9650472f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::DisplayTransform::getInputColorSpaceName</definition>
+        <argsstring>() const</argsstring>
+        <name>getInputColorSpaceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="304" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a6314adc4cfaabb58bc6edc11c9ddd4c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setInputColorSpaceName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setInputColorSpaceName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Step 0. Specify the incoming color space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="306" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a2a0fd8d25dbf89fd77977ce6ec1d0e5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstTransformRcPtr</type>
+        <definition>ConstTransformRcPtr OpenColorIO::DisplayTransform::getLinearCC</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinearCC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="308" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a20df1709efbf86dbe9c069544f97f3d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setLinearCC</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;cc)</argsstring>
+        <name>setLinearCC</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>cc</declname>
+        </param>
+        <briefdescription>
+<para>Step 1: Apply a Color Correction, in ROLE_SCENE_LINEAR. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="310" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a6b8b8458b3879967bec65862dc12fe47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstTransformRcPtr</type>
+        <definition>ConstTransformRcPtr OpenColorIO::DisplayTransform::getColorTimingCC</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorTimingCC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="312" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a095e507303e5e592635da679e148ae27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setColorTimingCC</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;cc)</argsstring>
+        <name>setColorTimingCC</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>cc</declname>
+        </param>
+        <briefdescription>
+<para>Step 2: Apply a color correction, in ROLE_COLOR_TIMING. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="314" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1abae66356a47d180fd024f24ce07f1f46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstTransformRcPtr</type>
+        <definition>ConstTransformRcPtr OpenColorIO::DisplayTransform::getChannelView</definition>
+        <argsstring>() const</argsstring>
+        <name>getChannelView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="316" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a670cb07559ace1fb89bff664361623ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setChannelView</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;transform)</argsstring>
+        <name>setChannelView</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Step 3: Apply the Channel Viewing Swizzle (mtx). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="318" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1ace3e6c068f1b4ab26f7f7405d371584c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::DisplayTransform::getDisplay</definition>
+        <argsstring>() const</argsstring>
+        <name>getDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="320" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a9d7924f724850668fabd956650356551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setDisplay</definition>
+        <argsstring>(const char *display)</argsstring>
+        <name>setDisplay</name>
+        <param>
+          <type>const char *</type>
+          <declname>display</declname>
+        </param>
+        <briefdescription>
+<para>Step 4: Apply the output display transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="323" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a8f5eeb6b1252556fdea27094dfa7eac9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::DisplayTransform::getView</definition>
+        <argsstring>() const</argsstring>
+        <name>getView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="325" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a84f6acce6b5a5d8cc655e765f8f2aa8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setView</definition>
+        <argsstring>(const char *view)</argsstring>
+        <name>setView</name>
+        <param>
+          <type>const char *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Specify which view transform to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="327" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1af9b259e104268a795dadf474aa876362" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstTransformRcPtr</type>
+        <definition>ConstTransformRcPtr OpenColorIO::DisplayTransform::getDisplayCC</definition>
+        <argsstring>() const</argsstring>
+        <name>getDisplayCC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="329" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1acb6c1fbff86461ee1eb4c42ddc667f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setDisplayCC</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;cc)</argsstring>
+        <name>setDisplayCC</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>cc</declname>
+        </param>
+        <briefdescription>
+<para>Step 5: Apply a post display transform color correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="331" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a81fbebd8840201dac7f51841294e5570" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::DisplayTransform::getLooksOverride</definition>
+        <argsstring>() const</argsstring>
+        <name>getLooksOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="335" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1aaa94ae61214376cb9da606a160fe7512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setLooksOverride</definition>
+        <argsstring>(const char *looks)</argsstring>
+        <name>setLooksOverride</name>
+        <param>
+          <type>const char *</type>
+          <declname>looks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A user can optionally override the looks that are, by default, used with the expected display / view combination. A common use case for this functionality is in an image viewing app, where per-shot looks are supported. If for some reason a per-shot look is not defined for the current <ref refid="classOpenColorIO_1_1Context" kindref="compound">Context</ref>, the <ref refid="classOpenColorIO_1_1Config_1a9d95b8748be3724109b8dcb439bda28b" kindref="member">Config::getProcessor</ref> fcn will not succeed by default. Thus, with this mechanism the viewing app could override to looks = &quot;&quot;, and this will allow image display to continue (though hopefully) the interface would reflect this fallback option.)</para>
+<para>Looks is a potentially comma (or colon) delimited list of lookNames, Where +/- prefixes are optionally allowed to denote forward/inverse look specification. (And forward is assumed in the absence of either) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="349" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1ad2c7914ee79c93ba61fdab0e8126622f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::DisplayTransform::getLooksOverrideEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>getLooksOverrideEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="351" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a5fc53bc30dfdf15782f44bf7d2e7abe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::DisplayTransform::setLooksOverrideEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setLooksOverrideEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify whether the lookOverride should be used, or not. This is a separate flag, as it&apos;s often useful to override &quot;looks&quot; to an empty string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="355" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1ab0bd5c3d1fc0afe983cc2c671d307c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref> &amp;</type>
+        <definition>DisplayTransform&amp; OpenColorIO::DisplayTransform::operator=</definition>
+        <argsstring>(const DisplayTransform &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="357" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a1af773f7db970fdf456b817c05137fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::DisplayTransform::~DisplayTransform</definition>
+        <argsstring>()</argsstring>
+        <name>~DisplayTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="358" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a11692eebc2303cea1a78eff7abcf5426" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::DisplayTransform::DisplayTransform</definition>
+        <argsstring>()</argsstring>
+        <name>DisplayTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="361" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a53ca8e878905985782b70d39a8f2cc5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::DisplayTransform::DisplayTransform</definition>
+        <argsstring>(const DisplayTransform &amp;)</argsstring>
+        <name>DisplayTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="362" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a9cca58a07ff54a0fa98023f81caf085b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::DisplayTransform::getImpl</definition>
+        <argsstring>()</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="368" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="368" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1ab4153f103017f9abc6c3750d319fb324" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl *</type>
+        <definition>const Impl* OpenColorIO::DisplayTransform::getImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="369" column="17" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="369" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1DisplayTransform_1a0521f7d32ad1418456c6aa7e98a9cf59" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenColorIO::DisplayTransform::deleter</definition>
+        <argsstring>(DisplayTransform *t)</argsstring>
+        <name>deleter</name>
+        <param>
+          <type><ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="364" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::DisplayTransform</label>
+        <link refid="classOpenColorIO_1_1DisplayTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::DisplayTransform</label>
+        <link refid="classOpenColorIO_1_1DisplayTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="292" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="291" bodyend="370"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a663d442bf0923220d58db96db3f1154f" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a283fa2e290c1a2617bef803c39062a44" prot="public" virt="virtual"><scope>OpenColorIO::DisplayTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a0521f7d32ad1418456c6aa7e98a9cf59" prot="private" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>deleter</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a11692eebc2303cea1a78eff7abcf5426" prot="private" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>DisplayTransform</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a53ca8e878905985782b70d39a8f2cc5f" prot="private" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>DisplayTransform</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1abae66356a47d180fd024f24ce07f1f46" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getChannelView</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a6b8b8458b3879967bec65862dc12fe47" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getColorTimingCC</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a6f092b6c8687dc5e328d22e4b1aff315" prot="public" virt="virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1ace3e6c068f1b4ab26f7f7405d371584c" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getDisplay</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1af9b259e104268a795dadf474aa876362" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getDisplayCC</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a9cca58a07ff54a0fa98023f81caf085b" prot="private" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1ab4153f103017f9abc6c3750d319fb324" prot="private" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1aa2555f28ab7c10b7e572a6d9650472f8" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getInputColorSpaceName</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a2a0fd8d25dbf89fd77977ce6ec1d0e5f" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getLinearCC</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a81fbebd8840201dac7f51841294e5570" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getLooksOverride</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1ad2c7914ee79c93ba61fdab0e8126622f" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getLooksOverrideEnabled</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a8f5eeb6b1252556fdea27094dfa7eac9" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>getView</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a0c1c0ef481fb07a353cd243df9b77776" prot="private" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>m_impl</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1ab0bd5c3d1fc0afe983cc2c671d307c2c" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::DisplayTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a670cb07559ace1fb89bff664361623ed" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setChannelView</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a095e507303e5e592635da679e148ae27" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setColorTimingCC</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a6b1afd50cfa0d168ba7dbb47f75c1b61" prot="public" virt="virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a9d7924f724850668fabd956650356551" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setDisplay</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1acb6c1fbff86461ee1eb4c42ddc667f1b" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setDisplayCC</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a6314adc4cfaabb58bc6edc11c9ddd4c2" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setInputColorSpaceName</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a20df1709efbf86dbe9c069544f97f3d8" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setLinearCC</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1aaa94ae61214376cb9da606a160fe7512" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setLooksOverride</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a5fc53bc30dfdf15782f44bf7d2e7abe9" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setLooksOverrideEnabled</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a84f6acce6b5a5d8cc655e765f8f2aa8c" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>setView</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::DisplayTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a4ee32069c96df6151db94a0e550783f5" prot="public" virt="virtual"><scope>OpenColorIO::DisplayTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1DisplayTransform_1a1af773f7db970fdf456b817c05137fd3" prot="public" virt="virtual"><scope>OpenColorIO::DisplayTransform</scope><name>~DisplayTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::DisplayTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

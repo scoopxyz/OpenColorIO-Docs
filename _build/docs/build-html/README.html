@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>OpenColorIO</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <img class="logo" src="_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="api/_index.html#api">API</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="api/change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="contributors/_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="contributors/getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>OpenColorIO</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <!-- SPDX-License-Identifier: CC-BY-4.0 --><!-- Copyright Contributors to the OpenColorIO Project. --><div class="section" id="opencolorio">
+<h1>OpenColorIO<a class="headerlink" href="#opencolorio" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://opensource.org/licenses/BSD-3-Clause"><img alt="License" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" /></a>
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/actions?query=workflow%3ACI"><img alt="Build Status" src="https://github.com/AcademySoftwareFoundation/OpenColorIO/workflows/CI/badge.svg" /></a>
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/actions?query=workflow%3AAnalysis"><img alt="Analysis Status" src="https://github.com/AcademySoftwareFoundation/OpenColorIO/workflows/Analysis/badge.svg" /></a>
+<a class="reference external" href="https://sonarcloud.io/dashboard?id=AcademySoftwareFoundation_OpenColorIO"><img alt="Quality Gate Status" src="https://sonarcloud.io/api/project_badges/measure?project=AcademySoftwareFoundation_OpenColorIO&amp;metric=alert_status" /></a>
+<a class="reference external" href="https://bestpractices.coreinfrastructure.org/projects/2612"><img alt="CII Best Practices" src="https://bestpractices.coreinfrastructure.org/projects/2612/badge" /></a></p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p><img alt="lnh" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy1.jpg" /> <img alt="lm10" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy3.jpg" /> <img alt="vd8" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy2.jpg" /></p>
+<p>OpenColorIO (OCIO) is a complete color management solution geared towards
+motion picture production with an emphasis on visual effects and computer
+animation. OCIO provides a straightforward and consistent user experience
+across all supporting applications while allowing for sophisticated back-end
+configuration options suitable for high-end production usage. OCIO is
+compatible with the Academy Color Encoding Specification (ACES) and is
+LUT-format agnostic, supporting many popular formats.</p>
+<p>OpenColorIO is released as version 1.0 and has been in development since 2003.
+OCIO represents the culmination of years of production experience earned on
+such films as SpiderMan 2 (2004), Surf’s Up (2007), Cloudy with a Chance of
+Meatballs (2009), Alice in Wonderland (2010), and many more. OpenColorIO is
+natively supported in commercial applications like Katana, Mari, Nuke, Maya,
+Houdini, Silhouette FX, and
+<a class="reference external" href="https://opencolorio.org/CompatibleSoftware.html">others</a>.</p>
+<p>OpenColorIO is free and open source software (<a class="reference internal" href="overview/license.html#license"><span class="std std-ref">LICENSE</span></a>), and
+one of several projects actvively sponsored by the ASWF
+(<a class="reference external" href="https://www.aswf.io/">Academy Software Foundation</a>).</p>
+</div>
+<div class="section" id="opencolorio-project-mission">
+<h2>OpenColorIO Project Mission<a class="headerlink" href="#opencolorio-project-mission" title="Permalink to this headline">¶</a></h2>
+<p>The OpenColorIO project is committed to providing an industry standard solution
+for highly precise, performant, and consistent color management across digital
+content creation applications and pipelines.</p>
+<p>OpenColorIO aims to:</p>
+<ul class="simple">
+<li><p>be stable, secure, and thouroughly tested on Linux, macOS, and Windows</p></li>
+<li><p>be performant on modern CPUs and GPUs</p></li>
+<li><p>be simple, scalable, and well documented</p></li>
+<li><p>be compatible with critical color and imaging standards</p></li>
+<li><p>provide lossless color processing wherever possible</p></li>
+<li><p>maintain config backwards compatability across major versions</p></li>
+<li><p>have every new feature carefully reviewed by leaders from the motion picture,
+VFX, animation, and video game industries</p></li>
+<li><p>have a healthy and active community</p></li>
+<li><p>receive wide industry adoption</p></li>
+</ul>
+</div>
+<div class="section" id="opencolorio-project-governance">
+<h2>OpenColorIO Project Governance<a class="headerlink" href="#opencolorio-project-governance" title="Permalink to this headline">¶</a></h2>
+<p>OpenColorIO is governed by the Academy Software Foundation (ASWF). See
+<a class="reference external" href="GOVERNANCE">GOVERNANCE.md</a> for detailed infomation about how the project
+operates.</p>
+</div>
+<div class="section" id="web-resources">
+<h2>Web Resources<a class="headerlink" href="#web-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Web page: <a class="reference external" href="http://opencolorio.org">http://opencolorio.org</a></p></li>
+<li><p>Mail lists:</p>
+<ul>
+<li><p>Developer: <a class="reference external" href="mailto:ocio-dev&#37;&#52;&#48;lists&#46;aswf&#46;io">ocio-dev<span>&#64;</span>lists<span>&#46;</span>aswf<span>&#46;</span>io</a></p></li>
+<li><p>User: <a class="reference external" href="mailto:ocio-user&#37;&#52;&#48;lists&#46;aswf&#46;io">ocio-user<span>&#64;</span>lists<span>&#46;</span>aswf<span>&#46;</span>io</a></p></li>
+</ul>
+</li>
+<li><p>Slack channel: <a class="reference external" href="https://opencolorio.slack.com">https://opencolorio.slack.com</a></p>
+<ul>
+<li><p>Please request access on the ocio-dev list with the email address you
+would like to be invited on.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="reference-configs">
+<h2>Reference Configs<a class="headerlink" href="#reference-configs" title="Permalink to this headline">¶</a></h2>
+<p>Reference OCIO configuration files and associated LUTs can be found at the
+Imageworks <a class="reference external" href="https://github.com/imageworks/OpenColorIO-Configs">OpenColorIO-Configs</a>
+repository.</p>
+<p>The following reference implementations are provided:</p>
+<ul class="simple">
+<li><p>SPI: Sony Pictures Imageworks</p>
+<ul>
+<li><p>spi-anim</p></li>
+<li><p>spi-vfx</p></li>
+</ul>
+</li>
+<li><p>ACES: Academy Color Encoding System</p>
+<ul>
+<li><p>aces_1.0.3</p></li>
+<li><p>aces_1.0.2</p></li>
+<li><p>aces_1.0.1</p></li>
+<li><p>aces_0.7.1</p></li>
+<li><p>aces_0.1.1</p></li>
+</ul>
+</li>
+<li><p>Other</p>
+<ul>
+<li><p>nuke-default</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p>OpenColorIO represents the generous contributions of many organizations and
+individuals. The “Contributors to the OpenColorIO Project” copyright statement
+used throughout the project reflects that the OCIO source is a collaborative
+effort, often with multiple copyright holders within a single file. Copyright
+for specific portions of code can be traced to an originating contributor using
+git commit history.</p>
+<p>OpenColorIO was originally developed and made open source by
+<a class="reference external" href="http://opensource.imageworks.com">Sony Pictures Imageworks</a>. The core design,
+and the majority of OCIO 1.0 code was authored by Imageworks, who continue to
+support and contribute to OCIO 2.0 development.</p>
+<p>The design and development of OpenColorIO 2.0 is being led by Autodesk.
+Autodesk submitted a proposal to revitalize the project in 2017, and have
+authored the majority of OCIO 2.0 code in the years since.</p>
+<p>Significant contributions have also been made by Industrial Light &amp; Magic,
+DNEG, and many individuals. See
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/graphs/contributors">Contributors</a>
+for a complete list.</p>
+<p>See <a class="reference external" href="THIRD-PARTY">THIRD-PARTY.md</a> for license information
+about portions of OpenColorIO that have been imported from other projects.</p>
+<hr class="docutils" />
+<p>Images from “Cloudy With A Chance of Meatballs” Copyright 2011 Sony Pictures Inc.
+All Rights Reserved.</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

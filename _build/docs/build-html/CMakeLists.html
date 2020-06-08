@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>SPDX-License-Identifier: BSD-3-Clause</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <img class="logo" src="_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="api/_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="api/_index.html#api">API</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="api/change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="api/c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="contributors/_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="contributors/getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="contributors/usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>SPDX-License-Identifier: BSD-3-Clause</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="spdx-license-identifier-bsd-3-clause">
+<h1>SPDX-License-Identifier: BSD-3-Clause<a class="headerlink" href="#spdx-license-identifier-bsd-3-clause" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="copyright-contributors-to-the-opencolorio-project">
+<h1>Copyright Contributors to the OpenColorIO Project.<a class="headerlink" href="#copyright-contributors-to-the-opencolorio-project" title="Permalink to this headline">¶</a></h1>
+<p>###############################################################################</p>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p>find_package(Python REQUIRED COMPONENTS Interpreter)
+if(NOT OCIO_BUILD_PYTHON)
+message(FATAL_ERROR “Doc generation requires that the python bindings be built”)
+endif()</p>
+<p>###############################################################################</p>
+</div>
+<div class="section" id="setup-pythonpath">
+<h2>Setup PYTHONPATH<a class="headerlink" href="#setup-pythonpath" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="override-pythonpath-prior-to-running-sphinx-this-makes-the-pyopencolorio">
+<h1>Override PYTHONPATH prior to running Sphinx. This makes the PyOpenColorIO<a class="headerlink" href="#override-pythonpath-prior-to-running-sphinx-this-makes-the-pyopencolorio" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="build-available-prioritizes-ext-installed-python-dependencies-and">
+<h1>build available, prioritizes ext/ installed Python dependencies, and<a class="headerlink" href="#build-available-prioritizes-ext-installed-python-dependencies-and" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="propagates-the-system-pythonpath">
+<h1>propagates the system PYTHONPATH.<a class="headerlink" href="#propagates-the-system-pythonpath" title="Permalink to this headline">¶</a></h1>
+<p>if(WIN32)
+# Use Windows path separators since this is being passed through to cmd
+file(TO_NATIVE_PATH ${CMAKE_BINARY_DIR} WIN_BINARY_DIR)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>set(DLL_PATH &quot;${WIN_BINARY_DIR}\\src\\OpenColorIO&quot;)
+if(MSVC_IDE)
+    set(DLL_PATH &quot;${DLL_PATH}\\${CMAKE_BUILD_TYPE}&quot;)
+endif()
+
+string(CONCAT PATH_SET
+    &quot;PATH=&quot;
+    &quot;${DLL_PATH}&quot;
+    &quot;\\\\;&quot;
+    &quot;%PATH%&quot;
+)
+
+set(PYD_PATH &quot;${WIN_BINARY_DIR}\\src\\bindings\\python&quot;)
+if(MSVC_IDE)
+    set(PYD_PATH &quot;${PYD_PATH}\\${CMAKE_BUILD_TYPE}&quot;)
+endif()
+
+string(CONCAT PYTHONPATH_SET
+    &quot;PYTHONPATH=&quot;
+    &quot;${PYD_PATH}&quot;
+    &quot;\\\\;&quot;
+    &quot;${WIN_BINARY_DIR}\\ext\\dist\\lib\\site-packages&quot;
+    &quot;\\\\;&quot;
+    &quot;%PYTHONPATH%&quot;
+)
+# Mimic *nix:
+#   &#39;&gt; PYTHONPATH=XXX CMD&#39;
+# on Windows with:
+#   &#39;&gt; set PYTHONPATH=XXX \n call CMD&#39;
+# &#39;\n&#39; is here because &#39;\\&amp;&#39; does not work.
+set(PYT_PRE_CMD set ${PATH_SET} &quot;\n&quot; set ${PYTHONPATH_SET} &quot;\n&quot; call)
+</pre></div>
+</div>
+<p>else()
+set(_Python_VARIANT “${Python_VERSION_MAJOR}.${Python_VERSION_MINOR}”)
+string(CONCAT PYT_PRE_CMD
+“PYTHONPATH=”
+“${CMAKE_BINARY_DIR}/src/bindings/python”
+“:”
+“${CMAKE_BINARY_DIR}/ext/dist/lib${LIB_SUFFIX}/python${_Python_VARIANT}/site-packages”
+“:”
+“$ENV{PYTHONPATH}”
+)
+endif()</p>
+<p>###############################################################################</p>
+<div class="section" id="copy-templates-to-build-area">
+<h2>Copy templates to build area<a class="headerlink" href="#copy-templates-to-build-area" title="Permalink to this headline">¶</a></h2>
+<p>message(STATUS “Create sphinx conf.py from conf.py.in”)
+configure_file(conf.py.in ${CMAKE_BINARY_DIR}/docs/conf.py &#64;ONLY)</p>
+<p>file(GLOB_RECURSE DOC_SOURCES “${CMAKE_SOURCE_DIR}/docs/*”)
+list(APPEND DOC_SOURCES
+${CMAKE_SOURCE_DIR}/README.md
+${CMAKE_SOURCE_DIR}/INSTALL.md
+${CMAKE_SOURCE_DIR}/CHANGELOG.md
+${CMAKE_SOURCE_DIR}/LICENSE
+)
+if(OCIO_BUILD_NUKE)
+list(APPEND DOC_SOURCES ${CMAKE_SOURCE_DIR}/share/nuke/ocionuke/viewer.py)
+endif()</p>
+<p>add_custom_target(doc_copy
+COMMENT “Copying doc files to staging area”
+)</p>
+<p>foreach(f ${DOC_SOURCES})
+string(REGEX REPLACE “^${CMAKE_SOURCE_DIR}/” “” relpath ${f})
+string(REGEX REPLACE “[/. ]” “_” tgtname ${relpath})
+string(REGEX MATCH “^docs” IN_DOCS ${relpath})</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>set(SRC_PATH ${CMAKE_SOURCE_DIR}/${relpath})
+set(DST_PATH ${CMAKE_BINARY_DIR}/${relpath})
+if(NOT IN_DOCS)
+    get_filename_component(F_NAME ${relpath} NAME)
+    set(DST_PATH &quot;${CMAKE_BINARY_DIR}/docs/${F_NAME}&quot;)
+endif()
+
+add_custom_command(OUTPUT ${DST_PATH}
+    COMMAND ${CMAKE_COMMAND} -E copy ${SRC_PATH} ${DST_PATH}
+    DEPENDS ${SRC_PATH}
+)
+add_custom_target(&quot;copy_${tgtname}&quot; DEPENDS ${DST_PATH})
+add_dependencies(doc_copy &quot;copy_${tgtname}&quot;)
+</pre></div>
+</div>
+<p>endforeach()</p>
+<p>###############################################################################</p>
+</div>
+<div class="section" id="extract-rst-from-c-headers">
+<h2>Extract rst from c++ headers<a class="headerlink" href="#extract-rst-from-c-headers" title="Permalink to this headline">¶</a></h2>
+<p>find_package(Doxygen REQUIRED)</p>
+<p>set(_OCIO_HEADER_DIR “${CMAKE_SOURCE_DIR}/include/OpenColorIO”)
+set(_RST_DESTINATION “${CMAKE_BINARY_DIR}”)
+set(_DOXYGEN_INDEX_FILE ${CMAKE_BINARY_DIR}/docs/build-html/index.html)</p>
+<p>set(DOXYGEN_INPUT_DIR ${PROJECT_SOURCE_DIR}/include/OpenColorIO)
+set(DOXYGEN_OUTPUT_DIR ${CMAKE_BINARY_DIR}/docs/_doxygen)</p>
+<p>list(APPEND _OCIO_PUBLIC_HEADERS
+${_OCIO_HEADER_DIR}/OpenColorIO.h
+${_OCIO_HEADER_DIR}/OpenColorTransforms.h
+${_OCIO_HEADER_DIR}/OpenColorTypes.h
+)</p>
+<p>configure_file(Doxyfile.in ${CMAKE_BINARY_DIR}/docs/Doxyfile &#64;ONLY)</p>
+<p>add_custom_command(OUTPUT ${_DOXYGEN_INDEX_FILE}
+DEPENDS ${_OCIO_PUBLIC_HEADERS}
+COMMAND ${DOXYGEN_EXECUTABLE} ${CMAKE_BINARY_DIR}/docs/Doxyfile
+WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+MAIN_DEPENDENCY ${CMAKE_BINARY_DIR}/docs/Doxyfile
+COMMENT “Generating Doxygen docs”)</p>
+<p>###############################################################################</p>
+</div>
+<div class="section" id="html-doc-target">
+<h2>HTML doc target<a class="headerlink" href="#html-doc-target" title="Permalink to this headline">¶</a></h2>
+<p>add_custom_target(docs-html ALL
+COMMAND
+${PYT_PRE_CMD} “${Sphinx_EXECUTABLE}” -b html -Dbreathe_projects.CatCutifier=${DOXYGEN_OUTPUT_DIR}
+. “${CMAKE_CURRENT_BINARY_DIR}/build-html”
+DEPENDS
+OpenColorIO
+PyOpenColorIO
+${CMAKE_BINARY_DIR}/docs/conf.py
+doc_copy
+Sphinx
+${_DOXYGEN_INDEX_FILE}
+COMMENT “Building html docs”
+)</p>
+<p>###############################################################################</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/build-html/
+DESTINATION ${CMAKE_INSTALL_PREFIX}/share/doc/OpenColorIO/html
+PATTERN .* EXCLUDE
+)</p>
+<p>###############################################################################</p>
+</div>
+<div class="section" id="pdf-target">
+<h2>PDF target<a class="headerlink" href="#pdf-target" title="Permalink to this headline">¶</a></h2>
+<p>find_package(LATEX)
+if(PDFLATEX_COMPILER)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>add_custom_target(latex
+    COMMAND
+        ${PYT_PRE_CMD} &quot;${Sphinx_EXECUTABLE}&quot; -b latex . &quot;${CMAKE_CURRENT_BINARY_DIR}/build-latex&quot;
+    DEPENDS
+        OpenColorIO
+        PyOpenColorIO
+        ${CMAKE_BINARY_DIR}/docs/conf.py
+        rst_extraction
+        doc_copy
+        Sphinx
+    COMMENT &quot;Building latex doc&quot;
+)
+
+add_custom_target(pdf ALL
+    DEPENDS latex
+    COMMAND ${PDFLATEX_COMPILER} OpenColorIO.tex
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/build-latex
+    COMMENT &quot;Building pdf doc&quot;
+)
+
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/build-latex/OpenColorIO.pdf
+        DESTINATION ${CMAKE_INSTALL_PREFIX}/share/doc/OpenColorIO/)
+</pre></div>
+</div>
+<p>endif()</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

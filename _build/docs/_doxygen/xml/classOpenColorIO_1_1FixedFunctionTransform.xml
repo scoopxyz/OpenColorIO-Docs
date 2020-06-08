@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1FixedFunctionTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::FixedFunctionTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1aa99f3a73b18dd95c497fef5c3b8e173a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FixedFunctionTransformRcPtr</type>
+        <definition>static FixedFunctionTransformRcPtr OpenColorIO::FixedFunctionTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="629" column="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1a2200d7185e760c413209b6a3d6126ad0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const <ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual const FormatMetadata&amp; OpenColorIO::FixedFunctionTransform::getFormatMetadata</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="631" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1ad2ea35ec467f2b9badc745b2e69bcd24" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual FormatMetadata&amp; OpenColorIO::FixedFunctionTransform::getFormatMetadata</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="632" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1a2b9077a67f60b25f2f15b9e5ad58ee50" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::FixedFunctionTransform::equals</definition>
+        <argsstring>(const FixedFunctionTransform &amp;other) const noexcept=0</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1FixedFunctionTransform" kindref="compound">FixedFunctionTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Checks if this exactly equals other. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="635" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1adf93587905ba222b935bc7bafc56647c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>FixedFunctionStyle</type>
+        <definition>virtual FixedFunctionStyle OpenColorIO::FixedFunctionTransform::getStyle</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="637" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1aeaf3315dc630449ed48f1ed333e0f38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::FixedFunctionTransform::setStyle</definition>
+        <argsstring>(FixedFunctionStyle style)=0</argsstring>
+        <name>setStyle</name>
+        <param>
+          <type>FixedFunctionStyle</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+<para>Select which algorithm to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="639" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1a9e3d558bb23a86c287ce04804fa6eb4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t OpenColorIO::FixedFunctionTransform::getNumParams</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getNumParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="641" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1a2d82e95bb218e28c15e0312c4ad4f34f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::FixedFunctionTransform::getParams</definition>
+        <argsstring>(double *params) const =0</argsstring>
+        <name>getParams</name>
+        <param>
+          <type>double *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="642" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1ad2a3168cd18c605cff6d91bedea0f2dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::FixedFunctionTransform::setParams</definition>
+        <argsstring>(const double *params, size_t num)=0</argsstring>
+        <name>setParams</name>
+        <param>
+          <type>const double *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Set the parameters (for functions that require them). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="644" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1a257a33a7428ab18efc308a1db05a9ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::FixedFunctionTransform::FixedFunctionTransform</definition>
+        <argsstring>(const FixedFunctionTransform &amp;)=delete</argsstring>
+        <name>FixedFunctionTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1FixedFunctionTransform" kindref="compound">FixedFunctionTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="646" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1a30d3e494d79f7e73c714706a49e2ec69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1FixedFunctionTransform" kindref="compound">FixedFunctionTransform</ref> &amp;</type>
+        <definition>FixedFunctionTransform&amp; OpenColorIO::FixedFunctionTransform::operator=</definition>
+        <argsstring>(const FixedFunctionTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1FixedFunctionTransform" kindref="compound">FixedFunctionTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="647" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1ac4ff0febc16305ff21774cef5d1b3781" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::FixedFunctionTransform::~FixedFunctionTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FixedFunctionTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="648" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1FixedFunctionTransform_1ac819107b4f4c125253c720e8d2b54cd3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::FixedFunctionTransform::FixedFunctionTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>FixedFunctionTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="651" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides a set of hard-coded algorithmic building blocks that are needed to accurately implement various common color transformations. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OpenColorIO::FixedFunctionTransform</label>
+        <link refid="classOpenColorIO_1_1FixedFunctionTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>OpenColorIO::FixedFunctionTransform</label>
+        <link refid="classOpenColorIO_1_1FixedFunctionTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="627" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="626" bodyend="652"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1aa99f3a73b18dd95c497fef5c3b8e173a" prot="public" virt="non-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1a2b9077a67f60b25f2f15b9e5ad58ee50" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>equals</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1a257a33a7428ab18efc308a1db05a9ddf" prot="public" virt="non-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>FixedFunctionTransform</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1ac819107b4f4c125253c720e8d2b54cd3" prot="protected" virt="non-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>FixedFunctionTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1a2200d7185e760c413209b6a3d6126ad0" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1ad2ea35ec467f2b9badc745b2e69bcd24" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1a9e3d558bb23a86c287ce04804fa6eb4b" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>getNumParams</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1a2d82e95bb218e28c15e0312c4ad4f34f" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>getParams</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1adf93587905ba222b935bc7bafc56647c" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>getStyle</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1a30d3e494d79f7e73c714706a49e2ec69" prot="public" virt="non-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::FixedFunctionTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1ad2a3168cd18c605cff6d91bedea0f2dc" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>setParams</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1aeaf3315dc630449ed48f1ed333e0f38d" prot="public" virt="pure-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>setStyle</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1FixedFunctionTransform_1ac4ff0febc16305ff21774cef5d1b3781" prot="public" virt="virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>~FixedFunctionTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::FixedFunctionTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

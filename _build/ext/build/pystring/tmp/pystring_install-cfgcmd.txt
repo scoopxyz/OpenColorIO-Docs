@@ -1,0 +1,1 @@
+cmd='/usr/local/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/dist;-DCMAKE_BUILD_TYPE=Release;-DCMAKE_CXX_FLAGS=-fvisibility=hidden -fPIC -fvisibility-inlines-hidden;-DCMAKE_CXX_STANDARD=11;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

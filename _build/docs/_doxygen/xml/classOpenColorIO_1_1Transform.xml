@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1Transform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::Transform</compoundname>
+    <derivedcompoundref refid="classOpenColorIO_1_1AllocationTransform" prot="public" virt="non-virtual">OpenColorIO::AllocationTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1BuiltinTransform" prot="public" virt="non-virtual">OpenColorIO::BuiltinTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1CDLTransform" prot="public" virt="non-virtual">OpenColorIO::CDLTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1ColorSpaceTransform" prot="public" virt="non-virtual">OpenColorIO::ColorSpaceTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1DisplayTransform" prot="public" virt="non-virtual">OpenColorIO::DisplayTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1ExponentTransform" prot="public" virt="non-virtual">OpenColorIO::ExponentTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1ExponentWithLinearTransform" prot="public" virt="non-virtual">OpenColorIO::ExponentWithLinearTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1ExposureContrastTransform" prot="public" virt="non-virtual">OpenColorIO::ExposureContrastTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1FileTransform" prot="public" virt="non-virtual">OpenColorIO::FileTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1FixedFunctionTransform" prot="public" virt="non-virtual">OpenColorIO::FixedFunctionTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1GroupTransform" prot="public" virt="non-virtual">OpenColorIO::GroupTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1LogAffineTransform" prot="public" virt="non-virtual">OpenColorIO::LogAffineTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1LogCameraTransform" prot="public" virt="non-virtual">OpenColorIO::LogCameraTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1LogTransform" prot="public" virt="non-virtual">OpenColorIO::LogTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1LookTransform" prot="public" virt="non-virtual">OpenColorIO::LookTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1Lut1DTransform" prot="public" virt="non-virtual">OpenColorIO::Lut1DTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1Lut3DTransform" prot="public" virt="non-virtual">OpenColorIO::Lut3DTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1MatrixTransform" prot="public" virt="non-virtual">OpenColorIO::MatrixTransform</derivedcompoundref>
+    <derivedcompoundref refid="classOpenColorIO_1_1RangeTransform" prot="public" virt="non-virtual">OpenColorIO::RangeTransform</derivedcompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>TransformRcPtr</type>
+        <definition>virtual TransformRcPtr OpenColorIO::Transform::createEditableCopy</definition>
+        <argsstring>() const =0</argsstring>
+        <name>createEditableCopy</name>
+        <reimplementedby refid="classOpenColorIO_1_1AllocationTransform_1aa21c580e58b2629443684c6a48851107">createEditableCopy</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1ColorSpaceTransform_1a4f67ca9a9ec90e064cd85013e672f484">createEditableCopy</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1DisplayTransform_1a283fa2e290c1a2617bef803c39062a44">createEditableCopy</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1FileTransform_1a2e2e4657b72c5d580ed51f7df00a376a">createEditableCopy</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1GroupTransform_1adb8fbf113eccbd7b7f408cc0f89d378e">createEditableCopy</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1LookTransform_1a304b4bd5fc97e563d4a0f327fba1dd7e">createEditableCopy</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="78" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>TransformDirection</type>
+        <definition>virtual TransformDirection OpenColorIO::Transform::getDirection</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getDirection</name>
+        <reimplementedby refid="classOpenColorIO_1_1AllocationTransform_1acf11d7f7554ddaf8d1486e7d73b8e842">getDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1ColorSpaceTransform_1a35b1a5ae606a0d48f938f67bbc4ea976">getDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1DisplayTransform_1a6f092b6c8687dc5e328d22e4b1aff315">getDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1FileTransform_1a0ef36a7cf4e14074bde56831c45df6e8">getDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1GroupTransform_1af0f379b8e764e8c16bc030f87e1ab59d">getDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1LookTransform_1aeae0daca6eb68e1e50e2e76d9c947155">getDirection</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="80" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Transform::setDirection</definition>
+        <argsstring>(TransformDirection dir) noexcept=0</argsstring>
+        <name>setDirection</name>
+        <reimplementedby refid="classOpenColorIO_1_1AllocationTransform_1af586fa4e9d164068a0ae922ca3f47d89">setDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1ColorSpaceTransform_1a89c8794a764843dee18cb7c790c0c987">setDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1DisplayTransform_1a6b1afd50cfa0d168ba7dbb47f75c1b61">setDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1FileTransform_1a5d019925b9805c65c401e8718912bc87">setDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1GroupTransform_1ab7fafe595932844b02b85d375a4e55cd">setDirection</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1LookTransform_1af46176b9566c8a7a0c9e254c2ec9a252">setDirection</reimplementedby>
+        <param>
+          <type>TransformDirection</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this only affects the evaluation and not the values stored in the object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="83" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::Transform::validate</definition>
+        <argsstring>() const</argsstring>
+        <name>validate</name>
+        <reimplementedby refid="classOpenColorIO_1_1AllocationTransform_1a6854879c5e5be0094dbb6d47f838a886">validate</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1ColorSpaceTransform_1a8a16b64fdab131e9a880b80c2a88a0a1">validate</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1DisplayTransform_1a4ee32069c96df6151db94a0e550783f5">validate</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1FileTransform_1a620472a478e150d4e3dae7ece6640cb1">validate</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1GroupTransform_1a768bd8ea1eb3e6e412393c872d645599">validate</reimplementedby>
+        <reimplementedby refid="classOpenColorIO_1_1LookTransform_1ad477f525755d98b0594bc4ae64a5dbe1">validate</reimplementedby>
+        <briefdescription>
+<para>Will throw if data is not valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Transform::Transform</definition>
+        <argsstring>(const Transform &amp;)=delete</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="88" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+        <definition>Transform&amp; OpenColorIO::Transform::operator=</definition>
+        <argsstring>(const Transform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1Transform" kindref="compound">Transform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="89" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::Transform::~Transform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="90" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::Transform::Transform</definition>
+        <argsstring>()=default</argsstring>
+        <name>Transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="93" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all the transform classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>OpenColorIO::FixedFunctionTransform</label>
+        <link refid="classOpenColorIO_1_1FixedFunctionTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OpenColorIO::LookTransform</label>
+        <link refid="classOpenColorIO_1_1LookTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="15">
+        <label>OpenColorIO::LogTransform</label>
+        <link refid="classOpenColorIO_1_1LogTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>OpenColorIO::DisplayTransform</label>
+        <link refid="classOpenColorIO_1_1DisplayTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>OpenColorIO::GroupTransform</label>
+        <link refid="classOpenColorIO_1_1GroupTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>OpenColorIO::RangeTransform</label>
+        <link refid="classOpenColorIO_1_1RangeTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>OpenColorIO::MatrixTransform</label>
+        <link refid="classOpenColorIO_1_1MatrixTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>OpenColorIO::CDLTransform</label>
+        <link refid="classOpenColorIO_1_1CDLTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OpenColorIO::LogAffineTransform</label>
+        <link refid="classOpenColorIO_1_1LogAffineTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>OpenColorIO::ExposureContrastTransform</label>
+        <link refid="classOpenColorIO_1_1ExposureContrastTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>OpenColorIO::FileTransform</label>
+        <link refid="classOpenColorIO_1_1FileTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>OpenColorIO::Lut3DTransform</label>
+        <link refid="classOpenColorIO_1_1Lut3DTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>OpenColorIO::ColorSpaceTransform</label>
+        <link refid="classOpenColorIO_1_1ColorSpaceTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OpenColorIO::AllocationTransform</label>
+        <link refid="classOpenColorIO_1_1AllocationTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>OpenColorIO::Lut1DTransform</label>
+        <link refid="classOpenColorIO_1_1Lut1DTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>OpenColorIO::ExponentTransform</label>
+        <link refid="classOpenColorIO_1_1ExponentTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>OpenColorIO::ExponentWithLinearTransform</label>
+        <link refid="classOpenColorIO_1_1ExponentWithLinearTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OpenColorIO::BuiltinTransform</label>
+        <link refid="classOpenColorIO_1_1BuiltinTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OpenColorIO::LogCameraTransform</label>
+        <link refid="classOpenColorIO_1_1LogCameraTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="76" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="75" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::Transform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::Transform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual"><scope>OpenColorIO::Transform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::Transform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::Transform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::Transform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::Transform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::Transform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

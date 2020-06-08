@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1RangeTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::RangeTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ae4bb9e693a87d507239dec87f094b676" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RangeTransformRcPtr</type>
+        <definition>static RangeTransformRcPtr OpenColorIO::RangeTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Creates an instance of <ref refid="classOpenColorIO_1_1RangeTransform" kindref="compound">RangeTransform</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1128" column="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1af42ba9b468f947bfe59302cebc0f7fe7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>RangeStyle</type>
+        <definition>virtual RangeStyle OpenColorIO::RangeTransform::getStyle</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1130" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a09592418fc464a3955042fb952c2eb65" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setStyle</definition>
+        <argsstring>(RangeStyle style) noexcept=0</argsstring>
+        <name>setStyle</name>
+        <param>
+          <type>RangeStyle</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+<para>Set the Range style to clamp or not input values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1132" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a73d96c08406337f1781e440eec8d0172" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const <ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual const FormatMetadata&amp; OpenColorIO::RangeTransform::getFormatMetadata</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1134" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ac424e9110cbab0235e99cdd9eb4c304c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual FormatMetadata&amp; OpenColorIO::RangeTransform::getFormatMetadata</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1135" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a3993e80547e4dbe38e9c0553f98e1bb7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::RangeTransform::equals</definition>
+        <argsstring>(const RangeTransform &amp;other) const noexcept=0</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1RangeTransform" kindref="compound">RangeTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Checks if this equals other. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1138" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a8b60fd040febccd621c1a917025f99a8" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>BitDepth</type>
+        <definition>virtual BitDepth OpenColorIO::RangeTransform::getFileInputBitDepth</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFileInputBitDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1152" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a953f95dbbabb2024b20cf6ee8b8b772f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setFileInputBitDepth</definition>
+        <argsstring>(BitDepth bitDepth) noexcept=0</argsstring>
+        <name>setFileInputBitDepth</name>
+        <param>
+          <type>BitDepth</type>
+          <declname>bitDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1153" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a622a7599f60876a21cbc88d286fa6d35" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>BitDepth</type>
+        <definition>virtual BitDepth OpenColorIO::RangeTransform::getFileOutputBitDepth</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFileOutputBitDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1154" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ae6c97f629f66dc6828f51b508c03fb4e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setFileOutputBitDepth</definition>
+        <argsstring>(BitDepth bitDepth) noexcept=0</argsstring>
+        <name>setFileOutputBitDepth</name>
+        <param>
+          <type>BitDepth</type>
+          <declname>bitDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1155" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a0dded7b1f42dffef931a5f1769ab6410" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::RangeTransform::getMinInValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getMinInValue</name>
+        <briefdescription>
+<para>Get the minimum value for the input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1170" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a5595a5cbe4f4966e9035ea5d2923de80" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setMinInValue</definition>
+        <argsstring>(double val) noexcept=0</argsstring>
+        <name>setMinInValue</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum value for the input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1172" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a6262ed276fc816ae605e1aa1cbc8e071" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::RangeTransform::hasMinInValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>hasMinInValue</name>
+        <briefdescription>
+<para>Is the minimum value for the input set? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1174" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ae8cf1360a50b4a476ff7ce5f578d3a16" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::unsetMinInValue</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>unsetMinInValue</name>
+        <briefdescription>
+<para>Unset the minimum value for the input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1176" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a5f4d4ec10e74698963e1a9092e471345" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setMaxInValue</definition>
+        <argsstring>(double val) noexcept=0</argsstring>
+        <name>setMaxInValue</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum value for the input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1179" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ab42f4c035c1ad149d373db84751b0bf6" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::RangeTransform::getMaxInValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getMaxInValue</name>
+        <briefdescription>
+<para>Get the maximum value for the input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1181" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a74f51c340d2d12d8ccd6e8dff1f0cb6c" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::RangeTransform::hasMaxInValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>hasMaxInValue</name>
+        <briefdescription>
+<para>Is the maximum value for the input set? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1183" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a81aee4d23e3da71b21944514db43841a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::unsetMaxInValue</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>unsetMaxInValue</name>
+        <briefdescription>
+<para>Unset the maximum value for the input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1185" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a6b2532a0f82a16d5a220fbc5aa12736f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setMinOutValue</definition>
+        <argsstring>(double val) noexcept=0</argsstring>
+        <name>setMinOutValue</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum value for the output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1188" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ada07e37d89b0a2e95d6210d1ae0520f1" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::RangeTransform::getMinOutValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getMinOutValue</name>
+        <briefdescription>
+<para>Get the minimum value for the output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1190" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a290392713352fb81b0da8df11ddf1335" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::RangeTransform::hasMinOutValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>hasMinOutValue</name>
+        <briefdescription>
+<para>Is the minimum value for the output set? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1192" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1af7e3b89fdd6a810e72f1d7a09ce5c12e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::unsetMinOutValue</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>unsetMinOutValue</name>
+        <briefdescription>
+<para>Unset the minimum value for the output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1194" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ac4b89e8dfe16f38633d61353351469ac" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::setMaxOutValue</definition>
+        <argsstring>(double val) noexcept=0</argsstring>
+        <name>setMaxOutValue</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum value for the output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1197" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a931964b62c809c71b2cc47975da497db" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::RangeTransform::getMaxOutValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getMaxOutValue</name>
+        <briefdescription>
+<para>Get the maximum value for the output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1199" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1add6c216dbef6dbece08deb966d3c26e3" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::RangeTransform::hasMaxOutValue</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>hasMaxOutValue</name>
+        <briefdescription>
+<para>Is the maximum value for the output set? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1201" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1af82957204f3922f340580130be3c3aaa" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::RangeTransform::unsetMaxOutValue</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>unsetMaxOutValue</name>
+        <briefdescription>
+<para>Unset the maximum value for the output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1203" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ae851d3920308c05c10aa6035921272f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::RangeTransform::RangeTransform</definition>
+        <argsstring>(const RangeTransform &amp;)=delete</argsstring>
+        <name>RangeTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1RangeTransform" kindref="compound">RangeTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1205" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1ae9c03c90624a5af088e555426f6fb98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1RangeTransform" kindref="compound">RangeTransform</ref> &amp;</type>
+        <definition>RangeTransform&amp; OpenColorIO::RangeTransform::operator=</definition>
+        <argsstring>(const RangeTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1RangeTransform" kindref="compound">RangeTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1206" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a253879af7859090ec392d7bdf8a23c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::RangeTransform::~RangeTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~RangeTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1207" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1RangeTransform_1a4242cf3b8ce7986003751364277af0dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::RangeTransform::RangeTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>RangeTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1210" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a range transform</para>
+<para>The Range is used to apply an affine transform (scale &amp; offset) and clamps values to min/max bounds on all color components except the alpha. The scale and offset values are computed from the input and output bounds.</para>
+<para>Refer to section 7.2.4 in specification S-2014-006 &quot;A Common File Format
+for Look-Up Tables&quot; from the Academy of Motion Picture Arts and Sciences and the American Society of Cinematographers.</para>
+<para>The &quot;noClamp&quot; style described in the specification S-2014-006 becomes a MatrixOp at the processor level. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::RangeTransform</label>
+        <link refid="classOpenColorIO_1_1RangeTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::RangeTransform</label>
+        <link refid="classOpenColorIO_1_1RangeTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="1125" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="1124" bodyend="1211"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ae4bb9e693a87d507239dec87f094b676" prot="public" virt="non-virtual"><scope>OpenColorIO::RangeTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a3993e80547e4dbe38e9c0553f98e1bb7" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>equals</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a8b60fd040febccd621c1a917025f99a8" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getFileInputBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a622a7599f60876a21cbc88d286fa6d35" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getFileOutputBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a73d96c08406337f1781e440eec8d0172" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ac424e9110cbab0235e99cdd9eb4c304c" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ab42f4c035c1ad149d373db84751b0bf6" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getMaxInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a931964b62c809c71b2cc47975da497db" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getMaxOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a0dded7b1f42dffef931a5f1769ab6410" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getMinInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ada07e37d89b0a2e95d6210d1ae0520f1" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getMinOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1af42ba9b468f947bfe59302cebc0f7fe7" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>getStyle</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a74f51c340d2d12d8ccd6e8dff1f0cb6c" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>hasMaxInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1add6c216dbef6dbece08deb966d3c26e3" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>hasMaxOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a6262ed276fc816ae605e1aa1cbc8e071" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>hasMinInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a290392713352fb81b0da8df11ddf1335" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>hasMinOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ae9c03c90624a5af088e555426f6fb98d" prot="public" virt="non-virtual"><scope>OpenColorIO::RangeTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::RangeTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ae851d3920308c05c10aa6035921272f7" prot="public" virt="non-virtual"><scope>OpenColorIO::RangeTransform</scope><name>RangeTransform</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a4242cf3b8ce7986003751364277af0dd" prot="protected" virt="non-virtual"><scope>OpenColorIO::RangeTransform</scope><name>RangeTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a953f95dbbabb2024b20cf6ee8b8b772f" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setFileInputBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ae6c97f629f66dc6828f51b508c03fb4e" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setFileOutputBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a5f4d4ec10e74698963e1a9092e471345" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setMaxInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ac4b89e8dfe16f38633d61353351469ac" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setMaxOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a5595a5cbe4f4966e9035ea5d2923de80" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setMinInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a6b2532a0f82a16d5a220fbc5aa12736f" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setMinOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a09592418fc464a3955042fb952c2eb65" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>setStyle</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::RangeTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::RangeTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a81aee4d23e3da71b21944514db43841a" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>unsetMaxInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1af82957204f3922f340580130be3c3aaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>unsetMaxOutValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1ae8cf1360a50b4a476ff7ce5f578d3a16" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>unsetMinInValue</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1af7e3b89fdd6a810e72f1d7a09ce5c12e" prot="public" virt="pure-virtual"><scope>OpenColorIO::RangeTransform</scope><name>unsetMinOutValue</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::RangeTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1RangeTransform_1a253879af7859090ec392d7bdf8a23c0e" prot="public" virt="virtual"><scope>OpenColorIO::RangeTransform</scope><name>~RangeTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::RangeTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1CDLTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::CDLTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a8e65e230c1aef059b2e79cf3103b3365" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CDLTransformRcPtr</type>
+        <definition>static CDLTransformRcPtr OpenColorIO::CDLTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="184" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a27fe3ff02090fd3434b7818cf7e11b74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CDLTransformRcPtr</type>
+        <definition>static CDLTransformRcPtr OpenColorIO::CDLTransform::CreateFromFile</definition>
+        <argsstring>(const char *src, const char *cccid)</argsstring>
+        <name>CreateFromFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cccid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the CDL from the src .cc or .ccc file. If a .ccc is used, the cccid must also be specified src must be an absolute path reference, no relative directory or envvar resolution is performed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="190" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a14f8040b5ea68de6a209f91b3db2719d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual FormatMetadata&amp; OpenColorIO::CDLTransform::getFormatMetadata</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="192" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a138f643a5f73095abe691f5c0c5c0bd9" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const <ref refid="classOpenColorIO_1_1FormatMetadata" kindref="compound">FormatMetadata</ref> &amp;</type>
+        <definition>virtual const FormatMetadata&amp; OpenColorIO::CDLTransform::getFormatMetadata</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getFormatMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="193" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1ae3f482111cc5b6184033b613869eadc0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool OpenColorIO::CDLTransform::equals</definition>
+        <argsstring>(const CDLTransform &amp;other) const noexcept=0</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1CDLTransform" kindref="compound">CDLTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="195" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a5f6a8c2f8de7eab19ed968b84991699d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>CDLStyle</type>
+        <definition>virtual CDLStyle OpenColorIO::CDLTransform::getStyle</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="197" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1aa2a51ec7c60b2eedfbf8d64158b1a615" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setStyle</definition>
+        <argsstring>(CDLStyle style)=0</argsstring>
+        <name>setStyle</name>
+        <param>
+          <type>CDLStyle</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use CDL_ASC to clamp values to [0,1] per the ASC spec. Use NO_CLAMP to never clamp values (regardless of whether power is 1.0). The NO_CLAMP option passes negatives through unchanged (like the NEGATIVE_PASS_THRU style of <ref refid="classOpenColorIO_1_1ExponentTransform" kindref="compound">ExponentTransform</ref>). The default style is CDL_NO_CLAMP. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="202" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a79dba1596b3161229f7d144990d1aea4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* OpenColorIO::CDLTransform::getXML</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getXML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="204" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1afc40fda9021fc96339f01a74dec07e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setXML</definition>
+        <argsstring>(const char *xml)=0</argsstring>
+        <name>setXML</name>
+        <param>
+          <type>const char *</type>
+          <declname>xml</declname>
+        </param>
+        <briefdescription>
+<para>The default style is CDL_NO_CLAMP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="206" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a382eba9210a9cd1f6439951378ed450d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::getSlope</definition>
+        <argsstring>(double *rgb) const =0</argsstring>
+        <name>getSlope</name>
+        <param>
+          <type>double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="208" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a6431570e5b48242167274639a2c0deca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setSlope</definition>
+        <argsstring>(const double *rgb)=0</argsstring>
+        <name>setSlope</name>
+        <param>
+          <type>const double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="209" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a7857b26b9fbe6c7c1a10b2d2d679c636" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::getOffset</definition>
+        <argsstring>(double *rgb) const =0</argsstring>
+        <name>getOffset</name>
+        <param>
+          <type>double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="211" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a6bb3d7f1cd6004941059f6544774a0cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setOffset</definition>
+        <argsstring>(const double *rgb)=0</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>const double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="212" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a0885cffd7fa916ade58a71006aeefb9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::getPower</definition>
+        <argsstring>(double *rgb) const =0</argsstring>
+        <name>getPower</name>
+        <param>
+          <type>double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="214" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a85b9d8cf3c9eee05f8e164d87f53b955" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setPower</definition>
+        <argsstring>(const double *rgb)=0</argsstring>
+        <name>setPower</name>
+        <param>
+          <type>const double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="215" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a4e6c6c7be5aa7c44a39d7d5b3d47d3de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::getSOP</definition>
+        <argsstring>(double *vec9) const =0</argsstring>
+        <name>getSOP</name>
+        <param>
+          <type>double *</type>
+          <declname>vec9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="217" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a475b21f8d508a11cdfe16f1c31b08df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setSOP</definition>
+        <argsstring>(const double *vec9)=0</argsstring>
+        <name>setSOP</name>
+        <param>
+          <type>const double *</type>
+          <declname>vec9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="218" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a05982a8a948249c7f3ea9131da68f063" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenColorIO::CDLTransform::getSat</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getSat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="220" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a7254f1a757a1f089329b7a856d5bf55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setSat</definition>
+        <argsstring>(double sat)=0</argsstring>
+        <name>setSat</name>
+        <param>
+          <type>double</type>
+          <declname>sat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="221" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1abd5e8e983c2d0cfc37db0caa54cb4a2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::getSatLumaCoefs</definition>
+        <argsstring>(double *rgb) const =0</argsstring>
+        <name>getSatLumaCoefs</name>
+        <param>
+          <type>double *</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+<para>These are hard-coded, by spec, to r709. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="224" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1aa9d847c7a1c2db4bae39781afad35a86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* OpenColorIO::CDLTransform::getID</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getID</name>
+        <briefdescription>
+<para>Unique Identifier for this correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="233" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a1d5bc75e842083f63868beec10493ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setID</definition>
+        <argsstring>(const char *id)=0</argsstring>
+        <name>setID</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="234" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1af00e11bf79953daf1fbf61ab645b8255" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* OpenColorIO::CDLTransform::getDescription</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deprecated. Use <computeroutput>getFormatMetadata</computeroutput>. First textual description of color correction (stored on the SOP). If there is already a description, the setter will replace it with the supplied text. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="240" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a03f5bf66a5455018f4c4b17e8acbc08e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::CDLTransform::setDescription</definition>
+        <argsstring>(const char *desc)=0</argsstring>
+        <name>setDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Deprecated. Use <computeroutput>getFormatMetadata</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="242" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a98ca9903f0f0c9ee9a4de566d40e78b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::CDLTransform::CDLTransform</definition>
+        <argsstring>(const CDLTransform &amp;)=delete</argsstring>
+        <name>CDLTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1CDLTransform" kindref="compound">CDLTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="244" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a0cbcd3c26a45bb792e7650f6bb97a5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1CDLTransform" kindref="compound">CDLTransform</ref> &amp;</type>
+        <definition>CDLTransform&amp; OpenColorIO::CDLTransform::operator=</definition>
+        <argsstring>(const CDLTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1CDLTransform" kindref="compound">CDLTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="245" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a4603f8bc6c5364c670727a4b5c65fcba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::CDLTransform::~CDLTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CDLTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="246" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1CDLTransform_1a7a1d458f3d08eec75c3ed4dc0125d5e1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::CDLTransform::CDLTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>CDLTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="249" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An implementation of the ASC Color Decision List (CDL), based on the ASC v1.2 specification.</para>
+<para><simplesect kind="note"><para>If the config version is 1, negative values are clamped if the power is not 1.0. For config version 2 and higher, the negative handling is controlled by the CDL style.</para>
+</simplesect>
+<simplesect kind="note"><para><bold>ASC_SOP</bold> out = clamp( (in * slope) + offset ) ^ power </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::CDLTransform</label>
+        <link refid="classOpenColorIO_1_1CDLTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::CDLTransform</label>
+        <link refid="classOpenColorIO_1_1CDLTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="182" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="181" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a98ca9903f0f0c9ee9a4de566d40e78b3" prot="public" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>CDLTransform</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a7a1d458f3d08eec75c3ed4dc0125d5e1" prot="protected" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>CDLTransform</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a8e65e230c1aef059b2e79cf3103b3365" prot="public" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a27fe3ff02090fd3434b7818cf7e11b74" prot="public" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>CreateFromFile</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1ae3f482111cc5b6184033b613869eadc0" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>equals</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1af00e11bf79953daf1fbf61ab645b8255" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getDescription</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a14f8040b5ea68de6a209f91b3db2719d" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a138f643a5f73095abe691f5c0c5c0bd9" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getFormatMetadata</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1aa9d847c7a1c2db4bae39781afad35a86" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getID</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a7857b26b9fbe6c7c1a10b2d2d679c636" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getOffset</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a0885cffd7fa916ade58a71006aeefb9b" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getPower</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a05982a8a948249c7f3ea9131da68f063" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getSat</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1abd5e8e983c2d0cfc37db0caa54cb4a2f" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getSatLumaCoefs</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a382eba9210a9cd1f6439951378ed450d" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getSlope</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a4e6c6c7be5aa7c44a39d7d5b3d47d3de" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getSOP</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a5f6a8c2f8de7eab19ed968b84991699d" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getStyle</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a79dba1596b3161229f7d144990d1aea4" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>getXML</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a0cbcd3c26a45bb792e7650f6bb97a5e5" prot="public" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::CDLTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a03f5bf66a5455018f4c4b17e8acbc08e" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setDescription</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a1d5bc75e842083f63868beec10493ea8" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setID</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a6bb3d7f1cd6004941059f6544774a0cf" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setOffset</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a85b9d8cf3c9eee05f8e164d87f53b955" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setPower</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a7254f1a757a1f089329b7a856d5bf55b" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setSat</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a6431570e5b48242167274639a2c0deca" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setSlope</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a475b21f8d508a11cdfe16f1c31b08df0" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setSOP</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1aa2a51ec7c60b2eedfbf8d64158b1a615" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setStyle</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1afc40fda9021fc96339f01a74dec07e9e" prot="public" virt="pure-virtual"><scope>OpenColorIO::CDLTransform</scope><name>setXML</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::CDLTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::CDLTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1CDLTransform_1a4603f8bc6c5364c670727a4b5c65fcba" prot="public" virt="virtual"><scope>OpenColorIO::CDLTransform</scope><name>~CDLTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::CDLTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

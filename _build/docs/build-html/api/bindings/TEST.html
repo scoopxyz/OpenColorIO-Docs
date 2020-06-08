@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>TEST</title>
+    
+      <link rel="stylesheet" href="../../_static/pygments.css">
+      <link rel="stylesheet" href="../../_static/theme.css">
+      <link rel="stylesheet" href="../../_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+
+      
+      <script src="../../_static/theme-vendors.js"></script>
+      <script src="../../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../../genindex.html" />
+  <link rel="search" title="Search" href="../../search.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../../index.html" class="home-link">
+    
+      <img class="logo" src="../../_static/OpenColorIO_withText.svg" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../../overview/_index.html#"
+         class="nav-link ">
+         Overview
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../users/_index.html#user-guide"
+         class="nav-link ">
+         User Guide
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../configs/_index.html#public-configs"
+         class="nav-link ">
+         Configs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../_index.html#api"
+         class="nav-link ">
+         API
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../../contributors/_index.html#"
+         class="nav-link ">
+         Contributors
+      </a>
+    </div>
+  
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/AcademySoftwareFoundation/OpenColorIO"
+        class="nav-link external">
+          Github <outboundlink/>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../overview/_index.html#">Overview</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../overview/compatible_software.html" class="reference internal ">Compatible Software</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/downloads.html" class="reference internal ">Downloads</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/faq.html" class="reference internal ">FAQ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/installation.html" class="reference internal ">Installation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../overview/license.html" class="reference internal ">License</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../users/_index.html#user-guide">User Guide</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../users/tool_overview.html" class="reference internal ">Tool overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../users/baking_luts.html" class="reference internal ">Baking LUT’s</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../configs/_index.html#public-configs">Configs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../configs/spi_vfx.html" class="reference internal ">spi-vfx</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/spi_anim.html" class="reference internal ">spi-anim</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/nuke_default.html" class="reference internal ">nuke-default</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/aces_1.0.3.html" class="reference internal ">aces_1.0.3</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/allocation_vars.html" class="reference internal ">How to Configure ColorSpace Allocation</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/config_syntax.html" class="reference internal ">Config syntax</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/contexts.html" class="reference internal ">Contexts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../configs/looks.html" class="reference internal ">Looks</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../_index.html#api">API</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../change_log.html" class="reference internal ">ChangeLog</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_baker.html" class="reference internal ">Baker</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_context.html" class="reference internal ">Context</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_gpushadercreator.html" class="reference internal ">GpuShaderCreator</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_gpushaderdesc.html" class="reference internal ">GpuShaderDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_imagedesc.html" class="reference internal ">ImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_packedimagedesc.html" class="reference internal ">PackedImageDesc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../c_planarimagedesc.html" class="reference internal ">PlanarImageDesc</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../../contributors/_index.html#">Contributors</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../../contributors/getting_started.html" class="reference internal ">Getting started</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/coding_guidelines.html" class="reference internal ">Coding guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/documentation_guidelines.html" class="reference internal ">Documentation guidelines</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/internal_architecture.html" class="reference internal ">Internal Architecture Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/issues.html" class="reference internal ">Issues</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/submitting_changes.html" class="reference internal ">Submitting Changes</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../../contributors/usage_examples.html" class="reference internal ">Usage Examples</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+    <li>TEST</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="test">
+<h1>TEST<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="baker-c">
+<h2>Baker C++<a class="headerlink" href="#baker-c" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N11OpenColorIO5BakerE">
+<span id="_CPPv3N11OpenColorIO5BakerE"></span><span id="_CPPv2N11OpenColorIO5BakerE"></span><span id="OpenColorIO::Baker"></span><span class="target" id="classOpenColorIO_1_1Baker"></span><em class="property">class </em><code class="sig-prename descclassname">OpenColorIO<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Baker</code><br /></dt>
+<dd><p>In certain situations it is necessary to serialize transforms into a variety of application specific LUT formats. Note that not all file formats that may be read also support baking.</p>
+<p><strong>Usage Example:</strong> <em>Bake a CSP sRGB viewer LUT</em></p>
+<p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>OCIO::ConstConfigRcPtr config = OCIO::Config::CreateFromEnv();
+OCIO::BakerRcPtr baker = OCIO::Baker::Create();
+baker-&gt;setConfig(config);
+baker-&gt;setFormat(&quot;csp&quot;);
+baker-&gt;setInputSpace(&quot;lnf&quot;);
+baker-&gt;setShaperSpace(&quot;log&quot;);
+baker-&gt;setTargetSpace(&quot;sRGB&quot;);
+auto &amp; metadata = baker-&gt;getFormatMetadata();
+metadata.addChildElement(OCIO::METADATA_DESCRIPTION, &quot;A first comment&quot;);
+metadata.addChildElement(OCIO::METADATA_DESCRIPTION, &quot;A second comment&quot;);
+std::ostringstream out;
+baker-&gt;bake(out); // fresh bread anyone!
+std::cout &lt;&lt; out.str();
+</pre></div>
+</div>
+</p>
+<p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">OpenColorIO</span><span class="o">.</span><span class="n">Baker</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">setConfig</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">setFormat</span><span class="p">(</span><span class="s2">&quot;csp&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO5Baker18createEditableCopyEv">
+<span id="_CPPv3NK11OpenColorIO5Baker18createEditableCopyEv"></span><span id="_CPPv2NK11OpenColorIO5Baker18createEditableCopyEv"></span><span id="OpenColorIO::Baker::createEditableCopyC"></span><span class="target" id="classOpenColorIO_1_1Baker_1aeac3955f3772275df82020860042dc76"></span>BakerRcPtr <code class="sig-name descname">createEditableCopy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO5Baker18createEditableCopyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a copy of this <a class="reference internal" href="../c_baker.html#classOpenColorIO_1_1Baker"><span class="std std-ref">Baker</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker9setConfigERK16ConstConfigRcPtr">
+<span id="_CPPv3N11OpenColorIO5Baker9setConfigERK16ConstConfigRcPtr"></span><span id="_CPPv2N11OpenColorIO5Baker9setConfigERK16ConstConfigRcPtr"></span><span id="OpenColorIO::Baker::setConfig__ConstConfigRcPtrCR"></span><span class="target" id="classOpenColorIO_1_1Baker_1a6ac7e69d05bb62a4b6aae063d671396d"></span>void <code class="sig-name descname">setConfig</code><span class="sig-paren">(</span><em class="property">const</em> ConstConfigRcPtr &amp;<em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker9setConfigERK16ConstConfigRcPtr" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the config to use. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker9setFormatEPKc">
+<span id="_CPPv3N11OpenColorIO5Baker9setFormatEPKc"></span><span id="_CPPv2N11OpenColorIO5Baker9setFormatEPKc"></span><span id="OpenColorIO::Baker::setFormat__cCP"></span><span class="target" id="classOpenColorIO_1_1Baker_1a61e7ad0ac34879ac95b3b31ad9e895ef"></span>void <code class="sig-name descname">setFormat</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>formatName</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker9setFormatEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the LUT output format. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker17getFormatMetadataEv">
+<span id="_CPPv3N11OpenColorIO5Baker17getFormatMetadataEv"></span><span id="_CPPv2N11OpenColorIO5Baker17getFormatMetadataEv"></span><span id="OpenColorIO::Baker::getFormatMetadata"></span><span class="target" id="classOpenColorIO_1_1Baker_1aa5c7d0c7e4379724280dae11e5406d8e"></span>FormatMetadata &amp;<code class="sig-name descname">getFormatMetadata</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker17getFormatMetadataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get editable <em>optional</em> format metadata. The metadata that will be used varies based on the capability of the given file format. Formats such as CSP, IridasCube, and ResolveCube will create comments in the file header using the value of any first-level children elements of the formatMetadata. The CLF/CTF formats will make use of the top-level “id” and “name” attributes and children elements “Description”, “InputDescriptor”, “OutputDescriptor”, and “Info”. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker13setInputSpaceEPKc">
+<span id="_CPPv3N11OpenColorIO5Baker13setInputSpaceEPKc"></span><span id="_CPPv2N11OpenColorIO5Baker13setInputSpaceEPKc"></span><span id="OpenColorIO::Baker::setInputSpace__cCP"></span><span class="target" id="classOpenColorIO_1_1Baker_1ad745e5948341ea7bdbaf3526d87acb7d"></span>void <code class="sig-name descname">setInputSpace</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>inputSpace</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker13setInputSpaceEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the input ColorSpace that the LUT will be applied to. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">inputSpace</span></code>: The input ColorSpace to use. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker14setShaperSpaceEPKc">
+<span id="_CPPv3N11OpenColorIO5Baker14setShaperSpaceEPKc"></span><span id="_CPPv2N11OpenColorIO5Baker14setShaperSpaceEPKc"></span><span id="OpenColorIO::Baker::setShaperSpace__cCP"></span><span class="target" id="classOpenColorIO_1_1Baker_1a048335330ab98ee60791cb293b97f8e4"></span>void <code class="sig-name descname">setShaperSpace</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>shaperSpace</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker14setShaperSpaceEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set an <em>optional</em> ColorSpace to be used to shape / transfer the input colorspace. This is mostly used to allocate an HDR luminance range into an LDR one. If a shaper space is not explicitly specified, and the file format supports one, the ColorSpace Allocation will be used (not implemented for all formats). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker8setLooksEPKc">
+<span id="_CPPv3N11OpenColorIO5Baker8setLooksEPKc"></span><span id="_CPPv2N11OpenColorIO5Baker8setLooksEPKc"></span><span id="OpenColorIO::Baker::setLooks__cCP"></span><span class="target" id="classOpenColorIO_1_1Baker_1acfb3ddd0b4260daeffd4de773c2f9bab"></span>void <code class="sig-name descname">setLooks</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>looks</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker8setLooksEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the looks to be applied during baking. Looks is a potentially comma (or colon) delimited list of lookNames, where +/- prefixes are optionally allowed to denote forward/inverse look specification. (And forward is assumed in the absence of either). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker14setTargetSpaceEPKc">
+<span id="_CPPv3N11OpenColorIO5Baker14setTargetSpaceEPKc"></span><span id="_CPPv2N11OpenColorIO5Baker14setTargetSpaceEPKc"></span><span id="OpenColorIO::Baker::setTargetSpace__cCP"></span><span class="target" id="classOpenColorIO_1_1Baker_1a65c3919e61fa953dc128671882f8aa1c"></span>void <code class="sig-name descname">setTargetSpace</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>targetSpace</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker14setTargetSpaceEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the target device colorspace for the LUT. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker13setShaperSizeEi">
+<span id="_CPPv3N11OpenColorIO5Baker13setShaperSizeEi"></span><span id="_CPPv2N11OpenColorIO5Baker13setShaperSizeEi"></span><span id="OpenColorIO::Baker::setShaperSize__i"></span><span class="target" id="classOpenColorIO_1_1Baker_1ac9b28a91467f31bab3128141b42af298"></span>void <code class="sig-name descname">setShaperSize</code><span class="sig-paren">(</span>int <em>shapersize</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker13setShaperSizeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Override the default shaper LUT size. Default value is -1, which allows each format to use its own most appropriate size. For the CLF format, the default uses a half-domain LUT1D (which is ideal for scene-linear inputs). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker11setCubeSizeEi">
+<span id="_CPPv3N11OpenColorIO5Baker11setCubeSizeEi"></span><span id="_CPPv2N11OpenColorIO5Baker11setCubeSizeEi"></span><span id="OpenColorIO::Baker::setCubeSize__i"></span><span class="target" id="classOpenColorIO_1_1Baker_1ae0b4c5f192769904f6579828407bf540"></span>void <code class="sig-name descname">setCubeSize</code><span class="sig-paren">(</span>int <em>cubesize</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker11setCubeSizeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Override the default cube sample size. default: &lt;format specific&gt; </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK11OpenColorIO5Baker4bakeERNSt7ostreamE">
+<span id="_CPPv3NK11OpenColorIO5Baker4bakeERNSt7ostreamE"></span><span id="_CPPv2NK11OpenColorIO5Baker4bakeERNSt7ostreamE"></span><span id="OpenColorIO::Baker::bake__osRC"></span><span class="target" id="classOpenColorIO_1_1Baker_1aafdab725623c5f6a3ca0b148dcf040c1"></span>void <code class="sig-name descname">bake</code><span class="sig-paren">(</span>std::ostream &amp;<em>os</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK11OpenColorIO5Baker4bakeERNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Bake the LUT into the output stream. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker6CreateEv">
+<span id="_CPPv3N11OpenColorIO5Baker6CreateEv"></span><span id="_CPPv2N11OpenColorIO5Baker6CreateEv"></span><span id="OpenColorIO::Baker::Create"></span><span class="target" id="classOpenColorIO_1_1Baker_1a86ca9609837ac90e167c37fead89ba6e"></span>BakerRcPtr <code class="sig-name descname">Create</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker6CreateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a new <a class="reference internal" href="../c_baker.html#classOpenColorIO_1_1Baker"><span class="std std-ref">Baker</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker13getNumFormatsEv">
+<span id="_CPPv3N11OpenColorIO5Baker13getNumFormatsEv"></span><span id="_CPPv2N11OpenColorIO5Baker13getNumFormatsEv"></span><span id="OpenColorIO::Baker::getNumFormats"></span><span class="target" id="classOpenColorIO_1_1Baker_1ac812d76fbeaa850b911f656d1293ebd4"></span>int <code class="sig-name descname">getNumFormats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker13getNumFormatsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the number of LUT bakers. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker20getFormatNameByIndexEi">
+<span id="_CPPv3N11OpenColorIO5Baker20getFormatNameByIndexEi"></span><span id="_CPPv2N11OpenColorIO5Baker20getFormatNameByIndexEi"></span><span id="OpenColorIO::Baker::getFormatNameByIndex__i"></span><span class="target" id="classOpenColorIO_1_1Baker_1a41d565e3ecbbc1a520a20139b7b58833"></span><em class="property">const</em> char *<code class="sig-name descname">getFormatNameByIndex</code><span class="sig-paren">(</span>int <em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker20getFormatNameByIndexEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the LUT baker format name at index, return empty string if an invalid index is specified. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N11OpenColorIO5Baker25getFormatExtensionByIndexEi">
+<span id="_CPPv3N11OpenColorIO5Baker25getFormatExtensionByIndexEi"></span><span id="_CPPv2N11OpenColorIO5Baker25getFormatExtensionByIndexEi"></span><span id="OpenColorIO::Baker::getFormatExtensionByIndex__i"></span><span class="target" id="classOpenColorIO_1_1Baker_1a38a91df77adb710033e764fc223eefa7"></span><em class="property">const</em> char *<code class="sig-name descname">getFormatExtensionByIndex</code><span class="sig-paren">(</span>int <em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11OpenColorIO5Baker25getFormatExtensionByIndexEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the LUT baker format extension at index, return empty string if an invalid index is specified. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="baker">
+<h2>Baker<a class="headerlink" href="#baker" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="PyOpenColorIO.Baker">
+<em class="property">class </em><code class="sig-prename descclassname">PyOpenColorIO.</code><code class="sig-name descname">Baker</code><a class="headerlink" href="#PyOpenColorIO.Baker" title="Permalink to this definition">¶</a></dt>
+<dd><p>In certain situations it is necessary to serialize transforms into a
+variety of application specific LUT formats. Note that not all file
+formats that may be read also support baking.</p>
+<p><strong>Usage Example:</strong> <em>Bake a CSP sRGB viewer LUT</em></p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
+{.cpp}</p>
+<blockquote>
+<div><p>OCIO::ConstConfigRcPtr config = OCIO::Config::CreateFromEnv();
+OCIO::BakerRcPtr baker = OCIO::Baker::Create();
+baker-&gt;setConfig(config);
+baker-&gt;setFormat(“csp”);
+baker-&gt;setInputSpace(“lnf”);
+baker-&gt;setShaperSpace(“log”);
+baker-&gt;setTargetSpace(“sRGB”);
+auto &amp; metadata = baker-&gt;getFormatMetadata();
+metadata.addChildElement(OCIO::METADATA_DESCRIPTION, “A first comment”);
+metadata.addChildElement(OCIO::METADATA_DESCRIPTION, “A second comment”);
+std::ostringstream out;
+baker-&gt;bake(out); // fresh bread anyone!
+std::cout &lt;&lt; out.str();</p>
+</div></blockquote>
+<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">{.py}</span>
+<span class="pre">x</span> <span class="pre">=</span> <span class="pre">OpenColorIO.Baker()</span>
+<span class="pre">x.setConfig()</span>
+<span class="pre">x.setFormat(&quot;csp&quot;)</span>
+<span class="pre">`</span></code></p>
+<dl class="py class">
+<dt id="PyOpenColorIO.Baker.FormatIterator">
+<em class="property">class </em><code class="sig-name descname">FormatIterator</code><a class="headerlink" href="#PyOpenColorIO.Baker.FormatIterator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.bake">
+<code class="sig-name descname">bake</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyOpenColorIO.Baker.bake" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>bake(self: PyOpenColorIO.Baker, fileName: str) -&gt; None</p></li>
+</ol>
+<p>Bake the LUT into the output stream.</p>
+<ol class="arabic simple" start="2">
+<li><p>bake(self: PyOpenColorIO.Baker) -&gt; str</p></li>
+</ol>
+<p>Bake the LUT into the output stream.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getConfig">
+<code class="sig-name descname">getConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Baker.getConfig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getCubeSize">
+<code class="sig-name descname">getCubeSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Baker.getCubeSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getFormat">
+<code class="sig-name descname">getFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getFormatMetadata">
+<code class="sig-name descname">getFormatMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyOpenColorIO.Baker.getFormatMetadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getFormatMetadata(self: PyOpenColorIO.Baker) -&gt; PyOpenColorIO.FormatMetadata</p></li>
+<li><p>getFormatMetadata(self: PyOpenColorIO.Baker) -&gt; PyOpenColorIO.FormatMetadata</p></li>
+</ol>
+<p>Get editable <em>optional</em> format metadata. The metadata that will be
+used varies based on the capability of the given file format. Formats
+such as CSP, IridasCube, and ResolveCube will create comments in the
+file header using the value of any first-level children elements of
+the formatMetadata. The CLF/CTF formats will make use of the top-level
+“id” and “name” attributes and children elements “Description”,
+“InputDescriptor”, “OutputDescriptor”, and “Info”.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getFormats">
+<em class="property">static </em><code class="sig-name descname">getFormats</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Baker&gt;, 0&gt;<a class="headerlink" href="#PyOpenColorIO.Baker.getFormats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getInputSpace">
+<code class="sig-name descname">getInputSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getInputSpace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getLooks">
+<code class="sig-name descname">getLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getLooks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getShaperSize">
+<code class="sig-name descname">getShaperSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Baker.getShaperSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getShaperSpace">
+<code class="sig-name descname">getShaperSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getShaperSpace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.getTargetSpace">
+<code class="sig-name descname">getTargetSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getTargetSpace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setConfig">
+<code class="sig-name descname">setConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the config to use.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setCubeSize">
+<code class="sig-name descname">setCubeSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">cubesize</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setCubeSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override the default cube sample size. default: &lt;format specific&gt;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setFormat">
+<code class="sig-name descname">setFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">formatName</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the LUT output format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setInputSpace">
+<code class="sig-name descname">setInputSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">inputSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setInputSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the input ColorSpace that the LUT will be applied to.</p>
+<dl class="simple">
+<dt>Parameter <code class="docutils literal notranslate"><span class="pre">inputSpace</span></code>:</dt><dd><p>The input ColorSpace to use.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setLooks">
+<code class="sig-name descname">setLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">looks</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setLooks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the looks to be applied during baking. Looks is a potentially
+comma (or colon) delimited list of lookNames, where +/- prefixes are
+optionally allowed to denote forward/inverse look specification. (And
+forward is assumed in the absence of either).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setShaperSize">
+<code class="sig-name descname">setShaperSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">shapersize</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setShaperSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override the default shaper LUT size. Default value is -1, which
+allows each format to use its own most appropriate size. For the CLF
+format, the default uses a half-domain LUT1D (which is ideal for
+scene-linear inputs).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setShaperSpace">
+<code class="sig-name descname">setShaperSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">shaperSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setShaperSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an <em>optional</em> ColorSpace to be used to shape / transfer the input
+colorspace. This is mostly used to allocate an HDR luminance range
+into an LDR one. If a shaper space is not explicitly specified, and
+the file format supports one, the ColorSpace Allocation will be used
+(not implemented for all formats).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="PyOpenColorIO.Baker.setTargetSpace">
+<code class="sig-name descname">setTargetSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">targetSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setTargetSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the target device colorspace for the LUT.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright Contributors to the OpenColorIO Project.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

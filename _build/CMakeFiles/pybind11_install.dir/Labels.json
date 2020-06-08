@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/CMakeFiles/pybind11_install"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/CMakeFiles/pybind11_install.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/CMakeFiles/pybind11_install-complete.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-install.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-mkdir.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-download.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-update.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-patch.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-configure.rule"
+		},
+		{
+			"file" : "/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pybind11/src/pybind11_install-stamp/pybind11_install-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pybind11_install"
+		],
+		"name" : "pybind11_install"
+	}
+}

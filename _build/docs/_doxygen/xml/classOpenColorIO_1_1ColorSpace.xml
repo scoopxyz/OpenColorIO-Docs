@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1ColorSpace" kind="class" language="C++" prot="public">
+    <compoundname>OpenColorIO::ColorSpace</compoundname>
+    <includes refid="OpenColorIO_8h" local="no">OpenColorIO.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenColorIO_1_1ColorSpace_1a46824a04c85ee082356fe9a097676b8c" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::ColorSpace::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="931" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a8d1c9a142351d8cb24db7f5bd1956cd4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ColorSpaceRcPtr</type>
+        <definition>static ColorSpaceRcPtr OpenColorIO::ColorSpace::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="810" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a5e27caaf0209bf070d3a70fcb7853ec7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ColorSpaceRcPtr</type>
+        <definition>static ColorSpaceRcPtr OpenColorIO::ColorSpace::Create</definition>
+        <argsstring>(ReferenceSpaceType referenceSpace)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>ReferenceSpaceType</type>
+          <declname>referenceSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="812" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a2514db7e27da9c2660dab716cb9cdd5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ColorSpaceRcPtr</type>
+        <definition>ColorSpaceRcPtr OpenColorIO::ColorSpace::createEditableCopy</definition>
+        <argsstring>() const</argsstring>
+        <name>createEditableCopy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="814" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ad0e7178b97b1ac109df7799cec8cd26d" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::ColorSpace::getName</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="816" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ad8722ca4de14c29299935735b5144af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="817" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ad8111b59a28d571b7bce5250a553dc94" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::ColorSpace::getFamily</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getFamily</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the family, for use in user interfaces (optional) The family string could use a &apos;/&apos; separator to indicate levels to be used by hierarchical menus. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="822" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a88d4bab590608ce976db71a9305d2622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setFamily</definition>
+        <argsstring>(const char *family)</argsstring>
+        <name>setFamily</name>
+        <param>
+          <type>const char *</type>
+          <declname>family</declname>
+        </param>
+        <briefdescription>
+<para>Set the family, for use in user interfaces (optional) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="824" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ae9ab7e47269a6de37ae8cb459586e6e5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::ColorSpace::getEqualityGroup</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getEqualityGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenColorIO_1_1ColorSpace" kindref="compound">ColorSpace</ref> group name (used for equality comparisons) This allows no-op transforms between different colorspaces. If an equalityGroup is not defined (an empty string), it will be considered unique (i.e., it will not compare as equal to other ColorSpaces with an empty equality group). This is often, though not always, set to the same value as &apos;family&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="832" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a04bcab350cb25205e7ed13248ff9e12c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setEqualityGroup</definition>
+        <argsstring>(const char *equalityGroup)</argsstring>
+        <name>setEqualityGroup</name>
+        <param>
+          <type>const char *</type>
+          <declname>equalityGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="833" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1aaa478cc40ed18a041a3ad3c1b5bb464f" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::ColorSpace::getDescription</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="835" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a8487ccca9469fedcde0b0d525ba454c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setDescription</definition>
+        <argsstring>(const char *description)</argsstring>
+        <name>setDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="836" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a307b0e2c4904b80ba495993bb8d08651" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>BitDepth</type>
+        <definition>BitDepth OpenColorIO::ColorSpace::getBitDepth</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getBitDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="838" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a144ea33f8a5d26a8e01394627881c5a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setBitDepth</definition>
+        <argsstring>(BitDepth bitDepth)</argsstring>
+        <name>setBitDepth</name>
+        <param>
+          <type>BitDepth</type>
+          <declname>bitDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="839" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a58ad9b4c1902c230a47830f0df7af324" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ReferenceSpaceType</type>
+        <definition>ReferenceSpaceType OpenColorIO::ColorSpace::getReferenceSpaceType</definition>
+        <argsstring>() const</argsstring>
+        <name>getReferenceSpaceType</name>
+        <briefdescription>
+<para>A display color space will use the display-referred reference space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="842" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a9b1e54dc86cf40de6ed7d4fe4f64cb68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::ColorSpace::hasCategory</definition>
+        <argsstring>(const char *category) const</argsstring>
+        <name>hasCategory</name>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+<para>rst:: </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if the category is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="861" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a112dcc06ca804d2f7a8c84db7078fc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::addCategory</definition>
+        <argsstring>(const char *category)</argsstring>
+        <name>addCategory</name>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a single category. <simplesect kind="note"><para>Will do nothing if the category already exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="864" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a87bedcced3ca98de18d077f7961bf08f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::removeCategory</definition>
+        <argsstring>(const char *category)</argsstring>
+        <name>removeCategory</name>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a category. <simplesect kind="note"><para>Will do nothing if the category is missing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="867" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a01e945bbf62e406502cf77fd3f8c749a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::ColorSpace::getNumCategories</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumCategories</name>
+        <briefdescription>
+<para>Get the number of categories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="869" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a2c540f31c63d5076fbab53baff66773b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* OpenColorIO::ColorSpace::getCategory</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getCategory</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the category name using its index <simplesect kind="note"><para>Will be null if the index is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="872" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ac050307fb6700c4a6166e8a404e61ad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::clearCategories</definition>
+        <argsstring>()</argsstring>
+        <name>clearCategories</name>
+        <briefdescription>
+<para>Clear all the categories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="874" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a4d273eafe1a795c5406fd99bb35f5071" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenColorIO::ColorSpace::isData</definition>
+        <argsstring>() const</argsstring>
+        <name>isData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ColorSpaces that are data are treated a bit special. Basically, any colorspace transforms you try to apply to them are ignored. (Think of applying a gamut mapping transform to an ID pass). Also, the <computeroutput><ref refid="classOpenColorIO_1_1DisplayTransform" kindref="compound">DisplayTransform</ref></computeroutput> process obeys special &apos;data min&apos; and &apos;data max&apos; args.</para>
+<para>This is traditionally used for pixel data that represents non-color pixel data, such as normals, point positions, ID information, etc. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="886" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ae29e198abf602116b0dcf1f9a8a4b2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setIsData</definition>
+        <argsstring>(bool isData)</argsstring>
+        <name>setIsData</name>
+        <param>
+          <type>bool</type>
+          <declname>isData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="887" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a2661aeb89e2d276d87582fa1ec5cd188" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Allocation</type>
+        <definition>Allocation OpenColorIO::ColorSpace::getAllocation</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this colorspace needs to be transferred to a limited dynamic range coding space (such as during display with a GPU path), use this allocation to maximize bit efficiency. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="893" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1aa87767245570c82f8c84d6ba0990b77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setAllocation</definition>
+        <argsstring>(Allocation allocation)</argsstring>
+        <name>setAllocation</name>
+        <param>
+          <type>Allocation</type>
+          <declname>allocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="894" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1aee6da1474678b3f8edeba30bb8664fb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::ColorSpace::getAllocationNumVars</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocationNumVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify the optional variable values to configure the allocation. If no variables are specified, the defaults are used.</para>
+<para>ALLOCATION_UNIFORM::</para>
+<para>2 vars: [min, max]</para>
+<para>ALLOCATION_LG2::</para>
+<para>2 vars: [lg2min, lg2max] 3 vars: [lg2min, lg2max, linear_offset] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="907" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a6757a9c09298b318104c7aa1b0adfe62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::getAllocationVars</definition>
+        <argsstring>(float *vars) const</argsstring>
+        <name>getAllocationVars</name>
+        <param>
+          <type>float *</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="908" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a1d0538ae986af650594c4399bdbe119d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setAllocationVars</definition>
+        <argsstring>(int numvars, const float *vars)</argsstring>
+        <name>setAllocationVars</name>
+        <param>
+          <type>int</type>
+          <declname>numvars</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="909" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ade7a5710a3e3ae26550f46bdb3993073" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ConstTransformRcPtr</type>
+        <definition>ConstTransformRcPtr OpenColorIO::ColorSpace::getTransform</definition>
+        <argsstring>(ColorSpaceDirection dir) const</argsstring>
+        <name>getTransform</name>
+        <param>
+          <type>ColorSpaceDirection</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If a transform in the specified direction has been specified, return it. Otherwise return a null ConstTransformRcPtr </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="913" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a54888e7212f2007925c4f097e4de5363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::ColorSpace::setTransform</definition>
+        <argsstring>(const ConstTransformRcPtr &amp;transform, ColorSpaceDirection dir)</argsstring>
+        <name>setTransform</name>
+        <param>
+          <type>const ConstTransformRcPtr &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>ColorSpaceDirection</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify the transform for the appropriate direction. Setting the transform to null will clear it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="917" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a2bff37f956621ffc07e55178dd240383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ColorSpace::ColorSpace</definition>
+        <argsstring>(const ColorSpace &amp;)=delete</argsstring>
+        <name>ColorSpace</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ColorSpace" kindref="compound">ColorSpace</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="920" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ae8e44586582443e247b07bdc28d91d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1ColorSpace" kindref="compound">ColorSpace</ref> &amp;</type>
+        <definition>ColorSpace&amp; OpenColorIO::ColorSpace::operator=</definition>
+        <argsstring>(const ColorSpace &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1ColorSpace" kindref="compound">ColorSpace</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="921" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a893e1815baebc9b10740489b3d29d988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ColorSpace::~ColorSpace</definition>
+        <argsstring>()</argsstring>
+        <name>~ColorSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="922" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1ad1ebc209894d103e65316178d890c9a4" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ColorSpace::ColorSpace</definition>
+        <argsstring>(ReferenceSpaceType referenceSpace)</argsstring>
+        <name>ColorSpace</name>
+        <param>
+          <type>ReferenceSpaceType</type>
+          <declname>referenceSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="925" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1acdebfe24ecc824073b4e5cfaee924a38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::ColorSpace::ColorSpace</definition>
+        <argsstring>()</argsstring>
+        <name>ColorSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="926" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a2a07fb8b3acf2efda1968e3dc8bf5088" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::ColorSpace::getImpl</definition>
+        <argsstring>()</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="932" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="932" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a4c217c7067c0a8e5946089fd5769d5df" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl *</type>
+        <definition>const Impl* OpenColorIO::ColorSpace::getImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="933" column="17" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="933" bodyend="933"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1ColorSpace_1a16b39f136a9570a082a3c86ecec5ac8a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenColorIO::ColorSpace::deleter</definition>
+        <argsstring>(ColorSpace *c)</argsstring>
+        <name>deleter</name>
+        <param>
+          <type><ref refid="classOpenColorIO_1_1ColorSpace" kindref="compound">ColorSpace</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="928" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <emphasis><ref refid="classOpenColorIO_1_1ColorSpace" kindref="compound">ColorSpace</ref></emphasis> is the state of an image with respect to colorimetry and color encoding. Transforming images between different <emphasis>ColorSpaces</emphasis> is the primary motivation for this library.</para>
+<para>While a complete discussion of color spaces is beyond the scope of header documentation, traditional uses would be to have <emphasis>ColorSpaces</emphasis> corresponding to: physical capture devices (known cameras, scanners), and internal &apos;convenience&apos; spaces (such as scene linear, logarithmic).</para>
+<para><emphasis>ColorSpaces</emphasis> are specific to a particular image precision (float32, uint8, etc.), and the set of ColorSpaces that provide equivalent mappings (at different precisions) are referred to as a &apos;family&apos;. </para>
+    </detaileddescription>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" line="808" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorIO.h" bodystart="807" bodyend="934"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a112dcc06ca804d2f7a8c84db7078fc15" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>addCategory</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ac050307fb6700c4a6166e8a404e61ad8" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>clearCategories</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a2bff37f956621ffc07e55178dd240383" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>ColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ad1ebc209894d103e65316178d890c9a4" prot="private" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>ColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1acdebfe24ecc824073b4e5cfaee924a38" prot="private" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>ColorSpace</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a8d1c9a142351d8cb24db7f5bd1956cd4" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a5e27caaf0209bf070d3a70fcb7853ec7" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a2514db7e27da9c2660dab716cb9cdd5e" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a16b39f136a9570a082a3c86ecec5ac8a" prot="private" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>deleter</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a2661aeb89e2d276d87582fa1ec5cd188" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getAllocation</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1aee6da1474678b3f8edeba30bb8664fb9" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getAllocationNumVars</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a6757a9c09298b318104c7aa1b0adfe62" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getAllocationVars</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a307b0e2c4904b80ba495993bb8d08651" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a2c540f31c63d5076fbab53baff66773b" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getCategory</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1aaa478cc40ed18a041a3ad3c1b5bb464f" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getDescription</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ae9ab7e47269a6de37ae8cb459586e6e5" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getEqualityGroup</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ad8111b59a28d571b7bce5250a553dc94" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getFamily</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a2a07fb8b3acf2efda1968e3dc8bf5088" prot="private" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a4c217c7067c0a8e5946089fd5769d5df" prot="private" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ad0e7178b97b1ac109df7799cec8cd26d" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getName</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a01e945bbf62e406502cf77fd3f8c749a" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getNumCategories</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a58ad9b4c1902c230a47830f0df7af324" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getReferenceSpaceType</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ade7a5710a3e3ae26550f46bdb3993073" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>getTransform</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a9b1e54dc86cf40de6ed7d4fe4f64cb68" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>hasCategory</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a4d273eafe1a795c5406fd99bb35f5071" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>isData</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a46824a04c85ee082356fe9a097676b8c" prot="private" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>m_impl</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ae8e44586582443e247b07bdc28d91d03" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a87bedcced3ca98de18d077f7961bf08f" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>removeCategory</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1aa87767245570c82f8c84d6ba0990b77d" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setAllocation</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a1d0538ae986af650594c4399bdbe119d" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setAllocationVars</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a144ea33f8a5d26a8e01394627881c5a5" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setBitDepth</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a8487ccca9469fedcde0b0d525ba454c6" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setDescription</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a04bcab350cb25205e7ed13248ff9e12c" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setEqualityGroup</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a88d4bab590608ce976db71a9305d2622" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setFamily</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ae29e198abf602116b0dcf1f9a8a4b2c4" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setIsData</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1ad8722ca4de14c29299935735b5144af5" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setName</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a54888e7212f2007925c4f097e4de5363" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>setTransform</name></member>
+      <member refid="classOpenColorIO_1_1ColorSpace_1a893e1815baebc9b10740489b3d29d988" prot="public" virt="non-virtual"><scope>OpenColorIO::ColorSpace</scope><name>~ColorSpace</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

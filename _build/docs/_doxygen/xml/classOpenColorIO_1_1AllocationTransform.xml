@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1AllocationTransform" kind="class" language="C++" prot="public">
+    <compoundname>OpenColorIO::AllocationTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenColorIO_1_1AllocationTransform_1aa0768e9b1f7bcc25a70902ee98688269" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::AllocationTransform::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="132" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1aefb5cb74a5797476042beabcbc6b2179" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AllocationTransformRcPtr</type>
+        <definition>static AllocationTransformRcPtr OpenColorIO::AllocationTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="105" column="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1aa21c580e58b2629443684c6a48851107" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TransformRcPtr</type>
+        <definition>TransformRcPtr OpenColorIO::AllocationTransform::createEditableCopy</definition>
+        <argsstring>() const override</argsstring>
+        <name>createEditableCopy</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa">createEditableCopy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="107" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1acf11d7f7554ddaf8d1486e7d73b8e842" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>TransformDirection</type>
+        <definition>TransformDirection OpenColorIO::AllocationTransform::getDirection</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>getDirection</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6">getDirection</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="109" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1af586fa4e9d164068a0ae922ca3f47d89" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::AllocationTransform::setDirection</definition>
+        <argsstring>(TransformDirection dir) noexcept override</argsstring>
+        <name>setDirection</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b">setDirection</reimplements>
+        <param>
+          <type>TransformDirection</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this only affects the evaluation and not the values stored in the object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a6854879c5e5be0094dbb6d47f838a886" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::AllocationTransform::validate</definition>
+        <argsstring>() const override</argsstring>
+        <name>validate</name>
+        <reimplements refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0">validate</reimplements>
+        <briefdescription>
+<para>Will throw if data is not valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1ab7fb6e9be485bdd16d886f7e1908e525" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Allocation</type>
+        <definition>Allocation OpenColorIO::AllocationTransform::getAllocation</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="115" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a8b156a013d616c6b9c223a153bfc2308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::AllocationTransform::setAllocation</definition>
+        <argsstring>(Allocation allocation)</argsstring>
+        <name>setAllocation</name>
+        <param>
+          <type>Allocation</type>
+          <declname>allocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a83ea70f8fb5ab526ec4504bfd9879096" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenColorIO::AllocationTransform::getNumVars</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="118" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a37a0a8c4545b9f287d82f5342a77e96a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::AllocationTransform::getVars</definition>
+        <argsstring>(float *vars) const</argsstring>
+        <name>getVars</name>
+        <param>
+          <type>float *</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a7f8c57137269cf6ec5bd9517e55e9c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenColorIO::AllocationTransform::setVars</definition>
+        <argsstring>(int numvars, const float *vars)</argsstring>
+        <name>setVars</name>
+        <param>
+          <type>int</type>
+          <declname>numvars</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1aa668635ee68b473aff7f826b4a514d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1AllocationTransform" kindref="compound">AllocationTransform</ref> &amp;</type>
+        <definition>AllocationTransform&amp; OpenColorIO::AllocationTransform::operator=</definition>
+        <argsstring>(const AllocationTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1AllocationTransform" kindref="compound">AllocationTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="122" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a6722693060c38e9879b1323b3a514bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::AllocationTransform::~AllocationTransform</definition>
+        <argsstring>()</argsstring>
+        <name>~AllocationTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="123" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a47a88534cd995459c5d442a00907e7f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::AllocationTransform::AllocationTransform</definition>
+        <argsstring>()</argsstring>
+        <name>AllocationTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="126" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a02c9c9210934fa661cc6bc445ea7748d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::AllocationTransform::AllocationTransform</definition>
+        <argsstring>(const AllocationTransform &amp;)</argsstring>
+        <name>AllocationTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1AllocationTransform" kindref="compound">AllocationTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="127" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a921776f4000360d9f6fc6b7c1a6aa325" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl *</type>
+        <definition>Impl* OpenColorIO::AllocationTransform::getImpl</definition>
+        <argsstring>()</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="133" column="11" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1a8d877012bc6328e788d96d0b40c1f466" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl *</type>
+        <definition>const Impl* OpenColorIO::AllocationTransform::getImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>getImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="134" column="17" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1AllocationTransform_1aca4e688959c227b67d80d550b3dea29c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenColorIO::AllocationTransform::deleter</definition>
+        <argsstring>(AllocationTransform *t)</argsstring>
+        <name>deleter</name>
+        <param>
+          <type><ref refid="classOpenColorIO_1_1AllocationTransform" kindref="compound">AllocationTransform</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="129" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Forward direction wraps the &apos;expanded&apos; range into the specified, often compressed, range. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::AllocationTransform</label>
+        <link refid="classOpenColorIO_1_1AllocationTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::AllocationTransform</label>
+        <link refid="classOpenColorIO_1_1AllocationTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="103" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="102" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a47a88534cd995459c5d442a00907e7f5" prot="private" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>AllocationTransform</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a02c9c9210934fa661cc6bc445ea7748d" prot="private" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>AllocationTransform</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1aefb5cb74a5797476042beabcbc6b2179" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1aa21c580e58b2629443684c6a48851107" prot="public" virt="virtual"><scope>OpenColorIO::AllocationTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1aca4e688959c227b67d80d550b3dea29c" prot="private" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>deleter</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1ab7fb6e9be485bdd16d886f7e1908e525" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>getAllocation</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1acf11d7f7554ddaf8d1486e7d73b8e842" prot="public" virt="virtual"><scope>OpenColorIO::AllocationTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a921776f4000360d9f6fc6b7c1a6aa325" prot="private" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a8d877012bc6328e788d96d0b40c1f466" prot="private" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>getImpl</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a83ea70f8fb5ab526ec4504bfd9879096" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>getNumVars</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a37a0a8c4545b9f287d82f5342a77e96a" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>getVars</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1aa0768e9b1f7bcc25a70902ee98688269" prot="private" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>m_impl</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1aa668635ee68b473aff7f826b4a514d52" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::AllocationTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a8b156a013d616c6b9c223a153bfc2308" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>setAllocation</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1af586fa4e9d164068a0ae922ca3f47d89" prot="public" virt="virtual"><scope>OpenColorIO::AllocationTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a7f8c57137269cf6ec5bd9517e55e9c16" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>setVars</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::AllocationTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a6854879c5e5be0094dbb6d47f838a886" prot="public" virt="virtual"><scope>OpenColorIO::AllocationTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1AllocationTransform_1a6722693060c38e9879b1323b3a514bed" prot="public" virt="virtual"><scope>OpenColorIO::AllocationTransform</scope><name>~AllocationTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::AllocationTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

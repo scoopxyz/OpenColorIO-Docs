@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOpenColorIO_1_1BuiltinTransform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OpenColorIO::BuiltinTransform</compoundname>
+    <basecompoundref refid="classOpenColorIO_1_1Transform" prot="public" virt="non-virtual">OpenColorIO::Transform</basecompoundref>
+    <includes refid="OpenColorTransforms_8h" local="no">OpenColorTransforms.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1af394d95909230ab3281c6826aa3df1be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BuiltinTransformRcPtr</type>
+        <definition>static BuiltinTransformRcPtr OpenColorIO::BuiltinTransform::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="146" column="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1a6cea18140b3dbe5cabcf5b4d00b76a4a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* OpenColorIO::BuiltinTransform::getStyle</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="148" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1a79e71caa68a3feb302b1911e74971211" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenColorIO::BuiltinTransform::setStyle</definition>
+        <argsstring>(const char *style)=0</argsstring>
+        <name>setStyle</name>
+        <param>
+          <type>const char *</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select an existing built-in transform style from the list accessible through :cpp:class:<computeroutput><ref refid="classOpenColorIO_1_1BuiltinTransformRegistry" kindref="compound">BuiltinTransformRegistry</ref></computeroutput>. The style is the ID string that identifies which transform to apply. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="152" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1ad67b50634b98cb2e8c56d1b750dff998" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* OpenColorIO::BuiltinTransform::getDescription</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>getDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="154" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1a5d41edd860e70097c69416390314dad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenColorIO::BuiltinTransform::~BuiltinTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~BuiltinTransform</name>
+        <briefdescription>
+<para>To never use i.e. only needed for the Python bindings with pybind11. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="157" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1a33731621b11dc4ada6a3a4faa77a9463" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::BuiltinTransform::BuiltinTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>BuiltinTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="160" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1aa947a3188287df6ec42583de5c573fe2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenColorIO::BuiltinTransform::BuiltinTransform</definition>
+        <argsstring>(const BuiltinTransform &amp;)=delete</argsstring>
+        <name>BuiltinTransform</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1BuiltinTransform" kindref="compound">BuiltinTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="163" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenColorIO_1_1BuiltinTransform_1af53bd0ed3adb56453203bc243838c7ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenColorIO_1_1BuiltinTransform" kindref="compound">BuiltinTransform</ref> &amp;</type>
+        <definition>BuiltinTransform&amp; OpenColorIO::BuiltinTransform::operator=</definition>
+        <argsstring>(const BuiltinTransform &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenColorIO_1_1BuiltinTransform" kindref="compound">BuiltinTransform</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="164" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A built-in transform is similar to a <ref refid="classOpenColorIO_1_1FileTransform" kindref="compound">FileTransform</ref>, but without the file. OCIO knows how to build a set of commonly used transforms on-demand, thus avoiding the need for external files and simplifying config authoring. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::BuiltinTransform</label>
+        <link refid="classOpenColorIO_1_1BuiltinTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OpenColorIO::Transform</label>
+        <link refid="classOpenColorIO_1_1Transform"/>
+      </node>
+      <node id="1">
+        <label>OpenColorIO::BuiltinTransform</label>
+        <link refid="classOpenColorIO_1_1BuiltinTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" line="144" column="1" bodyfile="/home/fawlty/temp_dev/OpenColorIO-2/include/OpenColorIO/OpenColorTransforms.h" bodystart="143" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1a33731621b11dc4ada6a3a4faa77a9463" prot="protected" virt="non-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>BuiltinTransform</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1aa947a3188287df6ec42583de5c573fe2" prot="private" virt="non-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>BuiltinTransform</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1af394d95909230ab3281c6826aa3df1be" prot="public" virt="non-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>Create</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aa1cbbd7cf05db7ca517943313dbeeaaa" prot="public" virt="pure-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>createEditableCopy</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1ad67b50634b98cb2e8c56d1b750dff998" prot="public" virt="pure-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>getDescription</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a5fd3cefa1d8f6509cc039e0a766758d6" prot="public" virt="pure-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>getDirection</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1a6cea18140b3dbe5cabcf5b4d00b76a4a" prot="public" virt="pure-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>getStyle</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1af53bd0ed3adb56453203bc243838c7ec" prot="private" virt="non-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ab05c7545c1e3408ca5c38b649ebe2da5" prot="public" virt="non-virtual" ambiguityscope="OpenColorIO::Transform::"><scope>OpenColorIO::BuiltinTransform</scope><name>operator=</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1accfb0c140b4c341486e002c8b108e10b" prot="public" virt="pure-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>setDirection</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1a79e71caa68a3feb302b1911e74971211" prot="public" virt="pure-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>setStyle</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac261a8e3359a024a16432385107b0c67" prot="public" virt="non-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1a3fe7f157396a4c96f250a434bdc16d2b" prot="protected" virt="non-virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>Transform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1aff9f7e14349ef4fd9d6f0143e78ffca0" prot="public" virt="virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>validate</name></member>
+      <member refid="classOpenColorIO_1_1BuiltinTransform_1a5d41edd860e70097c69416390314dad1" prot="public" virt="virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>~BuiltinTransform</name></member>
+      <member refid="classOpenColorIO_1_1Transform_1ac045c8f595624ffade713e4b18be6b4a" prot="public" virt="virtual"><scope>OpenColorIO::BuiltinTransform</scope><name>~Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
