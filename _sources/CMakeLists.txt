@@ -92,7 +92,7 @@ foreach(f ${DOC_SOURCES})
     set(DST_PATH ${CMAKE_BINARY_DIR}/${relpath})
     if(NOT IN_DOCS)
         get_filename_component(F_NAME ${relpath} NAME)
-        set(DST_PATH "${CMAKE_BINARY_DIR}/docs/src/${F_NAME}")
+        set(DST_PATH "${CMAKE_BINARY_DIR}/docs/${F_NAME}")
     endif()
 
     add_custom_command(OUTPUT ${DST_PATH}

@@ -457,7 +457,7 @@ LUT is correct.</p>
 </div>
 <p>Alternatively the config can be specified as a command-line argument
 to the ociobakelut command, <code class="docutils literal notranslate"><span class="pre">--iconfig</span> <span class="pre">~/path/to/spi-vfx/config.ocio</span></code></p>
-<p>These examples will use the <a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config, specifically the
+<p>These examples will use the <a class="reference internal" href="../configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config, specifically the
 following colorspaces</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">lnf</span></code> - scene-referred linear light colorspace (reference colorspace)</p></li>
@@ -471,7 +471,7 @@ config and any colorspaces</p>
 <p>Say we have a <code class="docutils literal notranslate"><span class="pre">lg10</span></code> image in MPlay (maybe a “.cin” film scan), and
 wish to view it in our main display colorspace, <code class="docutils literal notranslate"><span class="pre">srgb8</span></code></p>
 <p>The available formats are listed in the <code class="docutils literal notranslate"><span class="pre">ociobakelut</span> <span class="pre">--help</span></code> - for
-MPlay, we use the “houdini” format (see <a class="reference internal" href="../src/overview/faq.html#faq-supportedlut"><span class="std std-ref">the FAQ</span></a>
+MPlay, we use the “houdini” format (see <a class="reference internal" href="../overview/faq.html#faq-supportedlut"><span class="std std-ref">the FAQ</span></a>
 for a more detailed list)</p>
 <p>So, to create a LUT that transforms from <code class="docutils literal notranslate"><span class="pre">lg10</span></code> to <code class="docutils literal notranslate"><span class="pre">srgb8</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bash$ ociobakelut --format houdini --inputspace lg10 --outputspace srgb8 log_to_display.lut
@@ -519,11 +519,11 @@ course):</p>
 </div>
 <div class="section" id="allocation-based-prelut">
 <h3>Allocation-based prelut<a class="headerlink" href="#allocation-based-prelut" title="Permalink to this headline">¶</a></h3>
-<p>If your <a class="reference internal" href="../src/configs/allocation_vars.html#allocationvars"><span class="std std-ref">allocation variables</span></a> are setup
+<p>If your <a class="reference internal" href="../configs/allocation_vars.html#allocationvars"><span class="std std-ref">allocation variables</span></a> are setup
 correctly, you can omit the <code class="docutils literal notranslate"><span class="pre">--shaperspace</span></code> argument, and a prelut
 will be automatically created based on the allocation vars (see the
 linked page for more information)</p>
-<p>Since the colorspaces in the config we are using (<a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a>) have
+<p>Since the colorspaces in the config we are using (<a class="reference internal" href="../configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a>) have
 their allocation variables set correctly, we could simplify the
 <code class="docutils literal notranslate"><span class="pre">lnf</span></code> to <code class="docutils literal notranslate"><span class="pre">srgb8</span></code> bake command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bash$ ociobakelut --format houdini --inputspace lnf --outputspace srgb8 lin_to_display_allocbased.lut
@@ -597,7 +597,7 @@ other words, to paint values over 1.0 when converted to linear-light
 in comp)</p>
 <p>This is a facility-dependent workflow choice.</p>
 <p>For this example we will use the <code class="docutils literal notranslate"><span class="pre">vd16</span></code> colorspace, as described by
-the <a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a></p>
+the <a class="reference internal" href="../configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a></p>
 </div>
 <div class="section" id="creating-display-lut">
 <h3>Creating display LUT<a class="headerlink" href="#creating-display-lut" title="Permalink to this headline">¶</a></h3>

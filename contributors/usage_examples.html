@@ -443,7 +443,7 @@ steps internally.</p>
 This represents the entirety of the current color “universe”. It can either
 be initialized by your app at startup or created explicitly. In common
 usage, you can just query <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">GetCurrentConfig()</span></code>, which will auto
-initialize on first use using the <span class="target" id="index-0"></span><a class="reference internal" href="../src/overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a> environment variable.</p></li>
+initialize on first use using the <span class="target" id="index-0"></span><a class="reference internal" href="../overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a> environment variable.</p></li>
 <li><p><strong>Get Processor from the Config.</strong>
 A processor corresponds to a ‘baked’ color transformation. You specify two
 arguments when querying a processor: the <span class="xref std std-ref">colorspace_section</span> you are
@@ -458,11 +458,11 @@ render ‘setup’ would be appropriate, once per scanline would be
 inappropriate.</p></li>
 <li><p><strong>Convert your image, using the Processor.</strong>
 Once you have the processor, you can apply the color transformation using
-the “apply” function.  In <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic-cpp"><span class="std std-ref">C++</span></a>, you apply the
+the “apply” function.  In <a class="reference internal" href="#usage-applybasic-cpp"><span class="std std-ref">C++</span></a>, you apply the
 processing in-place, by first wrapping your image in an
 <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ImageDesc</span></code> class.  This approach is intended to be used in high
 performance applications, and can be used on multiple threads (per scanline,
-per tile, etc).   In <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic-python"><span class="std std-ref">Python</span></a> you call
+per tile, etc).   In <a class="reference internal" href="#usage-applybasic-python"><span class="std std-ref">Python</span></a> you call
 “applyRGB” / “applyRGBA” on your sequence of pixels.   Note that in both
 languages, it is far more efficient to call “apply” on batches of pixels at
 a time.</p></li>
@@ -513,16 +513,16 @@ The only difference is that one has to first determine the name of the display
 transform name.</p>
 <ol class="arabic simple">
 <li><p><strong>Get the Config.</strong>
-See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+See <a class="reference internal" href="#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
 <li><p><strong>Lookup the display ColorSpace.</strong>
 The display <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ColorSpace</span></code> is queried from the configuration using
 <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Config::getDisplayColorSpaceName()</span></code>.   If the user has specified
 value for the <code class="docutils literal notranslate"><span class="pre">device</span></code> or the <code class="docutils literal notranslate"><span class="pre">displayTransformName</span></code>, use them. If these
 values are unknown default values can be queried (as shown below).</p></li>
 <li><p><strong>Get the processor from the Config.</strong>
-See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+See <a class="reference internal" href="#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
 <li><p><strong>Convert your image, using the processor.</strong>
-See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+See <a class="reference internal" href="#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
 </ol>
 <div class="section" id="id1">
 <h3>C++<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
@@ -571,9 +571,9 @@ alpha, luma) are visible, as well as allowing for optional color corrections
 plugins, the OCIODisplay node performs these steps internally.</p>
 <ol class="arabic simple">
 <li><p><strong>Get the Config.</strong>
-See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+See <a class="reference internal" href="#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
 <li><p><strong>Lookup the display ColorSpace.</strong>
-See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-displayimage"><span class="std std-ref">Displaying an image, using the CPU (simple ColorSpace conversion)</span></a> for details</p></li>
+See <a class="reference internal" href="#usage-displayimage"><span class="std std-ref">Displaying an image, using the CPU (simple ColorSpace conversion)</span></a> for details</p></li>
 <li><p><strong>Create a new DisplayTransform.</strong>
 This transform will embody the full ‘display’ pipeline you wish to control.
 The user is required to call
@@ -596,7 +596,7 @@ returned, the original <code class="xref cpp cpp-class docutils literal notransl
 to hold onto. (Though if you’d like to for re-use, there is no problem doing
 so).</p></li>
 <li><p><strong>Convert your image, using the processor.</strong>
-See <a class="reference internal" href="../src/contributors/usage_examples.html#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
+See <a class="reference internal" href="#usage-applybasic"><span class="std std-ref">Applying a basic ColorSpace transform, using the CPU</span></a> for details.</p></li>
 </ol>
 <div class="section" id="id3">
 <h3>C++<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>

@@ -413,12 +413,12 @@
 <h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>A color configuration (<a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.Config</span></code></a>) defines all the color spaces to be
+<p>A color configuration (<a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.Config</span></code></a>) defines all the color spaces to be
 available at runtime.</p>
-<p>(<a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.Config</span></code></a>)  is the main object for interacting with this library.
+<p>(<a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.Config</span></code></a>)  is the main object for interacting with this library.
 It encapsulates all the information necessary to use customized
-<a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.ColorSpaceTransform" title="PyOpenColorIO.ColorSpaceTransform"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.ColorSpaceTransform</span></code></a> and
-<a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.DisplayTransform" title="PyOpenColorIO.DisplayTransform"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.DisplayTransform</span></code></a> operations.</p>
+<a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.ColorSpaceTransform" title="PyOpenColorIO.ColorSpaceTransform"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.ColorSpaceTransform</span></code></a> and
+<a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.DisplayTransform" title="PyOpenColorIO.DisplayTransform"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.DisplayTransform</span></code></a> operations.</p>
 <p>See the <span class="xref std std-ref">user-guide</span> for more information on selecting, creating,
 and working with custom color configurations.</p>
 <p>For applications interested in using only one color configuration at
@@ -434,7 +434,7 @@ concurrently in a single process. This app would need to keep
 multiple configurations alive, and manage them appropriately.</p>
 <p>Roughly speaking, a novice user should select a default
 configuration that most closely approximates the use case
-(animation, visual effects, etc.), and set the <span class="target" id="index-0"></span><a class="reference internal" href="../../src/overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a>
+(animation, visual effects, etc.), and set the <span class="target" id="index-0"></span><a class="reference internal" href="../../overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a>
 environment variable to point at the root of that configuration.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -443,9 +443,9 @@ in a multi-app ecosystem, as it allows all applications to be consistently confi
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Paths to LUTs can be relative. The search paths are defined in <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.Config</span></code></a>.</p>
+<p>Paths to LUTs can be relative. The search paths are defined in <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyOpenColorIO.Config</span></code></a>.</p>
 </div>
-<p>See <a class="reference internal" href="../../src/contributors/usage_examples.html#developers-usageexamples"><span class="std std-ref">Usage Examples</span></a></p>
+<p>See <a class="reference internal" href="../../contributors/usage_examples.html#developers-usageexamples"><span class="std std-ref">Usage Examples</span></a></p>
 <div class="section" id="examples-of-use">
 <h3>Examples of Use<a class="headerlink" href="#examples-of-use" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">PyOpenColorIO</span> <span class="k">as</span> <span class="nn">OCIO</span>
@@ -518,21 +518,21 @@ luts without restarting.</p>
 
 <dl class="py function">
 <dt id="PyOpenColorIO.GetCurrentConfig">
-<code class="sig-prename descclassname">PyOpenColorIO.</code><code class="sig-name descname">GetCurrentConfig</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.GetCurrentConfig" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">PyOpenColorIO.</code><code class="sig-name descname">GetCurrentConfig</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.GetCurrentConfig" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt id="PyOpenColorIO.GetLoggingLevel">
 <code class="sig-prename descclassname">PyOpenColorIO.</code><code class="sig-name descname">GetLoggingLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::LoggingLevel<a class="headerlink" href="#PyOpenColorIO.GetLoggingLevel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the global logging level. You can override this at runtime using
-the <span class="target" id="index-1"></span><a class="reference internal" href="../../src/overview/installation.html#envvar-OCIO_LOGGING_LEVEL"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO_LOGGING_LEVEL</span></code></a> environment variable. The client
+the <span class="target" id="index-1"></span><a class="reference internal" href="../../overview/installation.html#envvar-OCIO_LOGGING_LEVEL"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO_LOGGING_LEVEL</span></code></a> environment variable. The client
 application that sets this should use SetLoggingLevel, and not the
 environment variable. The default value is INFO.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="PyOpenColorIO.SetCurrentConfig">
-<code class="sig-prename descclassname">PyOpenColorIO.</code><code class="sig-name descname">SetCurrentConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.SetCurrentConfig" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">PyOpenColorIO.</code><code class="sig-name descname">SetCurrentConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.SetCurrentConfig" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -598,7 +598,7 @@ This app would need to keep multiple configurations alive, and to
 manage them appropriately.</p>
 <p>Roughly speaking, a novice user should select a default configuration
 that most closely approximates the use case (animation, visual
-effects, etc.), and set the <span class="target" id="index-2"></span><a class="reference internal" href="../../src/overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a> environment variable to
+effects, etc.), and set the <span class="target" id="index-2"></span><a class="reference internal" href="../../overview/installation.html#envvar-OCIO"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">OCIO</span></code></a> environment variable to
 point at the root of that configuration.</p>
 <p>note Initialization using environment variables is typically
 preferable in a multi-app ecosystem, as it allows all applications to
@@ -626,7 +626,7 @@ be consistently configured.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.CreateFromEnv">
-<em class="property">static </em><code class="sig-name descname">CreateFromEnv</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateFromEnv" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">CreateFromEnv</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateFromEnv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a configuration using the OCIO environment variable. If the
 variable is missing or empty, returns the same result as
 Config::CreateRaw`.</p>
@@ -634,19 +634,19 @@ Config::CreateRaw`.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.CreateFromFile">
-<em class="property">static </em><code class="sig-name descname">CreateFromFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateFromFile" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">CreateFromFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateFromFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a configuration using a specific config file.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.CreateFromStream">
-<em class="property">static </em><code class="sig-name descname">CreateFromStream</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">str</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateFromStream" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">CreateFromStream</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">str</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateFromStream" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a configuration using a stream.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.CreateRaw">
-<em class="property">static </em><code class="sig-name descname">CreateRaw</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateRaw" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">CreateRaw</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Config.CreateRaw" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a fall-back config. This may be useful to allow client apps to
 launch in cases when the supplied config path is not loadable.</p>
 </dd></dl>
@@ -741,7 +741,7 @@ use. If a look is not desired, then just pass a null or empty string.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.addEnvironmentVar">
-<code class="sig-name descname">addEnvironmentVar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">defaultValue</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.addEnvironmentVar" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">addEnvironmentVar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">defaultValue</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.addEnvironmentVar" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -751,7 +751,7 @@ use. If a look is not desired, then just pass a null or empty string.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.addSearchPath">
-<code class="sig-name descname">addSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.addSearchPath" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">addSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.addSearchPath" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a single search path to the end of the list. Paths may be either
 absolute or relative. Relative paths are relative to the working
 directory. Forward slashes will be normalized to reverse for Windows.
@@ -765,7 +765,7 @@ Environment (context) variables may be used in paths.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.clearColorSpaces">
-<code class="sig-name descname">clearColorSpaces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearColorSpaces" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearColorSpaces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearColorSpaces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove all the color spaces from the configuration.</p>
 <p>note Removing color spaces from a <cite>Config</cite> does not affect any
 <cite>ColorSpaceSet</cite> sets that have already been created.</p>
@@ -773,32 +773,32 @@ Environment (context) variables may be used in paths.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.clearDisplays">
-<code class="sig-name descname">clearDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearDisplays" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearDisplays" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.clearEnvironmentVars">
-<code class="sig-name descname">clearEnvironmentVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearEnvironmentVars" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearEnvironmentVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearEnvironmentVars" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.clearLooks">
-<code class="sig-name descname">clearLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearLooks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearLooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.clearSearchPaths">
-<code class="sig-name descname">clearSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearSearchPaths" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearSearchPaths" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.clearViewTransforms">
-<code class="sig-name descname">clearViewTransforms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearViewTransforms" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearViewTransforms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.clearViewTransforms" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.filepathOnlyMatchesDefaultRule">
-<code class="sig-name descname">filepathOnlyMatchesDefaultRule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">filePath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.filepathOnlyMatchesDefaultRule" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">filepathOnlyMatchesDefaultRule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">filePath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.filepathOnlyMatchesDefaultRule" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns true if the only rule matched by filePath is the default rule.
 This is a convenience method for applications that want to require the
 user to manually choose a color space when strictParsing is true and
@@ -807,12 +807,12 @@ no other rules match.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getActiveDisplays">
-<code class="sig-name descname">getActiveDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getActiveDisplays" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getActiveDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getActiveDisplays" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getActiveViews">
-<code class="sig-name descname">getActiveViews</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getActiveViews" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getActiveViews</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getActiveViews" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -838,7 +838,7 @@ Config::serialize).</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getColorSpace">
-<code class="sig-name descname">getColorSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ColorSpace<a class="headerlink" href="#PyOpenColorIO.Config.getColorSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getColorSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ColorSpace<a class="headerlink" href="#PyOpenColorIO.Config.getColorSpace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the color space from all the color spaces (i.e. active and
 inactive) and return null if the name is not found.</p>
 <p>note The fcn accepts either a color space OR role name. (Color space
@@ -904,17 +904,17 @@ and vice-versa.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getCurrentContext">
-<code class="sig-name descname">getCurrentContext</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::Context<a class="headerlink" href="#PyOpenColorIO.Config.getCurrentContext" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getCurrentContext</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::Context<a class="headerlink" href="#PyOpenColorIO.Config.getCurrentContext" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDefaultDisplay">
-<code class="sig-name descname">getDefaultDisplay</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultDisplay" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDefaultDisplay</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultDisplay" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDefaultLumaCoefs">
-<code class="sig-name descname">getDefaultLumaCoefs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; List[float[3]]<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultLumaCoefs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDefaultLumaCoefs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; List[float[3]]<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultLumaCoefs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the default coefficients for computing luma.</p>
 <p>note There is no “1 size fits all” set of luma coefficients. (The
 values are typically different for each colorspace, and the
@@ -927,7 +927,7 @@ call if/when another client is interesting in using it.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDefaultSceneToDisplayViewTransform">
-<code class="sig-name descname">getDefaultSceneToDisplayViewTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ViewTransform<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultSceneToDisplayViewTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDefaultSceneToDisplayViewTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ViewTransform<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultSceneToDisplayViewTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>The default transform to use for scene-referred to display-referred
 reference space conversions is the first scene-referred view transform
 listed in that section of the config (the one with the lowest index).
@@ -936,95 +936,95 @@ Returns a null ConstTransformRcPtr if there isn’t one.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDefaultView">
-<code class="sig-name descname">getDefaultView</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultView" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDefaultView</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDefaultView" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDescription">
-<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDescription" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDescription" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDisplayColorSpaceName">
-<code class="sig-name descname">getDisplayColorSpaceName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDisplayColorSpaceName" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDisplayColorSpaceName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDisplayColorSpaceName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the colorspace attribute of the (display, view) pair. (Note
 that this may be either a color space or a display color space.)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDisplayLooks">
-<code class="sig-name descname">getDisplayLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDisplayLooks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDisplayLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDisplayLooks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the looks attribute of a (display, view) pair.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDisplayViewTransformName">
-<code class="sig-name descname">getDisplayViewTransformName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDisplayViewTransformName" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDisplayViewTransformName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getDisplayViewTransformName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the view_transform attribute of the (display, view) pair.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getDisplays">
-<code class="sig-name descname">getDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 8&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getDisplays" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 8&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getDisplays" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getEnvironmentMode">
-<code class="sig-name descname">getEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.EnvironmentMode<a class="headerlink" href="#PyOpenColorIO.Config.getEnvironmentMode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.EnvironmentMode<a class="headerlink" href="#PyOpenColorIO.Config.getEnvironmentMode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getEnvironmentVarDefault">
-<code class="sig-name descname">getEnvironmentVarDefault</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getEnvironmentVarDefault" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getEnvironmentVarDefault</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getEnvironmentVarDefault" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getEnvironmentVarNames">
-<code class="sig-name descname">getEnvironmentVarNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 0&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getEnvironmentVarNames" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getEnvironmentVarNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 0&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getEnvironmentVarNames" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getFamilySeparator">
-<code class="sig-name descname">getFamilySeparator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getFamilySeparator" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getFamilySeparator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getFamilySeparator" title="Permalink to this definition">¶</a></dt>
 <dd><p>If not empty or null a single character to separate the family string
 in levels.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getFileRules">
-<code class="sig-name descname">getFileRules</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::FileRules<a class="headerlink" href="#PyOpenColorIO.Config.getFileRules" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getFileRules</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::FileRules<a class="headerlink" href="#PyOpenColorIO.Config.getFileRules" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get read-only version of the file rules.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getInactiveColorSpaces">
-<code class="sig-name descname">getInactiveColorSpaces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getInactiveColorSpaces" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getInactiveColorSpaces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getInactiveColorSpaces" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getLook">
-<code class="sig-name descname">getLook</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::Look<a class="headerlink" href="#PyOpenColorIO.Config.getLook" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getLook</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::Look<a class="headerlink" href="#PyOpenColorIO.Config.getLook" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getLookNames">
-<code class="sig-name descname">getLookNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 10&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getLookNames" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getLookNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 10&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getLookNames" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getLooks">
-<code class="sig-name descname">getLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 11&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getLooks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 11&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getLooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getMajorVersion">
-<code class="sig-name descname">getMajorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Config.getMajorVersion" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getMajorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Config.getMajorVersion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the configuration major version</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getMinorVersion">
-<code class="sig-name descname">getMinorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Config.getMinorVersion" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getMinorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Config.getMinorVersion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the configuration minor version</p>
 </dd></dl>
 
@@ -1065,75 +1065,75 @@ functionality (such as to apply an individual LUT file).</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getRoleNames">
-<code class="sig-name descname">getRoleNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 6&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getRoleNames" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getRoleNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 6&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getRoleNames" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getRoles">
-<code class="sig-name descname">getRoles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 7&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getRoles" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getRoles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 7&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getRoles" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getSearchPath">
-<code class="sig-name descname">getSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getSearchPath" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getSearchPath" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getSearchPaths">
-<code class="sig-name descname">getSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getSearchPaths" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getSearchPaths" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getViewTransform">
-<code class="sig-name descname">getViewTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ViewTransform<a class="headerlink" href="#PyOpenColorIO.Config.getViewTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getViewTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ViewTransform<a class="headerlink" href="#PyOpenColorIO.Config.getViewTransform" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getViewTransformNames">
-<code class="sig-name descname">getViewTransformNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 12&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getViewTransformNames" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getViewTransformNames</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 12&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getViewTransformNames" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getViewTransforms">
-<code class="sig-name descname">getViewTransforms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 13&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getViewTransforms" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getViewTransforms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 13&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getViewTransforms" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getViews">
-<code class="sig-name descname">getViews</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 9, char const*&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getViews" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getViews</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Config&gt;, 9, char const*&gt;<a class="headerlink" href="#PyOpenColorIO.Config.getViews" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.getWorkingDir">
-<code class="sig-name descname">getWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getWorkingDir" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.getWorkingDir" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.hasRole">
-<code class="sig-name descname">hasRole</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.hasRole" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">hasRole</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.hasRole" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return true if the role has been defined.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.isColorSpaceUsed">
-<code class="sig-name descname">isColorSpaceUsed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.isColorSpaceUsed" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">isColorSpaceUsed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.isColorSpaceUsed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return true if the color space is used by a transform, a role, or a
 look.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.isStrictParsingEnabled">
-<code class="sig-name descname">isStrictParsingEnabled</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.isStrictParsingEnabled" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">isStrictParsingEnabled</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Config.isStrictParsingEnabled" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.loadEnvironment">
-<code class="sig-name descname">loadEnvironment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.loadEnvironment" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">loadEnvironment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.loadEnvironment" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.parseColorSpaceFromString">
-<code class="sig-name descname">parseColorSpaceFromString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">str</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.parseColorSpaceFromString" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">parseColorSpaceFromString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">str</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Config.parseColorSpaceFromString" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given the specified string, get the longest, right-most, colorspace
 substring that appears.</p>
 <ul class="simple">
@@ -1146,7 +1146,7 @@ string.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.removeColorSpace">
-<code class="sig-name descname">removeColorSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.removeColorSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">removeColorSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.removeColorSpace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove a color space from the configuration.</p>
 <p>note It does not throw an exception if the color space is not present
 or used by an existing role. Role name arguments are ignored. note
@@ -1156,14 +1156,14 @@ Removing a color space to a <cite>Config</cite> does not affect any
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.removeDisplay">
-<code class="sig-name descname">removeDisplay</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.removeDisplay" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">removeDisplay</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">display</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">view</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.removeDisplay" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove the view and the display if no more views. It does not remove
 the associated color space.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.sanityCheck">
-<code class="sig-name descname">sanityCheck</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.sanityCheck" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">sanityCheck</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.sanityCheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>This will throw an exception if the config is malformed. The most
 common error occurs when references are made to colorspaces that do
 not exist.</p>
@@ -1187,7 +1187,7 @@ This is typically stored on disk in a file with the extension .ocio.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setActiveDisplays">
-<code class="sig-name descname">setActiveDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">displays</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setActiveDisplays" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setActiveDisplays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">displays</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setActiveDisplays" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comma-delimited list of names to filter and order the active displays.
 .. note:: The setter does not override the envvar. The getter does not
 take into account the envvar value and thus may not represent what the
@@ -1196,7 +1196,7 @@ user is seeing.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setActiveViews">
-<code class="sig-name descname">setActiveViews</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">views</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setActiveViews" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setActiveViews</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">views</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setActiveViews" title="Permalink to this definition">¶</a></dt>
 <dd><p>Comma-delimited list of names to filter and order the active views.
 note The setter does not override the envvar. The getter does not
 take into account the envvar value and thus may not represent what the
@@ -1205,23 +1205,23 @@ user is seeing.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setDefaultLumaCoefs">
-<code class="sig-name descname">setDefaultLumaCoefs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">rgb</span><span class="p">:</span> <span class="n">List[float[3]]</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setDefaultLumaCoefs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setDefaultLumaCoefs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">rgb</span><span class="p">:</span> <span class="n">List[float[3]]</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setDefaultLumaCoefs" title="Permalink to this definition">¶</a></dt>
 <dd><p>These should be normalized (sum to 1.0 exactly).</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setDescription">
-<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setDescription" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setDescription" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setEnvironmentMode">
-<code class="sig-name descname">setEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">mode</span><span class="p">:</span> <span class="n">PyOpenColorIO.EnvironmentMode</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setEnvironmentMode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">mode</span><span class="p">:</span> <span class="n">PyOpenColorIO.EnvironmentMode</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setEnvironmentMode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setFamilySeparator">
-<code class="sig-name descname">setFamilySeparator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">separator</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setFamilySeparator" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setFamilySeparator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">separator</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setFamilySeparator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Succeeds if the characters is null or a valid character from the ASCII
 table i.e. from value 32 (i.e. space) to 126 (i.e. ‘~’); otherwise, it
 throws an exception.</p>
@@ -1235,7 +1235,7 @@ throws an exception.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setInactiveColorSpaces">
-<code class="sig-name descname">setInactiveColorSpaces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">inactiveColorSpaces</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setInactiveColorSpaces" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setInactiveColorSpaces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">inactiveColorSpaces</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setInactiveColorSpaces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set/get a list of inactive color space names.</p>
 <ul class="simple">
 <li><p>The inactive spaces are color spaces that should not appear in</p></li>
@@ -1252,25 +1252,25 @@ list. * Roles may not be used.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setMajorVersion">
-<code class="sig-name descname">setMajorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">major</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setMajorVersion" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setMajorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">major</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setMajorVersion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the configuration major version</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setMinorVersion">
-<code class="sig-name descname">setMinorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">minor</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setMinorVersion" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setMinorVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">minor</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setMinorVersion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the configuration minor version</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setRole">
-<code class="sig-name descname">setRole</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">colorSpaceName</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setRole" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setRole</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">colorSpaceName</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setRole" title="Permalink to this definition">¶</a></dt>
 <dd><p>note Setting the colorSpaceName name to a null string unsets it.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setSearchPath">
-<code class="sig-name descname">setSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setSearchPath" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setSearchPath" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set all search paths as a concatenated string, using ‘:’ to separate
 the paths. See addSearchPath for a more robust and platform-agnostic
 method of setting the search paths.</p>
@@ -1278,7 +1278,7 @@ method of setting the search paths.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.setWorkingDir">
-<code class="sig-name descname">setWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">dirname</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setWorkingDir" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em>, <em class="sig-param"><span class="n">dirname</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.setWorkingDir" title="Permalink to this definition">¶</a></dt>
 <dd><p>The working directory defaults to the location of the config file. It
 is used to convert any relative paths to absolute. If no search paths
 have been set, the working directory will be used as the fallback
@@ -1288,7 +1288,7 @@ working directory.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Config.upgradeToLatestVersion">
-<code class="sig-name descname">upgradeToLatestVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.upgradeToLatestVersion" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">upgradeToLatestVersion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Config.upgradeToLatestVersion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Allows an older config to be serialized as the current version.</p>
 </dd></dl>
 
@@ -1317,20 +1317,20 @@ mappings (at different precisions) are referred to as a ‘family’.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.addCategory">
-<code class="sig-name descname">addCategory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">category</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.addCategory" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">addCategory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">category</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.addCategory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a single category. note Will do nothing if the category already
 exists.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.clearCategories">
-<code class="sig-name descname">clearCategories</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.clearCategories" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearCategories</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.clearCategories" title="Permalink to this definition">¶</a></dt>
 <dd><p>Clear all the categories.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getAllocation">
-<code class="sig-name descname">getAllocation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.Allocation<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getAllocation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getAllocation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.Allocation<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getAllocation" title="Permalink to this definition">¶</a></dt>
 <dd><p>If this colorspace needs to be transferred to a limited dynamic range
 coding space (such as during display with a GPU path), use this
 allocation to maximize bit efficiency.</p>
@@ -1338,27 +1338,27 @@ allocation to maximize bit efficiency.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getAllocationVars">
-<code class="sig-name descname">getAllocationVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>float<span class="p">]</span><a class="headerlink" href="#PyOpenColorIO.ColorSpace.getAllocationVars" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getAllocationVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>float<span class="p">]</span><a class="headerlink" href="#PyOpenColorIO.ColorSpace.getAllocationVars" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getBitDepth">
-<code class="sig-name descname">getBitDepth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.BitDepth<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getBitDepth" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getBitDepth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.BitDepth<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getBitDepth" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getCategories">
-<code class="sig-name descname">getCategories</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::ColorSpace&gt;, 0&gt;<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getCategories" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getCategories</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::ColorSpace&gt;, 0&gt;<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getCategories" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getDescription">
-<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getDescription" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getDescription" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getEqualityGroup">
-<code class="sig-name descname">getEqualityGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getEqualityGroup" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getEqualityGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getEqualityGroup" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the ColorSpace group name (used for equality comparisons) This
 allows no-op transforms between different colorspaces. If an
 equalityGroup is not defined (an empty string), it will be considered
@@ -1369,7 +1369,7 @@ same value as ‘family’.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getFamily">
-<code class="sig-name descname">getFamily</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getFamily" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getFamily</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getFamily" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the family, for use in user interfaces (optional) The family
 string could use a ‘/’ separator to indicate levels to be used by
 hierarchical menus.</p>
@@ -1377,31 +1377,31 @@ hierarchical menus.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getName">
-<code class="sig-name descname">getName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getName" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getName" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getReferenceSpaceType">
-<code class="sig-name descname">getReferenceSpaceType</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.ReferenceSpaceType<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getReferenceSpaceType" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getReferenceSpaceType</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.ReferenceSpaceType<a class="headerlink" href="#PyOpenColorIO.ColorSpace.getReferenceSpaceType" title="Permalink to this definition">¶</a></dt>
 <dd><p>A display color space will use the display-referred reference space.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.getTransform">
-<code class="sig-name descname">getTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">dir</span><span class="p">:</span> <span class="n">PyOpenColorIO.ColorSpaceDirection</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a><a class="headerlink" href="#PyOpenColorIO.ColorSpace.getTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">dir</span><span class="p">:</span> <span class="n">PyOpenColorIO.ColorSpaceDirection</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a><a class="headerlink" href="#PyOpenColorIO.ColorSpace.getTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>If a transform in the specified direction has been specified, return
 it. Otherwise return a null ConstTransformRcPtr</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.hasCategory">
-<code class="sig-name descname">hasCategory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">category</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.ColorSpace.hasCategory" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">hasCategory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">category</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.ColorSpace.hasCategory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return true if the category is present.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.isData">
-<code class="sig-name descname">isData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.ColorSpace.isData" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">isData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.ColorSpace.isData" title="Permalink to this definition">¶</a></dt>
 <dd><p>ColorSpaces that are data are treated a bit special. Basically, any
 colorspace transforms you try to apply to them are ignored. (Think of
 applying a gamut mapping transform to an ID pass). Also, the
@@ -1413,54 +1413,54 @@ pixel data, such as normals, point positions, ID information, etc.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.removeCategory">
-<code class="sig-name descname">removeCategory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">category</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.removeCategory" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">removeCategory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">category</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.removeCategory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove a category. note Will do nothing if the category is missing.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setAllocation">
-<code class="sig-name descname">setAllocation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">allocation</span><span class="p">:</span> <span class="n">PyOpenColorIO.Allocation</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setAllocation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setAllocation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">allocation</span><span class="p">:</span> <span class="n">PyOpenColorIO.Allocation</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setAllocation" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setAllocationVars">
-<code class="sig-name descname">setAllocationVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">vars</span><span class="p">:</span> <span class="n">List<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setAllocationVars" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setAllocationVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">vars</span><span class="p">:</span> <span class="n">List<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setAllocationVars" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setBitDepth">
-<code class="sig-name descname">setBitDepth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">bitDepth</span><span class="p">:</span> <span class="n">PyOpenColorIO.BitDepth</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setBitDepth" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setBitDepth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">bitDepth</span><span class="p">:</span> <span class="n">PyOpenColorIO.BitDepth</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setBitDepth" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setDescription">
-<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setDescription" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setDescription" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setEqualityGroup">
-<code class="sig-name descname">setEqualityGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">equalityGroup</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setEqualityGroup" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setEqualityGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">equalityGroup</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setEqualityGroup" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setFamily">
-<code class="sig-name descname">setFamily</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">family</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setFamily" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setFamily</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">family</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setFamily" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the family, for use in user interfaces (optional)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setIsData">
-<code class="sig-name descname">setIsData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">isData</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setIsData" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setIsData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">isData</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setIsData" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setName">
-<code class="sig-name descname">setName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setName" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setName" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.ColorSpace.setTransform">
-<code class="sig-name descname">setTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">transform</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a></span></em>, <em class="sig-param"><span class="n">dir</span><span class="p">:</span> <span class="n">PyOpenColorIO.ColorSpaceDirection</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.ColorSpace" title="PyOpenColorIO.ColorSpace">PyOpenColorIO.ColorSpace</a></span></em>, <em class="sig-param"><span class="n">transform</span><span class="p">:</span> <span class="n"><a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a></span></em>, <em class="sig-param"><span class="n">dir</span><span class="p">:</span> <span class="n">PyOpenColorIO.ColorSpaceDirection</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.ColorSpace.setTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Specify the transform for the appropriate direction. Setting the
 transform to null will clear it.</p>
 </dd></dl>
@@ -1478,53 +1478,53 @@ state. The processSpace defines the ColorSpace the image is required
 to be in, for the math to apply correctly.</p>
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.getDescription">
-<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Look.getDescription" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Look.getDescription" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.getInverseTransform">
-<code class="sig-name descname">getInverseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a><a class="headerlink" href="#PyOpenColorIO.Look.getInverseTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getInverseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a><a class="headerlink" href="#PyOpenColorIO.Look.getInverseTransform" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.getName">
-<code class="sig-name descname">getName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Look.getName" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Look.getName" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.getProcessSpace">
-<code class="sig-name descname">getProcessSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Look.getProcessSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getProcessSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Look.getProcessSpace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.getTransform">
-<code class="sig-name descname">getTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a><a class="headerlink" href="#PyOpenColorIO.Look.getTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a><a class="headerlink" href="#PyOpenColorIO.Look.getTransform" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.setDescription">
-<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setDescription" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setDescription" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.setInverseTransform">
-<code class="sig-name descname">setInverseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">transform</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setInverseTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setInverseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">transform</span><span class="p">:</span> <span class="n"><a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setInverseTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Setting a transform to a non-null call makes it allowed.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.setName">
-<code class="sig-name descname">setName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setName" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setName" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.setProcessSpace">
-<code class="sig-name descname">setProcessSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">processSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setProcessSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setProcessSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">processSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setProcessSpace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Look.setTransform">
-<code class="sig-name descname">setTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">transform</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Look" title="PyOpenColorIO.Look">PyOpenColorIO.Look</a></span></em>, <em class="sig-param"><span class="n">transform</span><span class="p">:</span> <span class="n"><a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.Transform" title="PyOpenColorIO.Transform">PyOpenColorIO.Transform</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Look.setTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Setting a transform to a non-null call makes it allowed.</p>
 </dd></dl>
 
@@ -1550,7 +1550,7 @@ the result of Config::getProcessor`.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.createGroupTransform">
-<code class="sig-name descname">createGroupTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonTransforms.html#PyOpenColorIO.GroupTransform" title="PyOpenColorIO.GroupTransform">PyOpenColorIO.GroupTransform</a><a class="headerlink" href="#PyOpenColorIO.Processor.createGroupTransform" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">createGroupTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="PythonTransforms.html#PyOpenColorIO.GroupTransform" title="PyOpenColorIO.GroupTransform">PyOpenColorIO.GroupTransform</a><a class="headerlink" href="#PyOpenColorIO.Processor.createGroupTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a GroupTransform that contains a copy of the transforms that
 comprise the processor. (Changes to it will not modify the original
 processor.)</p>
@@ -1558,12 +1558,12 @@ processor.)</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getCacheID">
-<code class="sig-name descname">getCacheID</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Processor.getCacheID" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getCacheID</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Processor.getCacheID" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getDefaultCPUProcessor">
-<code class="sig-name descname">getDefaultCPUProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::CPUProcessor<a class="headerlink" href="#PyOpenColorIO.Processor.getDefaultCPUProcessor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDefaultCPUProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::CPUProcessor<a class="headerlink" href="#PyOpenColorIO.Processor.getDefaultCPUProcessor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an optimized <cite>CPUProcessor</cite> instance.</p>
 <p>note This may provide higher fidelity than anticipated due to
 internal optimizations. For example, if the inputColorSpace and the
@@ -1587,18 +1587,18 @@ cpuProcessor-&gt;apply(img);</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getDefaultGPUProcessor">
-<code class="sig-name descname">getDefaultGPUProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::GPUProcessor<a class="headerlink" href="#PyOpenColorIO.Processor.getDefaultGPUProcessor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDefaultGPUProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::GPUProcessor<a class="headerlink" href="#PyOpenColorIO.Processor.getDefaultGPUProcessor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an optimized GPUProcessor instance.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getDynamicProperty">
-<code class="sig-name descname">getDynamicProperty</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em>, <em class="sig-param"><span class="n">type</span><span class="p">:</span> <span class="n">PyOpenColorIO.DynamicPropertyType</span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.DynamicProperty<a class="headerlink" href="#PyOpenColorIO.Processor.getDynamicProperty" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getDynamicProperty</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em>, <em class="sig-param"><span class="n">type</span><span class="p">:</span> <span class="n">PyOpenColorIO.DynamicPropertyType</span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.DynamicProperty<a class="headerlink" href="#PyOpenColorIO.Processor.getDynamicProperty" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getFormatMetadata">
-<code class="sig-name descname">getFormatMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.FormatMetadata<a class="headerlink" href="#PyOpenColorIO.Processor.getFormatMetadata" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getFormatMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.FormatMetadata<a class="headerlink" href="#PyOpenColorIO.Processor.getFormatMetadata" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a FormatMetadata containing the top level metadata for the
 processor. For a processor from a CLF file, this corresponds to the
 ProcessList metadata.</p>
@@ -1616,7 +1616,7 @@ ProcessList metadata.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getOptimizedGPUProcessor">
-<code class="sig-name descname">getOptimizedGPUProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em>, <em class="sig-param"><span class="n">oFlags</span><span class="p">:</span> <span class="n">PyOpenColorIO.OptimizationFlags</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::GPUProcessor<a class="headerlink" href="#PyOpenColorIO.Processor.getOptimizedGPUProcessor" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getOptimizedGPUProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em>, <em class="sig-param"><span class="n">oFlags</span><span class="p">:</span> <span class="n">PyOpenColorIO.OptimizationFlags</span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::GPUProcessor<a class="headerlink" href="#PyOpenColorIO.Processor.getOptimizedGPUProcessor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -1643,14 +1643,14 @@ the optimization is effectively only done once.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getProcessorMetadata">
-<code class="sig-name descname">getProcessorMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ProcessorMetadata<a class="headerlink" href="#PyOpenColorIO.Processor.getProcessorMetadata" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getProcessorMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::ProcessorMetadata<a class="headerlink" href="#PyOpenColorIO.Processor.getProcessorMetadata" title="Permalink to this definition">¶</a></dt>
 <dd><p>The ProcessorMetadata contains technical information such as the
 number of files and looks used in the processor.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.getTransformFormatMetadata">
-<code class="sig-name descname">getTransformFormatMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Processor&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.Processor.getTransformFormatMetadata" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getTransformFormatMetadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Processor&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.Processor.getTransformFormatMetadata" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a FormatMetadata containing the metadata for a transform within
 the processor. For a processor from a CLF file, this corresponds to
 the metadata associated with an individual process node.</p>
@@ -1663,19 +1663,19 @@ the metadata associated with an individual process node.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.hasChannelCrosstalk">
-<code class="sig-name descname">hasChannelCrosstalk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Processor.hasChannelCrosstalk" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">hasChannelCrosstalk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Processor.hasChannelCrosstalk" title="Permalink to this definition">¶</a></dt>
 <dd><p>True if the image transformation is non-separable. For example, if a
 change in red may also cause a change in green or blue.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.hasDynamicProperty">
-<code class="sig-name descname">hasDynamicProperty</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em>, <em class="sig-param"><span class="n">type</span><span class="p">:</span> <span class="n">PyOpenColorIO.DynamicPropertyType</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Processor.hasDynamicProperty" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">hasDynamicProperty</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em>, <em class="sig-param"><span class="n">type</span><span class="p">:</span> <span class="n">PyOpenColorIO.DynamicPropertyType</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Processor.hasDynamicProperty" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Processor.isNoOp">
-<code class="sig-name descname">isNoOp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Processor.isNoOp" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">isNoOp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Processor" title="PyOpenColorIO.Processor">PyOpenColorIO.Processor</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#PyOpenColorIO.Processor.isNoOp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -1723,58 +1723,58 @@ format.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.addSearchPath">
-<code class="sig-name descname">addSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.addSearchPath" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">addSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.addSearchPath" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.clearSearchPaths">
-<code class="sig-name descname">clearSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.clearSearchPaths" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.clearSearchPaths" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.clearStringVars">
-<code class="sig-name descname">clearStringVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.clearStringVars" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">clearStringVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.clearStringVars" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.getCacheID">
-<code class="sig-name descname">getCacheID</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.getCacheID" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getCacheID</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.getCacheID" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.getEnvironmentMode">
-<code class="sig-name descname">getEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.EnvironmentMode<a class="headerlink" href="#PyOpenColorIO.Context.getEnvironmentMode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; PyOpenColorIO.EnvironmentMode<a class="headerlink" href="#PyOpenColorIO.Context.getEnvironmentMode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.getSearchPath">
-<code class="sig-name descname">getSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.getSearchPath" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.getSearchPath" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.getSearchPaths">
-<code class="sig-name descname">getSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Context&gt;, 2&gt;<a class="headerlink" href="#PyOpenColorIO.Context.getSearchPaths" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getSearchPaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Context&gt;, 2&gt;<a class="headerlink" href="#PyOpenColorIO.Context.getSearchPaths" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.getStringVars">
-<code class="sig-name descname">getStringVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Context&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.Context.getStringVars" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getStringVars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; OpenColorIO_v2_0dev::PyIterator&lt;std::shared_ptr&lt;OpenColorIO_v2_0dev::Context&gt;, 1&gt;<a class="headerlink" href="#PyOpenColorIO.Context.getStringVars" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.getWorkingDir">
-<code class="sig-name descname">getWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.getWorkingDir" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.getWorkingDir" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.loadEnvironment">
-<code class="sig-name descname">loadEnvironment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.loadEnvironment" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">loadEnvironment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.loadEnvironment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Seed all string vars with the current environment.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.resolveFileLocation">
-<code class="sig-name descname">resolveFileLocation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.resolveFileLocation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">resolveFileLocation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.resolveFileLocation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Do a file lookup.</p>
 <p>Evaluate all variables (as needed). Also, walk the full search path
 until the file is found. If the filename cannot be found, an exception
@@ -1783,7 +1783,7 @@ will be thrown.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.resolveStringVar">
-<code class="sig-name descname">resolveStringVar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">val</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.resolveStringVar" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">resolveStringVar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">val</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Context.resolveStringVar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Do a file lookup.</p>
 <p>Evaluate the specified variable (as needed). Will not throw
 exceptions.</p>
@@ -1791,17 +1791,17 @@ exceptions.</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.setEnvironmentMode">
-<code class="sig-name descname">setEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">mode</span><span class="p">:</span> <span class="n">PyOpenColorIO.EnvironmentMode</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.setEnvironmentMode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setEnvironmentMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">mode</span><span class="p">:</span> <span class="n">PyOpenColorIO.EnvironmentMode</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.setEnvironmentMode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.setSearchPath">
-<code class="sig-name descname">setSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.setSearchPath" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setSearchPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.setSearchPath" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Context.setWorkingDir">
-<code class="sig-name descname">setWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">dirname</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.setWorkingDir" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setWorkingDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Context" title="PyOpenColorIO.Context">PyOpenColorIO.Context</a></span></em>, <em class="sig-param"><span class="n">dirname</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Context.setWorkingDir" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1861,17 +1861,17 @@ std::cout &lt;&lt; out.str();</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getConfig">
-<code class="sig-name descname">getConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Baker.getConfig" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a><a class="headerlink" href="#PyOpenColorIO.Baker.getConfig" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getCubeSize">
-<code class="sig-name descname">getCubeSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Baker.getCubeSize" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getCubeSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Baker.getCubeSize" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getFormat">
-<code class="sig-name descname">getFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getFormat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getFormat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -1898,50 +1898,50 @@ the formatMetadata. The CLF/CTF formats will make use of the top-level
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getInputSpace">
-<code class="sig-name descname">getInputSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getInputSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getInputSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getInputSpace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getLooks">
-<code class="sig-name descname">getLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getLooks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getLooks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getShaperSize">
-<code class="sig-name descname">getShaperSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Baker.getShaperSize" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getShaperSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#PyOpenColorIO.Baker.getShaperSize" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getShaperSpace">
-<code class="sig-name descname">getShaperSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getShaperSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getShaperSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getShaperSpace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.getTargetSpace">
-<code class="sig-name descname">getTargetSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getTargetSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">getTargetSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#PyOpenColorIO.Baker.getTargetSpace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setConfig">
-<code class="sig-name descname">setConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/PythonAPI.html#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setConfig" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#PyOpenColorIO.Config" title="PyOpenColorIO.Config">PyOpenColorIO.Config</a></span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setConfig" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the config to use.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setCubeSize">
-<code class="sig-name descname">setCubeSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">cubesize</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setCubeSize" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setCubeSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">cubesize</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setCubeSize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Override the default cube sample size. default: &lt;format specific&gt;</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setFormat">
-<code class="sig-name descname">setFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">formatName</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setFormat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setFormat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">formatName</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setFormat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the LUT output format.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setInputSpace">
-<code class="sig-name descname">setInputSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">inputSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setInputSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setInputSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">inputSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setInputSpace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the input ColorSpace that the LUT will be applied to.</p>
 <dl class="simple">
 <dt>Parameter <code class="docutils literal notranslate"><span class="pre">inputSpace</span></code>:</dt><dd><p>The input ColorSpace to use.</p>
@@ -1951,7 +1951,7 @@ the formatMetadata. The CLF/CTF formats will make use of the top-level
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setLooks">
-<code class="sig-name descname">setLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">looks</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setLooks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setLooks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">looks</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setLooks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the looks to be applied during baking. Looks is a potentially
 comma (or colon) delimited list of lookNames, where +/- prefixes are
 optionally allowed to denote forward/inverse look specification. (And
@@ -1960,7 +1960,7 @@ forward is assumed in the absence of either).</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setShaperSize">
-<code class="sig-name descname">setShaperSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">shapersize</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setShaperSize" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setShaperSize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">shapersize</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setShaperSize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Override the default shaper LUT size. Default value is -1, which
 allows each format to use its own most appropriate size. For the CLF
 format, the default uses a half-domain LUT1D (which is ideal for
@@ -1969,7 +1969,7 @@ scene-linear inputs).</p>
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setShaperSpace">
-<code class="sig-name descname">setShaperSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">shaperSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setShaperSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setShaperSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">shaperSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setShaperSpace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set an <em>optional</em> ColorSpace to be used to shape / transfer the input
 colorspace. This is mostly used to allocate an HDR luminance range
 into an LDR one. If a shaper space is not explicitly specified, and
@@ -1979,7 +1979,7 @@ the file format supports one, the ColorSpace Allocation will be used
 
 <dl class="py method">
 <dt id="PyOpenColorIO.Baker.setTargetSpace">
-<code class="sig-name descname">setTargetSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../../src/api/bindings/TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">targetSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setTargetSpace" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">setTargetSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span><span class="p">:</span> <span class="n"><a class="reference internal" href="TEST.html#PyOpenColorIO.Baker" title="PyOpenColorIO.Baker">PyOpenColorIO.Baker</a></span></em>, <em class="sig-param"><span class="n">targetSpace</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#PyOpenColorIO.Baker.setTargetSpace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the target device colorspace for the LUT.</p>
 </dd></dl>
 

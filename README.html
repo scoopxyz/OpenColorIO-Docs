@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Overview</title>
+      <title>OpenColorIO</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
@@ -22,13 +22,12 @@
       <script src="_static/theme.js" defer></script>
     
   <link rel="index" title="Index" href="genindex.html" />
-  <link rel="search" title="Search" href="search.html" />
-  <link rel="next" title="&lt;no title&gt;" href="overview/_index.html" /> 
+  <link rel="search" title="Search" href="search.html" /> 
   </head>
 
   <body>
     <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="#" class="home-link">
+  <router-link to="index.html" class="home-link">
     
       <img class="logo" src="_static/OpenColorIO_withText.svg" alt="doit logo"/>
     
@@ -397,86 +396,143 @@
           <div class="body-header" role="navigation" aria-label="navigation">
   
   <ul class="breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="index.html">Docs</a> &raquo;</li>
     
-    <li>Overview</li>
+    <li>OpenColorIO</li>
   </ul>
   
 
   <ul class="page-nav">
-  <li class="next">
-    <a href="overview/_index.html"
-       title="next chapter">&lt;no title&gt; →</a>
-  </li>
 </ul>
   
 </div>
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
-<p>OpenColorIO (OCIO) is a complete color management solution geared towards motion
-picture production with an emphasis on visual effects and computer animation.
-OCIO provides a straightforward and consistent user experience across all
-supporting applications while allowing for sophisticated back-end configuration
-options suitable for high-end production usage. OCIO is compatible with the
-Academy Color Encoding Specification (ACES) and is LUT-format agnostic,
-supporting many popular formats.</p>
+  <!-- SPDX-License-Identifier: CC-BY-4.0 --><!-- Copyright Contributors to the OpenColorIO Project. --><div class="section" id="opencolorio">
+<h1>OpenColorIO<a class="headerlink" href="#opencolorio" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://opensource.org/licenses/BSD-3-Clause"><img alt="License" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" /></a>
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/actions?query=workflow%3ACI"><img alt="Build Status" src="https://github.com/AcademySoftwareFoundation/OpenColorIO/workflows/CI/badge.svg" /></a>
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/actions?query=workflow%3AAnalysis"><img alt="Analysis Status" src="https://github.com/AcademySoftwareFoundation/OpenColorIO/workflows/Analysis/badge.svg" /></a>
+<a class="reference external" href="https://sonarcloud.io/dashboard?id=AcademySoftwareFoundation_OpenColorIO"><img alt="Quality Gate Status" src="https://sonarcloud.io/api/project_badges/measure?project=AcademySoftwareFoundation_OpenColorIO&amp;metric=alert_status" /></a>
+<a class="reference external" href="https://bestpractices.coreinfrastructure.org/projects/2612"><img alt="CII Best Practices" src="https://bestpractices.coreinfrastructure.org/projects/2612/badge" /></a></p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p><img alt="lnh" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy1.jpg" /> <img alt="lm10" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy3.jpg" /> <img alt="vd8" src="https://origin-flash.sonypictures.com/ist/imageworks/cloudy2.jpg" /></p>
+<p>OpenColorIO (OCIO) is a complete color management solution geared towards
+motion picture production with an emphasis on visual effects and computer
+animation. OCIO provides a straightforward and consistent user experience
+across all supporting applications while allowing for sophisticated back-end
+configuration options suitable for high-end production usage. OCIO is
+compatible with the Academy Color Encoding Specification (ACES) and is
+LUT-format agnostic, supporting many popular formats.</p>
 <p>OpenColorIO is released as version 1.0 and has been in development since 2003.
-OCIO represents the culmination of years of production experience earned on such
-films as SpiderMan 2 (2004), Surf’s Up (2007), Cloudy with a Chance of Meatballs
-(2009), Alice in Wonderland (2010), and many more. OpenColorIO is natively
-supported in commercial applications like Katana, Mari, Nuke, Silhouette FX, and
-others.</p>
+OCIO represents the culmination of years of production experience earned on
+such films as SpiderMan 2 (2004), Surf’s Up (2007), Cloudy with a Chance of
+Meatballs (2009), Alice in Wonderland (2010), and many more. OpenColorIO is
+natively supported in commercial applications like Katana, Mari, Nuke, Maya,
+Houdini, Silhouette FX, and
+<a class="reference external" href="https://opencolorio.org/CompatibleSoftware.html">others</a>.</p>
+<p>OpenColorIO is free and open source software (<a class="reference internal" href="overview/license.html#license"><span class="std std-ref">LICENSE</span></a>), and
+one of several projects actvively sponsored by the ASWF
+(<a class="reference external" href="https://www.aswf.io/">Academy Software Foundation</a>).</p>
 </div>
-<div class="section" id="users">
-<h1>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="quick-start">
-<h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
-<p>Most users will likely want to use the OpenColorIO that comes precompiled with
-their applications.  See the <a class="reference internal" href="overview/compatible_software.html#compatiblesoftware"><span class="std std-ref">Compatible Software</span></a> for further details on
-each application.</p>
-<p>Note that OCIO configurations are required to do any ‘real’ work, and are
-available separately on the <a class="reference internal" href="overview/downloads.html#downloads"><span class="std std-ref">Downloads</span></a> section of this site. Example
-images are also available. For assistance customizing .ocio configurations,
-contact <a class="reference external" href="https://lists.aswf.io/g/ocio-user">ocio-user</a>.</p>
+<div class="section" id="opencolorio-project-mission">
+<h2>OpenColorIO Project Mission<a class="headerlink" href="#opencolorio-project-mission" title="Permalink to this headline">¶</a></h2>
+<p>The OpenColorIO project is committed to providing an industry standard solution
+for highly precise, performant, and consistent color management across digital
+content creation applications and pipelines.</p>
+<p>OpenColorIO aims to:</p>
 <ul class="simple">
-<li><p>Step 1:  set the OCIO environment-variable to /path/to/your/profile.ocio</p></li>
-<li><p>Step 2:  Launch supported application.</p></li>
+<li><p>be stable, secure, and thouroughly tested on Linux, macOS, and Windows</p></li>
+<li><p>be performant on modern CPUs and GPUs</p></li>
+<li><p>be simple, scalable, and well documented</p></li>
+<li><p>be compatible with critical color and imaging standards</p></li>
+<li><p>provide lossless color processing wherever possible</p></li>
+<li><p>maintain config backwards compatability across major versions</p></li>
+<li><p>have every new feature carefully reviewed by leaders from the motion picture,
+VFX, animation, and video game industries</p></li>
+<li><p>have a healthy and active community</p></li>
+<li><p>receive wide industry adoption</p></li>
 </ul>
-<p>If you are on a platform that is not envvar friendly, most applications also
-provide a menu option to select a different OCIO configuration after launch.</p>
-<p>Please be sure to select a profile that matches your color workflow (VFX work
-typically requires a different profile than animated features). If you need
-assistance picking a profile, email
-<a class="reference external" href="https://lists.aswf.io/g/ocio-user">ocio-user</a>.</p>
 </div>
+<div class="section" id="opencolorio-project-governance">
+<h2>OpenColorIO Project Governance<a class="headerlink" href="#opencolorio-project-governance" title="Permalink to this headline">¶</a></h2>
+<p>OpenColorIO is governed by the Academy Software Foundation (ASWF). See
+<a class="reference external" href="GOVERNANCE">GOVERNANCE.md</a> for detailed infomation about how the project
+operates.</p>
 </div>
-<div class="section" id="community">
-<h1>Community<a class="headerlink" href="#community" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="mailing-lists">
-<span id="id1"></span><h2>Mailing Lists<a class="headerlink" href="#mailing-lists" title="Permalink to this headline">¶</a></h2>
-<p>There are two mailing lists associated with OpenColorIO:</p>
-<dl class="simple">
-<dt><a class="reference external" href="https://lists.aswf.io/g/ocio-user">ocio-user</a><code class="docutils literal notranslate"><span class="pre">&#64;lists.aswf.io</span></code></dt><dd><p>For end users (artists, often) interested in OCIO profile design,
-facility color management, and workflow.</p>
-</dd>
-<dt><a class="reference external" href="https://lists.aswf.io/g/ocio-dev">ocio-dev</a><code class="docutils literal notranslate"><span class="pre">&#64;lists.aswf.io</span></code></dt><dd><p>For developers interested OCIO APIs, code integration, compilation, etc.</p>
-</dd>
-</dl>
-<div class="toctree-wrapper compound">
+<div class="section" id="web-resources">
+<h2>Web Resources<a class="headerlink" href="#web-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Web page: <a class="reference external" href="http://opencolorio.org">http://opencolorio.org</a></p></li>
+<li><p>Mail lists:</p>
+<ul>
+<li><p>Developer: <a class="reference external" href="mailto:ocio-dev&#37;&#52;&#48;lists&#46;aswf&#46;io">ocio-dev<span>&#64;</span>lists<span>&#46;</span>aswf<span>&#46;</span>io</a></p></li>
+<li><p>User: <a class="reference external" href="mailto:ocio-user&#37;&#52;&#48;lists&#46;aswf&#46;io">ocio-user<span>&#64;</span>lists<span>&#46;</span>aswf<span>&#46;</span>io</a></p></li>
+</ul>
+</li>
+<li><p>Slack channel: <a class="reference external" href="https://opencolorio.slack.com">https://opencolorio.slack.com</a></p>
+<ul>
+<li><p>Please request access on the ocio-dev list with the email address you
+would like to be invited on.</p></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="reference-configs">
+<h2>Reference Configs<a class="headerlink" href="#reference-configs" title="Permalink to this headline">¶</a></h2>
+<p>Reference OCIO configuration files and associated LUTs can be found at the
+Imageworks <a class="reference external" href="https://github.com/imageworks/OpenColorIO-Configs">OpenColorIO-Configs</a>
+repository.</p>
+<p>The following reference implementations are provided:</p>
+<ul class="simple">
+<li><p>SPI: Sony Pictures Imageworks</p>
+<ul>
+<li><p>spi-anim</p></li>
+<li><p>spi-vfx</p></li>
+</ul>
+</li>
+<li><p>ACES: Academy Color Encoding System</p>
+<ul>
+<li><p>aces_1.0.3</p></li>
+<li><p>aces_1.0.2</p></li>
+<li><p>aces_1.0.1</p></li>
+<li><p>aces_0.7.1</p></li>
+<li><p>aces_0.1.1</p></li>
+</ul>
+</li>
+<li><p>Other</p>
+<ul>
+<li><p>nuke-default</p></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p>
-<p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p>OpenColorIO represents the generous contributions of many organizations and
+individuals. The “Contributors to the OpenColorIO Project” copyright statement
+used throughout the project reflects that the OCIO source is a collaborative
+effort, often with multiple copyright holders within a single file. Copyright
+for specific portions of code can be traced to an originating contributor using
+git commit history.</p>
+<p>OpenColorIO was originally developed and made open source by
+<a class="reference external" href="http://opensource.imageworks.com">Sony Pictures Imageworks</a>. The core design,
+and the majority of OCIO 1.0 code was authored by Imageworks, who continue to
+support and contribute to OCIO 2.0 development.</p>
+<p>The design and development of OpenColorIO 2.0 is being led by Autodesk.
+Autodesk submitted a proposal to revitalize the project in 2017, and have
+authored the majority of OCIO 2.0 code in the years since.</p>
+<p>Significant contributions have also been made by Industrial Light &amp; Magic,
+DNEG, and many individuals. See
+<a class="reference external" href="https://github.com/AcademySoftwareFoundation/OpenColorIO/graphs/contributors">Contributors</a>
+for a complete list.</p>
+<p>See <a class="reference external" href="THIRD-PARTY">THIRD-PARTY.md</a> for license information
+about portions of OpenColorIO that have been imported from other projects.</p>
+<hr class="docutils" />
+<p>Images from “Cloudy With A Chance of Meatballs” Copyright 2011 Sony Pictures Inc.
+All Rights Reserved.</p>
 </div>
 </div>
 
@@ -484,10 +540,6 @@ facility color management, and workflow.</p>
           </div>
           <div class="page-nav">
             <div class="inner"><ul class="page-nav">
-  <li class="next">
-    <a href="overview/_index.html"
-       title="next chapter">&lt;no title&gt; →</a>
-  </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright Contributors to the OpenColorIO Project.
     <br>

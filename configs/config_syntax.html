@@ -440,7 +440,7 @@ usually named <code class="docutils literal notranslate"><span class="pre">confi
 <em>syntactically</em> write this OCIO config - e.g. what transforms are
 available, or what sections are optional.</p>
 <p>This page alone will not help you to write a useful config file! See
-the <a class="reference internal" href="../src/configs/_index.html#configurations"><span class="std std-ref">Configurations</span></a> section for examples of complete, practical
+the <a class="reference internal" href="_index.html#configurations"><span class="std std-ref">Configurations</span></a> section for examples of complete, practical
 configs, and discussion of how they fit within a facilities workflow.</p>
 <div class="section" id="yaml-basics">
 <h2>YAML basics<a class="headerlink" href="#yaml-basics" title="Permalink to this headline">¶</a></h2>
@@ -505,7 +505,7 @@ absolute paths. Each path is separated with a colon <code class="docutils litera
 </div>
 <p>This allows for some clever setups, for example per-shot LUT’s with
 fallbacks to a default. For more information, see the examples in
-<a class="reference internal" href="../src/configs/looks.html#userguide-looks"><span class="std std-ref">Looks</span></a></p>
+<a class="reference internal" href="looks.html#userguide-looks"><span class="std std-ref">Looks</span></a></p>
 </div>
 <div class="section" id="strictparsing">
 <h3><code class="docutils literal notranslate"><span class="pre">strictparsing</span></code><a class="headerlink" href="#strictparsing" title="Permalink to this headline">¶</a></h3>
@@ -565,7 +565,7 @@ simplifies life for artists, as they don’t have to remember which is
 the correct log colorspace for the current project - the
 OCIOLogConvert always does the correct thing.</p>
 <p>A typical role definition looks like this, taken from the
-<a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> example configuration:</p>
+<a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> example configuration:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">roles</span><span class="p">:</span>
   <span class="nt">color_picking</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cpf</span>
   <span class="nt">color_timing</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lg10</span>
@@ -602,14 +602,14 @@ as a fallback. If not defined, the <code class="docutils literal notranslate"><s
 <li><p><code class="docutils literal notranslate"><span class="pre">matte_paint</span></code> - colorspace which matte-paintings are created in
 (for more information, <a class="reference internal" href="../users/baking_luts.html#userguide-bakelut-photoshop"><span class="std std-ref">see the guide on baking ICC profiles
 for Photoshop</span></a>, and
-<a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a>)</p></li>
+<a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">reference</span></code> - the colorspace against which the other colorspaces
 are defined</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">scene_linear</span></code> - the scene-referred linear-to-light colorspace,
 often the same as the reference space (see:ref:<cite>faq-terminology</cite>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">texture_paint</span></code> - similar to <code class="docutils literal notranslate"><span class="pre">matte_paint</span></code> but for painting
 textures for 3D objects (see the description of texture painting in
-<a class="reference internal" href="../src/overview/introduction.html#config-spipipeline-texture"><span class="std std-ref">SPI’s pipeline</span></a>)</p></li>
+<a class="reference internal" href="../overview/introduction.html#config-spipipeline-texture"><span class="std std-ref">SPI’s pipeline</span></a>)</p></li>
 </ul>
 </div>
 <div class="section" id="displays">
@@ -628,7 +628,7 @@ resulting in a “lifted” image useful for checking black-levels.</p></li>
 <li><p>“Raw” when assigned a colorspace with <code class="docutils literal notranslate"><span class="pre">raw:</span> <span class="pre">yes</span></code> set will show the
 unaltered image, useful for tech-checking images</p></li>
 </ul>
-<p>An example of the <code class="docutils literal notranslate"><span class="pre">displays</span></code> section from the <a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config:</p>
+<p>An example of the <code class="docutils literal notranslate"><span class="pre">displays</span></code> section from the <a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
   <span class="nt">DCIP3</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Film</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">p3dci8</span><span class="p p-Indicator">}</span>
@@ -726,7 +726,7 @@ applied in the scene-linear <code class="docutils literal notranslate"><span cla
 defined elsewhere in the config.</p>
 <p>Next is a definition for a “neutral” look, which applies a
 shot-specific CSP LUT, dynamically finding the correct LUT based on
-the SEQ and SHOT <a class="reference internal" href="../src/configs/looks.html#userguide-looks"><span class="std std-ref">context variables</span></a>.</p>
+the SEQ and SHOT <a class="reference internal" href="looks.html#userguide-looks"><span class="std std-ref">context variables</span></a>.</p>
 <p>For example if <code class="docutils literal notranslate"><span class="pre">SEQ=ab</span></code> and <code class="docutils literal notranslate"><span class="pre">SHOT=1234</span></code>, this look will search for
 a LUT named <code class="docutils literal notranslate"><span class="pre">neutral-ab-1234.csp</span></code> in locations specified in
 <code class="docutils literal notranslate"><span class="pre">search_path</span></code>.</p>
@@ -768,7 +768,7 @@ applications.</p>
 <div class="section" id="to-reference-and-from-reference">
 <h4><code class="docutils literal notranslate"><span class="pre">to_reference</span></code> and <code class="docutils literal notranslate"><span class="pre">from_reference</span></code><a class="headerlink" href="#to-reference-and-from-reference" title="Permalink to this headline">¶</a></h4>
 <p>Here is a example of a very simple <code class="docutils literal notranslate"><span class="pre">colorspaces</span></code> section, modified
-from the <a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> example config:</p>
+from the <a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> example config:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">colorspaces</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
     <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lnf</span>
@@ -790,7 +790,7 @@ reference colorspace is an important convention within OCIO: <strong>all
 other colorspaces are defined as transforms either to or from this
 colorspace.</strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">lg16</span></code> colorspace is a 16-bit log colorspace (see
-<a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> for an explanation of this colorspace). It has a
+<a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> for an explanation of this colorspace). It has a
 name, a bitdepth and a description.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">lg16</span></code> colorspace is defined as a transform from <code class="docutils literal notranslate"><span class="pre">lg16</span></code> to the
 reference colorspace (<code class="docutils literal notranslate"><span class="pre">lnf</span></code>). That transform is to apply the LUT
@@ -892,7 +892,7 @@ convert it to <code class="docutils literal notranslate"><span class="pre">srgb8
 </ul>
 <p>A more complex example: we have an image in the <code class="docutils literal notranslate"><span class="pre">lg16</span></code> colorspace,
 and convert to <code class="docutils literal notranslate"><span class="pre">srgb8</span></code> (using the lg16 definition from earlier, or
-the <a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config):</p>
+the <a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config):</p>
 <p>First OCIO converts from lg16 to the reference space, using the transform defined in lg16’s to_reference:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">FileTransform</span></code> applies the lg16.spi1d</p></li>
@@ -946,7 +946,7 @@ stands for floating point.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">isdata</span></code> key on a colorspace informs OCIO that this colorspace
 is used for non-color data channels, such as the “normals” output of a
 a multipass 3D render.</p>
-<p>Here is example “non-color” colorspace from the <a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a>
+<p>Here is example “non-color” colorspace from the <a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a>
 config:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="kt">!&lt;ColorSpace&gt;</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ncf</span>
@@ -968,7 +968,7 @@ them are considered non-operations.</p>
 <p>You might have multiple colorspaces which are identical, but operate
 at different bit-depths.</p>
 <p>For example, see the <code class="docutils literal notranslate"><span class="pre">lg10</span></code> and <code class="docutils literal notranslate"><span class="pre">lg16</span></code> colorspaces in the
-<a class="reference internal" href="../src/configs/spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config. If loading a <code class="docutils literal notranslate"><span class="pre">lg10</span></code> image and
+<a class="reference internal" href="spi_vfx.html#config-spivfx"><span class="std std-ref">spi-vfx</span></a> config. If loading a <code class="docutils literal notranslate"><span class="pre">lg10</span></code> image and
 converting to <code class="docutils literal notranslate"><span class="pre">lg16</span></code>, no transform is required. This is of course
 faster, but may cause an unexpected increase in precision (e.g. it skip
 potential clamping caused by a LUT)</p>
@@ -1028,7 +1028,7 @@ GPU.</p>
 <p>It is also used to automatically generate a “shaper LUT” when
 <a class="reference internal" href="../users/baking_luts.html#userguide-bakelut"><span class="std std-ref">baking LUT’s</span></a> unless one is explicitly
 specified (not all output formats utilise this)</p>
-<p>For a detailed description, see <a class="reference internal" href="../src/configs/allocation_vars.html#allocationvars"><span class="std std-ref">How to Configure ColorSpace Allocation</span></a></p>
+<p>For a detailed description, see <a class="reference internal" href="allocation_vars.html#allocationvars"><span class="std std-ref">How to Configure ColorSpace Allocation</span></a></p>
 <p>Example of a “0-1” colorspace</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">allocation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">uniform</span>
 <span class="nt">allocationvars</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">0.0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]</span>
