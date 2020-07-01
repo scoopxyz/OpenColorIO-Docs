@@ -1,7 +1,0 @@
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/install/strip.dir
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/install/local.dir
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/install.dir
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/list_install_components.dir
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/rebuild_cache.dir
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/edit_cache.dir
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/build/pystring/src/pystring_install-build/CMakeFiles/pystring.dir

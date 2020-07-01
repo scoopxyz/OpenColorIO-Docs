@@ -20,8 +20,8 @@ Initialization
 
         .. automethod:: PyOpenColorIO.PackedImageDesc.__init__
 
-Getters/Setters
-***************
+Methods
+*******
 
 .. tabs::
 

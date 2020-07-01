@@ -20,8 +20,8 @@ Initialization
 
         .. autoclass:: PyOpenColorIO.ImageDesc.__init__
 
-Getters/Setters
-***************
+Methods
+*******
 
 .. tabs::
 

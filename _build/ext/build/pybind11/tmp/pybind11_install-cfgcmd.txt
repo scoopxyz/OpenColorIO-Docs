@@ -1,1 +1,0 @@
-cmd='/usr/local/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/dist;-DPYBIND11_INSTALL=ON;-DPYBIND11_TEST=OFF;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

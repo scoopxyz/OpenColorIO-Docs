@@ -1,3 +1,0 @@
-repository='https://github.com/openexr/openexr.git'
-module=''
-tag='origin'

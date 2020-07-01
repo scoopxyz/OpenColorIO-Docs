@@ -20,8 +20,8 @@ Initialization
 
         .. automethod:: PyOpenColorIO.PlanarImageDesc.__init__
 
-Getters/Setters
-***************
+Methods
+*******
 
 .. tabs::
 

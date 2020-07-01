@@ -23,14 +23,18 @@ Initialization
         .. automethod:: PyOpenColorIO.Context.__init__
 
 
-Getters/Setters
-***************
+Methods
+*******
 
 .. tabs::
 
     .. group-tab:: C++
 
+        **Cache**
+
         .. doxygenfunction:: OpenColorIO::Context::getCacheID
+
+        **Search Paths**
 
         .. doxygenfunction:: OpenColorIO::Context::setSearchPath
 
@@ -42,9 +46,13 @@ Getters/Setters
 
         .. doxygenfunction:: OpenColorIO::Context::addSearchPath
 
+        **Working Directory**
+
         .. doxygenfunction:: OpenColorIO::Context::setWorkingDir
 
         .. doxygenfunction:: OpenColorIO::Context::getWorkingDir
+
+        **String Vars**
 
         .. doxygenfunction:: OpenColorIO::Context::setStringVar
 
@@ -56,19 +64,26 @@ Getters/Setters
 
         .. doxygenfunction:: OpenColorIO::Context::clearStringVars
 
+        .. doxygenfunction:: OpenColorIO::Context::resolveStringVar
+
+        .. doxygenfunction:: OpenColorIO::Context::resolveFileLocation
+
+        **Environment Mode**
+
         .. doxygenfunction:: OpenColorIO::Context::setEnvironmentMode
 
         .. doxygenfunction:: OpenColorIO::Context::getEnvironmentMode
 
         .. doxygenfunction:: OpenColorIO::Context::loadEnvironment
 
-        .. doxygenfunction:: OpenColorIO::Context::resolveStringVar
-
-        .. doxygenfunction:: OpenColorIO::Context::resolveFileLocation
 
     .. group-tab:: Python
 
+        **Cache**
+
         .. automethod:: PyOpenColorIO.Context.getCacheID
+
+        **Search Paths**
 
         .. automethod:: PyOpenColorIO.Context.getSearchPath
 
@@ -80,20 +95,26 @@ Getters/Setters
 
         .. automethod:: PyOpenColorIO.Context.addSearchPath
 
+        **Working Directory**
+
         .. automethod:: PyOpenColorIO.Context.getWorkingDir
 
         .. automethod:: PyOpenColorIO.Context.setWorkingDir
 
+        **String Vars**
+
         .. automethod:: PyOpenColorIO.Context.getStringVars
 
         .. automethod:: PyOpenColorIO.Context.clearStringVars
+
+        .. automethod:: PyOpenColorIO.Context.resolveStringVar
+
+        .. automethod:: PyOpenColorIO.Context.resolveFileLocation
+
+        **Environment Mode**
 
         .. automethod:: PyOpenColorIO.Context.getEnvironmentMode
 
         .. automethod:: PyOpenColorIO.Context.setEnvironmentMode
 
         .. automethod:: PyOpenColorIO.Context.loadEnvironment
-
-        .. automethod:: PyOpenColorIO.Context.resolveStringVar
-
-        .. automethod:: PyOpenColorIO.Context.resolveFileLocation

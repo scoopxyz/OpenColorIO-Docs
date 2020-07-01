@@ -1,2 +1,0 @@
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/dist/lib/libpystring.a
-/home/fawlty/temp_dev/OpenColorIO-2/_build/ext/dist/include/pystring/pystring.h
